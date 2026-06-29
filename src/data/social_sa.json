@@ -62,7 +62,9 @@
     "likes": 20
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "1120": {
@@ -128,7 +130,9 @@
     "likes": 62
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "1180": {
@@ -194,12 +198,14 @@
     "likes": 0
    }
   ],
-  "level": "high",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "1211": {
-  "n": 20,
-  "pos": 5,
+  "n": 22,
+  "pos": 7,
   "neg": 1,
   "mood": "positive",
   "items": [
@@ -260,7 +266,9 @@
     "likes": 0
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 2,
+  "level": "danger",
   "spike": false
  },
  "7010": {
@@ -326,6 +334,8 @@
     "likes": 8
    }
   ],
+  "x_n": 20,
+  "tg_n": 0,
   "level": "danger",
   "spike": false
  },
@@ -392,7 +402,9 @@
     "likes": 0
    }
   ],
-  "level": "high",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "2082": {
@@ -458,7 +470,9 @@
     "likes": 1
    }
   ],
-  "level": "low",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "1010": {
@@ -524,6 +538,8 @@
     "likes": 3
    }
   ],
+  "x_n": 20,
+  "tg_n": 0,
   "level": "high",
   "spike": false
  },
@@ -590,7 +606,9 @@
     "likes": 3
    }
   ],
-  "level": "low",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "4013": {
@@ -656,12 +674,14 @@
     "likes": 3
    }
   ],
+  "x_n": 20,
+  "tg_n": 0,
   "level": "high",
   "spike": false
  },
  "1150": {
-  "n": 20,
-  "pos": 1,
+  "n": 21,
+  "pos": 2,
   "neg": 0,
   "mood": "positive",
   "items": [
@@ -722,7 +742,9 @@
     "likes": 0
    }
   ],
-  "level": "low",
+  "x_n": 20,
+  "tg_n": 1,
+  "level": "danger",
   "spike": false
  },
  "1060": {
@@ -788,14 +810,16 @@
     "likes": 2
    }
   ],
-  "level": "low",
+  "x_n": 19,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "2020": {
-  "n": 20,
-  "pos": 1,
+  "n": 24,
+  "pos": 3,
   "neg": 2,
-  "mood": "negative",
+  "mood": "positive",
   "items": [
    {
     "text": "A particularly notable feature of the MENA region is the scale of its arms imports. During the 2020–2024 period, the United States alone accounted for approximately half of all arms deliveries to the region, reinforcing its dominant position in this market.\n\nFurthermore, four MEN",
@@ -854,6 +878,8 @@
     "likes": 22
    }
   ],
+  "x_n": 20,
+  "tg_n": 4,
   "level": "danger",
   "spike": false
  },
@@ -920,7 +946,9 @@
     "likes": 14
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "1050": {
@@ -986,7 +1014,1211 @@
     "likes": 0
    }
   ],
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
+  "spike": false
+ },
+ "1214": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1214 💰 السعر: 13.57    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1214",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23208",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
   "level": "medium",
+  "spike": false
+ },
+ "8311": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8311 💰 السعر: 10.85    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8311",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23173",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2320": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2320 💰 السعر: 66.65    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2320",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23213",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4004": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4004 💰 السعر: 111.3    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4004",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23184",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2030": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "‏🔴 دار جلوبال التابعة لـ(دار الأركان) تمنح عقداً بقيمة 338 مليون ريال لشركتي \"كومباس\" و\"بن عميرة\" لتنفيذ أعمال البنية التحتية لمشروع \"ريانة\" السكني في وادي صفار بالدرعية 💰 💰  ‏- البنية التحتية ستخدم مجموعة من القصور الفاخرة، أبرزها: ‏*قصور ترمب (Trump Mansions). ‏*قصور ريانة (Ray",
+    "author": "@sisor99",
+    "sentiment": "neutral",
+    "url": "https://t.me/sisor99/11470",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "1213": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "[🧵](https://t.co/oUZTo53HE7) سهم #نسيج (1213) يواصل الإيجابية  السهم يتحرك بمسار صاعد على المدى القصير، وما زالت النظرة الفنية إيجابية طالما يحافظ على مناطق الدعم الحالية.  📍 مستويات الدعم: ▫️ 29.00 ريال ▫️ 28.70 ريال  ✅ في حال الثبات والارتداد من هذه المستويات، فقد نشاهد استهداف",
+    "author": "@elmajdstocks",
+    "sentiment": "positive",
+    "url": "https://t.me/elmajdstocks/12399",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4210": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4210 💰 السعر: 72.50    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4210",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23212",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4050": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4050 💰 السعر: 46.50    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4050",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23201",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4050 💰 السعر: 45.98    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4050",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23187",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "2110": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2110 💰 السعر: 168.7    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2110",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23214",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2190": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2190 💰 السعر: 34.00    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2190",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23186",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "1320": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "🚨 سهم #أنابيب_السعودية (1320) تحت المراقبة  السهم يتحرك بمسار هابط على المدى القصير، ويقترب من مناطق دعم مهمة قد نشوف منها ارتداد فني خلال الجلسات القادمة.  📍 مستويات الدعم: ▫️ 49.40 ريال ▫️ 49.20 ريال  👀 في حال حافظ السهم على هالمناطق وظهرت قوة شرائية، فالأهداف المتوقعة تكون:  🎯",
+    "author": "@elmajdstocks",
+    "sentiment": "neutral",
+    "url": "https://t.me/elmajdstocks/12402",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "1202": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1202 💰 السعر: 17.57    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1202",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23185",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "6050": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "توصية تداول قصير المدى (29 يونيو 2026) 🇸🇦  💡 اشتر الأسماك تداول : 6050 ● أفضل نطاق الشراء- 63.3 - 65.3 ● هدف البيع- 69 - 70 ● وقف الخسارة- أقل من 59 ● العائد المحتمل- 6% - 7% 🗓️ فترة الاحتفاظ بالتجارة التقريبية- 12-14 يوم  -----------------------  Short-Term Trading Recommendatio",
+    "author": "@Naranj_KSA",
+    "sentiment": "positive",
+    "url": "https://t.me/Naranj_KSA/1531",
+    "src": "telegram"
+   },
+   {
+    "text": "🐟 سهم #الأسماك (6050) يواصل لفت الأنظار  السهم ما زال يتحرك بمسار صاعد على المدى القصير، ويحافظ على إيجابيته فوق مناطق دعم مهمة تدعم استمرار الزخم الشرائي.  📍 مستويات الدعم: ▫️ 71.50 ريال ▫️ 71.20 ريال  ✅ في حال الثبات فوق هذه المستويات واستمرار القوة الشرائية، فقد نشاهد استهداف:",
+    "author": "@elmajdstocks",
+    "sentiment": "positive",
+    "url": "https://t.me/elmajdstocks/12403",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "1302": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1302 💰 السعر: 39.72    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1302",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23228",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1302 💰 السعر: 39.34    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1302",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23209",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "4292": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4292 💰 السعر: 49.90    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4292",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23217",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4164": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4164 💰 السعر: 94.15    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4164",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23190",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "3080": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 3080 💰 السعر: 27.04    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:3080",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23176",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "8180": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8180 💰 السعر: 11.63    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8180",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23183",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2150": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2150 💰 السعر: 35.68    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2150",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23192",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "1322": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1322 💰 السعر: 71.65    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1322",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23221",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1322 💰 السعر: 72.90    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1322",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23170",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "4290": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4290 💰 السعر: 15.03    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4290",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23218",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4191": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4191 💰 السعر: 42.86    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4191",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23235",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "8200": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8200 💰 السعر: 26.34    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8200",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23181",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2170": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2170 💰 السعر: 27.04    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2170",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23239",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4230": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 4230 💰 السعر: 24.34    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4230",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23231",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "2330": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2330 💰 السعر: 24.86    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2330",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23200",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2330 💰 السعر: 24.94    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2330",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23174",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "4071": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4071 💰 السعر: 89.80    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4071",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23237",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4071 💰 السعر: 91.15    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4071",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23199",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "2283": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 2283 💰 السعر: 55.05    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2283",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23229",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "8010": {
+  "n": 3,
+  "pos": 3,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8010 💰 السعر: 147.5    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8010",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23233",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8010 💰 السعر: 147.7    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8010",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23225",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8010 💰 السعر: 149.7    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8010",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23198",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 3,
+  "level": "high",
+  "spike": false
+ },
+ "7020": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 7020 💰 السعر: 60.45    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:7020",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23211",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "1303": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1303 💰 السعر: 14.54    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1303",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23210",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "4142": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4142 💰 السعر: 123.6    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4142",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23189",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "medium",
+  "spike": false
+ },
+ "7040": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 7040 💰 السعر: 91.90    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:7040",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23207",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "1820": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 1820 💰 السعر: 2.20    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1820",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23204",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "2281": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2281 💰 السعر: 55.95    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2281",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23193",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2281 💰 السعر: 55.65    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2281",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23178",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "2080": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2080 💰 السعر: 71.15    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2080",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23216",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "4020": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4020 💰 السعر: 15.66    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4020",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23230",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4020 💰 السعر: 15.62    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4020",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23219",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "7200": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 7200 💰 السعر: 228.1    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:7200",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23215",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "4014": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4014 💰 السعر: 29.26    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4014",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23234",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "2120": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2120 💰 السعر: 15.99    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2120",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23223",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "1140": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1140 💰 السعر: 24.50    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1140",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23197",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "4003": {
+  "n": 3,
+  "pos": 3,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4003 💰 السعر: 72.45    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4003",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23226",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4003 💰 السعر: 72.85    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4003",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23202",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4003 💰 السعر: 73.05    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4003",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23194",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 3,
+  "level": "high",
+  "spike": false
+ },
+ "2040": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "‏🚨🚨 في خبر صدر الآن:  ‏موافقة وزارة الطاقة لشركة (سابك للمغذيات الزراعية) لتخصيص اللقيم اللازم لإنشاء مصنع لإنتاج الأمونيا الاعتيادية واليوريا في السعودية..  ‏- سيرفع قدرة الشركة الإنتاجية لليوريا من 4.8 مليون طن متري سنويا إلى 7.4 مليون طن متري سنويا بزيادة تبلغ 54% مقارنة بمستو",
+    "author": "@sisor99",
+    "sentiment": "neutral",
+    "url": "https://t.me/sisor99/11351",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "3003": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 3003 💰 السعر: 11.23    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:3003",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23222",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "2300": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2300 💰 السعر: 55.85    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2300",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23177",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "1831": {
+  "n": 3,
+  "pos": 3,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1831 💰 السعر: 6.36    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1831",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23238",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1831 💰 السعر: 6.41    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1831",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23206",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 1831 💰 السعر: 6.45    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:1831",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23182",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 3,
+  "level": "high",
+  "spike": false
+ },
+ "3050": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 3050 💰 السعر: 19.42    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:3050",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23171",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "1324": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "استرها معانا يارب 😂 ‏أول إدراجات (تاسي) لعام 2026م 🔥  ‏ادراج وبدء تداول اسهم شركة (صالح الراشد واولاده) بالسوق الرئيسي يوم الاربعاء 11 مارس 2026م..  ‏- سعر الاكتتاب: 45.00 ريال. ‏- رمز السهم: 1324 ‏- تم طرح 5.58 مليون سهم للاكتتاب.  ‏*موفقين خير يالمكتتبين 💰  https://x.com/ezzo_k",
+    "author": "@sisor99",
+    "sentiment": "neutral",
+    "url": "https://t.me/sisor99/11302",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "8040": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "⚡️ سهم #المتكاملة (8040) تحت المتابعة  السهم يواصل التحرك بإيجابية على المدى القصير، وما زالت النظرة الفنية داعمة لاستمرار الصعود طالما يحافظ على مناطق الدعم الحالية.  📍 مستويات الدعم: ▫️ 10.70 ريال ▫️ 10.50 ريال  ✅ في حال الثبات والارتداد من هذه المستويات، فقد نشاهد استهداف:  🎯 ",
+    "author": "@elmajdstocks",
+    "sentiment": "neutral",
+    "url": "https://t.me/elmajdstocks/12401",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "8060": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8060 💰 السعر: 10.26    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8060",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23188",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "2160": {
+  "n": 1,
+  "pos": 0,
+  "neg": 1,
+  "mood": "negative",
+  "items": [
+   {
+    "text": "❕ 🔴 الإشارة: بيع  ⏱ الفريم: 60 💱 السهم: 2160 💰 السعر: 13.85    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2160",
+    "author": "@naf_alert",
+    "sentiment": "negative",
+    "url": "https://t.me/naf_alert/23227",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "8230": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 8230 💰 السعر: 53.30    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:8230",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23224",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "4005": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4005 💰 السعر: 104.0    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4005",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23203",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
+  "spike": false
+ },
+ "4030": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 4030 💰 السعر: 32.20    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:4030",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23196",
+    "src": "telegram"
+   },
+   {
+    "text": "[🚢](https://t.co/oUZTo53HE7) سهم #البحري (4030) تحت المتابعة  السهم يتحرك بشكل عرضي على المدى القصير، ويتداول قرب مناطق دعم مهمة قد تحدد وجهته القادمة.  📍 مناطق الدعم: ▫️ 31.70 ريال ▫️ 31.50 ريال  👀 في حال حافظ السهم على هالمستويات وشفنا ارتداد إيجابي مع دخول سيولة، فالأهداف الفن",
+    "author": "@elmajdstocks",
+    "sentiment": "positive",
+    "url": "https://t.me/elmajdstocks/12398",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "2370": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2370 💰 السعر: 30.22    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2370",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23191",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2370 💰 السعر: 30.60    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2370",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23172",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "2200": {
+  "n": 2,
+  "pos": 2,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2200 💰 السعر: 6.69    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2200",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23232",
+    "src": "telegram"
+   },
+   {
+    "text": "❕ 🟢 الإشارة: شراء  ⏱ الفريم: 60 💱 السهم: 2200 💰 السعر: 6.71    🔗 الشارت: https://www.tradingview.com/chart/?symbol=TADAWUL_DLY:2200",
+    "author": "@naf_alert",
+    "sentiment": "positive",
+    "url": "https://t.me/naf_alert/23220",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 2,
+  "level": "high",
+  "spike": false
+ },
+ "5025": {
+  "n": 1,
+  "pos": 0,
+  "neg": 0,
+  "mood": "neutral",
+  "items": [
+   {
+    "text": "‏🔔🔔  ‏تم اليوم الأحد 29 مارس 2026م إدراج (صكوك بداية للتمويل) في سوق الصكوك 💰 ✅  ‏- رمز التداول: 5025 ‏- سعر الصك 1,000 ريال ‏- بعائد 7.1% 💵  ‏*الله يبارك للمكتتبين وبالتوفيق للشركة،،  https://x.com/ezzo_khrais/status/2038205489524191553?s=46",
+    "author": "@sisor99",
+    "sentiment": "neutral",
+    "url": "https://t.me/sisor99/11362",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
   "spike": false
  }
 }

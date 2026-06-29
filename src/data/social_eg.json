@@ -62,6 +62,8 @@
     "likes": 3
    }
   ],
+  "x_n": 20,
+  "tg_n": 0,
   "level": "danger",
   "spike": false
  },
@@ -100,6 +102,8 @@
     "likes": 3
    }
   ],
+  "x_n": 4,
+  "tg_n": 0,
   "level": "low",
   "spike": false
  },
@@ -166,7 +170,9 @@
     "likes": 2
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "CLHO": {
@@ -232,7 +238,9 @@
     "likes": 17
    }
   ],
-  "level": "low",
+  "x_n": 9,
+  "tg_n": 0,
+  "level": "medium",
   "spike": false
  },
  "SKPC": {
@@ -298,7 +306,28 @@
     "likes": 0
    }
   ],
-  "level": "high",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "medium",
+  "spike": false
+ },
+ "ABUK": {
+  "n": 1,
+  "pos": 1,
+  "neg": 0,
+  "mood": "positive",
+  "items": [
+   {
+    "text": "**ABUK - أبو قير للأسمدة 🏭**  - آخر سعر تداول **68.50** 📉  - منطقة شراء مناسبة للتجميع وعمل المتوسطات 💰📈",
+    "author": "@EgyptianStockk",
+    "sentiment": "positive",
+    "url": "https://t.me/EgyptianStockk/404",
+    "src": "telegram"
+   }
+  ],
+  "x_n": 0,
+  "tg_n": 1,
+  "level": "low",
   "spike": false
  }
 }

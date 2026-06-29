@@ -62,7 +62,9 @@
     "likes": 10
    }
   ],
-  "level": "danger",
+  "x_n": 19,
+  "tg_n": 0,
+  "level": "medium",
   "spike": false
  },
  "EMIRATESNBD": {
@@ -128,7 +130,9 @@
     "likes": 2
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "danger",
   "spike": false
  },
  "FAB": {
@@ -194,7 +198,9 @@
     "likes": 105
    }
   ],
-  "level": "medium",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "EAND": {
@@ -253,7 +259,9 @@
     "likes": 1
    }
   ],
-  "level": "high",
+  "x_n": 7,
+  "tg_n": 0,
+  "level": "low",
   "spike": false
  },
  "DEWA": {
@@ -319,7 +327,9 @@
     "likes": 0
    }
   ],
-  "level": "low",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "high",
   "spike": false
  },
  "EMAAR": {
@@ -385,6 +395,8 @@
     "likes": 1
    }
   ],
+  "x_n": 19,
+  "tg_n": 0,
   "level": "low",
   "spike": false
  },
@@ -451,7 +463,9 @@
     "likes": 31
    }
   ],
-  "level": "high",
+  "x_n": 20,
+  "tg_n": 0,
+  "level": "medium",
   "spike": false
  }
 }
