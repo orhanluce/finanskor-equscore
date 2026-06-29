@@ -1,1 +1,68 @@
-{}
+{
+ "2222": {
+  "rec": "SELL",
+  "buy": 1,
+  "sell": 15,
+  "neutral": 10
+ },
+ "1120": {
+  "rec": "STRONG_SELL",
+  "buy": 0,
+  "sell": 16,
+  "neutral": 10
+ },
+ "1180": {
+  "rec": "STRONG_SELL",
+  "buy": 0,
+  "sell": 17,
+  "neutral": 9
+ },
+ "1211": {
+  "rec": "STRONG_SELL",
+  "buy": 0,
+  "sell": 17,
+  "neutral": 9
+ },
+ "7010": {
+  "rec": "NEUTRAL",
+  "buy": 8,
+  "sell": 8,
+  "neutral": 10
+ },
+ "2010": {
+  "rec": "STRONG_SELL",
+  "buy": 2,
+  "sell": 18,
+  "neutral": 6
+ },
+ "2082": {
+  "rec": "SELL",
+  "buy": 4,
+  "sell": 12,
+  "neutral": 10
+ },
+ "1010": {
+  "rec": "STRONG_SELL",
+  "buy": 0,
+  "sell": 17,
+  "neutral": 9
+ },
+ "5110": {
+  "rec": "BUY",
+  "buy": 14,
+  "sell": 2,
+  "neutral": 10
+ },
+ "4013": {
+  "rec": "STRONG_SELL",
+  "buy": 1,
+  "sell": 16,
+  "neutral": 9
+ },
+ "1150": {
+  "rec": "NEUTRAL",
+  "buy": 7,
+  "sell": 10,
+  "neutral": 9
+ }
+}
