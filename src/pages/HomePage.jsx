@@ -114,8 +114,8 @@ export default function HomePage() {
           <Badge variant="muted" className="mb-3">What you get</Badge>
           <h2 className="font-serif text-3xl font-bold md:text-4xl">One screen, the whole story of a stock.</h2>
           <p className="mt-3 text-muted-foreground">
-            The same engine that powers our Turkish platform — re-pointed at the Gulf, with a Sharia lens
-            replacing the real-return lens that low inflation and the dollar peg make redundant here.
+            A purpose-built scoring engine for {COUNTRY.exchange}, with the local lenses each market needs —
+            {COUNTRY.modules.sharia ? ' a Sharia screen in place of the real-return lens that low inflation and the dollar peg make redundant here.' : ' an inflation & FX lens where the local currency floats.'}
           </p>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

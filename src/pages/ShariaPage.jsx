@@ -27,7 +27,7 @@ export default function ShariaPage() {
       <Badge variant="sharia" className="mb-3">Region-native differentiator</Badge>
       <h1 className="font-serif text-4xl font-bold">Sharia Compliance Screen</h1>
       <p className="mt-3 max-w-3xl text-muted-foreground">
-        In the Gulf, the inflation-adjusted "real return" lens that anchors our Turkish product is redundant —
+        In the Gulf, an inflation-adjusted "real return" lens is redundant —
         inflation is ~2% and the riyal is pegged to the dollar. Its place is taken by the question that actually
         matters to most Gulf retail investors: <span className="font-semibold text-foreground">is this stock halal?</span>{' '}
         We screen every name against the <span className="font-semibold text-sharia">AAOIFI Standard No. 21</span> ratios.

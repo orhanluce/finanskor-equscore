@@ -22,7 +22,7 @@ export default function EquityRing({ stocks }) {
 
   const [rot, setRotState] = useState(0);
   const [hoverIdx, setHoverIdx] = useState(null);
-  const [w, setW] = useState(900);
+  const [w, setW] = useState(() => (typeof window !== 'undefined' ? Math.min(Math.max(window.innerWidth - 32, 320), 1200) : 1000));
   const rotRef = useRef(0);
   const velRef = useRef(0);
   const rafRef = useRef(0);
@@ -36,10 +36,16 @@ export default function EquityRing({ stocks }) {
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
-    const ro = new ResizeObserver(() => setW(el.clientWidth || 900));
+    const measure = () => {
+      const cw = el.clientWidth || el.getBoundingClientRect().width
+        || (typeof window !== 'undefined' ? window.innerWidth - 32 : 0);
+      if (cw > 0) setW(cw);
+    };
+    const ro = new ResizeObserver(measure);
     ro.observe(el);
-    setW(el.clientWidth || 900);
-    return () => ro.disconnect();
+    measure();
+    const t = setTimeout(measure, 150); // re-measure after layout/tab paint
+    return () => { ro.disconnect(); clearTimeout(t); };
   }, []);
 
   const animate = () => {
@@ -58,8 +64,9 @@ export default function EquityRing({ stocks }) {
   const stopAnim = () => { if (rafRef.current) { cancelAnimationFrame(rafRef.current); rafRef.current = 0; } };
   useEffect(() => () => stopAnim(), []);
 
-  const mobil = w < 640;
-  const A = Math.min(440, w * 0.46);
+  const ww = Math.max(w, 320); // never collapse to 0 → cards always spread/visible
+  const mobil = ww < 640;
+  const A = Math.min(440, ww * 0.42);
   const B = mobil ? 150 : 200;
   const KW = mobil ? 96 : 118, KH = mobil ? 128 : 152;
   const front = mod(Math.round(-rot / (step || 1)), N || 1);

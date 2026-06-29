@@ -26,9 +26,9 @@ export default function MethodologyPage() {
       <Badge variant="muted" className="mb-3">Methodology & roadmap</Badge>
       <h1 className="font-serif text-4xl font-bold">How EquScore works</h1>
       <p className="mt-3 max-w-3xl text-muted-foreground">
-        EquScore is a 1:1 port of our Turkish platform's engine, re-pointed at the Gulf. Method and approach are
-        unchanged — what differs is the language, the data sources, and the swap of the real-return lens for a
-        Sharia lens.
+        EquScore's scoring engine is purpose-built for Gulf &amp; MENA markets. Each market keeps the same core
+        method — what differs is the data sources, the local lenses, and (in the Gulf) the swap of the real-return
+        lens for a Sharia lens.
       </p>
 
       {/* Equity Star */}
@@ -43,7 +43,7 @@ export default function MethodologyPage() {
           ))}
         </div>
         <p className="mt-3 text-xs text-muted-foreground">
-          Fundamental weights are set by a genetic algorithm in the Turkish product; for the Gulf they are
+          Fundamental weights are set by a genetic algorithm; for each market they are
           <span className="font-semibold text-foreground"> re-trained on MENA data</span> — the model ports, the weights do not.
         </p>
       </section>
@@ -53,8 +53,8 @@ export default function MethodologyPage() {
         <Card className="border-sharia/30 bg-sharia/5"><CardContent>
           <div className="flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-sharia" /><h3 className="font-serif text-lg font-bold">Sharia replaces the real-return lens</h3></div>
           <p className="mt-2 text-sm text-muted-foreground">
-            Turkey's killer feature — inflation-adjusted real return — is redundant in the Gulf (~2% inflation,
-            USD peg). We retire it (it stays as an optional expat multi-currency toggle) and make AAOIFI Sharia
+            An inflation-adjusted real-return lens is redundant in the pegged Gulf markets (~2% inflation,
+            USD peg). We retire it there (it stays as an optional multi-currency toggle) and make AAOIFI Sharia
             screening the core differentiator instead.
           </p>
         </CardContent></Card>
@@ -62,7 +62,7 @@ export default function MethodologyPage() {
           <div className="flex items-center gap-2"><Scale className="h-5 w-5 text-primary" /><h3 className="font-serif text-lg font-bold">USD-native valuation</h3></div>
           <p className="mt-2 text-sm text-muted-foreground">
             Because SAR/AED/QAR are hard-pegged to the dollar, fair value is computed directly in a stable
-            currency — cleaner than the Turkish model, with no FX gymnastics.
+            currency — clean, with no FX gymnastics.
           </p>
         </CardContent></Card>
       </section>
