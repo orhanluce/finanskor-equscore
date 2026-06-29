@@ -26,7 +26,7 @@ export default function MarketPage() {
   const [sharia, setSharia] = useState('all');
   const [board, setBoard] = useState('all');
   const [sort, setSort] = useState('score');
-  const [view, setView] = useState('grid'); // 'grid' | 'ring'
+  const [view, setView] = useState('ring'); // 'ring' | 'grid' — ring is the default landing view
   const showBoards = COUNTRY.modules.dualBoard;
 
   const rows = useMemo(() => {

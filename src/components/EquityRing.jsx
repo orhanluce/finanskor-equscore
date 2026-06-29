@@ -199,6 +199,9 @@ export default function EquityRing({ stocks }) {
             >
               <span className="font-mono text-2xl font-bold tabular-nums drop-shadow-sm" style={{ color: skorRenk }}>{s.total ?? 0}</span>
               <span className="font-serif text-base font-bold text-foreground leading-none">{s.ticker}</span>
+              {yakin && s.name && s.name !== s.ticker && (
+                <span className="text-[10px] font-medium text-foreground/80 line-clamp-2 text-center leading-tight px-0.5">{s.name}</span>
+              )}
               {yakin && <span className="text-[10px] text-muted-foreground line-clamp-1 text-center leading-tight">{s.sector || ''}</span>}
               {yakin && (
                 <span className={`text-[11px] font-mono font-semibold ${(s.change ?? 0) >= 0 ? 'text-success' : 'text-destructive'}`}>
