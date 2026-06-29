@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
+import { Search, LayoutGrid, CircleDot } from 'lucide-react';
 import StockCard from '@/components/StockCard.jsx';
+import EquityRing from '@/components/EquityRing.jsx';
 import { Badge } from '@/components/ui.jsx';
 import { cn } from '@/lib/utils.js';
 import { STOCKS, SECTORS, IS_LIVE, COUNTRY } from '@/data/stocks.js';
@@ -25,6 +26,7 @@ export default function MarketPage() {
   const [sharia, setSharia] = useState('all');
   const [board, setBoard] = useState('all');
   const [sort, setSort] = useState('score');
+  const [view, setView] = useState('grid'); // 'grid' | 'ring'
   const showBoards = COUNTRY.modules.dualBoard;
 
   const rows = useMemo(() => {
@@ -43,6 +45,9 @@ export default function MarketPage() {
     );
     return r;
   }, [q, sector, sharia, board, sort, showBoards]);
+
+  // Ring: top names by Equity Star from the filtered set (CLOU-style halo).
+  const ringRows = useMemo(() => [...rows].sort((a, b) => b.total - a.total).slice(0, 36), [rows]);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -90,24 +95,48 @@ export default function MarketPage() {
               ))}
             </div>
           )}
+          {view === 'grid' && (
+            <div className="flex rounded-full border border-border bg-card p-0.5">
+              {SORTS.map((s) => (
+                <button key={s.id} onClick={() => setSort(s.id)}
+                  className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+                    sort === s.id ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          )}
+          {/* Ring / Grid view toggle */}
           <div className="flex rounded-full border border-border bg-card p-0.5">
-            {SORTS.map((s) => (
-              <button key={s.id} onClick={() => setSort(s.id)}
-                className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
-                  sort === s.id ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
-                {s.label}
-              </button>
-            ))}
+            <button onClick={() => setView('ring')}
+              className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+                view === 'ring' ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground')}>
+              <CircleDot className="h-3.5 w-3.5" /> Ring
+            </button>
+            <button onClick={() => setView('grid')}
+              className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+                view === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
+              <LayoutGrid className="h-3.5 w-3.5" /> Grid
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="mt-4 text-sm text-muted-foreground">{rows.length} stocks</div>
-      <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {rows.map((s) => <StockCard key={s.ticker} s={s} />)}
-      </div>
-      {rows.length === 0 && (
-        <div className="mt-16 text-center text-muted-foreground">No stocks match your filters.</div>
+      {view === 'ring' ? (
+        <>
+          <div className="mt-4 text-sm text-muted-foreground">Top {ringRows.length} by Equity Star · switch to Grid for all {rows.length}</div>
+          <EquityRing stocks={ringRows} />
+        </>
+      ) : (
+        <>
+          <div className="mt-4 text-sm text-muted-foreground">{rows.length} stocks</div>
+          <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {rows.map((s) => <StockCard key={s.ticker} s={s} />)}
+          </div>
+          {rows.length === 0 && (
+            <div className="mt-16 text-center text-muted-foreground">No stocks match your filters.</div>
+          )}
+        </>
       )}
     </div>
   );
