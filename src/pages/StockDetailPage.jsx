@@ -10,7 +10,7 @@ import EquityStarFull from '@/components/EquityStarFull.jsx';
 import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
 import ShareButtons from '@/components/ShareButtons.jsx';
 import NEWS from '@/data/news_live.json';
-import { getStock } from '@/data/stocks.js';
+import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';
 
@@ -315,6 +315,7 @@ export default function StockDetailPage() {
         </Card>
 
         {/* Retail attention (MAX) — Tadawul-specific lottery/attention signal */}
+        {COUNTRY.modules.max && (
         <Card>
           <CardContent>
             <div className="flex items-center gap-2">
@@ -340,6 +341,7 @@ export default function StockDetailPage() {
             </div>
           </CardContent>
         </Card>
+        )}
       </div>
 
       {news && (

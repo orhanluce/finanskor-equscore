@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <img src="/logo.png" alt="EquScore" className="h-9 w-auto rounded-md bg-white/95 p-1" />
+              <img src="/logo-transparent.png" alt="EquScore" className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-sm text-sm text-background/70">
               The accountability & trust layer for Gulf equity markets. Score the analysts,
@@ -29,9 +29,9 @@ export default function Footer() {
           <div>
             <div className="text-sm font-semibold text-background">Coverage</div>
             <ul className="mt-3 space-y-2 text-sm text-background/70">
-              <li>🇸🇦 Tadawul — live (preview)</li>
-              <li>🇦🇪 DFM / ADX — Phase 2</li>
-              <li>🇶🇦 QSE — Phase 3</li>
+              <li>🇸🇦 Tadawul — live</li>
+              <li>🇦🇪 DFM / ADX — live</li>
+              <li>🇪🇬 EGX — rolling out</li>
             </ul>
           </div>
         </div>

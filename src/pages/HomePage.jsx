@@ -10,7 +10,7 @@ import MarketPulse from '@/components/MarketPulse.jsx';
 import SectorMomentum from '@/components/SectorMomentum.jsx';
 import EvidenceCorner from '@/components/EvidenceCorner.jsx';
 import { Button, Badge, Stat } from '@/components/ui.jsx';
-import { STOCKS } from '@/data/stocks.js';
+import { STOCKS, COUNTRY } from '@/data/stocks.js';
 import { LEADERBOARD } from '@/data/community.js';
 
 const QUICK = [
@@ -48,12 +48,12 @@ export default function HomePage() {
               <span className="italic text-primary">Track record.</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/70 md:text-2xl">
-              Who said it, did it work, is it <span className="text-sharia font-semibold">Sharia-compliant</span>,
-              and where is the money flowing? Score every Tadawul stock in a single glance.
+              Who said it, did it work, {COUNTRY.modules.sharia ? <>is it <span className="text-sharia font-semibold">Sharia-compliant</span>, </> : ''}
+              and where is the money flowing? Score every {COUNTRY.exchange} stock in a single glance.
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button as={Link} to="/market" variant="primary" className="h-14 px-8 text-lg">
-                Explore Tadawul <ArrowRight className="h-5 w-5" />
+                Explore {COUNTRY.short} <ArrowRight className="h-5 w-5" />
               </Button>
               <Button as={Link} to="/methodology" variant="outline" className="h-14 px-8 text-lg">
                 How it works
@@ -79,10 +79,14 @@ export default function HomePage() {
       {/* STATS STRIP */}
       <section className="border-y border-border bg-card/50">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 py-8 sm:px-6 md:grid-cols-4 lg:px-8">
-          <Stat value={`${STOCKS.length}`} label="Tadawul names scored (sample)" accent="text-primary" />
+          <Stat value={`${STOCKS.length}`} label={`${COUNTRY.exchange} names scored`} accent="text-primary" />
           <Stat value="7" label="Equity Star dimensions" accent="text-foreground" />
-          <Stat value="AAOIFI" label="Sharia screen standard" accent="text-sharia" />
-          <Stat value="USD-peg" label="No inflation lens needed" accent="text-teal" />
+          {COUNTRY.modules.sharia
+            ? <Stat value="AAOIFI" label="Sharia screen standard" accent="text-sharia" />
+            : <Stat value={COUNTRY.indexName} label="Benchmark index" accent="text-sharia" />}
+          {COUNTRY.modules.currencyRisk
+            ? <Stat value="FX-aware" label="Inflation & EGP lens" accent="text-teal" />
+            : <Stat value="USD-peg" label="No inflation lens needed" accent="text-teal" />}
         </div>
       </section>
 
@@ -130,7 +134,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between">
             <div>
               <Badge variant="muted" className="mb-3">Top of the market</Badge>
-              <h2 className="font-serif text-3xl font-bold md:text-4xl">Highest Equity Stars on Tadawul</h2>
+              <h2 className="font-serif text-3xl font-bold md:text-4xl">Highest Equity Stars on {COUNTRY.exchange}</h2>
             </div>
             <Button as={Link} to="/market" variant="outline" className="hidden sm:inline-flex">
               All stocks <ArrowRight className="h-4 w-4" />
@@ -180,15 +184,15 @@ export default function HomePage() {
       {/* COVERAGE / CTA */}
       <section className="surface-dark bg-foreground py-16 text-background">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold md:text-4xl">Starting with Saudi. Built for the Gulf.</h2>
+          <h2 className="font-serif text-3xl font-bold md:text-4xl">One engine. Every market you enter.</h2>
           <p className="mx-auto mt-3 max-w-2xl text-background/70">
-            Tadawul first — the deepest, most liquid market and the richest data ecosystem. UAE (DFM/ADX) and
-            Qatar (QSE) follow on the same engine.
+            The same Equity Star, Decision Mirror and Rumor Thermometer — re-pointed at each market, with the
+            local lenses each one needs. We detect your country and open its exchange automatically.
           </p>
           <div className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3">
-            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇸🇦 Tadawul — live preview</span>
-            <span className="rounded-full border border-background/20 px-4 py-2 text-sm text-background/60">🇦🇪 DFM / ADX — Phase 2</span>
-            <span className="rounded-full border border-background/20 px-4 py-2 text-sm text-background/60">🇶🇦 QSE — Phase 3</span>
+            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇸🇦 Tadawul — live</span>
+            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇦🇪 DFM / ADX — live</span>
+            <span className="rounded-full border border-background/20 px-4 py-2 text-sm text-background/60">🇪🇬 EGX — rolling out</span>
           </div>
         </div>
       </section>

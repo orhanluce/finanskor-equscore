@@ -12,6 +12,7 @@ import { useAuth } from '@/context/AuthContext.jsx';
 import { Button } from '@/components/ui.jsx';
 import StockSearch from '@/components/StockSearch.jsx';
 import ThemeToggle from '@/components/ThemeToggle.jsx';
+import CountrySwitcher from '@/components/CountrySwitcher.jsx';
 
 const PRIMARY = [
   { to: '/market', label: 'Market', icon: LineChart },
@@ -56,11 +57,8 @@ const MENUS = [
 
 function Brand() {
   return (
-    <Link to="/" className="flex shrink-0 items-center gap-2">
-      <span className="inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-lg bg-primary text-primary-foreground">
-        <img src="/favicon.png" alt="" className="h-8 w-8 object-cover" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-      </span>
-      <span className="font-serif text-xl font-bold tracking-tight">Equ<span className="text-primary">Score</span></span>
+    <Link to="/" className="flex shrink-0 items-center" aria-label="EquScore home">
+      <img src="/logo-transparent.png" alt="EquScore" className="h-9 w-auto sm:h-10" />
     </Link>
   );
 }
@@ -122,6 +120,7 @@ export default function Header() {
         {/* Right actions */}
         <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-0">
           <div className="hidden md:block"><StockSearch /></div>
+          <CountrySwitcher />
           <ThemeToggle />
           {hasAuth && (user ? (
             <div className="hidden sm:flex items-center gap-2">

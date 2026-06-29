@@ -3,7 +3,7 @@ import { Search } from 'lucide-react';
 import StockCard from '@/components/StockCard.jsx';
 import { Badge } from '@/components/ui.jsx';
 import { cn } from '@/lib/utils.js';
-import { STOCKS, SECTORS, IS_LIVE } from '@/data/stocks.js';
+import { STOCKS, SECTORS, IS_LIVE, COUNTRY } from '@/data/stocks.js';
 
 const SORTS = [
   { id: 'score', label: 'Equity Star' },
@@ -42,11 +42,11 @@ export default function MarketPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <Badge variant={IS_LIVE ? 'success' : 'muted'} className="mb-3">
-        🇸🇦 Tadawul · {IS_LIVE ? 'live — Yahoo Finance (delayed)' : 'sample dataset'}
+        {COUNTRY.flag} {COUNTRY.exchange} · {IS_LIVE ? 'live — Yahoo Finance (delayed)' : 'sample dataset'}
       </Badge>
       <h1 className="font-serif text-4xl font-bold">Market</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Every name with its Equity Star (out of 42), Sharia status and discount to USD-native fair value.
+        Every name with its Equity Star (out of 42){COUNTRY.modules.sharia ? ', Sharia status' : ''} and discount to fair value.
       </p>
 
       {/* controls */}
