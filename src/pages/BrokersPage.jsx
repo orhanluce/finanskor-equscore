@@ -4,6 +4,7 @@ import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import { getBrokers } from '@/data/extras.js';
 import { COUNTRY } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 export default function BrokersPage() {
   const [onlyResearch, setOnlyResearch] = useState(false);
@@ -17,22 +18,21 @@ export default function BrokersPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="primary" className="mb-3">{regShort}-licensed</Badge>
-      <h1 className="font-serif text-4xl font-bold">Brokers Directory</h1>
+      <Badge variant="primary" className="mb-3">{regShort}-{t('licensed')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Brokers Directory')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        {regShort}-licensed brokerages on {COUNTRY.exchange}, scored on platform quality, research depth and reliability
-        {hasShare ? ', ranked by market share' : ''}.
+        {regShort}-{t('licensed brokerages on')} {COUNTRY.exchange}, {t('scored on platform quality, research depth and reliability')}{hasShare ? `, ${t('ranked by market share')}` : ''}.
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
-        <Stat value={all.length} label="Licensed firms" />
-        <Stat value={researchCount} label="Publish research" accent="text-primary" />
-        <Stat value={Math.round(all.reduce((a, b) => a + b.score, 0) / all.length)} label="Average score" />
+        <Stat value={all.length} label={t('Licensed firms')} />
+        <Stat value={researchCount} label={t('Publish research')} accent="text-primary" />
+        <Stat value={Math.round(all.reduce((a, b) => a + b.score, 0) / all.length)} label={t('Average score')} />
       </div>
 
       <label className="mt-6 inline-flex cursor-pointer items-center gap-2 text-sm">
         <input type="checkbox" checked={onlyResearch} onChange={(e) => setOnlyResearch(e.target.checked)} className="accent-primary" />
-        Only firms that publish research
+        {t('Only firms that publish research')}
       </label>
 
       <div className="mt-4 space-y-3">
@@ -46,8 +46,8 @@ export default function BrokersPage() {
                 <div className="flex flex-wrap items-center gap-2">
                   {hasShare && <span className="font-mono text-sm font-bold text-muted-foreground">#{i + 1}</span>}
                   <h2 className="font-serif text-lg font-bold">{b.name}</h2>
-                  {b.research && <Badge variant="primary"><FileText className="h-3 w-3" /> Research</Badge>}
-                  {b.share != null && <Badge variant="success"><TrendingUp className="h-3 w-3" /> {b.share}% share</Badge>}
+                  {b.research && <Badge variant="primary"><FileText className="h-3 w-3" /> {t('Research')}</Badge>}
+                  {b.share != null && <Badge variant="success"><TrendingUp className="h-3 w-3" /> {b.share}% {t('share')}</Badge>}
                 </div>
                 <p className="text-sm text-muted-foreground">{b.note}</p>
               </div>
@@ -64,7 +64,7 @@ export default function BrokersPage() {
       </div>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        Illustrative directory. EquScore is independent and not affiliated with these firms; scores are editorial, not an endorsement.
+        {t('Illustrative directory. EquScore is independent and not affiliated with these firms; scores are editorial, not an endorsement.')}
       </p>
     </div>
   );

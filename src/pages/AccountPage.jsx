@@ -5,6 +5,7 @@ import { Card, CardContent, Badge, Button, Stat } from '@/components/ui.jsx';
 import { useAuth } from '@/context/AuthContext.jsx';
 import { getMyPredictions, getMyDecisions, getMembership, getMyVerification, isAdmin } from '@/lib/db.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const MEMBER_BADGE = {
   approved: { variant: 'success', label: 'Approved member' },
@@ -35,9 +36,9 @@ export default function AccountPage() {
     return (
       <div className="mx-auto max-w-md px-4 py-24 text-center">
         <User className="mx-auto h-10 w-10 text-muted-foreground" />
-        <h1 className="mt-4 font-serif text-3xl font-bold">Your account</h1>
-        <p className="mt-2 text-muted-foreground">Sign in to see your predictions, decisions and portfolio.</p>
-        <Button variant="accent" className="mt-5" onClick={openAuth}>Sign in</Button>
+        <h1 className="mt-4 font-serif text-3xl font-bold">{t('Your account')}</h1>
+        <p className="mt-2 text-muted-foreground">{t('Sign in to see your predictions, decisions and portfolio.')}</p>
+        <Button variant="accent" className="mt-5" onClick={openAuth}>{t('Sign in')}</Button>
       </div>
     );
   }
@@ -58,12 +59,12 @@ export default function AccountPage() {
             <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
               {user.email}
               {isAdmin(user) && <Badge variant="primary"><Crown className="h-3 w-3" /> Admin</Badge>}
-              {mb && <Badge variant={mb.variant}>{mb.label}</Badge>}
-              {verif?.status === 'approved' && <Badge variant="success"><ShieldCheck className="h-3 w-3" /> Verified</Badge>}
+              {mb && <Badge variant={mb.variant}>{t(mb.label)}</Badge>}
+              {verif?.status === 'approved' && <Badge variant="success"><ShieldCheck className="h-3 w-3" /> {t('Verified')}</Badge>}
             </div>
           </div>
         </div>
-        <Button variant="outline" onClick={signOut}><LogOut className="h-4 w-4" /> Sign out</Button>
+        <Button variant="outline" onClick={signOut}><LogOut className="h-4 w-4" /> {t('Sign out')}</Button>
       </div>
 
       {loading ? (
@@ -71,32 +72,32 @@ export default function AccountPage() {
       ) : (
         <>
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <Stat value={preds.length} label="Predictions" />
-            <Stat value={hitRate != null ? `${hitRate}%` : '—'} label="Hit rate" accent="text-success" />
-            <Stat value={decs.length} label="Journal entries" />
-            <Stat value={resolved.length} label="Resolved calls" />
+            <Stat value={preds.length} label={t('Predictions')} />
+            <Stat value={hitRate != null ? `${hitRate}%` : '—'} label={t('Hit rate')} accent="text-success" />
+            <Stat value={decs.length} label={t('Journal entries')} />
+            <Stat value={resolved.length} label={t('Resolved calls')} />
           </div>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <QuickLink to="/predict" icon={Trophy} title="My predictions" desc={`${preds.length} calls — make another`} />
-            <QuickLink to="/journal" icon={BookOpen} title="Decision journal" desc={`${decs.length} entries & your mirror`} />
-            <QuickLink to="/portfolio" icon={Briefcase} title="Virtual portfolio" desc="Track paper positions" />
-            <QuickLink to="/verify" icon={ShieldCheck} title="Get verified" desc={verif ? `Status: ${verif.status}` : 'Prove you are a real investor'} />
+            <QuickLink to="/predict" icon={Trophy} title={t('My predictions')} desc={`${preds.length} ${t('calls — make another')}`} />
+            <QuickLink to="/journal" icon={BookOpen} title={t('Decision journal')} desc={`${decs.length} ${t('entries & your mirror')}`} />
+            <QuickLink to="/portfolio" icon={Briefcase} title={t('Virtual portfolio')} desc={t('Track paper positions')} />
+            <QuickLink to="/verify" icon={ShieldCheck} title={t('Get verified')} desc={verif ? `${t('Status')}: ${verif.status}` : t('Prove you are a real investor')} />
           </div>
 
           {!member && (
             <Card className="mt-6 border-primary/30 bg-primary/5"><CardContent className="flex flex-wrap items-center gap-3">
               <Crown className="h-5 w-5 text-primary" />
-              <span className="text-sm">Request approved-member access for the full preview.</span>
-              <Button as={Link} to="/membership" variant="accent" className="ml-auto h-9 px-4 text-sm">Request access</Button>
+              <span className="text-sm">{t('Request approved-member access for the full preview.')}</span>
+              <Button as={Link} to="/membership" variant="accent" className="ml-auto h-9 px-4 text-sm">{t('Request access')}</Button>
             </CardContent></Card>
           )}
 
           {isAdmin(user) && (
             <Card className="mt-4"><CardContent className="flex items-center gap-3">
               <Crown className="h-5 w-5 text-medal-bronze" />
-              <span className="text-sm">You have admin access.</span>
-              <Button as={Link} to="/admin" variant="outline" className="ml-auto h-9 px-4 text-sm">Open admin</Button>
+              <span className="text-sm">{t('You have admin access.')}</span>
+              <Button as={Link} to="/admin" variant="outline" className="ml-auto h-9 px-4 text-sm">{t('Open admin')}</Button>
             </CardContent></Card>
           )}
         </>

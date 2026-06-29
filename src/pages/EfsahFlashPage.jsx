@@ -2,12 +2,12 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Newspaper, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
-import JargonTip from '@/components/JargonTip.jsx';
 import NEWS from '@/data/news.js';
 import { STOCKS } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
-const nameOf = (t) => STOCKS.find((s) => s.ticker === t)?.name || t;
+const nameOf = (tk) => STOCKS.find((s) => s.ticker === tk)?.name || tk;
 const MOOD_RANK = { positive: 2, neutral: 1, negative: 0 };
 
 export default function EfsahFlashPage() {
@@ -35,17 +35,16 @@ export default function EfsahFlashPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       <Badge variant="primary" className="mb-3">Marketaux + Google News</Badge>
-      <h1 className="font-serif text-4xl font-bold">Efsah Flash</h1>
+      <h1 className="font-serif text-4xl font-bold">{t('Efsah Flash')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        News &amp; disclosure <JargonTip term="Sentiment" inline>sentiment</JargonTip> across TASI. Tadawul shows{' '}
-        <JargonTip term="PEAD" inline>post-earnings drift</JargonTip> — reactions tend to persist for weeks.
+        {t('News & disclosure sentiment across TASI. Tadawul shows post-earnings drift — reactions tend to persist for weeks.')}
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat value={stats.stocks} label="Names covered" />
-        <Stat value={stats.headlines} label="Recent headlines" />
-        <Stat value={stats.pos} label="Positive mood" accent="text-success" />
-        <Stat value={stats.neg} label="Negative mood" accent="text-destructive" />
+        <Stat value={stats.stocks} label={t('Names covered')} />
+        <Stat value={stats.headlines} label={t('Recent headlines')} />
+        <Stat value={stats.pos} label={t('Positive mood')} accent="text-success" />
+        <Stat value={stats.neg} label={t('Negative mood')} accent="text-destructive" />
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -53,7 +52,7 @@ export default function EfsahFlashPage() {
           <button key={id} onClick={() => setMood(id)}
             className={cn('rounded-full px-4 py-1.5 text-sm font-medium capitalize transition-colors',
               mood === id ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-            {id}
+            {t(id)}
           </button>
         ))}
       </div>
@@ -71,9 +70,9 @@ export default function EfsahFlashPage() {
                     <span className="ml-2 text-foreground">{nameOf(e.ticker)}</span>
                   </Link>
                   <Badge variant={e.summary.mood === 'positive' ? 'success' : e.summary.mood === 'negative' ? 'danger' : 'muted'} className="ml-2 capitalize">
-                    <MoodIcon className="h-3 w-3" /> {e.summary.mood}
+                    <MoodIcon className="h-3 w-3" /> {t(e.summary.mood)}
                   </Badge>
-                  <span className="ml-auto text-xs text-muted-foreground">{e.summary.n} headlines</span>
+                  <span className="ml-auto text-xs text-muted-foreground">{e.summary.n} {t('headlines')}</span>
                 </div>
                 <div className="mt-3 divide-y divide-border">
                   {e.items.slice(0, 4).map((it, i) => (
@@ -91,11 +90,11 @@ export default function EfsahFlashPage() {
             </Card>
           );
         })}
-        {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">No {mood} headlines right now.</div>}
+        {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">No {t(mood)} {t('headlines')} right now.</div>}
       </div>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        Sentiment from Marketaux per-entity scores (Argaam/Mubasher/Reuters) with a Google-News lexicon fallback. Arabic-NLP (AraBERT) is the next upgrade.
+        {t('Sentiment from Marketaux per-entity scores (Argaam/Mubasher/Reuters) with a Google-News lexicon fallback. Arabic-NLP (AraBERT) is the next upgrade.')}
       </p>
     </div>
   );

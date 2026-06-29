@@ -5,6 +5,7 @@ import { Card, Badge, Button } from '@/components/ui.jsx';
 import { ShariaBadge } from '@/components/equity.jsx';
 import { STOCKS, SECTORS, scoreColor } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const COLUMNS = [
   { key: 'total', label: 'Star', fmt: (s) => `${s.total}`, cls: (s) => scoreColor(s.total) },
@@ -47,22 +48,22 @@ export default function ExplorePage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="font-serif text-4xl font-bold">Explorer</h1>
+      <h1 className="font-serif text-4xl font-bold">{t('Explorer')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Screen every TASI name by score, valuation, dividend and Sharia status. Build your own shortlist.
+        {t('Screen every TASI name by score, valuation, dividend and Sharia status. Build your own shortlist.')}
       </p>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-[280px_1fr]">
         {/* Filters */}
         <Card className="h-fit p-5">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2 font-serif text-lg font-bold"><SlidersHorizontal className="h-4 w-4 text-primary" /> Filters</div>
-            <button onClick={reset} className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"><RotateCcw className="h-3 w-3" /> Reset</button>
+            <div className="flex items-center gap-2 font-serif text-lg font-bold"><SlidersHorizontal className="h-4 w-4 text-primary" /> {t('Filters')}</div>
+            <button onClick={reset} className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground"><RotateCcw className="h-3 w-3" /> {t('Reset')}</button>
           </div>
 
-          <label className="mt-4 block text-xs font-medium text-muted-foreground">Sector</label>
+          <label className="mt-4 block text-xs font-medium text-muted-foreground">{t('Sector')}</label>
           <select value={sector} onChange={(e) => setSector(e.target.value)} className="mt-1 w-full text-sm">
-            <option value="All">All sectors</option>
+            <option value="All">{t('All sectors')}</option>
             {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
 
@@ -71,31 +72,31 @@ export default function ExplorePage() {
             {['all', 'compliant', 'doubtful', 'non-compliant'].map((id) => (
               <button key={id} onClick={() => setSharia(id)}
                 className={cn('rounded-full px-3 py-1 text-xs font-medium capitalize', sharia === id ? 'bg-sharia text-white' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-                {id === 'all' ? 'All' : id}
+                {id === 'all' ? t('All') : id}
               </button>
             ))}
           </div>
 
-          <RangeField label={`Min Equity Star: ${f.minScore}`} min={0} max={42} value={f.minScore} onChange={(v) => setF({ ...f, minScore: v })} />
-          <RangeField label={`Max P/E: ${f.maxPe}`} min={5} max={100} value={f.maxPe} onChange={(v) => setF({ ...f, maxPe: v })} />
-          <RangeField label={`Min dividend yield: ${f.minDiv}%`} min={0} max={8} step={0.5} value={f.minDiv} onChange={(v) => setF({ ...f, minDiv: v })} />
-          <RangeField label={`Min discount: ${f.minDiscount}%`} min={-50} max={30} value={f.minDiscount} onChange={(v) => setF({ ...f, minDiscount: v })} />
+          <RangeField label={`${t('Min Equity Star:')} ${f.minScore}`} min={0} max={42} value={f.minScore} onChange={(v) => setF({ ...f, minScore: v })} />
+          <RangeField label={`${t('Max P/E:')} ${f.maxPe}`} min={5} max={100} value={f.maxPe} onChange={(v) => setF({ ...f, maxPe: v })} />
+          <RangeField label={`${t('Min dividend yield:')} ${f.minDiv}%`} min={0} max={8} step={0.5} value={f.minDiv} onChange={(v) => setF({ ...f, minDiv: v })} />
+          <RangeField label={`${t('Min discount:')} ${f.minDiscount}%`} min={-50} max={30} value={f.minDiscount} onChange={(v) => setF({ ...f, minDiscount: v })} />
         </Card>
 
         {/* Results table */}
         <Card className="overflow-hidden">
           <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-            <span className="text-sm text-muted-foreground">{rows.length} stocks</span>
+            <span className="text-sm text-muted-foreground">{rows.length} {t('stocks')}</span>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-muted/40 text-muted-foreground">
-                  <th className="px-4 py-2.5 text-left font-medium">Company</th>
+                  <th className="px-4 py-2.5 text-left font-medium">{t('Company')}</th>
                   {COLUMNS.map((c) => (
                     <th key={c.key} className="px-4 py-2.5 text-right font-medium">
                       <button onClick={() => toggleSort(c.key)} className="inline-flex items-center gap-1 hover:text-foreground">
-                        {c.label} <ArrowUpDown className={cn('h-3 w-3', sort.key === c.key ? 'text-primary' : 'opacity-40')} />
+                        {t(c.label)} <ArrowUpDown className={cn('h-3 w-3', sort.key === c.key ? 'text-primary' : 'opacity-40')} />
                       </button>
                     </th>
                   ))}
@@ -120,7 +121,7 @@ export default function ExplorePage() {
               </tbody>
             </table>
           </div>
-          {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">No stocks match. Loosen the filters.</div>}
+          {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">{t('No stocks match. Loosen the filters.')}</div>}
         </Card>
       </div>
     </div>

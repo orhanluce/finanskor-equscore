@@ -4,6 +4,7 @@ import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import JargonTip from '@/components/JargonTip.jsx';
 import { IPOS } from '@/data/extras.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const STATUS = {
   open: { label: 'Subscription open', variant: 'success', dot: 'bg-success' },
@@ -23,15 +24,15 @@ export default function IpoPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
       <Badge variant="primary" className="mb-3">Tadawul + NOMU</Badge>
-      <h1 className="font-serif text-4xl font-bold">IPOs &amp; New Listings</h1>
+      <h1 className="font-serif text-4xl font-bold">{t('IPOs & New Listings')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        The Saudi primary market is one of the most active in the world. Track subscription windows and how recent debuts have traded.
+        {t('The Saudi primary market is one of the most active in the world. Track subscription windows and how recent debuts have traded.')}
       </p>
 
       <div className="mt-8 grid grid-cols-3 gap-3">
-        <Stat value={counts.open} label="Open now" accent="text-success" />
-        <Stat value={counts.upcoming} label="Upcoming" accent="text-primary" />
-        <Stat value={counts.listed} label="Recently listed" />
+        <Stat value={counts.open} label={t('Open now')} accent="text-success" />
+        <Stat value={counts.upcoming} label={t('Upcoming')} accent="text-primary" />
+        <Stat value={counts.listed} label={t('Recently listed')} />
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -39,7 +40,7 @@ export default function IpoPage() {
           <button key={id} onClick={() => setTab(id)}
             className={cn('rounded-full px-4 py-1.5 text-sm font-medium capitalize transition-colors',
               tab === id ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-            {id}
+            {t(id)}
           </button>
         ))}
       </div>
@@ -59,18 +60,18 @@ export default function IpoPage() {
                     </div>
                     <div className="mt-1 text-sm text-muted-foreground">{ipo.sector} · {ipo.board} board {ipo.ticker !== '—' && <>· <span className="font-mono">{ipo.ticker}</span></>}</div>
                   </div>
-                  <Badge variant={st.variant}><span className={cn('h-2 w-2 rounded-full', st.dot)} /> {st.label}</Badge>
+                  <Badge variant={st.variant}><span className={cn('h-2 w-2 rounded-full', st.dot)} /> {t(st.label)}</Badge>
                 </div>
 
                 <p className="mt-3 text-sm text-foreground/80">{ipo.note}</p>
 
                 <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-4">
-                  <Field label="Price" value={ipo.priceRange} />
-                  <Field label="Offer size" value={ipo.raise} />
-                  <Field label="Float" value={`${ipo.offerPct}%`} />
+                  <Field label={t('Price')} value={ipo.priceRange} />
+                  <Field label={t('Offer size')} value={ipo.raise} />
+                  <Field label={t('Float')} value={`${ipo.offerPct}%`} />
                   {ipo.firstDay
-                    ? <Field label="First day" value={ipo.firstDay} accent="text-success" />
-                    : <Field label="Subscription" value={ipo.subscription} icon={CalendarClock} />}
+                    ? <Field label={t('First day')} value={ipo.firstDay} accent="text-success" />
+                    : <Field label={t('Subscription')} value={ipo.subscription} icon={CalendarClock} />}
                 </div>
               </CardContent>
             </Card>
@@ -78,7 +79,7 @@ export default function IpoPage() {
         })}
       </div>
 
-      <p className="mt-6 text-xs text-muted-foreground">Illustrative listing data. Informational only, not investment advice or an offer to subscribe.</p>
+      <p className="mt-6 text-xs text-muted-foreground">{t('Illustrative listing data. Informational only, not investment advice or an offer to subscribe.')}</p>
     </div>
   );
 }

@@ -2,11 +2,10 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Zap, TrendingUp, TrendingDown, Flame, Droplets, Tag, AlertTriangle } from 'lucide-react';
 import { Card, CardContent, Badge } from '@/components/ui.jsx';
-import JargonTip from '@/components/JargonTip.jsx';
 import { STOCKS } from '@/data/stocks.js';
 import { cn, pct } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
-// Derive anomalies from the live dataset (stand-in for the nightly anomaly scanner).
 function buildSignals() {
   const out = [];
   STOCKS.forEach((s) => {
@@ -62,10 +61,10 @@ export default function SignalsPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="primary" className="mb-3">Daily scan</Badge>
-      <h1 className="font-serif text-4xl font-bold"><JargonTip term="z-score">Anomalies</JargonTip> &amp; Signals</h1>
+      <Badge variant="primary" className="mb-3">{t('Daily scan')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Anomalies & Signals')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Unusual moves the daily scan flagged — price spikes, money-flow surges, lottery attention, and valuation gaps. A starting point for research, not a recommendation.
+        {t('Unusual moves the daily scan flagged — price spikes, money-flow surges, lottery attention, and valuation gaps. A starting point for research, not a recommendation.')}
       </p>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -73,7 +72,7 @@ export default function SignalsPage() {
           <button key={f.id} onClick={() => setFilter(f.id)}
             className={cn('rounded-full px-4 py-1.5 text-sm font-medium transition-colors',
               filter === f.id ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-            {f.label}
+            {t(f.label)}
           </button>
         ))}
       </div>
@@ -90,7 +89,7 @@ export default function SignalsPage() {
                 </span>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2">
-                    <span className={cn('text-sm font-semibold', m.color)}>{m.label}</span>
+                    <span className={cn('text-sm font-semibold', m.color)}>{t(m.label)}</span>
                     {Array.from({ length: sig.severity }).map((_, k) => <Zap key={k} className="h-3 w-3 text-medal-bronze" />)}
                   </div>
                   <p className="text-sm text-muted-foreground">{sig.detail}</p>
@@ -103,7 +102,7 @@ export default function SignalsPage() {
             </Card>
           );
         })}
-        {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">No signals in this category right now.</div>}
+        {rows.length === 0 && <div className="py-12 text-center text-muted-foreground">{t('No signals in this category right now.')}</div>}
       </div>
     </div>
   );

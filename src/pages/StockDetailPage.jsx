@@ -17,6 +17,7 @@ import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';
+import { t } from '@/i18n.js';
 
 async function fetchAiYorum(stock) {
   const ctx = [
@@ -42,18 +43,18 @@ async function fetchAiYorum(stock) {
 }
 
 const RUMOR = {
-  low: { label: 'Low', color: 'text-success', bg: 'bg-success/10', w: '25%' },
-  medium: { label: 'Medium', color: 'text-primary', bg: 'bg-primary/10', w: '50%' },
-  high: { label: 'High', color: 'text-medal-bronze', bg: 'bg-medal-bronze/10', w: '75%' },
-  danger: { label: 'Dangerous', color: 'text-destructive', bg: 'bg-destructive/10', w: '100%' },
+  low: { label: () => t('Low'), color: 'text-success', bg: 'bg-success/10', w: '25%' },
+  medium: { label: () => t('Medium'), color: 'text-primary', bg: 'bg-primary/10', w: '50%' },
+  high: { label: () => t('High'), color: 'text-medal-bronze', bg: 'bg-medal-bronze/10', w: '75%' },
+  danger: { label: () => t('Dangerous'), color: 'text-destructive', bg: 'bg-destructive/10', w: '100%' },
 };
 
 const TV_META = {
-  STRONG_BUY: { label: 'Strong Buy', color: 'text-success' },
-  BUY: { label: 'Buy', color: 'text-success' },
-  NEUTRAL: { label: 'Neutral', color: 'text-primary' },
-  SELL: { label: 'Sell', color: 'text-destructive' },
-  STRONG_SELL: { label: 'Strong Sell', color: 'text-destructive' },
+  STRONG_BUY: { label: () => t('Strong Buy'), color: 'text-success' },
+  BUY: { label: () => t('Buy'), color: 'text-success' },
+  NEUTRAL: { label: () => t('Neutral'), color: 'text-primary' },
+  SELL: { label: () => t('Sell'), color: 'text-destructive' },
+  STRONG_SELL: { label: () => t('Strong Sell'), color: 'text-destructive' },
 };
 
 function ShariaRatio({ label, value, threshold }) {
@@ -96,8 +97,8 @@ export default function StockDetailPage() {
   if (!s) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-24 text-center">
-        <h1 className="font-serif text-3xl font-bold">Stock not found</h1>
-        <Link to="/market" className="mt-4 inline-block text-primary">← Back to market</Link>
+        <h1 className="font-serif text-3xl font-bold">{t('Stock not found')}</h1>
+        <Link to="/market" className="mt-4 inline-block text-primary">← {t('Back to market')}</Link>
       </div>
     );
   }
@@ -113,18 +114,18 @@ export default function StockDetailPage() {
   const tv = tvRating(s.ticker);
 
   const TABS = [
-    { id: 'star', label: 'Star' },
-    { id: 'flow', label: 'Flow' },
-    { id: 'value', label: 'Fair Value' },
-    { id: 'stories', label: 'Stories' },
-    { id: 'social', label: 'Social' },
-    { id: 'predictions', label: 'Predictions' },
+    { id: 'star', label: t('Star') },
+    { id: 'flow', label: t('Flow') },
+    { id: 'value', label: t('Fair Value') },
+    { id: 'stories', label: t('Stories') },
+    { id: 'social', label: t('Social') },
+    { id: 'predictions', label: t('Predictions') },
   ];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <Link to="/market" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
-        <ArrowLeft className="h-4 w-4" /> Market
+        <ArrowLeft className="h-4 w-4" /> {t('Market')}
       </Link>
 
       {/* header */}
@@ -133,7 +134,7 @@ export default function StockDetailPage() {
           <div className="flex items-center gap-2">
             <span className="font-mono text-base font-bold text-primary">{s.ticker}</span>
             <Badge variant="muted">{s.sector}</Badge>
-            {s.nomu && <Badge variant="muted" className="text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10">NOMU · parallel market</Badge>}
+            {s.nomu && <Badge variant="muted" className="text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10">{t('NOMU · parallel market')}</Badge>}
             {COUNTRY.modules.dualBoard && s.board && (
               <Badge variant="muted" className="font-mono">{s.board}</Badge>
             )}
@@ -146,7 +147,7 @@ export default function StockDetailPage() {
           </div>
         </div>
         <div className="text-right">
-          <div className="text-xs uppercase tracking-wide text-muted-foreground">Equity Star</div>
+          <div className="text-xs uppercase tracking-wide text-muted-foreground">{t('Equity Star')}</div>
           <ScorePill total={s.total} size="lg" />
         </div>
       </div>
@@ -156,16 +157,16 @@ export default function StockDetailPage() {
 
       {/* Tabs */}
       <div className="mt-6 flex flex-wrap gap-1 border-b border-border">
-        {TABS.map((t) => (
-          <button key={t.id} onClick={() => setTab(t.id)}
+        {TABS.map((tb) => (
+          <button key={tb.id} onClick={() => setTab(tb.id)}
             className={cn('px-4 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors',
-              tab === t.id ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground')}>
-            {t.label}
+              tab === tb.id ? 'border-primary text-primary' : 'border-transparent text-muted-foreground hover:text-foreground')}>
+            {tb.label}
           </button>
         ))}
       </div>
 
-      {/* ───────────── STAR ───────────── */}
+      {/* ─────────────── STAR ─────────────── */}
       {tab === 'star' && (
         <div className="mt-6 space-y-5">
           <EquityStarFull stock={s} />
@@ -174,7 +175,7 @@ export default function StockDetailPage() {
             <CardContent>
               <div className="flex items-center gap-2">
                 <Activity className="h-5 w-5 text-primary" />
-                <h2 className="font-serif text-xl font-bold">Price Chart</h2>
+                <h2 className="font-serif text-xl font-bold">{t('Price Chart')}</h2>
                 <Badge variant="muted" className="ml-auto">TradingView</Badge>
               </div>
               <div className="mt-3"><TvChart stock={s} /></div>
@@ -183,19 +184,20 @@ export default function StockDetailPage() {
 
           {tv && (() => {
             const meta = TV_META[tv.rec] || TV_META.NEUTRAL;
+            const metaLabel = meta.label();
             const total = tv.buy + tv.sell + tv.neutral || 1;
             return (
               <Card>
                 <CardContent>
                   <div className="flex items-center gap-2">
                     <Activity className="h-5 w-5 text-ai-navy" />
-                    <h2 className="font-serif text-xl font-bold">Technical Rating</h2>
-                    <Badge variant="muted" className="ml-auto">TradingView · daily</Badge>
+                    <h2 className="font-serif text-xl font-bold">{t('Technical Rating')}</h2>
+                    <Badge variant="muted" className="ml-auto">{t('TradingView · daily')}</Badge>
                   </div>
                   <div className="mt-4 flex flex-wrap items-center gap-6">
                     <div>
-                      <div className={cn('font-serif text-3xl font-bold', meta.color)}>{meta.label}</div>
-                      <div className="text-xs text-muted-foreground">summary of oscillators &amp; moving averages</div>
+                      <div className={cn('font-serif text-3xl font-bold', meta.color)}>{metaLabel}</div>
+                      <div className="text-xs text-muted-foreground">{t('summary of oscillators & moving averages')}</div>
                     </div>
                     <div className="flex-1 min-w-[220px]">
                       <div className="flex h-3 w-full overflow-hidden rounded-full">
@@ -204,14 +206,14 @@ export default function StockDetailPage() {
                         <div className="bg-destructive" style={{ width: `${(tv.sell / total) * 100}%` }} />
                       </div>
                       <div className="mt-1.5 flex justify-between text-xs text-muted-foreground">
-                        <span className="text-success">Buy {tv.buy}</span>
-                        <span>Neutral {tv.neutral}</span>
-                        <span className="text-destructive">Sell {tv.sell}</span>
+                        <span className="text-success">{t('Buy')} {tv.buy}</span>
+                        <span>{t('Neutral')} {tv.neutral}</span>
+                        <span className="text-destructive">{t('Sell')} {tv.sell}</span>
                       </div>
                     </div>
                   </div>
                   <p className="mt-3 text-[11px] text-muted-foreground">
-                    Derived from TradingView&apos;s technical-analysis summary. Indicative direction only, not a recommendation.
+                    {t("Derived from TradingView's technical-analysis summary. Indicative direction only, not a recommendation.")}
                   </p>
                 </CardContent>
               </Card>
@@ -225,24 +227,24 @@ export default function StockDetailPage() {
                   <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center">
                     <Sparkles className="w-4 h-4 text-primary" />
                   </div>
-                  <h2 className="font-serif text-xl font-bold">AI Analysis</h2>
-                  <span className="text-xs text-muted-foreground ml-1">· EquScore data</span>
+                  <h2 className="font-serif text-xl font-bold">{t('AI Analysis')}</h2>
+                  <span className="text-xs text-muted-foreground ml-1">{t('· EquScore data')}</span>
                 </div>
                 {aiLoading ? (
                   <div className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
-                    <Loader2 className="w-4 h-4 animate-spin" /> Generating analysis…
+                    <Loader2 className="w-4 h-4 animate-spin" /> {t('Generating analysis…')}
                   </div>
                 ) : (
                   <p className="mt-3 text-sm leading-relaxed text-foreground/90">{aiYorum}</p>
                 )}
-                <p className="mt-2 text-[11px] text-muted-foreground">Not investment advice. Generated from live EquScore metrics.</p>
+                <p className="mt-2 text-[11px] text-muted-foreground">{t('Not investment advice. Generated from live EquScore metrics.')}</p>
               </CardContent>
             </Card>
           )}
         </div>
       )}
 
-      {/* ───────────── FLOW ───────────── */}
+      {/* ─────────────── FLOW ─────────────── */}
       {tab === 'flow' && (
         <div className="mt-6 grid gap-5 lg:grid-cols-2">
           <Card>
@@ -253,7 +255,7 @@ export default function StockDetailPage() {
               </div>
               {s.netFlowPct != null ? (
                 <>
-                  <p className="mt-1 text-xs text-muted-foreground">Net intraday money flow — Tadawul-licensed (SAHMK).</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{t('Net intraday money flow — Tadawul-licensed (SAHMK).')}</p>
                   <div className="mt-4 flex items-center gap-3">
                     <span className={cn('inline-flex h-11 w-11 items-center justify-center rounded-xl',
                       s.netFlowPct > 2 ? 'bg-success/15 text-success' : s.netFlowPct < -2 ? 'bg-destructive/15 text-destructive' : 'bg-muted text-muted-foreground')}>
@@ -263,7 +265,7 @@ export default function StockDetailPage() {
                       <div className={cn('font-serif text-2xl font-bold', s.netFlowPct >= 0 ? 'text-success' : 'text-destructive')}>
                         {s.netFlowPct >= 0 ? '+' : ''}{s.netFlowPct}%
                       </div>
-                      <div className="text-xs text-muted-foreground">net {s.netFlowPct >= 0 ? 'inflow' : 'outflow'} of value traded</div>
+                      <div className="text-xs text-muted-foreground">{s.netFlowPct >= 0 ? t('net inflow') : t('net outflow')} {t('of value traded')}</div>
                     </div>
                   </div>
                   <p className="mt-4 text-xs text-muted-foreground">
@@ -273,18 +275,18 @@ export default function StockDetailPage() {
                 </>
               ) : (
                 <>
-                  <p className="mt-1 text-xs text-muted-foreground">Institutional ownership — a smart-money proxy.</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{t('Institutional ownership — a smart-money proxy.')}</p>
                   <div className="mt-4 flex items-center gap-3">
                     <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-ai-navy/10 text-ai-navy">
                       <Activity className="h-6 w-6" />
                     </span>
                     <div>
                       <div className="font-serif text-2xl font-bold">{s.instOwn != null ? `${s.instOwn}%` : (s.foreignOwn != null ? `${s.foreignOwn}%` : '—')}</div>
-                      <div className="text-xs text-muted-foreground">{s.instOwn != null ? 'held by institutions' : 'foreign ownership'}</div>
+                      <div className="text-xs text-muted-foreground">{s.instOwn != null ? t('held by institutions') : t('foreign ownership')}</div>
                     </div>
                   </div>
                   <p className="mt-4 text-xs text-muted-foreground">
-                    Heavier institutional/foreign ownership is a quality signal. <span className="text-foreground/70">Licensed real-time net flow is shown where available.</span>
+                    {t('Heavier institutional/foreign ownership is a quality signal.')} <span className="text-foreground/70">{t('Licensed real-time net flow is shown where available.')}</span>
                   </p>
                 </>
               )}
@@ -293,19 +295,19 @@ export default function StockDetailPage() {
         </div>
       )}
 
-      {/* ───────────── FAIR VALUE ───────────── */}
+      {/* ─────────────── FAIR VALUE ─────────────── */}
       {tab === 'value' && (
         <div className="mt-6 grid gap-5 lg:grid-cols-2">
           <Card>
             <CardContent>
-              <h2 className="font-serif text-xl font-bold"><JargonTip term="Fair value">Fair Value</JargonTip></h2>
-              <p className="mt-1 text-xs text-muted-foreground">Sector-relative multiples (<JargonTip term="P/E" inline>P/E</JargonTip> reversion + analyst).</p>
+              <h2 className="font-serif text-xl font-bold"><JargonTip term="Fair value">{t('Fair Value')}</JargonTip></h2>
+              <p className="mt-1 text-xs text-muted-foreground">{t('Sector-relative multiples (P/E reversion + analyst).')}</p>
               <div className="mt-4 space-y-3">
-                <Row label="Last price" value={money(s.price, s.currency)} />
-                <Row label="Fair value" value={money(s.fairValue, s.currency)} />
+                <Row label={t('Last price')} value={money(s.price, s.currency)} />
+                <Row label={t('Fair value')} value={money(s.fairValue, s.currency)} />
                 <div className="flex items-center justify-between border-t border-border pt-3">
                   <span className="text-sm text-muted-foreground">
-                    <JargonTip term="Discount" inline>{s.discount >= 0 ? 'Discount' : 'Premium'}</JargonTip>
+                    {s.discount >= 0 ? t('Discount') : t('Premium')}
                   </span>
                   <span className={cn('font-serif text-2xl font-bold', s.discount >= 0 ? 'text-success' : 'text-destructive')}>
                     {s.discount >= 0 ? '' : '+'}{Math.abs(s.discount).toFixed(1)}%
@@ -326,22 +328,22 @@ export default function StockDetailPage() {
                   {s.sharia === 'compliant' ? <ShieldCheck className="h-5 w-5 text-sharia" />
                     : s.sharia === 'doubtful' ? <ShieldAlert className="h-5 w-5 text-medal-bronze" />
                     : <ShieldX className="h-5 w-5 text-destructive" />}
-                  <h2 className="font-serif text-xl font-bold">Sharia Screen</h2>
-                  {s.auto && <Badge variant="muted" className="ml-auto">Auto-screen</Badge>}
+                  <h2 className="font-serif text-xl font-bold">{t('Sharia Screen')}</h2>
+                  {s.auto && <Badge variant="muted" className="ml-auto">{t('Auto-screen')}</Badge>}
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  <JargonTip term="AAOIFI" inline>AAOIFI</JargonTip> Standard No. 21 — financial ratios.
-                  {s.auto && ' Status estimated from sector + live debt ratio — verify with a Shariah board.'}
+                  {t('AAOIFI Standard No. 21 — financial ratios.')}
+                  {s.auto && ' ' + t('Status estimated from sector + live debt ratio — verify with a Shariah board.')}
                 </p>
                 <div className="mt-3 divide-y divide-border">
-                  <ShariaRatio label="Interest-bearing debt / mcap" value={s.shariaRatios.debt} threshold={30} />
-                  <ShariaRatio label="Interest deposits / mcap" value={s.shariaRatios.cashInterest} threshold={30} />
-                  <ShariaRatio label="Impermissible income" value={s.shariaRatios.impureIncome} threshold={5} />
+                  <ShariaRatio label={t('Interest-bearing debt / mcap')} value={s.shariaRatios.debt} threshold={30} />
+                  <ShariaRatio label={t('Interest deposits / mcap')} value={s.shariaRatios.cashInterest} threshold={30} />
+                  <ShariaRatio label={t('Impermissible income')} value={s.shariaRatios.impureIncome} threshold={5} />
                 </div>
                 <div className="mt-3 rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
                   {purify != null
-                    ? <><JargonTip term="Purification" inline>Purification</JargonTip> estimate: <span className="font-semibold text-foreground">{purify}%</span> of dividend income.</>
-                    : <>Debt ratio is live; the cash-interest &amp; impermissible-income ratios need a deeper financials source (auto-screen).</>}
+                    ? <>{t('Purification')} {t('estimate:')} <span className="font-semibold text-foreground">{purify}%</span> {t('of dividend income.')}</>
+                    : <>{t('Debt ratio is live; the cash-interest & impermissible-income ratios need a deeper financials source (auto-screen).')}</>}
                 </div>
               </CardContent>
             </Card>
@@ -352,7 +354,7 @@ export default function StockDetailPage() {
         </div>
       )}
 
-      {/* ───────────── STORIES (Efsah Flash) ───────────── */}
+      {/* ─────────────── STORIES (Efsah Flash) ─────────────── */}
       {tab === 'stories' && (
         <div className="mt-6">
           {news ? (
@@ -360,13 +362,13 @@ export default function StockDetailPage() {
               <CardContent>
                 <div className="flex items-center gap-2">
                   <Newspaper className="h-5 w-5 text-primary" />
-                  <h2 className="font-serif text-xl font-bold">Efsah Flash</h2>
+                  <h2 className="font-serif text-xl font-bold">{t('Efsah Flash')}</h2>
                   <Badge variant={news.summary.mood === 'positive' ? 'success' : news.summary.mood === 'negative' ? 'danger' : 'muted'} className="ml-2 capitalize">
-                    {news.summary.mood}
+                    {t(news.summary.mood)}
                   </Badge>
-                  <span className="ml-auto text-xs text-muted-foreground">{news.summary.n} recent headlines</span>
+                  <span className="ml-auto text-xs text-muted-foreground">{news.summary.n} {t('recent headlines')}</span>
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">News &amp; disclosure <JargonTip term="Sentiment" inline>sentiment</JargonTip>. Reactions to earnings tend to persist (<JargonTip term="PEAD" inline>post-earnings drift</JargonTip>).</p>
+                <p className="mt-1 text-xs text-muted-foreground">{t('News & disclosure sentiment. Reactions to earnings tend to persist (post-earnings drift).')}</p>
                 <div className="mt-3 divide-y divide-border">
                   {news.items.map((it, i) => (
                     <a key={i} href={it.url} target="_blank" rel="noreferrer" className="flex items-start gap-3 py-2.5 hover:bg-muted/30 -mx-2 px-2 rounded-lg">
@@ -381,30 +383,30 @@ export default function StockDetailPage() {
                 </div>
                 <p className="mt-3 text-[11px] text-muted-foreground">
                   {news.summary.src === 'marketaux'
-                    ? 'Marketaux — region-aware news with per-entity sentiment.'
-                    : 'Google News + financial-lexicon sentiment (fallback).'} Arabic-NLP is the next upgrade.
+                    ? t('Marketaux — region-aware news with per-entity sentiment.')
+                    : t('Google News + financial-lexicon sentiment (fallback).')} {t('Arabic-NLP is the next upgrade.')}
                 </p>
               </CardContent>
             </Card>
           ) : (
-            <Card><CardContent className="py-12 text-center text-muted-foreground">No recent headlines for {s.ticker} yet.</CardContent></Card>
+            <Card><CardContent className="py-12 text-center text-muted-foreground">{t('No recent headlines for')} {s.ticker} {t('yet.')}</CardContent></Card>
           )}
         </div>
       )}
 
-      {/* ───────────── SOCIAL ───────────── */}
+      {/* ─────────────── SOCIAL ─────────────── */}
       {tab === 'social' && (
         <div className="mt-6 grid gap-5 lg:grid-cols-2">
           <Card>
             <CardContent>
               <div className="flex items-center gap-2">
                 <Flame className={cn('h-5 w-5', r.color)} />
-                <h2 className="font-serif text-xl font-bold"><JargonTip term="Rumor thermometer">Rumor Thermometer</JargonTip></h2>
+                <h2 className="font-serif text-xl font-bold">{t('Rumor Thermometer')}</h2>
                 {soc && <Badge variant="muted" className="ml-auto">𝕏 · {soc.n} posts</Badge>}
               </div>
               <div className="mt-4">
                 <div className="flex items-center gap-2">
-                  <div className={cn('inline-flex rounded-full px-3 py-1 text-sm font-semibold', r.bg, r.color)}>{r.label}</div>
+                  <div className={cn('inline-flex rounded-full px-3 py-1 text-sm font-semibold', r.bg, r.color)}>{r.label()}</div>
                   {soc && (
                     <Badge variant={soc.mood === 'positive' ? 'success' : soc.mood === 'negative' ? 'danger' : 'muted'} className="capitalize">{soc.mood}</Badge>
                   )}
@@ -416,12 +418,12 @@ export default function StockDetailPage() {
                     style={{ width: r.w }} />
                 </div>
                 <p className="mt-3 text-xs text-muted-foreground">
-                  {soc ? 'Volume + tone of live 𝕏 chatter (AR + EN).' : `Volume + tone of ${COUNTRY.modules.facebookSentiment ? 'Facebook-group' : 'social'} chatter.`}
-                  {rumorLevel === 'danger' && ' Heavily discussed — historically a fade signal.'}
-                  {rumorLevel === 'low' && ' Quiet — could be an overlooked name.'}
+                  {soc ? t('Volume + tone of live 𝕏 chatter (AR + EN).') : t('Volume + tone of social chatter.')}
+                  {rumorLevel === 'danger' && ' ' + t('Heavily discussed — historically a fade signal.')}
+                  {rumorLevel === 'low' && ' ' + t('Quiet — could be an overlooked name.')}
                 </p>
                 {soc?.spike && (
-                  <p className="mt-1 text-[11px] text-medal-bronze">Sudden one-sided chatter spike — watch for pump/manipulation.</p>
+                  <p className="mt-1 text-[11px] text-medal-bronze">{t('Sudden one-sided chatter spike — watch for pump/manipulation.')}</p>
                 )}
                 {soc?.items?.length > 0 && (
                   <div className="mt-3 divide-y divide-border border-t border-border">
@@ -438,8 +440,8 @@ export default function StockDetailPage() {
                   </div>
                 )}
                 <p className="mt-3 text-[11px] text-muted-foreground">
-                  Unverified retail chatter — kept out of the Equity Star score.
-                  {COUNTRY.modules.facebookSentiment && ' On EGX, Facebook groups (300K+ members) are the dominant channel; X is shown here.'}
+                  {t('Unverified retail chatter — kept out of the Equity Star score.')}
+                  {COUNTRY.modules.facebookSentiment && ' ' + t('On EGX, Facebook groups (300K+ members) are the dominant channel; X is shown here.')}
                 </p>
               </div>
             </CardContent>
@@ -450,21 +452,20 @@ export default function StockDetailPage() {
               <CardContent>
                 <div className="flex items-center gap-2">
                   <Flame className="h-5 w-5 text-medal-bronze" />
-                  <h2 className="font-serif text-xl font-bold"><JargonTip term="MAX score">Retail Attention (MAX)</JargonTip></h2>
+                  <h2 className="font-serif text-xl font-bold">{t('Retail Attention (MAX)')}</h2>
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">Biggest 1-day jump in <JargonTip term="Volatility" inline>volatility</JargonTip> units (lottery-seeking signal).</p>
+                <p className="mt-1 text-xs text-muted-foreground">{t('Biggest 1-day jump in volatility units (lottery-seeking signal).')}</p>
                 <div className="mt-4">
                   <div className="font-serif text-3xl font-bold">{s.maxScore != null ? `${s.maxScore}σ` : '—'}</div>
                   {s.maxFlag === 'trap' ? (
-                    <div className="mt-2 inline-flex rounded-lg bg-medal-bronze/10 px-3 py-1.5 text-sm font-semibold text-medal-bronze">⚠ <JargonTip term="Value trap" inline>Value-trap</JargonTip> risk</div>
+                    <div className="mt-2 inline-flex rounded-lg bg-medal-bronze/10 px-3 py-1.5 text-sm font-semibold text-medal-bronze">{t('⚠ Value-trap risk')}</div>
                   ) : s.maxFlag === 'strong' ? (
-                    <div className="mt-2 inline-flex rounded-lg bg-success/10 px-3 py-1.5 text-sm font-semibold text-success">▲ Attention + strong profits</div>
+                    <div className="mt-2 inline-flex rounded-lg bg-success/10 px-3 py-1.5 text-sm font-semibold text-success">{t('▲ Attention + strong profits')}</div>
                   ) : (
-                    <div className="mt-2 inline-flex rounded-lg bg-muted px-3 py-1.5 text-sm text-muted-foreground">Normal attention</div>
+                    <div className="mt-2 inline-flex rounded-lg bg-muted px-3 py-1.5 text-sm text-muted-foreground">{t('Normal attention')}</div>
                   )}
                   <p className="mt-3 text-xs text-muted-foreground">
-                    On Tadawul, high-attention "lottery" stocks rise when profitability is strong and fade when it&apos;s weak —
-                    so MAX is read together with the Quality dimension.
+                    {t("On Tadawul, high-attention \"lottery\" stocks rise when profitability is strong and fade when it's weak — so MAX is read together with the Quality dimension.")}
                   </p>
                 </div>
               </CardContent>
@@ -473,31 +474,31 @@ export default function StockDetailPage() {
         </div>
       )}
 
-      {/* ───────────── PREDICTIONS ───────────── */}
+      {/* ─────────────── PREDICTIONS ─────────────── */}
       {tab === 'predictions' && (
         <div className="mt-6 grid gap-5 lg:grid-cols-2">
           <Card>
             <CardContent>
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-primary" />
-                <h2 className="font-serif text-xl font-bold"><JargonTip term="Analyst consensus">Analyst Consensus</JargonTip> ★</h2>
+                <h2 className="font-serif text-xl font-bold">{t('Analyst Consensus')} ★</h2>
               </div>
-              <p className="mt-1 text-xs text-muted-foreground">{a.count || '—'} analyst forecasts.</p>
+              <p className="mt-1 text-xs text-muted-foreground">{a.count || '—'} {t('analyst forecasts.')}</p>
               {a.buy != null ? (
                 <div className="mt-4 flex gap-2">
-                  <Pill n={a.buy} label="Buy" cls="bg-success/15 text-success" />
-                  <Pill n={a.hold} label="Hold" cls="bg-muted text-muted-foreground" />
-                  <Pill n={a.sell} label="Sell" cls="bg-destructive/15 text-destructive" />
+                  <Pill n={a.buy} label={t('Buy')} cls="bg-success/15 text-success" />
+                  <Pill n={a.hold} label={t('Hold')} cls="bg-muted text-muted-foreground" />
+                  <Pill n={a.sell} label={t('Sell')} cls="bg-destructive/15 text-destructive" />
                 </div>
               ) : (
                 <div className="mt-4 rounded-lg bg-muted/40 px-3 py-2 text-xs text-muted-foreground">
-                  {a.count ? `${a.count} analysts cover this stock.` : 'No analyst coverage on the free feed.'} Hit-rate-weighted scoring activates with a licensed analyst feed.
+                  {a.count ? `${a.count} ${t('analysts cover this stock.')}` : t('No analyst coverage on the free feed.')} {t('Hit-rate-weighted scoring activates with a licensed analyst feed.')}
                 </div>
               )}
               <div className="mt-4 space-y-3">
-                <Row label="Median target" value={money(a.target, s.currency)} />
+                <Row label={t('Median target')} value={money(a.target, s.currency)} />
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground"><JargonTip term="Upside" inline>Implied upside</JargonTip></span>
+                  <span className="text-sm text-muted-foreground">{t('Implied upside')}</span>
                   <span className={cn('font-semibold', upside >= 0 ? 'text-success' : 'text-destructive')}>{pct(upside)}</span>
                 </div>
               </div>
@@ -508,20 +509,20 @@ export default function StockDetailPage() {
             <CardContent className="flex h-full flex-col items-start justify-center gap-3">
               <div className="flex items-center gap-2">
                 <Trophy className="h-5 w-5 text-primary" />
-                <h2 className="font-serif text-xl font-bold">Make your own call</h2>
+                <h2 className="font-serif text-xl font-bold">{t('Make your own call')}</h2>
               </div>
               <p className="text-sm text-muted-foreground">
-                Lock a price target or direction on {s.ticker} with a server-side timestamp — it&apos;s graded against the realised price and feeds your leaderboard track record.
+                {t('Lock a price target or direction on')} {s.ticker} {t("with a server-side timestamp — it's graded against the realised price and feeds your leaderboard track record.")}
               </p>
-              <Button as={Link} to="/predict" variant="accent">Submit a prediction</Button>
+              <Button as={Link} to="/predict" variant="accent">{t('Submit a prediction')}</Button>
             </CardContent>
           </Card>
         </div>
       )}
 
       <p className="mt-8 text-xs text-muted-foreground">
-        Informational/statistical analysis, not investment advice under {COUNTRY.regulator} rules.
-        {COUNTRY.modules.sharia && ' Sharia status is an AAOIFI-style screen for guidance only.'}
+        {t('Informational/statistical analysis, not investment advice under')} {COUNTRY.regulator} {t('rules.')}
+        {COUNTRY.modules.sharia && ' ' + t('Sharia status is an AAOIFI-style screen for guidance only.')}
       </p>
     </div>
   );

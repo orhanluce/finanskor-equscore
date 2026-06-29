@@ -4,6 +4,7 @@ import { Card, CardContent, Badge } from '@/components/ui.jsx';
 import { cn } from '@/lib/utils.js';
 import { LEAGUES, CONTEST } from '@/data/community.js';
 import { getLeaderboard } from '@/lib/db.js';
+import { t } from '@/i18n.js';
 
 const TYPE_CLS = {
   Analyst: 'bg-primary/10 text-primary',
@@ -25,14 +26,12 @@ export default function LeaderboardPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="muted" className="mb-3">Accountability arena</Badge>
-      <h1 className="font-serif text-4xl font-bold">Leaderboard</h1>
+      <Badge variant="muted" className="mb-3">{t('Accountability arena')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Leaderboard')}</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">
-        Analysts, the crowd and AI models compete in one arena. Every call is locked with a server-side
-        timestamp and graded against realised price — hit rate is earned, not claimed.
+        {t('Analysts, the crowd and AI models compete in one arena. Every call is locked with a server-side timestamp and graded against realised price — hit rate is earned, not claimed.')}
       </p>
 
-      {/* contest banner */}
       <Card className="mt-6 border-primary/30 bg-primary/5">
         <CardContent className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
@@ -43,12 +42,11 @@ export default function LeaderboardPage() {
             </div>
           </div>
           <div className="flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
-            <Lock className="h-3.5 w-3.5" /> Predictions locked & time-stamped
+            <Lock className="h-3.5 w-3.5" /> {t('Predictions locked & time-stamped')}
           </div>
         </CardContent>
       </Card>
 
-      {/* leagues */}
       <div className="mt-6 flex flex-wrap gap-2">
         {LEAGUES.map((l) => (
           <button key={l} onClick={() => setLeague(l)}
@@ -59,17 +57,16 @@ export default function LeaderboardPage() {
         ))}
       </div>
 
-      {/* table */}
       <div className="mt-5 overflow-hidden rounded-2xl border border-border">
         <table className="w-full text-sm">
           <thead className="bg-muted/50 text-left text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
               <th className="px-4 py-3 w-12">#</th>
-              <th className="px-4 py-3">Name</th>
-              <th className="px-4 py-3">League</th>
-              <th className="px-4 py-3 text-right">Calls</th>
-              <th className="px-4 py-3 text-right">Avg upside</th>
-              <th className="px-4 py-3 text-right">Hit rate</th>
+              <th className="px-4 py-3">{t('Name')}</th>
+              <th className="px-4 py-3">{t('League')}</th>
+              <th className="px-4 py-3 text-right">{t('Calls')}</th>
+              <th className="px-4 py-3 text-right">{t('Avg upside')}</th>
+              <th className="px-4 py-3 text-right">{t('Hit rate')}</th>
             </tr>
           </thead>
           <tbody>
@@ -96,12 +93,6 @@ export default function LeaderboardPage() {
           </tbody>
         </table>
       </div>
-      <p className="mt-4 text-xs text-muted-foreground">
-        {live
-          ? 'Live standings from real, server-timestamped predictions. Hit rate fills in as horizons resolve.'
-          : 'Sample standings — be the first to lock a prediction in the Contest and you\'ll appear here live.'}{' '}
-        An analyst (Argaam feed) leaderboard like this exists nowhere else for Tadawul.
-      </p>
     </div>
   );
 }

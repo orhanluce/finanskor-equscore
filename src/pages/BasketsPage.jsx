@@ -6,6 +6,7 @@ import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
 import { BASKET_DEFS } from '@/data/extras.js';
 import { STOCKS } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 export default function BasketsPage() {
   const baskets = useMemo(
@@ -17,14 +18,13 @@ export default function BasketsPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="primary" className="mb-3">Auto-built from the dataset</Badge>
-      <h1 className="font-serif text-4xl font-bold">Thematic Baskets</h1>
+      <Badge variant="primary" className="mb-3">{t('Auto-built from the dataset')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Thematic Baskets')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Ready-made groupings built live from the Equity Star engine — a fast way to find names that share a single idea.
+        {t('Ready-made groupings built live from the Equity Star engine — a fast way to find names that share a single idea.')}
       </p>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-[300px_1fr]">
-        {/* Basket list */}
         <div className="space-y-2">
           {baskets.map((b) => (
             <button key={b.id} onClick={() => setActive(b.id)}
@@ -40,13 +40,12 @@ export default function BasketsPage() {
           ))}
         </div>
 
-        {/* Active basket members */}
         <Card>
           <CardContent>
             <div className="flex items-center gap-2">
               <Layers className="h-5 w-5 text-primary" />
               <h2 className="font-serif text-xl font-bold">{current.emoji} {current.name}</h2>
-              <span className="ml-auto text-sm text-muted-foreground">{current.members.length} names</span>
+              <span className="ml-auto text-sm text-muted-foreground">{current.members.length} {t('names')}</span>
             </div>
             <p className="mt-1 text-sm text-muted-foreground">{current.desc}</p>
 
@@ -54,12 +53,12 @@ export default function BasketsPage() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-border text-muted-foreground">
-                    <th className="px-3 py-2 text-left font-medium">Company</th>
-                    <th className="px-3 py-2 text-right font-medium">Star</th>
-                    <th className="px-3 py-2 text-right font-medium">Price</th>
-                    <th className="px-3 py-2 text-right font-medium">Today</th>
-                    <th className="px-3 py-2 text-right font-medium">Div %</th>
-                    <th className="px-3 py-2 text-left font-medium">Sharia</th>
+                    <th className="px-3 py-2 text-left font-medium">{t('Company')}</th>
+                    <th className="px-3 py-2 text-right font-medium">{t('Star')}</th>
+                    <th className="px-3 py-2 text-right font-medium">{t('Price')}</th>
+                    <th className="px-3 py-2 text-right font-medium">{t('Today')}</th>
+                    <th className="px-3 py-2 text-right font-medium">{t('Div %')}</th>
+                    <th className="px-3 py-2 text-left font-medium">{t('Sharia')}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -80,7 +79,7 @@ export default function BasketsPage() {
                   ))}
                 </tbody>
               </table>
-              {current.members.length === 0 && <div className="py-10 text-center text-muted-foreground">No names currently match this theme.</div>}
+              {current.members.length === 0 && <div className="py-10 text-center text-muted-foreground">{t('No names currently match this theme.')}</div>}
             </div>
           </CardContent>
         </Card>

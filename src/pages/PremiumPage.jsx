@@ -3,6 +3,7 @@ import { Check, Sparkles } from 'lucide-react';
 import { Card, CardContent, Badge, Button } from '@/components/ui.jsx';
 import { useAuth } from '@/context/AuthContext.jsx';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const PLANS = [
   {
@@ -24,10 +25,10 @@ export default function PremiumPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <div className="text-center">
-        <Badge variant="primary" className="mb-3"><Sparkles className="h-3.5 w-3.5" /> Preview pricing</Badge>
-        <h1 className="font-serif text-4xl font-bold">Upgrade EquScore</h1>
+        <Badge variant="primary" className="mb-3"><Sparkles className="h-3.5 w-3.5" /> {t('Preview pricing')}</Badge>
+        <h1 className="font-serif text-4xl font-bold">{t('Upgrade EquScore')}</h1>
         <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
-          Everything is free during the preview. These are the plans we'll launch with — lock in early access by signing in now.
+          {t('Everything is free during the preview. These are the plans we\'ll launch with — lock in early access by signing in now.')}
         </p>
       </div>
 
@@ -35,21 +36,21 @@ export default function PremiumPage() {
         {PLANS.map((p) => (
           <Card key={p.name} className={cn(p.highlight && 'border-primary ring-1 ring-primary/30')}>
             <CardContent className="flex h-full flex-col">
-              {p.highlight && <Badge variant="primary" className="w-fit">Most popular</Badge>}
-              <h2 className="mt-2 font-serif text-2xl font-bold">{p.name}</h2>
+              {p.highlight && <Badge variant="primary" className="w-fit">{t('Most popular')}</Badge>}
+              <h2 className="mt-2 font-serif text-2xl font-bold">{t(p.name)}</h2>
               <div className="mt-2 flex items-baseline gap-1">
                 <span className="font-serif text-4xl font-bold">{p.price}</span>
-                <span className="text-sm text-muted-foreground">{p.period}</span>
+                <span className="text-sm text-muted-foreground">{t(p.period)}</span>
               </div>
               <ul className="mt-5 flex-1 space-y-2.5">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-success" /> <span className="text-foreground/80">{f}</span>
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-success" /> <span className="text-foreground/80">{t(f)}</span>
                   </li>
                 ))}
               </ul>
               <Button variant={p.variant} className="mt-6 w-full" onClick={user ? undefined : openAuth}>
-                {user && p.name === 'Free' ? 'Signed in' : p.cta}
+                {user && p.name === 'Free' ? t('Signed in') : t(p.cta)}
               </Button>
             </CardContent>
           </Card>
@@ -57,7 +58,7 @@ export default function PremiumPage() {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted-foreground">
-        Billing isn't enabled yet — no card required during preview. Prices indicative.
+        {t('Billing isn\'t enabled yet — no card required during preview. Prices indicative.')}
       </p>
     </div>
   );

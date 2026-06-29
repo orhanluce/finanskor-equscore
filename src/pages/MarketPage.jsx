@@ -27,7 +27,7 @@ export default function MarketPage() {
   const [sharia, setSharia] = useState('all');
   const [board, setBoard] = useState('all');
   const [sort, setSort] = useState('score');
-  const [view, setView] = useState('ring'); // 'ring' | 'grid' — ring is the default landing view
+  const [view, setView] = useState('ring');
   const showBoards = COUNTRY.modules.dualBoard;
 
   const rows = useMemo(() => {
@@ -36,8 +36,8 @@ export default function MarketPage() {
       if (sharia !== 'all' && s.sharia !== sharia) return false;
       if (showBoards && board !== 'all' && s.board !== board) return false;
       if (q) {
-        const t = (s.ticker + ' ' + s.name).toLowerCase();
-        if (!t.includes(q.toLowerCase())) return false;
+        const tl = (s.ticker + ' ' + s.name).toLowerCase();
+        if (!tl.includes(q.toLowerCase())) return false;
       }
       return true;
     });
@@ -47,7 +47,6 @@ export default function MarketPage() {
     return r;
   }, [q, sector, sharia, board, sort, showBoards]);
 
-  // Ring: top names by Equity Star from the filtered set (CLOU-style halo).
   const ringRows = useMemo(() => [...rows].sort((a, b) => b.total - a.total).slice(0, 36), [rows]);
 
   return (
@@ -57,16 +56,15 @@ export default function MarketPage() {
       </Badge>
       <h1 className="font-serif text-4xl font-bold">{t('Market')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Every name with its Equity Star (out of 42){COUNTRY.modules.sharia ? ', Sharia status' : ''} and discount to fair value.
+        {t('Every name with its Equity Star (out of 42)')}{COUNTRY.modules.sharia ? `, ${t('Sharia status')}` : ''} {t('and discount to fair value.')}
       </p>
 
-      {/* controls */}
       <div className="mt-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="relative max-w-sm flex-1">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
             type="search" value={q} onChange={(e) => setQ(e.target.value)}
-            placeholder="Search ticker or company…" className="w-full !pl-9"
+            placeholder={t('Search ticker or company…')} className="w-full !pl-9"
           />
         </div>
         <div className="flex flex-wrap items-center gap-2">
@@ -80,7 +78,7 @@ export default function MarketPage() {
                 <button key={b.id} onClick={() => setBoard(b.id)}
                   className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
                     board === b.id ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
-                  {b.label}
+                  {t(b.label)}
                 </button>
               ))}
             </div>
@@ -91,7 +89,7 @@ export default function MarketPage() {
                 <button key={s.id} onClick={() => setSharia(s.id)}
                   className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
                     sharia === s.id ? 'bg-sharia text-white' : 'text-muted-foreground hover:text-foreground')}>
-                  {s.label}
+                  {t(s.label)}
                 </button>
               ))}
             </div>
@@ -102,12 +100,11 @@ export default function MarketPage() {
                 <button key={s.id} onClick={() => setSort(s.id)}
                   className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
                     sort === s.id ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
-                  {s.label}
+                  {t(s.label)}
                 </button>
               ))}
             </div>
           )}
-          {/* Ring / Grid view toggle */}
           <div className="flex rounded-full border border-border bg-card p-0.5">
             <button onClick={() => setView('ring')}
               className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
@@ -125,7 +122,7 @@ export default function MarketPage() {
 
       {view === 'ring' ? (
         <>
-          <div className="mt-4 text-sm text-muted-foreground">Top {ringRows.length} by Equity Star · switch to Grid for all {rows.length}</div>
+          <div className="mt-4 text-sm text-muted-foreground">{t('Top')} {ringRows.length} {t('by Equity Star · switch to Grid for all')} {rows.length}</div>
           <EquityRing stocks={ringRows} />
         </>
       ) : (

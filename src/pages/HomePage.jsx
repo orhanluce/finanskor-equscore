@@ -50,8 +50,8 @@ export default function HomePage() {
               <span className="italic text-primary">{t('Track record.')}</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/70 md:text-2xl">
-              Who said it, did it work, {COUNTRY.modules.sharia ? <>is it <span className="text-sharia font-semibold">Sharia-compliant</span>, </> : ''}
-              and where is the money flowing? Score every {COUNTRY.exchange} stock in a single glance.
+              {t('Who said it, did it work,')}{COUNTRY.modules.sharia ? <> {t('is it')} <span className="text-sharia font-semibold">{t('Sharia-compliant')}</span>, </> : ''}
+              {t('and where is the money flowing? Score every')} {COUNTRY.exchange} {t('stock in a single glance.')}
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button as={Link} to="/market" variant="primary" className="h-14 px-8 text-lg">
@@ -69,8 +69,8 @@ export default function HomePage() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 text-primary">
                     <c.icon className="h-5 w-5" />
                   </span>
-                  <span className="font-serif font-bold">{c.title}</span>
-                  <span className="text-sm text-muted-foreground">{c.desc}</span>
+                  <span className="font-serif font-bold">{t(c.title)}</span>
+                  <span className="text-sm text-muted-foreground">{t(c.desc)}</span>
                 </Link>
               ))}
             </div>
@@ -81,22 +81,22 @@ export default function HomePage() {
       {/* STATS STRIP */}
       <section className="border-y border-border bg-card/50">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 py-8 sm:px-6 md:grid-cols-4 lg:px-8">
-          <Stat value={`${STOCKS.length}`} label={`${COUNTRY.exchange} names scored`} accent="text-primary" />
-          <Stat value="7" label="Equity Star dimensions" accent="text-foreground" />
+          <Stat value={`${STOCKS.length}`} label={`${COUNTRY.exchange} ${t('names scored')}`} accent="text-primary" />
+          <Stat value="7" label={t('Equity Star dimensions')} accent="text-foreground" />
           {COUNTRY.modules.sharia
-            ? <Stat value="AAOIFI" label="Sharia screen standard" accent="text-sharia" />
-            : <Stat value={COUNTRY.indexName} label="Benchmark index" accent="text-sharia" />}
+            ? <Stat value="AAOIFI" label={t('Sharia screen standard')} accent="text-sharia" />
+            : <Stat value={COUNTRY.indexName} label={t('Benchmark index')} accent="text-sharia" />}
           {COUNTRY.modules.currencyRisk
-            ? <Stat value="FX-aware" label="Inflation & EGP lens" accent="text-teal" />
-            : <Stat value="USD-peg" label="No inflation lens needed" accent="text-teal" />}
+            ? <Stat value="FX-aware" label={t('Inflation & EGP lens')} accent="text-teal" />
+            : <Stat value="USD-peg" label={t('No inflation lens needed')} accent="text-teal" />}
         </div>
       </section>
 
-      {/* MARKET TODAY — live dashboard */}
+      {/* MARKET TODAY */}
       <section className="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <Badge variant="muted" className="mb-3">Market today</Badge>
-          <h2 className="font-serif text-3xl font-bold md:text-4xl">The whole board, at a glance.</h2>
+          <Badge variant="muted" className="mb-3">{t('Market today')}</Badge>
+          <h2 className="font-serif text-3xl font-bold md:text-4xl">{t('The whole board, at a glance.')}</h2>
         </div>
         <div className="mt-6"><MacroStrip /></div>
         <div className="mt-5 grid gap-5 lg:grid-cols-3">
@@ -112,11 +112,11 @@ export default function HomePage() {
       {/* MODULES */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <Badge variant="muted" className="mb-3">What you get</Badge>
-          <h2 className="font-serif text-3xl font-bold md:text-4xl">One screen, the whole story of a stock.</h2>
+          <Badge variant="muted" className="mb-3">{t('What you get')}</Badge>
+          <h2 className="font-serif text-3xl font-bold md:text-4xl">{t('One screen, the whole story of a stock.')}</h2>
           <p className="mt-3 text-muted-foreground">
-            A purpose-built scoring engine for {COUNTRY.exchange}, with the local lenses each market needs —
-            {COUNTRY.modules.sharia ? ' a Sharia screen in place of the real-return lens that low inflation and the dollar peg make redundant here.' : ' an inflation & FX lens where the local currency floats.'}
+            {t('A purpose-built scoring engine for')} {COUNTRY.exchange}, {t('with the local lenses each market needs —')}
+            {COUNTRY.modules.sharia ? t(' a Sharia screen in place of the real-return lens that low inflation and the dollar peg make redundant here.') : t(' an inflation & FX lens where the local currency floats.')}
           </p>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -126,8 +126,8 @@ export default function HomePage() {
               <span className={`inline-flex h-11 w-11 items-center justify-center rounded-xl ${m.accent ? 'bg-sharia/15 text-sharia' : 'bg-primary/10 text-primary'}`}>
                 <m.icon className="h-6 w-6" />
               </span>
-              <h3 className="mt-4 font-serif text-lg font-bold">{m.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{m.body}</p>
+              <h3 className="mt-4 font-serif text-lg font-bold">{t(m.title)}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(m.body)}</p>
             </div>
           ))}
         </div>
@@ -138,11 +138,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between">
             <div>
-              <Badge variant="muted" className="mb-3">Top of the market</Badge>
-              <h2 className="font-serif text-3xl font-bold md:text-4xl">Highest Equity Stars on {COUNTRY.exchange}</h2>
+              <Badge variant="muted" className="mb-3">{t('Top of the market')}</Badge>
+              <h2 className="font-serif text-3xl font-bold md:text-4xl">{t('Highest Equity Stars on')} {COUNTRY.exchange}</h2>
             </div>
             <Button as={Link} to="/market" variant="outline" className="hidden sm:inline-flex">
-              All stocks <ArrowRight className="h-4 w-4" />
+              {t('All stocks')} <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -155,17 +155,16 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <Badge variant="muted" className="mb-3">Accountability</Badge>
-            <h2 className="font-serif text-3xl font-bold md:text-4xl">Score the analysts, not just the stocks.</h2>
+            <Badge variant="muted" className="mb-3">{t('Accountability')}</Badge>
+            <h2 className="font-serif text-3xl font-bold md:text-4xl">{t('Score the analysts, not just the stocks.')}</h2>
             <p className="mt-3 text-muted-foreground">
-              Every prediction is locked with a server-side timestamp and graded against realised price.
-              Analysts, the crowd and AI models compete in the same arena — no back-dating, no cherry-picking.
+              {t('Every prediction is locked with a server-side timestamp and graded against realised price. Analysts, the crowd and AI models compete in the same arena — no back-dating, no cherry-picking.')}
             </p>
             <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
-              <Brain className="h-4 w-4 text-ai-navy" /> Analysts · crowd · AI in one league
+              <Brain className="h-4 w-4 text-ai-navy" /> {t('Analysts · crowd · AI in one league')}
             </div>
             <Button as={Link} to="/leaderboard" variant="accent" className="mt-6">
-              See the leaderboard <ArrowRight className="h-4 w-4" />
+              {t('See the leaderboard')} <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
           <div className="rounded-2xl border border-border bg-card p-2">
@@ -174,11 +173,11 @@ export default function HomePage() {
                 <span className="w-6 text-center font-serif font-bold text-muted-foreground">{r.rank}</span>
                 <div className="min-w-0 flex-1">
                   <div className="truncate text-sm font-semibold">{r.name}</div>
-                  <div className="text-xs text-muted-foreground">{r.type} · {r.predictions} calls</div>
+                  <div className="text-xs text-muted-foreground">{r.type} · {r.predictions} {t('calls')}</div>
                 </div>
                 <div className="text-right">
                   <div className="font-mono text-sm font-bold text-success">{r.hitRate}%</div>
-                  <div className="text-[11px] text-muted-foreground">hit rate</div>
+                  <div className="text-[11px] text-muted-foreground">{t('hit rate')}</div>
                 </div>
               </div>
             ))}
@@ -189,15 +188,14 @@ export default function HomePage() {
       {/* COVERAGE / CTA */}
       <section className="surface-dark bg-foreground py-16 text-background">
         <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold md:text-4xl">One engine. Every market you enter.</h2>
+          <h2 className="font-serif text-3xl font-bold md:text-4xl">{t('One engine. Every market you enter.')}</h2>
           <p className="mx-auto mt-3 max-w-2xl text-background/70">
-            The same Equity Star, Decision Mirror and Rumor Thermometer — re-pointed at each market, with the
-            local lenses each one needs. We detect your country and open its exchange automatically.
+            {t('The same Equity Star, Decision Mirror and Rumor Thermometer — re-pointed at each market, with the local lenses each one needs. We detect your country and open its exchange automatically.')}
           </p>
           <div className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3">
-            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇸🇦 Tadawul — live</span>
-            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇦🇪 DFM / ADX — live</span>
-            <span className="rounded-full border border-background/20 px-4 py-2 text-sm text-background/60">🇪🇬 EGX — rolling out</span>
+            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇸🇦 Tadawul — {t('live')}</span>
+            <span className="rounded-full border border-background/20 bg-background/5 px-4 py-2 text-sm">🇦🇪 DFM / ADX — {t('live')}</span>
+            <span className="rounded-full border border-background/20 px-4 py-2 text-sm text-background/60">🇪🇬 EGX — {t('rolling out')}</span>
           </div>
         </div>
       </section>

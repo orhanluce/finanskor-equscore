@@ -6,6 +6,7 @@ import { useAuth } from '@/context/AuthContext.jsx';
 import { getPortfolio, addHolding, removeHolding } from '@/lib/db.js';
 import { STOCKS, getStock } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 export default function PortfolioPage() {
   const { user, openAuth } = useAuth();
@@ -36,7 +37,7 @@ export default function PortfolioPage() {
   const submit = async (e) => {
     e.preventDefault(); setBusy(true); setErr(null);
     try {
-      if (!(Number(shares) > 0) || !(Number(buyPrice) > 0)) throw new Error('Enter valid shares and buy price.');
+      if (!(Number(shares) > 0) || !(Number(buyPrice) > 0)) throw new Error(t('Enter valid shares and buy price.'));
       await addHolding({ user, ticker, shares, buyPrice });
       setShares(''); setBuyPrice(''); refresh();
     } catch (e2) { setErr(e2.message); } finally { setBusy(false); }
@@ -46,63 +47,61 @@ export default function PortfolioPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="muted" className="mb-3">Track without risk</Badge>
-      <h1 className="font-serif text-4xl font-bold">Virtual Portfolio</h1>
+      <Badge variant="muted" className="mb-3">{t('Track without risk')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Virtual Portfolio')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Add positions at your entry price and watch live profit/loss against the latest Tadawul prices. Paper only — no real money.
+        {t('Add positions at your entry price and watch live profit/loss against the latest Tadawul prices. Paper only — no real money.')}
       </p>
 
       {!user ? (
         <Card className="mt-6"><CardContent className="flex flex-col items-center gap-3 py-10 text-center">
           <Briefcase className="h-8 w-8 text-muted-foreground" />
-          <p className="text-muted-foreground">Sign in to build and save your virtual portfolio.</p>
-          <Button variant="accent" onClick={openAuth}>Sign in</Button>
+          <p className="text-muted-foreground">{t('Sign in to build and save your virtual portfolio.')}</p>
+          <Button variant="accent" onClick={openAuth}>{t('Sign in')}</Button>
         </CardContent></Card>
       ) : (
         <>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <Stat value={money(totals.value, 'SAR')} label="Market value" />
-            <Stat value={money(totals.cost, 'SAR')} label="Cost basis" />
-            <Stat value={`${totals.pl >= 0 ? '+' : ''}${money(totals.pl, 'SAR')}`} label="Unrealised P/L" accent={totals.pl >= 0 ? 'text-success' : 'text-destructive'} />
-            <Stat value={pct(totals.plPct)} label="Return" accent={totals.plPct >= 0 ? 'text-success' : 'text-destructive'} />
+            <Stat value={money(totals.value, 'SAR')} label={t('Market value')} />
+            <Stat value={money(totals.cost, 'SAR')} label={t('Cost basis')} />
+            <Stat value={`${totals.pl >= 0 ? '+' : ''}${money(totals.pl, 'SAR')}`} label={t('Unrealised P/L')} accent={totals.pl >= 0 ? 'text-success' : 'text-destructive'} />
+            <Stat value={pct(totals.plPct)} label={t('Return')} accent={totals.plPct >= 0 ? 'text-success' : 'text-destructive'} />
           </div>
 
-          {/* Add form */}
           <Card className="mt-6"><CardContent>
-            <h2 className="font-serif text-lg font-bold">Add a holding</h2>
+            <h2 className="font-serif text-lg font-bold">{t('Add a holding')}</h2>
             <form onSubmit={submit} className="mt-3 grid gap-3 sm:grid-cols-[1fr_auto_auto_auto] sm:items-end">
               <div>
-                <label className="text-xs font-semibold text-muted-foreground">Stock</label>
+                <label className="text-xs font-semibold text-muted-foreground">{t('Stock')}</label>
                 <select value={ticker} onChange={(e) => setTicker(e.target.value)} className="mt-1 w-full">
                   {STOCKS.map((s) => <option key={s.ticker} value={s.ticker}>{s.ticker} · {s.name}</option>)}
                 </select>
               </div>
               <div>
-                <label className="text-xs font-semibold text-muted-foreground">Shares</label>
+                <label className="text-xs font-semibold text-muted-foreground">{t('Shares')}</label>
                 <input type="number" step="1" value={shares} onChange={(e) => setShares(e.target.value)} placeholder="100" className="mt-1 w-28" />
               </div>
               <div>
-                <label className="text-xs font-semibold text-muted-foreground">Buy price</label>
+                <label className="text-xs font-semibold text-muted-foreground">{t('Buy price')}</label>
                 <input type="number" step="0.01" value={buyPrice} onChange={(e) => setBuyPrice(e.target.value)} placeholder={String(getStock(ticker)?.price ?? '')} className="mt-1 w-28" />
               </div>
               <Button type="submit" variant="accent" disabled={busy}>
-                {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <><Plus className="h-4 w-4" /> Add</>}
+                {busy ? <Loader2 className="h-4 w-4 animate-spin" /> : <><Plus className="h-4 w-4" /> {t('Add')}</>}
               </Button>
             </form>
             {err && <div className="mt-3 rounded-lg bg-destructive/10 px-3 py-2 text-sm text-destructive">{err}</div>}
           </CardContent></Card>
 
-          {/* Holdings */}
           <Card className="mt-5 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-border bg-muted/40 text-muted-foreground">
-                    <th className="px-4 py-2.5 text-left font-medium">Stock</th>
-                    <th className="px-4 py-2.5 text-right font-medium">Shares</th>
-                    <th className="px-4 py-2.5 text-right font-medium">Buy</th>
-                    <th className="px-4 py-2.5 text-right font-medium">Last</th>
-                    <th className="px-4 py-2.5 text-right font-medium">Value</th>
+                    <th className="px-4 py-2.5 text-left font-medium">{t('Stock')}</th>
+                    <th className="px-4 py-2.5 text-right font-medium">{t('Shares')}</th>
+                    <th className="px-4 py-2.5 text-right font-medium">{t('Buy price')}</th>
+                    <th className="px-4 py-2.5 text-right font-medium">{t('Last')}</th>
+                    <th className="px-4 py-2.5 text-right font-medium">{t('Value')}</th>
                     <th className="px-4 py-2.5 text-right font-medium">P/L</th>
                     <th className="px-4 py-2.5"></th>
                   </tr>
@@ -130,12 +129,12 @@ export default function PortfolioPage() {
                   ))}
                 </tbody>
               </table>
-              {enriched.length === 0 && <div className="py-10 text-center text-muted-foreground">No holdings yet — add your first position above.</div>}
+              {enriched.length === 0 && <div className="py-10 text-center text-muted-foreground">{t('No holdings yet — add your first position above.')}</div>}
             </div>
           </Card>
         </>
       )}
-      <p className="mt-6 text-xs text-muted-foreground">Paper-trading tool for tracking only. Prices are delayed/sample. Not investment advice.</p>
+      <p className="mt-6 text-xs text-muted-foreground">{t('Paper-trading tool for tracking only. Prices are delayed/sample. Not investment advice.')}</p>
     </div>
   );
 }

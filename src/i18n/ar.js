@@ -1,4 +1,4 @@
-// Arabic (ع) translations, keyed by the English source string. Extend as more UI is wrapped.
+// Arabic (ع) translations, keyed by the English source string.
 export const AR = {
   // ── Header / nav ──
   'Market': 'السوق',
@@ -51,9 +51,14 @@ export const AR = {
   'Coverage': 'التغطية',
   'Sharia Screen': 'فرز الشريعة',
   'Methodology': 'المنهجية',
+  'Data sources': 'مصادر البيانات',
+  'The accountability & trust layer for Gulf equity markets. Score the analysts, screen for Sharia, follow the smart money — starting with Tadawul.':
+    'طبقة المساءلة والثقة لأسواق أسهم الخليج. قيّم المحلّلين، افرز وفق الشريعة، وتابع الأموال الذكية — بدءاً من تداول.',
 
-  // ── Home ──
+  // ── Home hero ──
   'The accountability & trust layer for Gulf markets': 'طبقة المساءلة والثقة لأسواق الخليج',
+  'Not hype.': 'ليست ضجّة.',
+  'Track record.': 'بل سجلّ أداء.',
   'How it works': 'كيف يعمل',
   'Equity Star dimensions': 'أبعاد نجمة السهم',
   'Benchmark index': 'المؤشّر المرجعي',
@@ -68,6 +73,41 @@ export const AR = {
   'Score the analysts, not just the stocks.': 'قيّم المحلّلين، لا الأسهم فقط.',
   'See the leaderboard': 'شاهد لوحة المتصدّرين',
   'One engine. Every market you enter.': 'محرّك واحد. كل سوق تدخله.',
+  'AAOIFI-style halal / doubtful / non-compliant gate.': 'بوابة الحلال/المشكوك/غير المتوافق وفق AAOIFI.',
+  'Every Tadawul name with its Equity Star.': 'كل أسماء تداول مع نجمة السهم.',
+  'Which analyst actually delivers?': 'أي محلل ينجح فعلًا؟',
+  'is it Sharia-compliant?': 'هل هو متوافق مع الشريعة؟',
+  'Top of the market': 'أعلى السوق',
+  'All stocks': 'كل الأسهم',
+  'Every prediction is locked with a server-side timestamp and graded against realised price. Analysts, the crowd and AI models compete in the same arena — no back-dating, no cherry-picking.':
+    'كل توقع مقفل بطابع زمني من الخادم ومُقيَّم مقابل السعر الفعلي. المحللون والجمهور ونماذج الذكاء الاصطناعي يتنافسون في الحلبة ذاتها — لا تأريخ لاحق، لا انتقاء.',
+  'Analysts · crowd · AI in one league': 'محللون · جمهور · ذكاء اصطناعي في دوري واحد',
+  'The same Equity Star, Decision Mirror and Rumor Thermometer — re-pointed at each market, with the local lenses each one needs. We detect your country and open its exchange automatically.':
+    'نفس نجمة السهم، ومرآة القرار، ومقياس الإشاعات — موجَّهة لكل سوق مع العدسات المحلية التي يحتاجها. نرصد دولتك ونفتح بورصتها تلقائيًا.',
+  '🇸🇦 Tadawul — live': '🇸🇦 تداول — حي',
+  '🇦🇪 DFM / ADX — live': '🇦🇪 سوق دبي / أبوظبي — حي',
+  '🇪🇬 EGX — rolling out': '🇪🇬 بورصة مصر — قيد الإطلاق',
+  'hit rate': 'نسبة الإصابة',
+  'calls': 'توقع',
+  // Home modules
+  'Equity Star (7 dimensions)': 'نجمة السهم (7 أبعاد)',
+  'Value · Growth · Quality · Health · Dividend + analyst Consensus ★ and Money-Flow ★ — one visual score out of 42.':
+    'القيمة · النمو · الجودة · الصحة · الأرباح + إجماع المحلّلين ★ والتدفق المالي ★ — نقاط بصرية من 42.',
+  'Sharia Compliance': 'الامتثال الشرعي',
+  'AAOIFI Standard No. 21: business-activity screen plus the three financial ratios, with a purification estimate. The Gulf-native lens.':
+    'المعيار 21 من AAOIFI: فرز النشاط التجاري بالإضافة إلى النسب المالية الثلاث، مع تقدير التطهير. العدسة الأصيلة للخليج.',
+  'USD-native Fair Value': 'القيمة العادلة بالدولار',
+  'A discount/premium read in a single number. No inflation gymnastics needed — the riyal is pegged to the dollar.':
+    'قراءة الخصم/العلاوة برقم واحد. لا حاجة لمرونة التضخّم — الريال مربوط بالدولار.',
+  'Analyst Accountability': 'مساءلة المحلّلين',
+  'Every forecast is time-stamped and locked, then graded against realised price. Who is right, in which sector?':
+    'كل توقع مؤرَّخ ومقفل، ثم مُقيَّم مقابل السعر الفعلي. من المصيب في أي قطاع؟',
+  'Smart-Money Flow': 'تدفق الأموال الذكية',
+  'Foreign and institutional ownership flow, distilled into one ★ signal — now that Tadawul is open to all foreign investors.':
+    'تدفق الملكية الأجنبية والمؤسسية، مُقطَّرًا في إشارة ★ واحدة — الآن بعد أن فُتح تداول لجميع المستثمرين الأجانب.',
+  'Rumor Thermometer': 'مقياس الإشاعات',
+  'Volume + tone of social chatter per stock: low → danger. We turn the WhatsApp tip into a measurable signal.':
+    'حجم ونبرة الحديث الاجتماعي لكل سهم: منخفض ← خطر. نحوّل نصائح واتساب إلى إشارة قابلة للقياس.',
 
   // ── Market page ──
   'sample dataset': 'بيانات تجريبية',
@@ -80,6 +120,14 @@ export const AR = {
   'No stocks match your filters.': 'لا توجد أسهم مطابقة للمرشّحات.',
   'Search ticker or company…': 'ابحث عن رمز أو شركة…',
   'No match for': 'لا تطابق لـ',
+  'live — Yahoo Finance (delayed)': 'حي — Yahoo Finance (متأخر)',
+  'Every name with its Equity Star (out of 42) and discount to fair value.':
+    'كل اسم مع نجمة السهم (من 42) والخصم عن القيمة العادلة.',
+  'Every name with its Equity Star (out of 42), Sharia status and discount to fair value.':
+    'كل اسم مع نجمة السهم (من 42) وحالة الشريعة والخصم عن القيمة العادلة.',
+  'Sharia ✓': 'شريعة ✓',
+  'Today': 'اليوم',
+  'Equity Star': 'نجمة السهم',
 
   // ── Stock detail tabs + common ──
   'Star': 'النجمة',
@@ -101,18 +149,457 @@ export const AR = {
   'Sharia-compliant': 'متوافق مع الشريعة',
   'Doubtful': 'مشكوك فيه',
   'Non-compliant': 'غير متوافق',
+  'Back to market': 'العودة إلى السوق',
+  'Stock not found': 'لم يُعثر على السهم',
+  // StockDetail — body strings
+  'NOMU · parallel market': 'نومو · السوق الموازي',
+  'TradingView · daily': 'TradingView · يومي',
+  'summary of oscillators & moving averages': 'ملخّص المذبذبات والمتوسطات المتحرّكة',
+  'Derived from TradingView\'s technical-analysis summary. Indicative direction only, not a recommendation.':
+    'مشتقّ من ملخّص التحليل الفنّي لـ TradingView. اتجاه استرشادي فقط، ليس توصية.',
+  'Strong Buy': 'شراء قوي',
+  'Buy': 'شراء',
+  'Hold': 'تعليق',
+  'Sell': 'بيع',
+  'Strong Sell': 'بيع قوي',
+  'Neutral': 'محايد',
+  'Generating analysis…': 'جارٍ إنشاء التحليل…',
+  'Not investment advice. Generated from live EquScore metrics.': 'ليست نصيحة استثمارية. مُنشأة من مقاييس EquScore الحية.',
+  '· EquScore data': '· بيانات EquScore',
+  'Net intraday money flow — Tadawul-licensed (SAHMK).': 'صافي تدفق الأموال خلال اليوم — مرخّص من تداول (سهمك).',
+  'net inflow': 'تدفق للداخل',
+  'net outflow': 'تدفق للخارج',
+  'of value traded': 'من قيمة التداول',
+  'Institutional ownership — a smart-money proxy.': 'ملكية المؤسسات — وكيل للأموال الذكية.',
+  'held by institutions': 'تحتفظ به المؤسسات',
+  'foreign ownership': 'الملكية الأجنبية',
+  'Heavier institutional/foreign ownership is a quality signal. Licensed real-time net flow is shown where available.':
+    'تشير الملكية الأعلى للمؤسسات/الأجانب إلى الجودة. يُعرض صافي التدفق الفوري المرخّص حيث يتوفر.',
+  'Sector-relative multiples (P/E reversion + analyst).': 'مضاعفات نسبية للقطاع (ارتداد م/ر + محلل).',
+  'Last price': 'آخر سعر',
+  'Fair value': 'القيمة العادلة',
+  'Interest-bearing debt / mcap': 'الدين المرتبط بالفائدة / القيمة السوقية',
+  'Interest deposits / mcap': 'الودائع المدرّة للفائدة / القيمة السوقية',
+  'Impermissible income': 'الدخل المحرّم',
+  'Auto-screen': 'فرز تلقائي',
+  'AAOIFI Standard No. 21 — financial ratios.': 'المعيار 21 من AAOIFI — النسب المالية.',
+  'Status estimated from sector + live debt ratio — verify with a Shariah board.':
+    'الحالة مقدَّرة من القطاع ونسبة الدين الحية — تحقّق مع هيئة شرعية.',
+  'Purification': 'التطهير',
+  'of dividend income.': 'من دخل الأرباح.',
+  'Debt ratio is live; the cash-interest & impermissible-income ratios need a deeper financials source (auto-screen).':
+    'نسبة الدين حية؛ نسبتا الفائدة النقدية والدخل المحرّم تحتاجان مصدرًا ماليًا أعمق (فرز تلقائي).',
+  'recent headlines': 'عناوين حديثة',
+  'No recent headlines for': 'لا توجد عناوين حديثة لـ',
+  'yet.': 'بعد.',
+  'News & disclosure sentiment. Reactions to earnings tend to persist (post-earnings drift).':
+    'مشاعر الأخبار والإفصاحات. ردود الفعل على الأرباح تميل إلى الاستمرار (انجراف ما بعد الأرباح).',
+  'Marketaux — region-aware news with per-entity sentiment.': 'Marketaux — أخبار منطقة الخليج مع مشاعر لكل كيان.',
+  'Google News + financial-lexicon sentiment (fallback).': 'Google News + مشاعر معجم مالي (احتياطي).',
+  'Arabic-NLP is the next upgrade.': 'معالجة اللغة العربية هي التحديث القادم.',
+  'Volume + tone of live 𝕏 chatter (AR + EN).': 'حجم ونبرة إشاعات 𝕏 الحية (ع + إ).',
+  'Volume + tone of social chatter.': 'حجم ونبرة الحديث الاجتماعي.',
+  'Heavily discussed — historically a fade signal.': 'يُناقَش كثيرًا — إشارة تراجع تاريخيًا.',
+  'Quiet — could be an overlooked name.': 'هادئ — قد يكون اسمًا مُهملًا.',
+  'Sudden one-sided chatter spike — watch for pump/manipulation.': 'ارتفاع مفاجئ أحادي الجانب في النقاشات — احترس من التلاعب/الضخ.',
+  'Unverified retail chatter — kept out of the Equity Star score.': 'نقاشات تجزئة غير مُتحقَّق منها — خارج نجمة السهم عمدًا.',
+  'On EGX, Facebook groups (300K+ members) are the dominant channel; X is shown here.':
+    'في بورصة مصر، مجموعات فيسبوك (+300 ألف عضو) هي القناة السائدة؛ يُعرض 𝕏 هنا.',
+  'Retail Attention (MAX)': 'اهتمام التجزئة (MAX)',
+  'Biggest 1-day jump in volatility units (lottery-seeking signal).': 'أكبر قفزة يومية بوحدات التقلّب (إشارة البحث عن اليانصيب).',
+  '⚠ Value-trap risk': '⚠ خطر فخّ القيمة',
+  '▲ Attention + strong profits': '▲ اهتمام + أرباح قوية',
+  'Normal attention': 'اهتمام طبيعي',
+  'On Tadawul, high-attention "lottery" stocks rise when profitability is strong and fade when it\'s weak — so MAX is read together with the Quality dimension.':
+    'في تداول، أسهم "اليانصيب" عالية الاهتمام ترتفع عند قوة الربحية وتتراجع عند ضعفها — يُقرأ MAX مع بُعد الجودة.',
+  'Analyst Consensus ★': 'إجماع المحلّلين ★',
+  'analyst forecasts.': 'توقعات محلل.',
+  'No analyst coverage on the free feed.': 'لا تغطية محللين في التغذية المجانية.',
+  'analysts cover this stock.': 'محلل يغطي هذا السهم.',
+  'Hit-rate-weighted scoring activates with a licensed analyst feed.': 'يتفعّل التقييم الموزون بنسبة الإصابة بتغذية محللين مرخّصة.',
+  'Median target': 'الهدف الوسيط',
+  'Implied upside': 'الارتفاع الضمني',
+  'Lock a price target or direction on': 'اقفل هدفًا سعريًا أو اتجاهًا لـ',
+  'with a server-side timestamp — it\'s graded against the realised price and feeds your leaderboard track record.':
+    'بطابع زمني من الخادم — يُقيَّم مقابل السعر الفعلي ويُضاف إلى سجلّك في لوحة المتصدّرين.',
+  'Submit a prediction': 'أرسل توقعًا',
+  'Informational/statistical analysis, not investment advice under': 'تحليل إحصائي/معلوماتي، ليست نصيحة استثمارية وفق',
+  'rules.': 'أنظمة.',
+  'Sharia status is an AAOIFI-style screen for guidance only.': 'حالة الشريعة فرز بأسلوب AAOIFI للإرشاد فقط.',
 
-  // ── Footer ──
-  'Data sources': 'مصادر البيانات',
-  'The accountability & trust layer for Gulf equity markets. Score the analysts, screen for Sharia, follow the smart money — starting with Tadawul.':
-    'طبقة المساءلة والثقة لأسواق أسهم الخليج. قيّم المحلّلين، افرز وفق الشريعة، وتابع الأموال الذكية — بدءاً من تداول.',
+  // ── Market page subtitle ──
+  'Top {n} by Equity Star · switch to Grid for all {total}': 'أفضل {n} حسب نجمة السهم · بدّل إلى الشبكة للكل {total}',
 
-  // ── Market page subtitle / bits ──
-  'Top {n} by Equity Star · switch to Grid for all {total}': 'أعلى {n} حسب نجمة السهم · بدّل إلى الشبكة للكل {total}',
+  // ── ExplorePage ──
+  'Explorer': 'المستكشف',
+  'Screen every TASI name by score, valuation, dividend and Sharia status. Build your own shortlist.':
+    'فرز كل أسماء تداول حسب النقاط والتقييم والتوزيعات وحالة الشريعة. ابنِ قائمتك المختصرة.',
+  'Filters': 'المرشّحات',
+  'Reset': 'إعادة تعيين',
+  'Sector': 'القطاع',
+  'Company': 'الشركة',
+  'Price': 'السعر',
+  'Div %': 'عائد توزيعات',
+  'No stocks match. Loosen the filters.': 'لا أسهم مطابقة. خفّف المرشّحات.',
+  'Min Equity Star:': 'الحد الأدنى لنجمة السهم:',
+  'Max P/E:': 'الحد الأقصى م/ر:',
+  'Min dividend yield:': 'الحد الأدنى لعائد التوزيعات:',
+  'Min discount:': 'الحد الأدنى للخصم:',
 
-  // ── Home hero ──
-  'Not hype.': 'ليست ضجّة.',
-  'Track record.': 'بل سجلّ أداء.',
+  // ── FearGreedPage ──
+  'A composite read on TASI sentiment — built from market breadth, valuation, money flow, speculative attention and foreign demand.':
+    'قراءة مركّبة لمشاعر تداول — مبنية من اتساع السوق والتقييم والتدفق المالي والاهتمام المضاربي والطلب الأجنبي.',
+  'What\'s driving it': 'ما الذي يقوده',
+  'Extreme Greed': 'جشع متطرف',
+  'Greed': 'جشع',
+  'Fear': 'خوف',
+  'Extreme Fear': 'خوف متطرف',
+  '0 = extreme fear · 100 = extreme greed': '0 = خوف متطرف · 100 = جشع متطرف',
+  'Market breadth': 'اتساع السوق',
+  'Valuation': 'التقييم',
+  'Speculative attention': 'الاهتمام المضاربي',
+  'Foreign demand': 'الطلب الأجنبي',
+  '% of names up today.': '% من الأسهم مرتفعة اليوم.',
+  'Price vs USD-native fair value across the board.': 'السعر مقابل القيمة العادلة بالدولار في السوق.',
+  'SAHMK net buy/sell pressure on liquid names.': 'ضغط الشراء/البيع الصافي لـ سهمك على الأسهم السائلة.',
+  'MAX/lottery & rumor heat — high = euphoria.': 'حرارة MAX/اليانصيب والإشاعات — مرتفع = نشوة.',
+  'Net foreign inflow vs outflow.': 'صافي التدفق الأجنبي للداخل مقابل الخارج.',
+  'Contrarian read: extreme fear has historically marked better entry points, extreme greed worse ones — but it is a statistical tendency, not a timing signal. Informational only, not investment advice.':
+    'قراءة معاكسة: الخوف الشديد سجَّل تاريخيًا نقاط دخول أفضل، والجشع الشديد نقاط أسوأ — لكنها ميل إحصائي، ليس إشارة توقيت. للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+
+  // ── MoneyFlowPage ──
+  'Real net intraday money flow — buy-side minus sell-side value traded — for the most liquid TASI names.':
+    'صافي تدفق الأموال الفعلي خلال اليوم — جانب الشراء ناقص جانب البيع — للأسهم الأكثر سيولة في تداول.',
+  'Names with licensed flow': 'أسماء بتدفق مرخّص',
+  'Net inflow today': 'صافي تدفق للداخل اليوم',
+  'Top inflow ·': 'أعلى تدفق للداخل ·',
+  'Top outflow ·': 'أعلى تدفق للخارج ·',
+  'Strongest inflows': 'أقوى التدفقات الداخلة',
+  'Strongest outflows': 'أقوى التدفقات الخارجة',
+  'Sector flow': 'تدفق القطاع',
+  'Average net flow across covered names in each sector.': 'متوسط صافي التدفق عبر الأسماء المشمولة في كل قطاع.',
+  'On Tadawul institutions trade on value while retail (≈90% of volume) chases attention — sustained net inflow into a name is a smart-money signal, not a guarantee. Informational only.':
+    'في تداول، تتداول المؤسسات بناءً على القيمة بينما يلاحق التجزئة (≈90% من الحجم) الاهتمام — التدفق الداخل المستمر لاسم ما هو إشارة أموال ذكية، ليس ضمانًا. للأغراض المعلوماتية فقط.',
+  'Licensed SAHMK flow data isn\'t loaded yet. Run the fetch pipeline to populate it.':
+    'بيانات تدفق SAHMK المرخّصة غير محمّلة بعد. شغِّل خط جلب البيانات لتعبئتها.',
+
+  // ── RumorsPage ──
+  'Heuristic · separate from the score': 'إرشادي · منفصل عن النقاط',
+  'Volume and tone of social chatter per name. Heavily discussed stocks have historically faded — high heat alone is not a buy signal.':
+    'حجم ونبرة الحديث الاجتماعي لكل اسم. الأسهم المُناقَشة كثيرًا تراجعت تاريخيًا — الحرارة العالية وحدها ليست إشارة شراء.',
+  'Manipulation caution:': 'تحذير التلاعب:',
+  'sudden chatter spikes on low-float names are a classic pump pattern. This panel is deliberately kept out of the Equity Star score.':
+    'ارتفاعات الحديث المفاجئة على الأسهم منخفضة التداول الحر هي نمط ضخ كلاسيكي. هذه اللوحة مُستبعَدة عمدًا من نقاط نجمة السهم.',
+  'Dangerous': 'خطير',
+  'High': 'مرتفع',
+  'Medium': 'متوسط',
+  'Low / quiet': 'منخفض / هادئ',
+  'Low': 'منخفض',
+  'historically a fade signal': 'إشارة تراجع تاريخيًا',
+  'possibly overlooked': 'ربما مُهمَل',
+  'Live 𝕏 chatter (AR + EN), volume + tone, kept out of the score. Not a recommendation; deeper Arabic-NLP is a planned upgrade.':
+    'حديث 𝕏 الحي (ع + إ)، حجم ونبرة، خارج النقاط. ليست توصية؛ معالجة عربية أعمق بالذكاء الاصطناعي مخطَّطة.',
+
+  // ── EfsahFlashPage ──
+  'News & disclosure sentiment across TASI. Tadawul shows post-earnings drift — reactions tend to persist for weeks.':
+    'مشاعر الأخبار والإفصاحات في تداول. يُظهر تداول انجراف ما بعد الأرباح — تستمر ردود الفعل لأسابيع.',
+  'Names covered': 'أسماء مشمولة',
+  'Recent headlines': 'عناوين حديثة',
+  'Positive mood': 'مشاعر إيجابية',
+  'Negative mood': 'مشاعر سلبية',
+  'headlines': 'عناوين',
+  'positive': 'إيجابي',
+  'neutral': 'محايد',
+  'negative': 'سلبي',
+  'all': 'الكل',
+  'Sentiment from Marketaux per-entity scores (Argaam/Mubasher/Reuters) with a Google-News lexicon fallback. Arabic-NLP (AraBERT) is the next upgrade.':
+    'المشاعر من نقاط Marketaux لكل كيان (أرقام/مباشر/رويترز) مع احتياطي معجم Google News. معالجة العربية (AraBERT) هي التحديث القادم.',
+
+  // ── SignalsPage ──
+  'Daily scan': 'مسح يومي',
+  'Anomalies & Signals': 'الحالات الشاذة والإشارات',
+  'Unusual moves the daily scan flagged — price spikes, money-flow surges, lottery attention, and valuation gaps. A starting point for research, not a recommendation.':
+    'تحركات غير اعتيادية رصدها المسح اليومي — ارتفاعات السعر وتدفق الأموال المتسارع والاهتمام باليانصيب وفجوات التقييم. نقطة انطلاق للبحث، ليست توصية.',
+  'Price moves': 'تحركات السعر',
+  'Attention': 'الاهتمام',
+  'Price spike ↑': 'ارتفاع مفاجئ ↑',
+  'Price spike ↓': 'هبوط مفاجئ ↓',
+  'Value-trap risk': 'خطر فخّ القيمة',
+  'Attention + strong': 'اهتمام + قوي',
+  'Money inflow': 'تدفق أموال للداخل',
+  'Money outflow': 'تدفق أموال للخارج',
+  'Deep discount': 'خصم عميق',
+  'Rumor heat': 'حرارة الإشاعات',
+  'No signals in this category right now.': 'لا إشارات في هذه الفئة الآن.',
+
+  // ── ShariaPage ──
+  'Region-native differentiator': 'مميِّز أصيل للمنطقة',
+  'Sharia Compliance Screen': 'فرز الامتثال الشرعي',
+  'is this stock halal?': 'هل هذا السهم حلال؟',
+  'Interest-bearing debt': 'الدين المرتبط بالفائدة',
+  '< 30% of market cap': 'أقل من 30% من القيمة السوقية',
+  'Interest-earning deposits': 'الودائع المدرّة للفائدة',
+  '< 5% of total revenue': 'أقل من 5% من إجمالي الإيرادات',
+  'Plus a business-activity screen (excludes conventional banking, alcohol, gambling, tobacco, adult content, weapons) and a purification estimate for any minor impermissible income. Derived from the financials we already compute — guidance only; consult a qualified Shariah advisor.':
+    'بالإضافة إلى فرز نشاط تجاري (يستثني البنوك التقليدية والكحول والقمار والتبغ والمحتوى الإباحي والأسلحة) وتقدير التطهير لأي دخل محرّم طفيف. مشتقّ من البيانات المالية المحسوبة لدينا — إرشادي فقط؛ استشر مستشارًا شرعيًا مؤهّلًا.',
+  'Compliant': 'متوافق',
+  'Non-compliant': 'غير متوافق',
+  'Debt': 'الدين',
+  'Int. cash': 'فائدة نقدية',
+  'Impure': 'محرّم',
+  'Star': 'النجمة',
+
+  // ── MethodologyPage ──
+  'Methodology & roadmap': 'المنهجية وخارطة الطريق',
+  'How EquScore works': 'كيف يعمل EquScore',
+  'Equity Star — 7 dimensions, out of 42': 'نجمة السهم — 7 أبعاد، من 42',
+  'Fundamental weights are set by a genetic algorithm; for each market they are re-trained on MENA data — the model ports, the weights do not.':
+    'الأوزان الأساسية محدَّدة بخوارزمية جينية؛ لكل سوق تُعاد تدريبها على بيانات الشرق الأوسط — النموذج قابل للنقل، الأوزان لا.',
+  'Sharia replaces the real-return lens': 'الشريعة تحلّ محل عدسة العائد الحقيقي',
+  'An inflation-adjusted real-return lens is redundant in the pegged Gulf markets (~2% inflation, USD peg). We retire it there (it stays as an optional multi-currency toggle) and make AAOIFI Sharia screening the core differentiator instead.':
+    'عدسة العائد الحقيقي المعدَّلة للتضخّم زائدة في أسواق الخليج المربوطة (~2% تضخّم، ربط بالدولار). نستبدلها هناك (تبقى كخيار متعدد العملات) ونجعل فرز الشريعة AAOIFI المميّز الأساسي بدلًا منها.',
+  'USD-native valuation': 'التقييم بالدولار',
+  'Because SAR/AED/QAR are hard-pegged to the dollar, fair value is computed directly in a stable currency — clean, with no FX gymnastics.':
+    'لأن الريال/الدرهم/الريال القطري مربوطة بقوة بالدولار، تُحسب القيمة العادلة مباشرةً بعملة مستقرة — نظيفة، بدون تحوّلات صرف.',
+  'Data sources (delayed / EOD)': 'مصادر البيانات (متأخرة / نهاية اليوم)',
+  'No live feed required. There is no free borsapy-style source for the Gulf, so a paid EOD vendor is the one new cost line.':
+    'لا حاجة لتغذية حية. لا يوجد مصدر مجاني بأسلوب borsapy للخليج، لذا مورّد بيانات مدفوع نهاية اليوم هو خط التكلفة الجديد الوحيد.',
+  'Roadmap — Saudi first': 'خارطة الطريق — السعودية أولًا',
+  'Cross-cutting: English-first now, Arabic / RTL next; Zakat helper; expat multi-currency lens.':
+    'شامل: الإنجليزية أولًا الآن، العربية / من اليمين إلى اليسار لاحقًا؛ مساعد الزكاة؛ عدسة متعددة العملات للمغتربين.',
+
+  // ── IpoPage ──
+  'IPOs & New Listings': 'الاكتتابات والإدراجات الجديدة',
+  'The Saudi primary market is one of the most active in the world. Track subscription windows and how recent debuts have traded.':
+    'السوق الأولي السعودي هو الأكثر نشاطًا في العالم. تتبَّع نوافذ الاكتتاب وكيف تداولت الإدراجات الحديثة.',
+  'Open now': 'مفتوح الآن',
+  'Upcoming': 'قادم',
+  'Recently listed': 'مدرَج حديثًا',
+  'Subscription open': 'الاكتتاب مفتوح',
+  'Listed': 'مدرَج',
+  'Offer size': 'حجم العرض',
+  'Float': 'التداول الحر',
+  'First day': 'اليوم الأول',
+  'Subscription': 'الاكتتاب',
+  'Illustrative listing data. Informational only, not investment advice or an offer to subscribe.':
+    'بيانات إدراج توضيحية. للأغراض المعلوماتية فقط، ليست نصيحة استثمارية أو عرضًا للاكتتاب.',
+
+  // ── StrategiesPage ──
+  'Rules-based · monthly rebalance': 'قواعدي · إعادة توازن شهرية',
+  'Model Strategies': 'الاستراتيجيات النموذجية',
+  'Transparent, rules-based portfolios built from the Equity Star engine. Each shows its rule, holdings and return since inception versus TASI.':
+    'محافظ قائمة على قواعد شفافة مبنية من محرّك نجمة السهم. كل واحدة تُظهر قاعدتها وحيازاتها وعائدها منذ الإنشاء مقابل تداول.',
+  'vs TASI': 'مقابل تداول',
+  'alpha': 'ألفا',
+  'View strategy': 'عرض الاستراتيجية',
+  'Illustrative back-tested returns assume monthly equal-weight rebalancing and exclude costs. Past performance is not indicative of future results. Not investment advice.':
+    'العوائد التاريخية الاختبارية تفترض إعادة توازن شهرية متساوية الأوزان وتستثني التكاليف. الأداء السابق لا يدل على النتائج المستقبلية. ليست نصيحة استثمارية.',
+
+  // ── StrategyDetailPage ──
+  'Strategy not found': 'الاستراتيجية غير موجودة',
+  '← All strategies': '← كل الاستراتيجيات',
+  'Return since inception': 'العائد منذ الإنشاء',
+  'TASI benchmark': 'المؤشر المرجعي تداول',
+  'Alpha': 'ألفا',
+  'Holdings': 'الحيازات',
+  'since': 'منذ',
+  'Cumulative return vs TASI': 'العائد التراكمي مقابل تداول',
+  'Selection rule:': 'قاعدة الاختيار:',
+  'Illustrative back-test, equal-weight monthly rebalance, costs excluded. Past performance is not indicative of future results. Not investment advice.':
+    'اختبار تاريخي توضيحي، إعادة توازن شهرية متساوية الأوزان، التكاليف مستثناة. الأداء السابق لا يدل على النتائج المستقبلية. ليست نصيحة استثمارية.',
+
+  // ── BasketsPage ──
+  'Auto-built from the dataset': 'مبني تلقائيًا من مجموعة البيانات',
+  'Thematic Baskets': 'السلال الموضوعية',
+  'Ready-made groupings built live from the Equity Star engine — a fast way to find names that share a single idea.':
+    'تجميعات جاهزة مبنية حيًا من محرّك نجمة السهم — طريقة سريعة للعثور على الأسهم التي تشترك في فكرة واحدة.',
+  'names': 'أسماء',
+  'No names currently match this theme.': 'لا توجد أسماء تطابق هذا الموضوع حاليًا.',
+
+  // ── BrokersPage ──
+  'Brokers Directory': 'دليل الوسطاء',
+  'Licensed firms': 'شركات مرخّصة',
+  'Publish research': 'تنشر بحوثًا',
+  'Average score': 'متوسط النقاط',
+  'Only firms that publish research': 'الشركات التي تنشر بحوثًا فقط',
+  'Research': 'بحث',
+  'Illustrative directory. EquScore is independent and not affiliated with these firms; scores are editorial, not an endorsement.':
+    'دليل توضيحي. EquScore مستقل وغير مرتبط بهذه الشركات؛ النقاط تحريرية، ليست تأييدًا.',
+
+  // ── StoriesPage ──
+  'Plain-English explainers on how to read EquScore and invest thoughtfully on Tadawul.':
+    'شروح بلغة بسيطة حول كيفية قراءة EquScore والاستثمار بتأنٍّ في تداول.',
+  'min read': 'د قراءة',
+  'Read': 'اقرأ',
+  'Educational content, not investment advice.': 'محتوى تعليمي، ليست نصيحة استثمارية.',
+
+  // ── LeaderboardPage ──
+  'Accountability arena': 'حلبة المساءلة',
+  'Analysts, the crowd and AI models compete in one arena. Every call is locked with a server-side timestamp and graded against realised price — hit rate is earned, not claimed.':
+    'يتنافس المحلّلون والجمهور ونماذج الذكاء الاصطناعي في حلبة واحدة. كل توقع مقفل بطابع زمني من الخادم ومُقيَّم مقابل السعر الفعلي — نسبة الإصابة مكتسَبة لا مدَّعاة.',
+  'Predictions locked & time-stamped': 'التوقعات مقفلة ومؤرَّخة',
+  'Name': 'الاسم',
+  'League': 'الدوري',
+  'Calls': 'التوقعات',
+  'Avg upside': 'متوسط الارتفاع',
+  'Hit rate': 'نسبة الإصابة',
+
+  // ── ComparePage ──
+  'Put up to four names side by side — Equity Star dimensions, valuation, and Sharia status at a glance.':
+    'ضع حتى أربعة أسماء جنبًا إلى جنب — أبعاد نجمة السهم والتقييم وحالة الشريعة في لمحة.',
+  'Equity Star overlay': 'تراكب نجمة السهم',
+  'Add a stock…': 'أضف سهمًا…',
+  'No more matches.': 'لا مزيد من التطابقات.',
+  'Metric': 'المقياس',
+  'Add a stock to start comparing.': 'أضف سهمًا لبدء المقارنة.',
+  'Dividend yield': 'عائد التوزيعات',
+
+  // ── CompetitionPage ──
+  'Analysts, the crowd and AI compete in the same league. Every call is locked with a server-side timestamp and graded against realised price.':
+    'يتنافس المحلّلون والجمهور والذكاء الاصطناعي في الدوري ذاته. كل توقع مقفل بطابع زمني من الخادم ومُقيَّم مقابل السعر الفعلي.',
+  'Monthly Cup': 'الكأس الشهري',
+  'Quarterly League': 'الدوري الربع سنوي',
+  'Resets on the 1st. Best hit-rate over locked calls this month.': 'يُعاد تعيينه في الأول. أفضل نسبة إصابة على التوقعات المقفلة هذا الشهر.',
+  'Cumulative hit-rate across the quarter — rewards consistency.': 'نسبة إصابة تراكمية عبر الربع — تكافئ الاتساق.',
+  'Competitors': 'المتنافسون',
+  'Top hit rate': 'أعلى نسبة إصابة',
+  'Data': 'البيانات',
+  'Competitor': 'المتنافس',
+  'Type': 'النوع',
+  'Make a call': 'ضع توقعًا',
+  'Live': 'حي',
+  'Sample': 'نموذج',
+
+  // ── PredictPage ──
+  'Lock in a prediction with a server-side timestamp. It can\'t be back-dated or edited — when the horizon passes, it\'s scored against the realised price and feeds your track record on the leaderboard.':
+    'أقفل توقعًا بطابع زمني من الخادم. لا يمكن تأريخه لاحقًا أو تعديله — عند انقضاء الأفق، يُقيَّم مقابل السعر الفعلي ويُضاف إلى سجلّك في لوحة المتصدّرين.',
+  'Server-locked': 'مقفل بالخادم',
+  'Sign in to submit predictions and build your track record.': 'سجّل الدخول لإرسال التوقعات وبناء سجلّك.',
+  'Sign in to play': 'سجّل الدخول للمشاركة',
+  'New prediction': 'توقع جديد',
+  'Stock': 'السهم',
+  'Price target': 'هدف السعر',
+  'Direction': 'الاتجاه',
+  'Horizon': 'الأفق الزمني',
+  'Target price (SAR)': 'السعر المستهدف (ر.س)',
+  'Enter a valid target price': 'أدخل سعرًا مستهدفًا صحيحًا',
+  '1 month': 'شهر واحد',
+  '3 months': '3 أشهر',
+  '6 months': '6 أشهر',
+  'Up': 'صعود',
+  'Down': 'هبوط',
+  'Lock prediction': 'أقفل التوقع',
+  'No predictions yet — lock your first call.': 'لا توقعات بعد — أقفل أول توقعاتك.',
+  'Direction: Up': 'الاتجاه: صعود',
+  'Direction: Down': 'الاتجاه: هبوط',
+  'Locked': 'مقفل',
+
+  // ── PortfolioPage ──
+  'Track without risk': 'تتبّع بدون مخاطرة',
+  'Add positions at your entry price and watch live profit/loss against the latest Tadawul prices. Paper only — no real money.':
+    'أضف مراكزك بسعر الدخول وشاهد الربح/الخسارة الحية مقابل أحدث أسعار تداول. ورقي فقط — لا أموال حقيقية.',
+  'Sign in to build and save your virtual portfolio.': 'سجّل الدخول لبناء محفظتك الافتراضية وحفظها.',
+  'Market value': 'القيمة السوقية',
+  'Cost basis': 'أساس التكلفة',
+  'Unrealised P/L': 'ربح/خسارة غير محقَّق',
+  'Return': 'العائد',
+  'Add a holding': 'أضف حيازة',
+  'Shares': 'الأسهم',
+  'Buy price': 'سعر الشراء',
+  'Add': 'إضافة',
+  'Enter valid shares and buy price.': 'أدخل أسهمًا وسعر شراء صحيحَين.',
+  'Last': 'الأخير',
+  'Value': 'القيمة',
+  'No holdings yet — add your first position above.': 'لا حيازات بعد — أضف أول مركز أعلاه.',
+  'Paper-trading tool for tracking only. Prices are delayed/sample. Not investment advice.':
+    'أداة تداول ورقي للتتبّع فقط. الأسعار متأخرة/نموذجية. ليست نصيحة استثمارية.',
+
+  // ── JournalPage ──
+  'Behavioural moat': 'الخندق السلوكي',
+  'Decision Journal': 'يوميات القرار',
+  'Sign in to keep a private decision journal.': 'سجّل الدخول للاحتفاظ بيوميات قرار خاصة.',
+  'Decision Mirror': 'مرآة القرار',
+  'Log a few decisions to unlock your mirror.': 'سجّل بعض القرارات لفتح مرآتك.',
+  'decisions logged': 'قرارات مسجّلة',
+  'scored': 'مُقيَّمة',
+  'results fill in as horizons pass': 'النتائج تُملأ مع انقضاء الآفاق',
+  'Behavioural flags': 'علامات سلوكية',
+  'Bought': 'اشتريت',
+  'Sold': 'بعت',
+  'Watching': 'أتابع',
+  'Intuition': 'حدس',
+  'News': 'أخبار',
+  'A tip': 'نصيحة',
+  'Rumor': 'إشاعة',
+  'Analysis': 'تحليل',
+  'Why? (the honest reason)': 'لماذا؟ (السبب الحقيقي)',
+  'Optional note…': 'ملاحظة اختيارية…',
+  'Add to journal': 'أضف للسجل',
+  'Nothing logged yet.': 'لا شيء مسجّل بعد.',
+
+  // ── AccountPage ──
+  'Your account': 'حسابك',
+  'Sign in to see your predictions, decisions and portfolio.': 'سجّل الدخول لمشاهدة توقعاتك وقراراتك ومحفظتك.',
+  'Admin': 'مدير',
+  'Approved member': 'عضو معتمَد',
+  'Approval pending': 'الموافقة معلّقة',
+  'Not approved': 'غير معتمَد',
+  'Verified': 'مُوثَّق',
+  'Journal entries': 'إدخالات السجل',
+  'Resolved calls': 'توقعات محسومة',
+  'My predictions': 'توقعاتي',
+  'Track paper positions': 'تتبّع المراكز الورقية',
+  'Get verified': 'احصل على توثيق',
+  'Request approved-member access for the full preview.': 'اطلب وصول عضو معتمَد للمعاينة الكاملة.',
+  'Request access': 'طلب الوصول',
+  'You have admin access.': 'لديك صلاحية الإدارة.',
+  'Open admin': 'فتح الإدارة',
+
+  // ── PremiumPage ──
+  'Preview pricing': 'أسعار المعاينة',
+  'Upgrade EquScore': 'ترقية EquScore',
+  'Everything is free during the preview. These are the plans we\'ll launch with — lock in early access by signing in now.':
+    'كل شيء مجاني أثناء المعاينة. هذه الخطط التي سنطلقها — احجز وصولًا مبكرًا بتسجيل الدخول الآن.',
+  'Most popular': 'الأكثر شعبية',
+  'forever': 'للأبد',
+  'SAR / month': 'ر.س / شهر',
+  'Current plan': 'الخطة الحالية',
+  'Start free preview': 'ابدأ المعاينة المجانية',
+  'Contact us': 'اتصل بنا',
+  'Signed in': 'تم تسجيل الدخول',
+  'Equity Star on every stock': 'نجمة السهم لكل سهم',
+  'Sharia screen': 'فرز الشريعة',
+  'Market & Explorer': 'السوق والمستكشف',
+  'Fear & Greed index': 'مؤشر الخوف والطمع',
+  'Contest + leaderboard': 'المسابقة + لوحة المتصدّرين',
+  'Everything in Free': 'كل ما في المجاني',
+  'AI Analysis on every stock': 'تحليل الذكاء الاصطناعي لكل سهم',
+  'Licensed SAHMK money flow': 'تدفق أموال SAHMK المرخّص',
+  'Efsah Flash full feed': 'تغذية إفصاح فلاش الكاملة',
+  'Model strategies & baskets': 'الاستراتيجيات والسلال النموذجية',
+  'Virtual portfolio tracking': 'تتبّع المحفظة الافتراضية',
+  'Anomaly alerts': 'تنبيهات الحالات الشاذة',
+  'Everything in Premium': 'كل ما في المميز',
+  'API access': 'وصول API',
+  'Analyst hit-rate weighting': 'ترجيح نسبة إصابة المحلل',
+  'Custom screeners & exports': 'فرز وتصدير مخصّص',
+  'Priority data refresh': 'تحديث بيانات أولوية',
+  'Billing isn\'t enabled yet — no card required during preview. Prices indicative.':
+    'الفوترة غير مفعّلة بعد — لا بطاقة مطلوبة أثناء المعاينة. الأسعار استرشادية.',
+
+  // ── MembershipPage ──
+  'The full preview is opened to approved members. Tell us who you are — we keep the community real.':
+    'المعاينة الكاملة مفتوحة للأعضاء المعتمَدين. أخبرنا من أنت — نحافظ على مجتمع حقيقي.',
+  'Sign in first, then request access.': 'سجّل الدخول أولًا، ثم اطلب الوصول.',
+  'Approved': 'معتمَد',
+  'Pending review': 'قيد المراجعة',
+  'You have full preview access. Welcome aboard.': 'لديك وصول كامل للمعاينة. أهلًا بك.',
+  'We are reviewing your request — you will get access once approved.': 'نحن نراجع طلبك — ستحصل على الوصول عند الاعتماد.',
+  'Your request was not approved. You can update your details and re-apply.': 'لم يُعتمَد طلبك. يمكنك تحديث بياناتك وإعادة التقديم.',
+  'Re-apply': 'إعادة التقديم',
+  'Full name *': 'الاسم الكامل *',
+  'LinkedIn (optional)': 'LinkedIn (اختياري)',
+  'Please enter your full name.': 'يرجى إدخال اسمك الكامل.',
 
   // ── generic ──
   'Back to market': 'العودة إلى السوق',

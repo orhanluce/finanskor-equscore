@@ -10,13 +10,13 @@ import ShareButtons from '@/components/ShareButtons.jsx';
 import { getStrategy } from '@/data/extras.js';
 import { STOCKS } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
-// Build a plausible monthly cumulative-return path that lands on the stated totals.
 function buildSeries(returnPct, benchPct, months = 18) {
   const pts = [];
   for (let i = 0; i <= months; i++) {
     const f = i / months;
-    const ease = f * f * (3 - 2 * f); // smoothstep
+    const ease = f * f * (3 - 2 * f);
     const wobble = Math.sin(i * 1.3) * (returnPct * 0.04);
     const wobbleB = Math.sin(i * 1.1) * (benchPct * 0.04);
     pts.push({
@@ -36,40 +36,40 @@ export default function StrategyDetailPage() {
   if (!st) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-24 text-center">
-        <h1 className="font-serif text-3xl font-bold">Strategy not found</h1>
-        <Link to="/strategies" className="mt-4 inline-block text-primary">← All strategies</Link>
+        <h1 className="font-serif text-3xl font-bold">{t('Strategy not found')}</h1>
+        <Link to="/strategies" className="mt-4 inline-block text-primary">← {t('All strategies')}</Link>
       </div>
     );
   }
 
-  const holdings = st.tickers.map((t) => STOCKS.find((s) => s.ticker === t)).filter(Boolean);
+  const holdings = st.tickers.map((tk) => STOCKS.find((s) => s.ticker === tk)).filter(Boolean);
   const alpha = st.returnPct - st.benchPct;
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
       <Link to="/strategies" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary">
-        <ArrowLeft className="h-4 w-4" /> Strategies
+        <ArrowLeft className="h-4 w-4" /> {t('Strategies')}
       </Link>
 
       <div className="mt-4 flex flex-wrap items-start justify-between gap-4">
         <div>
-          <Badge variant="muted">{st.theme}</Badge>
+          <Badge variant="muted">{t(st.theme)}</Badge>
           <h1 className="mt-2 font-serif text-4xl font-bold">{st.name}</h1>
           <p className="mt-2 max-w-2xl text-muted-foreground">{st.tagline}</p>
         </div>
-        <ShareButtons title={st.name} text={`${st.name} on EquScore — ${st.returnPct >= 0 ? '+' : ''}${st.returnPct}% since inception`} />
+        <ShareButtons title={st.name} text={`${st.name} on EquScore — ${st.returnPct >= 0 ? '+' : ''}${st.returnPct}%`} />
       </div>
 
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat value={`${st.returnPct >= 0 ? '+' : ''}${st.returnPct}%`} label="Return since inception" accent={st.returnPct >= 0 ? 'text-success' : 'text-destructive'} />
-        <Stat value={`${st.benchPct}%`} label="TASI benchmark" />
-        <Stat value={`${alpha >= 0 ? '+' : ''}${alpha.toFixed(1)}%`} label="Alpha" accent={alpha >= 0 ? 'text-success' : 'text-destructive'} />
-        <Stat value={holdings.length} label="Holdings" sub={`since ${st.inception}`} />
+        <Stat value={`${st.returnPct >= 0 ? '+' : ''}${st.returnPct}%`} label={t('Return since inception')} accent={st.returnPct >= 0 ? 'text-success' : 'text-destructive'} />
+        <Stat value={`${st.benchPct}%`} label={t('TASI benchmark')} />
+        <Stat value={`${alpha >= 0 ? '+' : ''}${alpha.toFixed(1)}%`} label={t('Alpha')} accent={alpha >= 0 ? 'text-success' : 'text-destructive'} />
+        <Stat value={holdings.length} label={t('Holdings')} sub={`since ${st.inception}`} />
       </div>
 
       <Card className="mt-6">
         <CardContent>
-          <h2 className="font-serif text-xl font-bold">Cumulative return vs TASI</h2>
+          <h2 className="font-serif text-xl font-bold">{t('Cumulative return vs TASI')}</h2>
           <ResponsiveContainer width="100%" height={280}>
             <LineChart data={series} margin={{ top: 10, right: 10, left: -10, bottom: 0 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
@@ -87,19 +87,19 @@ export default function StrategyDetailPage() {
       <Card className="mt-5">
         <CardContent>
           <div className="rounded-xl bg-muted/50 px-4 py-3 text-sm">
-            <span className="font-semibold text-foreground">Selection rule:</span> <span className="text-muted-foreground">{st.rule}</span>
+            <span className="font-semibold text-foreground">{t('Selection rule:')}</span> <span className="text-muted-foreground">{st.rule}</span>
           </div>
 
-          <h2 className="mt-5 font-serif text-xl font-bold">Holdings</h2>
+          <h2 className="mt-5 font-serif text-xl font-bold">{t('Holdings')}</h2>
           <div className="mt-3 overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border text-muted-foreground">
-                  <th className="px-3 py-2 text-left font-medium">Company</th>
-                  <th className="px-3 py-2 text-right font-medium">Star</th>
-                  <th className="px-3 py-2 text-right font-medium">Price</th>
-                  <th className="px-3 py-2 text-right font-medium">Today</th>
-                  <th className="px-3 py-2 text-left font-medium">Sharia</th>
+                  <th className="px-3 py-2 text-left font-medium">{t('Company')}</th>
+                  <th className="px-3 py-2 text-right font-medium">{t('Star')}</th>
+                  <th className="px-3 py-2 text-right font-medium">{t('Price')}</th>
+                  <th className="px-3 py-2 text-right font-medium">{t('Today')}</th>
+                  <th className="px-3 py-2 text-left font-medium">{t('Sharia')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -124,7 +124,7 @@ export default function StrategyDetailPage() {
       </Card>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        Illustrative back-test, equal-weight monthly rebalance, costs excluded. Past performance is not indicative of future results. Not investment advice.
+        {t('Illustrative back-test, equal-weight monthly rebalance, costs excluded. Past performance is not indicative of future results. Not investment advice.')}
       </p>
     </div>
   );

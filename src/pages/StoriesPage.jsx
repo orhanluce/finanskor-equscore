@@ -2,6 +2,7 @@ import React from 'react';
 import { BookOpen, Clock, ArrowRight } from 'lucide-react';
 import { Card, CardContent, Badge } from '@/components/ui.jsx';
 import { STORIES } from '@/data/extras.js';
+import { t } from '@/i18n.js';
 
 const TAG_VARIANT = {
   Guide: 'primary', Sharia: 'sharia', Behaviour: 'muted',
@@ -12,13 +13,12 @@ export default function StoriesPage() {
   const [featured, ...rest] = STORIES;
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="primary" className="mb-3">Investor education</Badge>
-      <h1 className="font-serif text-4xl font-bold">Stories</h1>
+      <Badge variant="primary" className="mb-3">{t('Investor education')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Stories')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Plain-English explainers on how to read EquScore and invest thoughtfully on Tadawul.
+        {t('Plain-English explainers on how to read EquScore and invest thoughtfully on Tadawul.')}
       </p>
 
-      {/* Featured */}
       <Card className="mt-8 overflow-hidden">
         <div className="grid md:grid-cols-2">
           <div className="bg-gradient-to-br from-primary/15 via-primary/5 to-transparent p-8 flex items-center justify-center">
@@ -29,14 +29,13 @@ export default function StoriesPage() {
             <h2 className="mt-3 font-serif text-2xl font-bold">{featured.title}</h2>
             <p className="mt-2 text-muted-foreground">{featured.excerpt}</p>
             <div className="mt-4 flex items-center gap-3 text-sm text-muted-foreground">
-              <span className="inline-flex items-center gap-1"><Clock className="h-4 w-4" /> {featured.minutes} min read</span>
-              <span className="inline-flex items-center gap-1 font-medium text-primary">Read <ArrowRight className="h-4 w-4" /></span>
+              <span className="inline-flex items-center gap-1"><Clock className="h-4 w-4" /> {featured.minutes} {t('min read')}</span>
+              <span className="inline-flex items-center gap-1 font-medium text-primary">{t('Read')} <ArrowRight className="h-4 w-4" /></span>
             </div>
           </CardContent>
         </div>
       </Card>
 
-      {/* Grid */}
       <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {rest.map((st) => (
           <Card key={st.slug} className="group h-full transition-shadow hover:shadow-md">
@@ -53,7 +52,7 @@ export default function StoriesPage() {
         ))}
       </div>
 
-      <p className="mt-6 text-xs text-muted-foreground">Educational content, not investment advice.</p>
+      <p className="mt-6 text-xs text-muted-foreground">{t('Educational content, not investment advice.')}</p>
     </div>
   );
 }

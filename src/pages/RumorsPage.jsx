@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Flame, AlertTriangle, Volume2 } from 'lucide-react';
+import { Flame, AlertTriangle } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
-import JargonTip from '@/components/JargonTip.jsx';
 import { STOCKS } from '@/data/stocks.js';
 import { socialFor } from '@/data/social.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const lvl = (s) => socialFor(s.ticker)?.level || s.rumor;
 
@@ -28,25 +28,24 @@ export default function RumorsPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="muted" className="mb-3">Heuristic · separate from the score</Badge>
-      <h1 className="font-serif text-4xl font-bold"><JargonTip term="Rumor thermometer">Rumor Thermometer</JargonTip></h1>
+      <Badge variant="muted" className="mb-3">{t('Heuristic · separate from the score')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Rumor Thermometer')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Volume and tone of social chatter per name. Heavily discussed stocks have historically faded — high heat alone is not a buy signal.
+        {t('Volume and tone of social chatter per name. Heavily discussed stocks have historically faded — high heat alone is not a buy signal.')}
       </p>
 
       <div className="mt-6 flex items-start gap-3 rounded-2xl border border-medal-bronze/30 bg-medal-bronze/5 p-4">
         <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-medal-bronze" />
         <p className="text-sm text-foreground/80">
-          <span className="font-semibold">Manipulation caution:</span> sudden chatter spikes on low-float names are a classic
-          pump pattern. This panel is deliberately kept out of the Equity Star score.
+          <span className="font-semibold">{t('Manipulation caution:')}</span> {t('sudden chatter spikes on low-float names are a classic pump pattern. This panel is deliberately kept out of the Equity Star score.')}
         </p>
       </div>
 
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat value={counts.danger} label="Dangerous" accent="text-destructive" />
-        <Stat value={counts.high} label="High" accent="text-medal-bronze" />
-        <Stat value={counts.medium} label="Medium" accent="text-primary" />
-        <Stat value={counts.low} label="Low / quiet" accent="text-success" />
+        <Stat value={counts.danger} label={t('Dangerous')} accent="text-destructive" />
+        <Stat value={counts.high} label={t('High')} accent="text-medal-bronze" />
+        <Stat value={counts.medium} label={t('Medium')} accent="text-primary" />
+        <Stat value={counts.low} label={t('Low / quiet')} accent="text-success" />
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -54,7 +53,7 @@ export default function RumorsPage() {
           <button key={id} onClick={() => setFilter(id)}
             className={cn('rounded-full px-4 py-1.5 text-sm font-medium capitalize transition-colors',
               filter === id ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-            {id === 'all' ? 'All' : LEVELS[id].label}
+            {id === 'all' ? t('All') : t(LEVELS[id].label)}
           </button>
         ))}
       </div>
@@ -78,10 +77,10 @@ export default function RumorsPage() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <Badge variant={lv.chip} className={level === 'high' ? 'text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10' : ''}>{lv.label}</Badge>
+                  <Badge variant={lv.chip} className={level === 'high' ? 'text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10' : ''}>{t(lv.label)}</Badge>
                   {soc ? <div className="mt-1 text-[11px] text-muted-foreground">𝕏 {soc.n} posts · {soc.mood}</div>
-                    : level === 'danger' ? <div className="mt-1 text-[11px] text-muted-foreground">historically a fade signal</div>
-                    : level === 'low' ? <div className="mt-1 text-[11px] text-muted-foreground">possibly overlooked</div> : null}
+                    : level === 'danger' ? <div className="mt-1 text-[11px] text-muted-foreground">{t('historically a fade signal')}</div>
+                    : level === 'low' ? <div className="mt-1 text-[11px] text-muted-foreground">{t('possibly overlooked')}</div> : null}
                 </div>
               </CardContent>
             </Card>
@@ -90,7 +89,7 @@ export default function RumorsPage() {
       </div>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        Live 𝕏 chatter (AR + EN), volume + tone, kept out of the score. Not a recommendation; deeper Arabic-NLP is a planned upgrade.
+        {t('Live 𝕏 chatter (AR + EN), volume + tone, kept out of the score. Not a recommendation; deeper Arabic-NLP is a planned upgrade.')}
       </p>
     </div>
   );

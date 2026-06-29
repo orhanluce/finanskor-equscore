@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { TrendingUp, TrendingDown, Activity, Minus } from 'lucide-react';
+import { TrendingUp, TrendingDown, Activity } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
-import JargonTip from '@/components/JargonTip.jsx';
 import { STOCKS, SECTORS } from '@/data/stocks.js';
-import { cn, pct } from '@/lib/utils.js';
+import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const avg = (arr) => (arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0);
 
@@ -47,8 +47,8 @@ export default function MoneyFlowPage() {
     return (
       <div className="mx-auto max-w-3xl px-4 py-24 text-center">
         <Activity className="mx-auto h-10 w-10 text-muted-foreground" />
-        <h1 className="mt-4 font-serif text-3xl font-bold">Money Flow</h1>
-        <p className="mt-2 text-muted-foreground">Licensed SAHMK flow data isn't loaded yet. Run the fetch pipeline to populate it.</p>
+        <h1 className="mt-4 font-serif text-3xl font-bold">{t('Money Flow')}</h1>
+        <p className="mt-2 text-muted-foreground">{t("Licensed SAHMK flow data isn't loaded yet. Run the fetch pipeline to populate it.")}</p>
       </div>
     );
   }
@@ -56,28 +56,28 @@ export default function MoneyFlowPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <Badge variant="success" className="mb-3">SAHMK · Tadawul-licensed</Badge>
-      <h1 className="font-serif text-4xl font-bold"><JargonTip term="Foreign flow">Money Flow</JargonTip></h1>
+      <h1 className="font-serif text-4xl font-bold">{t('Money Flow')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Real net intraday money flow — buy-side minus sell-side value traded — for the most liquid TASI names.
+        {t('Real net intraday money flow — buy-side minus sell-side value traded — for the most liquid TASI names.')}
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <Stat value={withFlow.length} label="Names with licensed flow" />
-        <Stat value={`${breadthIn}/${withFlow.length}`} label="Net inflow today" accent="text-success" />
-        <Stat value={`${sorted[0].netFlowPct >= 0 ? '+' : ''}${sorted[0].netFlowPct}%`} label={`Top inflow · ${sorted[0].ticker}`} accent="text-success" />
-        <Stat value={`${sorted[sorted.length - 1].netFlowPct}%`} label={`Top outflow · ${sorted[sorted.length - 1].ticker}`} accent="text-destructive" />
+        <Stat value={withFlow.length} label={t('Names with licensed flow')} />
+        <Stat value={`${breadthIn}/${withFlow.length}`} label={t('Net inflow today')} accent="text-success" />
+        <Stat value={`${sorted[0].netFlowPct >= 0 ? '+' : ''}${sorted[0].netFlowPct}%`} label={`${t('Top inflow ·')} ${sorted[0].ticker}`} accent="text-success" />
+        <Stat value={`${sorted[sorted.length - 1].netFlowPct}%`} label={`${t('Top outflow ·')} ${sorted[sorted.length - 1].ticker}`} accent="text-destructive" />
       </div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-2">
         <Card>
           <CardContent>
-            <div className="flex items-center gap-2"><TrendingUp className="h-5 w-5 text-success" /><h2 className="font-serif text-xl font-bold">Strongest inflows</h2></div>
+            <div className="flex items-center gap-2"><TrendingUp className="h-5 w-5 text-success" /><h2 className="font-serif text-xl font-bold">{t('Strongest inflows')}</h2></div>
             <div className="mt-3 divide-y divide-border">{inflows.map((s) => <FlowRow key={s.ticker} s={s} />)}</div>
           </CardContent>
         </Card>
         <Card>
           <CardContent>
-            <div className="flex items-center gap-2"><TrendingDown className="h-5 w-5 text-destructive" /><h2 className="font-serif text-xl font-bold">Strongest outflows</h2></div>
+            <div className="flex items-center gap-2"><TrendingDown className="h-5 w-5 text-destructive" /><h2 className="font-serif text-xl font-bold">{t('Strongest outflows')}</h2></div>
             <div className="mt-3 divide-y divide-border">{outflows.map((s) => <FlowRow key={s.ticker} s={s} />)}</div>
           </CardContent>
         </Card>
@@ -85,8 +85,8 @@ export default function MoneyFlowPage() {
 
       <Card className="mt-5">
         <CardContent>
-          <h2 className="font-serif text-xl font-bold">Sector flow</h2>
-          <p className="mt-1 text-xs text-muted-foreground">Average net flow across covered names in each sector.</p>
+          <h2 className="font-serif text-xl font-bold">{t('Sector flow')}</h2>
+          <p className="mt-1 text-xs text-muted-foreground">{t('Average net flow across covered names in each sector.')}</p>
           <div className="mt-4 space-y-2.5">
             {sectorFlow.map((x) => {
               const pos = x.value >= 0;
@@ -109,8 +109,7 @@ export default function MoneyFlowPage() {
       </Card>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        On Tadawul institutions trade on value while retail (≈90% of volume) chases attention — sustained net inflow into a name
-        is a smart-money signal, not a guarantee. Informational only.
+        {t('On Tadawul institutions trade on value while retail (≈90% of volume) chases attention — sustained net inflow into a name is a smart-money signal, not a guarantee. Informational only.')}
       </p>
     </div>
   );

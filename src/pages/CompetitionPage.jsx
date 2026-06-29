@@ -5,6 +5,7 @@ import { Card, CardContent, Badge, Button, Stat } from '@/components/ui.jsx';
 import { getLeaderboard } from '@/lib/db.js';
 import { CONTEST } from '@/data/community.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const PERIODS = [
   { id: 'monthly', label: 'Monthly Cup', window: CONTEST.monthly, prize: '🥇 Featured + verified badge', desc: 'Resets on the 1st. Best hit-rate over locked calls this month.' },
@@ -29,10 +30,10 @@ export default function CompetitionPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="muted" className="mb-3">Accountability arena</Badge>
-      <h1 className="font-serif text-4xl font-bold">Competitions</h1>
+      <Badge variant="muted" className="mb-3">{t('Accountability arena')}</Badge>
+      <h1 className="font-serif text-4xl font-bold">{t('Competitions')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Analysts, the crowd and AI compete in the same league. Every call is locked with a server-side timestamp and graded against realised price.
+        {t('Analysts, the crowd and AI compete in the same league. Every call is locked with a server-side timestamp and graded against realised price.')}
       </p>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -40,23 +41,23 @@ export default function CompetitionPage() {
           <button key={p.id} onClick={() => setPeriod(p.id)}
             className={cn('rounded-full px-4 py-1.5 text-sm font-medium transition-colors',
               period === p.id ? 'bg-foreground text-background' : 'bg-muted text-muted-foreground hover:text-foreground')}>
-            {p.label}
+            {t(p.label)}
           </button>
         ))}
       </div>
 
       <Card className="mt-4 border-primary/30 bg-primary/5">
         <CardContent className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <div className="flex items-center gap-2"><CalendarDays className="h-5 w-5 text-primary" /><span className="font-semibold">{cur.label}</span><span className="text-sm text-muted-foreground">· {cur.window}</span></div>
+          <div className="flex items-center gap-2"><CalendarDays className="h-5 w-5 text-primary" /><span className="font-semibold">{t(cur.label)}</span><span className="text-sm text-muted-foreground">· {cur.window}</span></div>
           <span className="text-sm text-muted-foreground">{cur.desc}</span>
           <span className="ml-auto text-sm font-medium text-primary">{cur.prize}</span>
         </CardContent>
       </Card>
 
       <div className="mt-6 grid grid-cols-3 gap-3">
-        <Stat value={rows.length} label="Competitors" />
-        <Stat value={rows[0]?.hitRate ? `${rows[0].hitRate}%` : '—'} label="Top hit rate" accent="text-success" />
-        <Stat value={live ? 'Live' : 'Sample'} label="Data" accent={live ? 'text-success' : 'text-muted-foreground'} />
+        <Stat value={rows.length} label={t('Competitors')} />
+        <Stat value={rows[0]?.hitRate ? `${rows[0].hitRate}%` : '—'} label={t('Top hit rate')} accent="text-success" />
+        <Stat value={live ? t('Live') : t('Sample')} label={t('Data')} accent={live ? 'text-success' : 'text-muted-foreground'} />
       </div>
 
       <Card className="mt-6 overflow-hidden">
@@ -68,10 +69,10 @@ export default function CompetitionPage() {
               <thead>
                 <tr className="border-b border-border bg-muted/40 text-muted-foreground">
                   <th className="px-4 py-2.5 text-left font-medium">#</th>
-                  <th className="px-4 py-2.5 text-left font-medium">Competitor</th>
-                  <th className="px-4 py-2.5 text-left font-medium">Type</th>
-                  <th className="px-4 py-2.5 text-right font-medium">Calls</th>
-                  <th className="px-4 py-2.5 text-right font-medium">Hit rate</th>
+                  <th className="px-4 py-2.5 text-left font-medium">{t('Competitor')}</th>
+                  <th className="px-4 py-2.5 text-left font-medium">{t('Type')}</th>
+                  <th className="px-4 py-2.5 text-right font-medium">{t('Calls')}</th>
+                  <th className="px-4 py-2.5 text-right font-medium">{t('Hit rate')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -94,7 +95,7 @@ export default function CompetitionPage() {
 
       <div className="mt-6 flex items-center justify-between rounded-2xl border border-border bg-card p-4">
         <div className="flex items-center gap-2 text-sm text-muted-foreground"><Lock className="h-4 w-4" /> {CONTEST.note}</div>
-        <Button as={Link} to="/predict" variant="accent" className="shrink-0">Make a call</Button>
+        <Button as={Link} to="/predict" variant="accent" className="shrink-0">{t('Make a call')}</Button>
       </div>
     </div>
   );
