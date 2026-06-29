@@ -55,7 +55,7 @@ export default function MarketPage() {
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <input
             type="search" value={q} onChange={(e) => setQ(e.target.value)}
-            placeholder="Search ticker or company…" className="w-full pl-9"
+            placeholder="Search ticker or company…" className="w-full !pl-9"
           />
         </div>
         <div className="flex flex-wrap items-center gap-2">

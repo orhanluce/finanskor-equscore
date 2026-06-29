@@ -8,6 +8,7 @@ import { Card, CardContent, Badge } from '@/components/ui.jsx';
 import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
 import EquityStarFull from '@/components/EquityStarFull.jsx';
 import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
+import ShareButtons from '@/components/ShareButtons.jsx';
 import NEWS from '@/data/news_live.json';
 import { getStock } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
@@ -125,6 +126,7 @@ export default function StockDetailPage() {
       </div>
 
       <p className="mt-4 max-w-3xl text-muted-foreground">{s.about}</p>
+      <div className="mt-4"><ShareButtons title={`${s.ticker} — ${s.name}`} text={`${s.name} (${s.ticker}) scores ${s.total}/42 on EquScore`} /></div>
 
       <div className="mt-8 grid gap-5 lg:grid-cols-3">
         {/* Interactive Equity Star + Intelligence Cube (full width) */}

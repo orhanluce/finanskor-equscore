@@ -28,7 +28,7 @@ function Picker({ onPick, exclude }) {
       <div className="relative">
         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
         <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Add a stock…"
-          className="w-full rounded-full border border-border bg-card pl-9 h-9 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
+          className="w-full rounded-full border border-border bg-card !pl-9 h-9 text-sm focus:outline-none focus:ring-1 focus:ring-primary" />
       </div>
       <div className="mt-2 space-y-1">
         {results.map((s) => (

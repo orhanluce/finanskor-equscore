@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { TrendingUp } from 'lucide-react';
+import ShareButtons from '@/components/ShareButtons.jsx';
 
 export default function Footer() {
   return (
@@ -9,15 +9,13 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <TrendingUp className="h-5 w-5" />
-              </span>
-              <span className="font-serif text-xl font-bold">EquScore</span>
+              <img src="/logo.png" alt="EquScore" className="h-9 w-auto rounded-md bg-white/95 p-1" />
             </div>
             <p className="mt-3 max-w-sm text-sm text-background/70">
               The accountability & trust layer for Gulf equity markets. Score the analysts,
               screen for Sharia, follow the smart money — starting with Tadawul.
             </p>
+            <div className="mt-4"><ShareButtons title="EquScore" text="EquScore — accountability & Sharia scoring for Tadawul" /></div>
           </div>
           <div>
             <div className="text-sm font-semibold text-background">Product</div>

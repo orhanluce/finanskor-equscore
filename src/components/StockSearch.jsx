@@ -55,7 +55,7 @@ export default function StockSearch({ compact = false }) {
         onFocus={() => setOpen(true)}
         onKeyDown={onKey}
         placeholder="Search ticker or company…"
-        className="w-full rounded-full border border-border bg-card pl-9 pr-8 h-9 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+        className="w-full rounded-full border border-border bg-card !pl-9 !pr-8 h-9 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
         aria-label="Search stocks"
       />
       {q && (
