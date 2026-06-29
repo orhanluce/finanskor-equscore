@@ -38,8 +38,11 @@ const MENUS = [
     label: 'Compete',
     items: [
       { to: '/predict', label: 'Contest', desc: 'Submit a prediction' },
+      { to: '/competition', label: 'Competitions', desc: 'Monthly & quarterly' },
       { to: '/leaderboard', label: 'Leaderboard', desc: 'Top forecasters' },
       { to: '/journal', label: 'Journal', desc: 'Decision mirror' },
+      { to: '/portfolio', label: 'Virtual Portfolio', desc: 'Paper-trade tracking' },
+      { to: '/investors', label: 'Verified Investors', desc: 'Identity-checked wall' },
     ],
   },
 ];
@@ -109,9 +112,9 @@ export default function Header() {
           <div className="hidden md:block"><StockSearch /></div>
           {hasAuth && (user ? (
             <div className="hidden sm:flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium">
+              <Link to="/account" className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium hover:border-primary/40">
                 <User className="h-3.5 w-3.5 text-primary" /> {user.username}
-              </span>
+              </Link>
               <button onClick={signOut} title="Sign out" className="p-1.5 text-muted-foreground hover:text-foreground">
                 <LogOut className="h-4 w-4" />
               </button>
@@ -149,7 +152,10 @@ export default function Header() {
           {hasAuth && (
             <div className="border-t border-border pt-2 mt-2">
               {user ? (
-                <button onClick={() => { signOut(); setOpen(false); }} className="block w-full text-left rounded-lg px-3 py-2 text-sm text-foreground/80">Sign out ({user.username})</button>
+                <>
+                  <NavLink to="/account" onClick={() => setOpen(false)} className="block rounded-lg px-3 py-2 text-sm text-foreground/80">My account ({user.username})</NavLink>
+                  <button onClick={() => { signOut(); setOpen(false); }} className="block w-full text-left rounded-lg px-3 py-2 text-sm text-foreground/80">Sign out</button>
+                </>
               ) : (
                 <button onClick={() => { openAuth(); setOpen(false); }} className="block w-full text-left rounded-lg px-3 py-2 text-sm font-medium text-primary">Sign in</button>
               )}

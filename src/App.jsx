@@ -23,6 +23,14 @@ import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
 import BasketsPage from '@/pages/BasketsPage.jsx';
 import BrokersPage from '@/pages/BrokersPage.jsx';
 import StoriesPage from '@/pages/StoriesPage.jsx';
+import AccountPage from '@/pages/AccountPage.jsx';
+import PortfolioPage from '@/pages/PortfolioPage.jsx';
+import CompetitionPage from '@/pages/CompetitionPage.jsx';
+import PremiumPage from '@/pages/PremiumPage.jsx';
+import MembershipPage from '@/pages/MembershipPage.jsx';
+import VerifyPage from '@/pages/VerifyPage.jsx';
+import InvestorsPage from '@/pages/InvestorsPage.jsx';
+import AdminPage from '@/pages/AdminPage.jsx';
 
 export default function App() {
   return (
@@ -48,7 +56,15 @@ export default function App() {
         <Route path="/predict" element={<PredictPage />} />
         <Route path="/journal" element={<JournalPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
+        <Route path="/competition" element={<CompetitionPage />} />
         <Route path="/methodology" element={<MethodologyPage />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/premium" element={<PremiumPage />} />
+        <Route path="/membership" element={<MembershipPage />} />
+        <Route path="/verify" element={<VerifyPage />} />
+        <Route path="/investors" element={<InvestorsPage />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

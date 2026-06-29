@@ -5,6 +5,10 @@ import {
 } from 'lucide-react';
 import WebGLHero from '@/components/WebGLHero.jsx';
 import StockCard from '@/components/StockCard.jsx';
+import MacroStrip from '@/components/MacroStrip.jsx';
+import MarketPulse from '@/components/MarketPulse.jsx';
+import SectorMomentum from '@/components/SectorMomentum.jsx';
+import EvidenceCorner from '@/components/EvidenceCorner.jsx';
 import { Button, Badge, Stat } from '@/components/ui.jsx';
 import { STOCKS } from '@/data/stocks.js';
 import { LEADERBOARD } from '@/data/community.js';
@@ -79,6 +83,20 @@ export default function HomePage() {
           <Stat value="7" label="Equity Star dimensions" accent="text-foreground" />
           <Stat value="AAOIFI" label="Sharia screen standard" accent="text-sharia" />
           <Stat value="USD-peg" label="No inflation lens needed" accent="text-teal" />
+        </div>
+      </section>
+
+      {/* MARKET TODAY — live dashboard */}
+      <section className="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
+        <div className="max-w-2xl">
+          <Badge variant="muted" className="mb-3">Market today</Badge>
+          <h2 className="font-serif text-3xl font-bold md:text-4xl">The whole board, at a glance.</h2>
+        </div>
+        <div className="mt-6"><MacroStrip /></div>
+        <div className="mt-5 grid gap-5 lg:grid-cols-3">
+          <MarketPulse />
+          <SectorMomentum />
+          <EvidenceCorner />
         </div>
       </section>
 

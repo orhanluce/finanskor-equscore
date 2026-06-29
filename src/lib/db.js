@@ -142,4 +142,101 @@ export function computeBiases(decisions, stockByTicker = {}) {
   return out;
 }
 
+// ── Virtual Portfolio ─────────────────────────────────────────────────
+export async function getPortfolio(userId) {
+  if (!HAS_SUPABASE || !userId) return [];
+  const { data, error } = await supabase
+    .from('portfolio')
+    .select('id, ticker, shares, buy_price, created_at')
+    .eq('user_id', userId)
+    .order('created_at', { ascending: false });
+  if (error) throw error;
+  return data || [];
+}
+export async function addHolding({ user, ticker, shares, buyPrice }) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('portfolio').insert({
+    user_id: user.id, ticker, shares: Number(shares), buy_price: Number(buyPrice),
+  });
+  if (error) throw error;
+}
+export async function removeHolding(id) {
+  if (!HAS_SUPABASE) return;
+  const { error } = await supabase.from('portfolio').delete().eq('id', id);
+  if (error) throw error;
+}
+
+// ── Membership (admin-approved access) ────────────────────────────────
+export async function getMembership(userId) {
+  if (!HAS_SUPABASE || !userId) return null;
+  const { data, error } = await supabase
+    .from('memberships').select('status, requested_at, reviewed_at').eq('user_id', userId).maybeSingle();
+  if (error) { console.warn('getMembership', error.message); return null; }
+  return data;
+}
+export async function requestMembership({ user, fullName, linkedin }) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('memberships').upsert({
+    user_id: user.id, email: user.email, full_name: fullName, linkedin, status: 'pending',
+    requested_at: new Date().toISOString(),
+  });
+  if (error) throw error;
+}
+export async function getMemberships(status = 'pending') {
+  if (!HAS_SUPABASE) return [];
+  let q = supabase.from('memberships').select('user_id, email, full_name, linkedin, status, requested_at');
+  if (status !== 'all') q = q.eq('status', status);
+  const { data, error } = await q.order('requested_at', { ascending: false });
+  if (error) { console.warn('getMemberships', error.message); return []; }
+  return data || [];
+}
+export async function reviewMembership(userId, status) {
+  if (!HAS_SUPABASE) return;
+  const { error } = await supabase.from('memberships')
+    .update({ status, reviewed_at: new Date().toISOString() }).eq('user_id', userId);
+  if (error) throw error;
+}
+
+// ── Verification (VerifOK) ────────────────────────────────────────────
+export async function getMyVerification(userId) {
+  if (!HAS_SUPABASE || !userId) return null;
+  const { data, error } = await supabase
+    .from('verifications').select('display_name, handle, statement, status').eq('user_id', userId).maybeSingle();
+  if (error) { console.warn('getMyVerification', error.message); return null; }
+  return data;
+}
+export async function requestVerification({ user, displayName, handle, statement }) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('verifications').upsert({
+    user_id: user.id, display_name: displayName, handle, statement, status: 'pending',
+  });
+  if (error) throw error;
+}
+export async function getVerifiedInvestors() {
+  if (!HAS_SUPABASE) return [];
+  const { data, error } = await supabase
+    .from('verifications').select('display_name, handle, statement, status').eq('status', 'approved');
+  if (error) { console.warn('getVerifiedInvestors', error.message); return []; }
+  return data || [];
+}
+export async function getVerifications(status = 'pending') {
+  if (!HAS_SUPABASE) return [];
+  let q = supabase.from('verifications').select('user_id, display_name, handle, statement, status');
+  if (status !== 'all') q = q.eq('status', status);
+  const { data, error } = await q;
+  if (error) { console.warn('getVerifications', error.message); return []; }
+  return data || [];
+}
+export async function reviewVerification(userId, status) {
+  if (!HAS_SUPABASE) return;
+  const { error } = await supabase.from('verifications').update({ status }).eq('user_id', userId);
+  if (error) throw error;
+}
+
+// Admin check (client-side mirror of the SQL is_admin allowlist)
+export const ADMIN_EMAILS = ['orhhanisik@gmail.com'];
+export function isAdmin(user) {
+  return !!user && ADMIN_EMAILS.includes(user.email);
+}
+
 export { currentPeriod };
