@@ -1,0 +1,33 @@
+# EquScore — Rumor Thermometer için izlenecek Telegram kanalları (ülke bölümlü).
+# discover_telegram.py ile bulundu, abone sayısı + finans-alaka ile süzüldü.
+# SADECE public BROADCAST (📢) kanallar okunabilir (gruplar 👥 üyelik ister, atlandı).
+# Kalite = sentiment kalitesi; spam/kripto/alakasız kanallar dahil edilmedi.
+
+[SA]
+@tadawularabss
+@sisor99
+@sisor6
+@naf_alert
+@sultanksaa
+@Naranj_KSA
+@elmajdstocks
+@BPTsaudi
+@tasimoneymap
+@DTA_KSA
+
+[AE]
+@UAE_Stocksfx
+@uaedfm
+@DFMGI
+@ssharjah
+@uae_stock_market
+
+[EG]
+@nourabdalwahab2
+@SOM3AEG
+@egx_professinals
+@EgyptianStockk
+@QTRADE_EGY
+@egstocks
+@masregyp
+@stocksgoldegypt
