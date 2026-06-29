@@ -1,4 +1,36 @@
 {
+ "2222": {
+  "items": [
+   {
+    "title": "Qassim Cement projects increase in total costs following notification from Aramco",
+    "url": "https://english.mubasher.info/news/4632273/Qassim-Cement-projects-increase-in-total-costs-following-notification-from-Aramco",
+    "date": "2026-06-25T12:39:05.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "CMA nods for Arabian Pipes’ capital hike via bonus shares",
+    "url": "https://english.mubasher.info/news/4625906/CMA-nods-for-Arabian-Pipes-capital-hike-via-bonus-shares",
+    "date": "2026-06-11T15:56:11.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Saudi Aramco shareholders review 2025 performance, strategic initiatives",
+    "url": "https://english.mubasher.info/news/4625689/Saudi-Aramco-shareholders-review-2025-performance-strategic-initiatives",
+    "date": "2026-06-11T11:10:07.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "marketaux"
+  }
+ },
  "1120": {
   "items": [
    {
@@ -84,6 +116,38 @@
     "url": "https://www.benzinga.com/25/05/45437126/us-and-saudi-arabia-deepen-critical-minerals-ties-with-rare-earth-agreement",
     "date": "2025-05-15T13:28:22.000000Z",
     "source": "benzinga.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "7010": {
+  "items": [
+   {
+    "title": "stc extends MoU agreement with HUMAIN for AI joint venture",
+    "url": "https://english.mubasher.info/news/4628815/stc-extends-MoU-agreement-with-HUMAIN-for-AI-joint-venture",
+    "date": "2026-06-18T11:42:56.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Multi Business Group reveals update on contract with stc",
+    "url": "https://english.mubasher.info/news/4621637/Multi-Business-Group-reveals-update-on-contract-with-stc",
+    "date": "2026-06-03T17:07:38.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Multi Business Group Co. Announces an update on Multi Business Group Co. Announces Contract Sign-Off with Saudi Telecom Company",
+    "url": "https://english.mubasher.info/news/4621182/Multi-Business-Group-Co-Announces-an-update-on-Multi-Business-Group-Co-Announces-Contract-Sign-Off-with-Saudi-Telecom-Company",
+    "date": "2026-06-03T05:18:44.000000Z",
+    "source": "english.mubasher.info",
     "sentiment": "positive"
    }
   ],
@@ -212,6 +276,70 @@
    "src": "marketaux"
   }
  },
+ "5110": {
+  "items": [
+   {
+    "title": "Ladun signs framework agreement for Al Khalidiyah project in Makkah",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1915229",
+    "date": "2026-06-24T18:27:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Ladun Investment Company Announces the Signing of the Framework Agreement for the Al Khalidiyah Informal Area Development Project in Makkah with the Royal Commission for Makkah City and Holy Sites.",
+    "url": "https://english.mubasher.info/news/4631621/Ladun-Investment-Company-Announces-the-Signing-of-the-Framework-Agreement-for-the-Al-Khalidiyah-Informal-Area-Development-Project-in-Makkah-with-the-Royal-Commission-for-Makkah-City-and-Holy-Sites-",
+    "date": "2026-06-24T12:53:29.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Ladun discloses nearly SAR 327m infrastructure contract",
+    "url": "https://english.mubasher.info/news/4631438/Ladun-discloses-nearly-SAR-327m-infrastructure-contract",
+    "date": "2026-06-24T09:47:18.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "4013": {
+  "items": [
+   {
+    "title": "Dr. Sulaiman Al Habib Medical Services Group Announces the Results of the Ordinary General Assembly Meeting (First Meeting)",
+    "url": "https://english.mubasher.info/news/4603265/Dr-Sulaiman-Al-Habib-Medical-Services-Group-Announces-the-Results-of-the-Ordinary-General-Assembly-Meeting-First-Meeting-",
+    "date": "2026-04-29T05:02:08.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "TASI: 4 stocks have their ex-date today",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1881792",
+    "date": "2026-02-19T10:14:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Al Mawarid Q4 2025 earnings: What to expect",
+    "url": "https://www.argaam.com/en/reports/quarterly-overview-report-other/56171?preview=true",
+    "date": "2026-02-17T13:37:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
  "1150": {
   "items": [
    {
@@ -308,6 +436,59 @@
    "src": "marketaux"
   }
  },
+ "7203": {
+  "items": [
+   {
+    "title": "Saudi Fintech, Cloud Services Drive Technology Sector Profit Boom - Asharq Al-Awsat English",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWmJKLUpmcEEyaUxja2kyQXNJTG02Q1diYjV4S3lzVG5pUGNya2xiZ3dxSWxYT05SR2hpMXlwRmtMQ1hSSlJXOTlZUzBpam05dHpYdE1tN29TckJtdllCZERDbUl4SHZLLWEtSS1QMmZqdG9SYTRMNXltRFZ1SkxHaG9OaXlNVnlwdExjSU9pOXdZTHgzZ0ZVX0VGTGR1QTlEckNzbVdoMUVEb2Y2?oc=5",
+    "date": "Fri, 29 May 2026 07:00:00 GMT",
+    "source": "Asharq Al-Awsat English",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Elm Co Stock Price and Chart — TADAWUL:7203 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1FM1VQTnk1aXFQZjM0S3JoS2Z2bVBpV3FFdWRCaXRFSnlfVUYyZHBjRzZINE9rUFJvS2hlVzY1MUNqZ0VqRzBfSzkzTGs1MkJUbnI5WU9SUGUwQldGeVE?oc=5",
+    "date": "Sun, 20 Feb 2022 18:28:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "MIS signs 2 contracts worth SAR 190.9M with Health Ministry, Elm - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oWi1WU3BWWHRoVEZGNzl1S2RoaUJXNjByOXBXeHJjNzBhQTY1c3p0WHo5ZGlud1FRdDF5Nl9hcW5GbzIxREkwUTZuY2hVSHVUN195amxzQU9VYTJJaHBfVFVMWDZYNXFNREE?oc=5",
+    "date": "Mon, 01 Sep 2025 07:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "PIF-owned Elm’s stock slips despite 59% profit surge in H1 - Arab News",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBHMVZCQWFkLWpGc3V6SmlJZ0hNY1ZJWUtLSW5wWXJiRTdJYjV6ekd2dXJfSHFCNlZNeHkzeDdLMGtYemJTaEVmTXNDSlgxcC1OSFp2Z01vY1I4UWYzZ0FILVZveDU?oc=5",
+    "date": "Sun, 07 Aug 2022 07:00:00 GMT",
+    "source": "Arab News",
+    "sentiment": "positive"
+   },
+   {
+    "title": "PIF’s digital security firm Elm wins $55m contract from the Ministry of Interior - Arab News",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5pRW42bmRnRzJsbUZPYk56Q19Eb0xwR256RVNxMVBGRGdnWTA2UEdMaWRrc0ljcEFVYXRENF9qNXVOV19YSE5saFF3RHlRSWJPUGQxVl9JSzh2dXFDYU85VWtzYVA?oc=5",
+    "date": "Tue, 15 Nov 2022 08:00:00 GMT",
+    "source": "Arab News",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Retail subscription for Elm IPO starts today - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKSTZRcENBOW9NQUFuaV96ZHdlSkMxbkFiYl9kak5yUmlPYlY2akR6YklMQTlwY1NQYUJSbXhpTEFDOExPWU5CamdFQW1GWVU0bmE5ZXJzZjVaUUlHbVBIdzFVQjFPSUJkV3c?oc=5",
+    "date": "Thu, 03 Feb 2022 08:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
  "1050": {
   "items": [
    {
@@ -328,6 +509,102 @@
     "title": "Lana Company announces the resignation and appointment of a member of the Audit Committee",
     "url": "https://english.mubasher.info/news/4631982/Lana-Company-announces-the-resignation-and-appointment-of-a-member-of-the-Audit-Committee",
     "date": "2026-06-25T05:56:00.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "7020": {
+  "items": [
+   {
+    "title": "Mobily shareholders authorize board to distribute interim dividends for 2026",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1909121",
+    "date": "2026-05-31T12:11:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Mobily, Ericsson collaborate for 20 years during Hajj season",
+    "url": "https://english.mubasher.info/news/4619339/Mobily-Ericsson-collaborate-for-20-years-during-Hajj-season",
+    "date": "2026-05-28T14:33:39.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Mobily’s net profits jump 15% in Q1-26 initial results",
+    "url": "https://english.mubasher.info/news/4600492/Mobily-s-net-profits-jump-15-in-Q1-26-initial-results",
+    "date": "2026-04-23T19:31:34.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "2280": {
+  "items": [
+   {
+    "title": "Addendum announcement from Alshehili Metal Industries Company regarding the receipt of a purchase order from Almarai Company in the amount of SAR 11,785,256 (excluding VAT)",
+    "url": "https://english.mubasher.info/news/4632788/Addendum-announcement-from-Alshehili-Metal-Industries-Company-regarding-the-receipt-of-a-purchase-order-from-Almarai-Company-in-the-amount-of-SAR-11-785-256-excluding-VAT-",
+    "date": "2026-06-28T05:28:07.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Alshehili shareholders approve financial statements, contracts",
+    "url": "https://english.mubasher.info/news/4630672/Alshehili-shareholders-approve-financial-statements-contracts",
+    "date": "2026-06-23T08:04:49.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Alshehili receives SAR 11.8M purchase order from Almarai to manufacture refrigerated trailers",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1914325",
+    "date": "2026-06-22T09:35:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "4280": {
+  "items": [
+   {
+    "title": "Kingdom Holding’s board approves cash dividends for H1-26",
+    "url": "https://english.mubasher.info/news/4629889/Kingdom-Holding-s-board-approves-cash-dividends-for-H1-26",
+    "date": "2026-06-22T05:31:33.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "KHC says fair value of SpaceX stake nears $6.83B",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1912414",
+    "date": "2026-06-14T10:07:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Kingdom Holding Company announces the latest development on its investment in SpaceX",
+    "url": "https://english.mubasher.info/news/4626284/Kingdom-Holding-Company-announces-the-latest-development-on-its-investment-in-SpaceX",
+    "date": "2026-06-14T05:29:42.000000Z",
     "source": "english.mubasher.info",
     "sentiment": "neutral"
    }
@@ -361,6 +638,13 @@
  "1140": {
   "items": [
    {
+    "title": "TASI falls to lowest level in 3 months",
+    "url": "https://www.argaam.com/en/market-daily-report/3/59409?preview=true",
+    "date": "2026-06-29T11:28:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
     "title": "Makkah Construction forms Audit Committee for upcoming board term",
     "url": "https://english.mubasher.info/news/4629019/Makkah-Construction-forms-Audit-Committee-for-upcoming-board-term",
     "date": "2026-06-18T20:13:34.000000Z",
@@ -373,13 +657,559 @@
     "date": "2026-06-15T17:39:00.000000Z",
     "source": "argaam.com",
     "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "marketaux"
+  }
+ },
+ "4030": {
+  "items": [
+   {
+    "title": "Bahri shareholders approve nearly SAR 923m dividends, major transactions",
+    "url": "https://english.mubasher.info/news/4625876/Bahri-shareholders-approve-nearly-SAR-923m-dividends-major-transactions",
+    "date": "2026-06-11T14:25:07.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
    },
    {
-    "title": "Bank Albilad sees negotiated deal worth SAR 7.3M",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1907455",
-    "date": "2026-05-20T11:40:00.000000Z",
+    "title": "The National Shipping Company of Saudi Arabia (Bahri) Announces the Results of the Ordinary General Assembly Meeting (First meeting)",
+    "url": "https://english.mubasher.info/news/4625395/The-National-Shipping-Company-of-Saudi-Arabia-Bahri-Announces-the-Results-of-the-Ordinary-General-Assembly-Meeting-First-meeting-",
+    "date": "2026-06-11T05:00:33.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "The National Shipping Company of Saudi Arabia (Bahri) Board invites its shareholders to attend the Ordinary General Assembly meeting (First meeting)",
+    "url": "https://english.mubasher.info/news/4615536/The-National-Shipping-Company-of-Saudi-Arabia-Bahri-Board-invites-its-shareholders-to-attend-the-Ordinary-General-Assembly-meeting-First-meeting-",
+    "date": "2026-05-19T05:45:55.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "2380": {
+  "items": [
+   {
+    "title": "TASI: Petro Rabigh, Bahri notch 52-week highs",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1900137",
+    "date": "2026-04-28T11:23:00.000000Z",
     "source": "argaam.com",
     "sentiment": "positive"
+   },
+   {
+    "title": "Petro Rabigh’s accumulated losses hit SAR 2.4bn at end-March 2026",
+    "url": "https://english.mubasher.info/news/4601721/Petro-Rabigh-s-accumulated-losses-hit-SAR-2-4bn-at-end-March-2026",
+    "date": "2026-04-27T08:32:54.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "negative"
+   },
+   {
+    "title": "Petro Rabigh turns profitable at SAR 1.4bn amid 32% higher revenue in Q1-26",
+    "url": "https://english.mubasher.info/news/4601111/Petro-Rabigh-turns-profitable-at-SAR-1-4bn-amid-32-higher-revenue-in-Q1-26",
+    "date": "2026-04-26T09:32:06.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 1,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "8210": {
+  "items": [
+   {
+    "title": "Bupa Arabia commences e-voting for end-June EGM",
+    "url": "https://english.mubasher.info/news/4632950/Bupa-Arabia-commences-e-voting-for-end-June-EGM",
+    "date": "2026-06-28T08:47:16.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Bupa Arabia for Cooperative Insurance Company Announces the Starting of Electronic Voting on the Agenda of the Extraordinary General Assembly Meeting",
+    "url": "https://english.mubasher.info/news/4632292/Bupa-Arabia-for-Cooperative-Insurance-Company-Announces-the-Starting-of-Electronic-Voting-on-the-Agenda-of-the-Extraordinary-General-Assembly-Meeting",
+    "date": "2026-06-25T12:41:05.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Bupa Arabia’s board proposes 40% cash dividend for 2025",
+    "url": "https://www.argaam.com/en/reports/company-dividend/58781?preview=true",
+    "date": "2026-06-07T16:30:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "7202": {
+  "items": [
+   {
+    "title": "How many employees work at Shabakkat? - Revelio Labs",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tTEFIWnRFOElrZ2ZrZUNKQTNqaXZ3a3dfRlR6X0NqU3FGM1FremN6S3hTVjNsUzdMUW5MOURJcUlEcjRyUVpPZjhvZmt5VnY1c2Y3ZGRoS2N1VlRiQmhXOGprMGxOdnppZGc?oc=5",
+    "date": "Thu, 23 Apr 2026 19:17:34 GMT",
+    "source": "Revelio Labs",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "7202 Stock Price and Chart — TADAWUL:7202 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBOWjlnN21DUG04OVZobXAtSlNCdkNYRE5xellGWk8wWDRmamlmVzVxdThrOXUwWk9rOXUyZjNtbjRXQTNXQnVoN3lhUlFaWlhtNUt6UFY3NTVWcXlpdWc?oc=5",
+    "date": "Thu, 30 Sep 2021 13:13:11 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "How many employees work at Imdaad? - Revelio Labs",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9aWC1UbE82bkg4Z1VQQXZvbERWcUE2T1dYR19UeW1GUjdMN2ZfVWtDNDNweWpLWEVnT0lCX1NscFR1UjRpYk1TSEhjaHhCV1RwUWhacG5HWlNPTjNpUmdKYndCS2lGUQ?oc=5",
+    "date": "Wed, 08 Apr 2026 15:26:23 GMT",
+    "source": "Revelio Labs",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Frost & Sullivan Institute Commends Visionary Companies with the 2024 Enlightened Growth Leadership Best Practices Recognition for Commitment to Sustainability and Growth Excellence - aap.com.au",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vMlpCVjh5MEk2clhjRS04a09MUkExaW5fN1dpUnpIamZnUjAzZHRSb09seEJIdHl0VFZQZEZhakpGalJCbnpPRGRKMVp6dXNSNC12cWVYWkdNWkQwa3BGMm4xMC1hZlV0?oc=5",
+    "date": "Thu, 01 Aug 2024 07:00:00 GMT",
+    "source": "aap.com.au",
+    "sentiment": "positive"
+   },
+   {
+    "title": "How many employees work at T2 Business Research? - Revelio Labs",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8yM0M3UE9mZDdjdDNpM2pZQlNDYURBVlQxZ0RGN1JnaUt2YU9BU243YVdjVnFwS2lUSnNIY2RhdzRfU01zNWNOdGFGeUJCdk8zWncxcVlHOFFtb25DTjdQNklyV1Q5Qi12TktTYlQybXRyWWc0djZmRQ?oc=5",
+    "date": "Thu, 23 Apr 2026 11:35:32 GMT",
+    "source": "Revelio Labs",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai kicks off IPO rush with landmark listing of utility DEWA - The Peninsula Qatar",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQXN1Y2hMbEYxb0k5SDZUYlBwVERhSVNaSTVoeWFpZGhEREpCS3Z1R0t3UlFZVkhVYTIwcFFjbG12b1NQQmhmUUEwS1JFRnVSamZpbThyMi1HejNPSUJya2FlcWZxVXNmTmlZVGEyMGZRcWZlUFJIbi1yVDNfTXZSb1l0TW5UQm4tUkZwNFlRa0tWUEloczR3UDZFdm1UMExrYzJiNEV4NlpIc2FxbG5Kbw?oc=5",
+    "date": "Tue, 15 Mar 2022 07:00:00 GMT",
+    "source": "The Peninsula Qatar",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "8010": {
+  "items": [
+   {
+    "title": "Tawuniya shareholders OK SAR 2/shr dividend for 2025",
+    "url": "https://www.argaam.com/en/reports/company-dividend/59377?preview=true",
+    "date": "2026-06-29T09:34:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "The Company for Cooperative Insurance Announces the Results of the Extraordinary General Assembly Meeting (First Meeting)",
+    "url": "https://english.mubasher.info/news/4633341/The-Company-for-Cooperative-Insurance-Announces-the-Results-of-the-Extraordinary-General-Assembly-Meeting-First-Meeting-",
+    "date": "2026-06-29T05:15:04.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "TASI: 2 stocks go ex-dividend, 1 ex-bonus today",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1915956",
+    "date": "2026-06-28T12:03:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "2223": {
+  "items": [
+   {
+    "title": "2223 Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82RkRFMkZTdTlkSHRsVm5VR2Rpak5GcmNFRWM3WkpyWjBCR3U4MktZY1hUcVBVRWFVWTh1ZU50T1NKUDBLLVZGc2Rkd1ByUTYyZzdGNnl4N0U5RFJhZERDdHg2U1U1N19SdUJaZmJXT3hJWXF4Yk1MMVFKZw?oc=5",
+    "date": "Thu, 25 Jun 2026 14:23:44 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Chinese energy official meets with Saudi Aramco executive in Beijing - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTlVVRW1kZC1Manp2czgwclFFY0dYTTZpRmNzXzlsekppVHhNYUxuYy00Q0FGR0NUN1dON0UtRkVOODNVaG13a3JURC00dTZEaEFMSlp6dUlRNDNNbGFFUW5Db3A5UXBBdnFCYkg1UlpfX09QUElYUlM2QUNIWEdPWmM2VkEyUDJFNG5SUi1KdFoxb3p5UkQxTnpiR0RVWlYtRWVxNFpGMkotRkRkb1BvNHF1S09TN3Fl?oc=5",
+    "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "BP Stock And 2 Energy Names Exposed To Strait Of Hormuz Reopening - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOHVLT1ZaNjgxMldzT2EzbFYwYThneEcxTEdMalFocS0xSVhBcHY5S05ENEpVQVRmUHZZOF9MTTdYUlZGaUctaXVlVUFLOXBkbGJqOGRrRFFjZG90ZGdxeUFuZ0RUbFdsSEY2YnlSTUlSLVhadVA4M0tFS0ZIVEo4aV9Zb0ZLQzdGUURuYUJVeHVZTXhXcVlRYnBkOGhRRlZSV3ZsZDQxaWJKQVA1ZzY2TzVGZmdpSEpZaWRtQll3aGtlb1FObmF2RU9iRGZFblBETTAxMzlnOXFadnFpRkU0SjhIM3hjVTB3anJ1YnR4ZEYxNUdi0gH6AUFVX3lxTE1xQ3hLSlZydVhpaEFSQ1Y0Vk9WZkN0SWI3THExLUM4RHFpUng0ZTZ1WjdyLXdCelhCbHdmNUZaNlltNHo0OUZWLWhIVlVVbFdjSGNWenhjMlZ2V242X1I0Tk1xTDNENWU5RWptLTRkaFlMX1JsSWNlNUY5STRuSjdEQTJuVmRGVDhhSWIzaWdDallqTkM5TXItNnJnWHRGdmJsUDdRMlk4NnNkTmRSUUlYaFZpek01TjlpUW9OaXhTZTMzaUhnaFR5d1lvWHZxMDAtRXBrN1RtbkZNd04yMXVkMW9mV1RscE1oTnpTX0JrdGthT21wbUVROUE?oc=5",
+    "date": "Thu, 25 Jun 2026 01:43:24 GMT",
+    "source": "simplywall.st",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Saudi Aramco Base Oil Company - Luberef Actuals & Estimates (TADAWUL:2223) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVXNLa0ZfUWFqUzd4TlEtb09rdk1YVkVNQUlTenZDWThRd28xVlBTR3dWZVNQdURqSFBjcE8wSmlaRXQ2WVgwSkNtVzFqZ0dmd0tGZUJ4a1RYbTNpQlNCSVpxeTFsZEU5T2RVZXA1VERhVGhOd2NlN1pCeWhSVVAxRTZzR2RqaE0?oc=5",
+    "date": "Thu, 25 Jun 2026 19:33:44 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Earnings call transcript: Saudi Aramco Base Oil beats Q4 2025 forecasts - Investing.com",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQaGZmc3dCRmdyR2E3V0JlTmprTVVmZGM4Mm94aTBGTkduT2V2QXp3TW1oRWVGM0RlMGpuVk10bURsUllrU2xRZk56V1FFcmd0SXp4N0s2SzM2OHV5SEJtd0o0T2dERW55VF9jYmdyR0VyX2MzejZNQW1HaEtPenAtQXNUcjJ0Y3ZDV1dHU3Y0ZXBZOTZXYXhiVVBwV3l2YkhFbU5NZWFVMHhQemhGNl9ncGcxVFdWYXVmNXNROFFVS05vdEI1?oc=5",
+    "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+    "source": "Investing.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Saudi Aramco Base Oil Company - Luberef Approves Appointment of Mr. Mohammed K. Al-Dhubaib (Non-Executive) to the Board, Effective March 1, 2026G - marketscreener.com",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbV9lUkxZZFFhbmxTUmRLblZXQ1JXRDRvMG5IZFB2ejFUTjVQQUJjREpLbDRSM3RzdGRTbDZ2eS1Vbm5EZ2tRQkZMMjVOcWdVdDZ2SHBoX25DMS1pTml2SWV4UGI3a0MtMHZ5YXhNQnI0MHdiNVZZbVhNNHpGWXhHSkhjbjhRMDZaZFcyVnp4c3JFcENhYm9nbERqV1gyYUdZT3ppdUhZSUJGbWpKLV9sRG5pdmxVZzZ0Qkg1d2ZseEtBSGhWNXNpa2JuRHpEM1IydFgzRzJoTzV6VEp5enJfazhR?oc=5",
+    "date": "Tue, 14 Apr 2026 07:00:00 GMT",
+    "source": "marketscreener.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "2382": {
+  "items": [
+   {
+    "title": "Saipem to sell Saudi shallow-water drilling business to ADES for $285 mln - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkpGalN1eHF1OUZnTXoxdFp6X1Rra1g1OUsxVUZ1dDJLeDlIeThsbHNkWlFkaWxWR0Nab2ZIQUt4WGlJTnNTbml6YWk1b2xRRkNsOVg3dDR5QzdSeGV3SExnak0xR3lPU2I3eFdTTDdKaEUydXRkbHpyVVhBZjhDWGtLckJyNTJRaWp3U2duYk50cGRqWG5uRlhQSllpaWRrRWdKUnFnazFzTDRVR1FYVXZKcFc?oc=5",
+    "date": "Wed, 24 Jun 2026 07:16:38 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "COLUMN | Bang! The gavel falls again: Saipem and ADES; Seacor for sale; death penalty in CNOOC; Gabon corruption; “dark fleet” master in the dock (part one of two) [Offshore Accounts] - Baird Maritime",
+    "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQMUxWQzFXSm5jajdKaVBlTW1ZTC1IR0N6VjVYWHJrTlJRMHF1ZVJ5X1ZvUWFDYmtPQjNBa0lObGlBSUpKeUVmWlhvN2pjajd4dURmc3QxS3V2ZW8tVnVwQld0QWVSNXJxLWxMdXdIUFh0VDlFakI2S2dMdzl4Y3VodmppV2xnSm5CWEVMc2tmSHZiV1d1S2VMMWZwdXJnWnNUcmxxdlEwTWtrVHltdU41OUs1Q0VOZlJDbHdVRW9CSFUwX0J1S0FTOWdYNzBWVDZLSDFWMGdQRnVpeXNOLWlrMWxOampubnZkRm4wUlVndjZSQWpWRDVuZUJzM1ZtOG52amMtSVFKRzYzNzJaNlBaY2MtZ1Q1akt1UXRvRk9IdE9SN3d5dFgtMXdheWtPcVQ0U3fSAb8CQVVfeXFMT3FSWWVXRWt6UjdmNmhlcXJGcDltTjVzbDd2U28wTVdKMGpIZHFNRi1vODFfVHNEZkhWNjF5eFNxanJUWFRPY2dTTXdFVlFLNU42S3hUbnlPMkRtdU96Rkd3ZjFYSW5CVDZKelB1NnRrRlVYVW5mM0tFYkdaOWNOX3p3eElRQTZXYVBRUHFuX0J2ZVdPeElpZEw3WFViVFl2TUZESjY0SThtREc5Ulk3TVhvVElnTjJoOXJvcDhUUVF2OWl5WVdnMmVPdmZIVGotSWpwREhFMHhGU0o0Y3FGWks0c3Utazhpb041ZjJUbm1EamtCa0V0MEhYRUFOTnk1S2J4SUg4ZHJ2dUhqRk5qbHE1S1JSUmplZ216QXBKLXpmb185SkkxRk82WnBVMDVIUHhFekp0WEIxc0xMZGZSNA?oc=5",
+    "date": "Mon, 29 Jun 2026 08:57:00 GMT",
+    "source": "Baird Maritime",
+    "sentiment": "negative"
+   },
+   {
+    "title": "ADES to acquire Saipem’s Saudi rig-owning unit for $285m - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNOC0tMjl3bElPTjdPNHowTFZrelFjby1YT1BIUXVXLUlZSkI0dm92M2RhT3VFbktQMmVwZzdZQUtuM25rMExnMFhid2VMa1NOd3YtQkVHYnBiWTBuUjBVYTh6cnB6Yk5ESnI0ZkpHZ25POHdheFVXQ2IzbzZLaHZxdVFLTXFuT0JvNnBoYzN5UQ?oc=5",
+    "date": "Wed, 24 Jun 2026 14:29:13 GMT",
+    "source": "Yahoo Finance",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Saipem Sells Saudi Jack-Up Drilling Business to ADES for $285 Million - Crude Oil Prices Today | OilPrice.com",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQelNpTGdpZ0ViUHdDN25HOU5CZnFhRkdjbHJTM0Zaci1RcUFwNzV4dlVjOWlkM1lFU2hhaHFHRHAyd2Z1dEZyOHc3Ri1Kb2JtdnRkNkltWTN2WmJqdkowdWNLNzRQcFl2M1o1Z3BJdFdqM3h1VUJVN3VrSUlRMHhEdVZLUHNCTV9oNFNwWERUODl1UFZlYm00TlJHeHNnNjA1TmFlMlBSTUlPam_SAbABQVVfeXFMT0RKd2NFeHZkdkxlZmJFV0dvdHZlUVFxbUdmZ194aUV4M0hGWFJoWmRLNzI2NTFsRmZDaUJtSndob09YQXNpV3RCRW5tdDhsZHRwX0E1UktjbVdUZzkzVnVGUHZPelhSRWwyZHlDQzJwemhqdldCTFgyWVkyZm0zV3UxWjFnREp3a1hMaFl1QVBDY0RMdk1SQjV2LUlJUnF1UGNEdmR6anpVd01hWWVLd3M?oc=5",
+    "date": "Wed, 24 Jun 2026 05:13:07 GMT",
+    "source": "Crude Oil Prices Today | OilPrice.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "ADES acquires five Saipem jackups in Saudi Arabia deal - Drilling Contractor",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSFFRUm1CWFNCYWtyVW9PamhOd1dNUV93dTZfT2dFT1Znc3hTUDNRTEoxQ29VcWF5aTMwQk14cUYyTHo0Mkg3cG1rQm9UNzdqYmFjQlJOYzVpc2xGN19lekY0TEpQVEtqQ2ZzaVVCbDByWi1HTjVjMENrLXFoaE9jQWluZGZkRzhFVU9obUE4b08tZnVlR3c?oc=5",
+    "date": "Wed, 24 Jun 2026 13:43:24 GMT",
+    "source": "Drilling Contractor",
+    "sentiment": "positive"
+   },
+   {
+    "title": "ADES Expands Offshore Drilling Presence with Acquisition of Saipem’s Saudi Jack-Up Fleet - imarinenews.com",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9pakhzS295MnpsN0kzeGk4UjBpZ29NMmRkOXc3emVvazBHc2ZlU3FaRGFmVHJkbWRQY0s3MGh4cWNIRkVudC04cERCbnFmTU0?oc=5",
+    "date": "Thu, 25 Jun 2026 08:00:45 GMT",
+    "source": "imarinenews.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 3,
+   "neg": 1,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "4190": {
+  "items": [
+   {
+    "title": "Jarir opens new Jeddah store with SAR 32M investment",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1910836",
+    "date": "2026-06-07T17:12:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Jarir inaugurates SAR 32m showroom in Jeddah",
+    "url": "https://english.mubasher.info/news/4623264/Jarir-inaugurates-SAR-32m-showroom-in-Jeddah",
+    "date": "2026-06-07T13:58:37.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Jarir Marketing Company announces the opening of its new showroom on Al-Madinah Road in Jeddah, which will replace its previous showroom located on King Abdulaziz Road in Jeddah",
+    "url": "https://english.mubasher.info/news/4623220/Jarir-Marketing-Company-announces-the-opening-of-its-new-showroom-on-Al-Madinah-Road-in-Jeddah-which-will-replace-its-previous-showroom-located-on-King-Abdulaziz-Road-in-Jeddah",
+    "date": "2026-06-07T12:45:40.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "marketaux"
+  }
+ },
+ "4300": {
+  "items": [
+   {
+    "title": "SHL Finance greenlights 2025 dividends, ratifies business contracts",
+    "url": "https://english.mubasher.info/news/4630694/SHL-Finance-greenlights-2025-dividends-ratifies-business-contracts",
+    "date": "2026-06-23T08:51:27.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "SHL Finance Co. Announces the Results of the Ordinary General Assembly Meeting (First Meeting)",
+    "url": "https://english.mubasher.info/news/4630481/SHL-Finance-Co-Announces-the-Results-of-the-Ordinary-General-Assembly-Meeting-First-Meeting-",
+    "date": "2026-06-23T05:04:13.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dar Al Arkan sees negotiated deal worth SAR 17.1M",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1909160",
+    "date": "2026-05-31T14:40:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "4250": {
+  "items": [
+   {
+    "title": "Jabal Omar plans to sell 400 hospitality units, develop Phase 7",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1915890",
+    "date": "2026-06-28T09:46:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Jabal Omar outlines new strategy following real estate ownership law for non-Saudis",
+    "url": "https://english.mubasher.info/news/4632938/Jabal-Omar-outlines-new-strategy-following-real-estate-ownership-law-for-non-Saudis",
+    "date": "2026-06-28T08:26:58.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Jabal Omar secures SAR 2bn funding from SNB",
+    "url": "https://english.mubasher.info/news/4629617/Jabal-Omar-secures-SAR-2bn-funding-from-SNB",
+    "date": "2026-06-21T11:46:27.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "4142": {
+  "items": [
+   {
+    "title": "Riyadh Cables Acquires 51% of Artikul Aziya Kabel, Makes 1st Payment - Caspian Post",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS0kwYUJ4QmRINThaMklrODctNEhLX1BESFlTQm5EZWQxb3BIbFZER2trU3ZZR2JRUkprLUtUX3VWQ3dOdW51NHlHV2lSNFhXRHV2SmJmSU1YWlFXaVZHeDd0Y0V6RHo4QVFqbUIwQ3ZzOU9LSFJ1MU13WUEwYWZyNktQaWhYT09MOUkyRXBsTVo4R1pNT2xVc0c4U2FLMDdrNkxN?oc=5",
+    "date": "Sun, 30 Nov 2025 10:34:48 GMT",
+    "source": "Caspian Post",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Riyadh Cables acquires 51% stake in Uzbek entity for SAR 147.7M - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Kc3N6bHV3UnBUWnhqa2hWQnRyUTJQekE2U1RoR09GN2xHR2s1UWF6VThCTk1xUHF2eDNXODZDTVBIbmp6SHdpRE5SRFBhTkFsN3p6Z1VaSHU2amVkazloaWpsWmVyYzlDNUE?oc=5",
+    "date": "Tue, 28 Oct 2025 07:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Riyadh Cables Buys 51% Stake in Uzbekistan’s Artikul Aziya Kabel - Kursiv Media Казахстан: последние новости Казахстана и мира",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQRmVjNWdoR0M0Vkx5b2dNQ2daTFdiRFVIeHFYZ0t2SU9uamRtbmhKRE5BRW1MblRnME9URmZZZWpKNmt4NkhiSnlOeWZnY3dEUmpGSC1DVkY4Q0VaanBrTTN5NFY4R01PcXNvTXZkOHZZcmdWR3lLVlJ4RWY2SUVsZXVCOTg1ZW9OYmppX0U0bGpFcklBOFlpLUgxVEFWMkNPTlFF0gGoAUFVX3lxTE9yOVJkZnNvNTBqRElLTG4wMlhMZWpDVmVjSk9zMVgtT3BJTXZCbVlSRHFkX3o3YnZ2ZlhEVkcxMm1SNGxQdFZBb1Y5LUVTc1FOaTI3aDZfcUFUeDhnOHZGZ2FYY0lWdTFSd0hkMlY3LU5uR3RRcHE4Z1BBMXFMcnM0NG1Xb3JKOGZLc04wR08yMGlGVXZwaFFfbFdqQVh3bE1HcHdzbE40Ng?oc=5",
+    "date": "Tue, 28 Oct 2025 07:00:00 GMT",
+    "source": "Kursiv Media Казахстан: последние новости Казахстана и мира",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Riyadh Cables debuts on Tadawul today - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5xa0lKbHJueXFtelpLWjF2V205VXRGQV9YNENSYUZMTXRKU2lkYUo4LVd0ZFFvTVU5VHFNdWdwYUI0N1VJdU9xdnBXSmtEQTVjc0ZKM3liVXRkbU8ydFNiSHljQ2FiR25nS3c?oc=5",
+    "date": "Mon, 19 Dec 2022 08:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Retail subscription begins today to 3.3 mln Riyadh Cables shares - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GYXo1ZF82TXF0SGxPSE56TXlYNFRpNE4zY3BERlJpZXhoRWM4WEJnaXotSDUxUm9YVzFQUFo5QnBaQ2c2OUxPMUR4MHA5VnhCWlRHVUxyb1NLMXhWdndVd05oVmtic2NDTHc?oc=5",
+    "date": "Mon, 21 Nov 2022 08:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Reasons for YTD TASI drop; key grabs, challenges going forward: Alawwal Capital - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9TWElnU0pmbkp3bmhNdV9rY2FIVnRlRlZKNXhBaDQ2YkRUeTh2MUs5cXY1eC1CSmhWWi1aUFpmVWJXQUNIa215em5hbFNpQjdtUGlWYTFKbE1PR1J5ZUZ4Uk1ORDIyM05iNHc?oc=5",
+    "date": "Sun, 14 Sep 2025 07:00:00 GMT",
+    "source": "argaam.com",
+    "sentiment": "negative"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 1,
+   "mood": "negative",
+   "src": "google"
+  }
+ },
+ "6015": {
+  "items": [
+   {
+    "title": "Americana Restaurants International PLC Actuals & Estimates (TADAWUL:6015) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNS3BfcURyZ3VlRk5QZjZ1UUFuaVZ2VnFNZzRKXzU3U2E0WDJ3aFdlMmhhTzJHNVkwbzNKbzgybFlIdkxvb1Q1MThLWE1BNW9HX2dBenh4aDNlc1I4aG9KYktnSUh1dDJUTDNBUWFWMGtoNkRzdm43dXdOTWtmOFVFM19UY1NZZ3M?oc=5",
+    "date": "Thu, 25 Jun 2026 16:34:15 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Americana Restaurants International PLC Just Beat Earnings Expectations: Here's What Analysts Think Will Happen Next - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNUVpmWk9pVzhMM1Q1VEUwTjlaN2VwTFFPM2c4M0JneUwzVlNyczRMS2d4cWF2TWdlTXE0QUZXN3c3X2lWM2xQSzBpZVYyZzBma1pXV19kVTRzZFo2UEZIc2FYUTVNbEVKRHN6b19MVkZMSkNtWUJtdWNXRTg2dE5tVkZXWlByUTVRVnJjYy1OZV9yMmN5dlVhRGRSczBReFROdDFMY2JPeUg1QXBPQTc1eFNKT290U2dYUkM4X21aWGJmRTFwT2RvV1BZTkpCb2JQWWptQ0xnb0t3WmI5ZURYcllLbGdjMjJiazdmQ0JaazZ3SlJ2U2xBbTdn0gH_AUFVX3lxTE5QZkdNMlZGb1J5OVBsSlpHUDZWZXN3WWdsSmpxLTdMU25aYkJualRRSmZQSmhxSEhJLXlscENmbGZlZmU0VlJROF9lVFBYWjVZSDk3QnVVY19Xam1kbXFYZTdqVUtlZ0lYRVdZN2V6NUt4a1F3Y0EtM09TajNkd3VlR0lnSE9UcWVsNW4yUFc0NFRRWlJBdzJmSEVFeUxsN05IVEhJNlFwdU0weFRidGhhUUw2NXJ1QXlpQWtQNGhNLUhaS2duZWJEX0NWS05wOWJUOGdidE1lcmVkUmdtUVNmTXRTWGNfY0Zyc3p2T1ZTU3RSb211NkMteFVjS3NjRQ?oc=5",
+    "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Americana Restaurants adds Al Tawouk to MENA, CIS brand portfolio; acquisition deal worth $21mln unveiled - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPWVdLTTR6aXFFenpJVVZ5NWduTi1LYmlqc0swTF9aX0JPZ0lXX2k1RmRjVEVhclh6ZjVtamNncUY3aWl5QlI1d1FwVmV0REpVWlRCd3FwT3JJN1N1TkVNN3Bsa1k1d2s0c0VHbmFBaWJwVk51R3p3aVJUMk1tN2YwWGVsenAwaDN2d3cwMFlQOGJHaU5ScDRpSEtSbkdOQ2xuNzd6YkVmSkR6djFsdVlqNURMRWsyYWYyWTM5RGlfV3dUdVJISFk2Mm5KdnpJaDlqREVua0prYW5Qamk2T3BjV3U5bw?oc=5",
+    "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Americana Restaurants net profit climbs 93.5 percent in Q1 2026 - Caterer Middle East",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSVJ5Wk5QemxPa0VkY1A3VHJGN1FkQU4zVzNaNW1LUEVKbHdZVjBONGVETXc5U0VmN1B3VnBib0JqNS1JRjJuY2dUcjdraU5sQzFaNkFwU3o0NUltSFVQNTZ3eDFDb0gwaVlVdTJnZlZxRkhIUXdKOVdvR3UwWHZObkhsUEhWemV5dkFsNVY4YXBhcGtDR1FTT3ZiLXpzaGRoMUxoamt6VFMtNlN3SUI4?oc=5",
+    "date": "Thu, 30 Apr 2026 07:00:00 GMT",
+    "source": "Caterer Middle East",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Americana, Malak Al Tawouk sign 75-year agreement - Businessnews.com.lb",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9CM3EyUVlrUzd3ejZLclVaMThtamhLTXZTbko4anUwN1NNU05wRmpDTnV4aFRJN3NjNElldDhwcHBPYXhoZ2ZtRE04MmlvSjc0dzZ2U1MtQUdUejNrcS1NeFc4dUlWWGRqTWN0aFQyNDc5TENMV3lrRlRSNHU?oc=5",
+    "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+    "source": "Businessnews.com.lb",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Middle East KFC Operator Set for Abu Dhabi, Riyadh Dual Listing - Bloomberg",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMmJ0WWRKc1B4dmhlZHQtWWsxdVhGREJBNEhGNEVwZXI3Z2JvTHk3RVJzdFRIM3BVeHFpWGJvNXVkNG9uc1k4TzhISW9ZVDRoRDk2M0VzUXdqQVNMaWs5ckJTZzN3RlRLMVBOTEtBQTFPZzdqWkx2N2hwZkczMHBiT21EVlE2UFgxemJUMXNNT2ZrRmZDUWJveWtHU2MxX3lwNUxocm80Y2x3RlNaYk5wZGxPRQ?oc=5",
+    "date": "Mon, 31 Oct 2022 07:00:00 GMT",
+    "source": "Bloomberg",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "4100": {
+  "items": [
+   {
+    "title": "Saudi developers jump as kingdom moves to open property market",
+    "url": "https://finance.yahoo.com/news/saudi-developers-jump-kingdom-moves-134317577.html",
+    "date": "2026-01-25T13:43:17.000000Z",
+    "source": "finance.yahoo.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Makkah Construction sees 6 negotiated deals worth SAR 38.6M",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1795925",
+    "date": "2025-03-09T14:47:00.000000Z",
+    "source": "argaam.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Saudi Arabia stocks lower at close of trade; Tadawul All Share down 0.41% By Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-lower-at-close-of-trade-tadawul-all-share-down-041-3768797",
+    "date": "2024-12-12T12:50:04.000000Z",
+    "source": "investing.com",
+    "sentiment": "negative"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 1,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "2290": {
+  "items": [
+   {
+    "title": "Yansab generates SAR 11m net profits amid over SAR 1.3bn revenue in Q1-26",
+    "url": "https://english.mubasher.info/news/4601410/Yansab-generates-SAR-11m-net-profits-amid-over-SAR-1-3bn-revenue-in-Q1-26",
+    "date": "2026-04-26T17:23:44.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Yanbu National Petrochemical Co. (YANSAB) announces its Interim Financial results for the Period Ending on 2026-03-31 ( Three Months )",
+    "url": "https://english.mubasher.info/news/4600860/Yanbu-National-Petrochemical-Co-YANSAB-announces-its-Interim-Financial-results-for-the-Period-Ending-on-2026-03-31-Three-Months-",
+    "date": "2026-04-26T05:22:19.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Yanbu National Petrochemical Co. (YANSAB) Announces the Results of the Extraordinary General Assembly Meeting, (First Meeting)",
+    "url": "https://english.mubasher.info/news/4577341/Yanbu-National-Petrochemical-Co-YANSAB-Announces-the-Results-of-the-Extraordinary-General-Assembly-Meeting-First-Meeting-",
+    "date": "2026-03-15T05:06:23.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
    }
   ],
   "summary": {
@@ -486,746 +1316,57 @@
    "src": "marketaux"
   }
  },
- "1212": {
+ "4263": {
   "items": [
    {
-    "title": "Astra OGM approves 35% dividend for 2025",
-    "url": "https://www.argaam.com/en/reports/company-dividend/57982?preview=true",
-    "date": "2026-04-30T09:28:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "TASI: 4 stocks, 1 REIT go ex-dividend today",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1900533",
-    "date": "2026-04-29T10:53:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Astra shareholders to vote on 35% dividend for 2025 April 29",
-    "url": "https://www.argaam.com/en/reports/company-dividend/57231?preview=true",
-    "date": "2026-04-07T09:29:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "2050": {
-  "items": [
-   {
-    "title": "Entaj CEO resigns; Abu Sharkh takes helm",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1906527",
-    "date": "2026-05-17T16:33:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "TASI-listed food producers post broad-based gains",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1904335",
-    "date": "2026-05-11T11:51:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Savola shareholders approve 17% dividend for 2025",
-    "url": "https://www.argaam.com/en/reports/company-dividend/58243?preview=true",
-    "date": "2026-05-07T08:56:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1322": {
-  "items": [
-   {
-    "title": "Al Masane Al Kobra Mining Co. Actuals & Estimates (TADAWUL:1322) - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTDRkb0hMR3B6RHFfd24ybHdNc0ZRZzQwN1B4VzBHQ0lKdHl1SFYtZEZoVUJ2M3ViMEx5OWFXZ0JvaG5QWHVWNzJESnpVbXNiX0V0em5lRU1mdWc5d0M2TWRnRjBzVnVwdHllMklva09GZ2hzT09abGtKN0JNbHBWOU9qSTFlMGc?oc=5",
-    "date": "Thu, 25 Jun 2026 16:54:51 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Saudi mining firms sign license-swap deal to boost exploration, collaboration - Arab News",
-    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44OUlfMzRfUmpMU0hpN0doNHFuVVlQdHZabGEyaFhIYnpPZHlheXc2MFR5WnlEZlJzdXhfRTNqM1lVQm1pWUV6a1FmRzhkZUpWSmVR?oc=5",
-    "date": "Tue, 09 Dec 2025 08:00:00 GMT",
+    "title": "SAL agrees $30m Aviapartner Liege acquisition to expand into Europe - Arab News",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5kOEVZVnVTQ0Jqb25NclZxaGhCc0xLY05IUFlhb0w4M1V2SzVpRW1CQm42Wk01RWNBazdxWUhuYXBRMmJHZ0pqZk5wZ3hGcmlLcHZFcTZnM3RxS2o0MDdKZmxZVmk?oc=5",
+    "date": "Thu, 05 Mar 2026 08:00:00 GMT",
     "source": "Arab News",
     "sentiment": "positive"
    },
    {
-    "title": "Subsoil Technologies delivers NLT N-Connex WiFi network for Saudi Arabia’s AMAK Mining - International Mining",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbXUtUDg2VFlvQ3RGSUlOdlYyYVI1dkpFTWpkcm1SWUxEdjdNeXZtX3Jrb2lFYWsyWXFwQVZQUUZLQWgtQUtabVFJYXM5T1F2YURyNUI5MUFRaV96dElmaG5pcWlTYzREaGwzNTZDbFFYZjJ1UFNPLU9pRFhnaDRIU2RRd3FRMlZkVzZ1eDNIRlFPRTNaSDhSTndnM1FXYmZXVEFKTndfdERjZ2NQR2hLMnc5T0lGSTZJQkRV?oc=5",
-    "date": "Thu, 22 Dec 2022 08:00:00 GMT",
-    "source": "International Mining",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "AMAC Stock Price and Chart — TADAWUL:1322 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ibDRpbWpLVUlSeEUxTmtZOF9LV0RuOVRCTEN3OWZPZWZWWEpFTC1GMV9nM0NELVdKODQ2UVQtUTBPbU9OSTBaS29UMmhheGpPbkpVZy0tX3VWNzFOZXc?oc=5",
-    "date": "Mon, 25 Apr 2022 04:43:13 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "AMAK showcases Saudi Arabia’s mining potential - Arab News",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9YbGhKRFJMdVJTejZJLWZyYV9IS3JLOFpXNUxBZHEwT3NYeXo0SUFtdVRVMC1LVi1Gem5YaDY4VUwxODdvR2NOai05MkFsVVMxVWppWDlnS3VORjZYWUp2TWtR?oc=5",
-    "date": "Mon, 20 Jan 2025 08:00:00 GMT",
-    "source": "Arab News",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Industry Ministry Announces Successful Bidders for Round 7 Exploration Licenses - وكالة الأنباء السعودية",
-    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1FREpsMXZMb0FTSXdlZWRvYzV4M2NLM3JQelMtMDBNV0lDeEdPQmtDMHVwYzNtQUFXcVk4YWJ0OExDaUVUT1MwY21B?oc=5",
-    "date": "Tue, 14 Jan 2025 08:00:00 GMT",
-    "source": "وكالة الأنباء السعودية",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 6,
-   "pos": 1,
-   "neg": 0,
-   "mood": "positive",
-   "src": "google"
-  }
- },
- "2060": {
-  "items": [
-   {
-    "title": "National Metal Manufacturing and Casting Co. Announces Regarding the appointment of the Chairman of the Board, the Vice Chairman of the Board, and the Secretary and appointment of Audit Committee Memb",
-    "url": "https://english.mubasher.info/news/4624291/National-Metal-Manufacturing-and-Casting-Co-Announces-Regarding-the-appointment-of-the-Chairman-of-the-Board-the-Vice-Chairman-of-the-Board-and-the-Secretary-and-appointment-of-Audit-Committee-Memb",
-    "date": "2026-06-09T06:59:01.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Tasnee completes scheduled maintenance at ethylene, polyethylene plant",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1910687",
-    "date": "2026-06-07T09:38:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Tasnee concludes maintenance works at JV plant",
-    "url": "https://english.mubasher.info/news/4622930/Tasnee-concludes-maintenance-works-at-JV-plant",
-    "date": "2026-06-07T06:27:47.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 0,
-   "neg": 0,
-   "mood": "neutral",
-   "src": "marketaux"
-  }
- },
- "2080": {
-  "items": [
-   {
-    "title": "Price to book forward of National Gas & Industrialization Co. – TADAWUL:2080 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSXdKUUJFbU5aWHJJYjR3QmhHRmYzeUs3SzlXUHlVOHpIdFNkZjI0eFVieUY0R3hVd0RQNGhha3pFcy1aZ2dLMlgyc1owMVZvTHJZM2dfWTJnY0xTMnlYQnNLMkJJV2xkazhJZXEwSmtTc0xXeEhFMnJvOXJmX29xZWU2TFgxQ2ZybkpxcEptcDlYSUR1MFRlbG16T0lwZw?oc=5",
-    "date": "Fri, 26 Jun 2026 09:11:52 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Saudi Arabia opens its stock market for foreign investors: A brief insight for (bio) energy investors and market participants - Bioenergy Insight Magazine",
-    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOUVlzLW1acEhseGEzVVZwblJhbVhuY2Z2V1ZqcEZDSUpSWUMzUU1wTUF4LVVlcXZmcEhrOHRhVUVSRHh3Um5YQTBUR1ZSNi1xMVpCNm9JWTF3aXZRQTdtTWhtN0NIajBhV2s1aWxmNkduRmxUN2poQTdUdjFMV2I3cEVwc2R0ZkFiYkt4aHJIZUIzNTA2dFFuTDNYdjFUR1BOTjN3alRwRzg4NVp4SnB4cEpmRDZNcDRSTS1Oc3JIUkc0dGVDaWFpM01hOGdBYndnNkZrYTlHMWExYVhSTE5sZFRMelZqZGlnYXZ3OXVoblQ?oc=5",
-    "date": "Thu, 22 Jan 2026 08:00:00 GMT",
-    "source": "Bioenergy Insight Magazine",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Saudi Arabia shares higher at close of trade; Tadawul All Share up 0.55% - Investing.com India",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNcmljZHoyODZqWmdSYndLa0JOUXdzZzFEMENNbWtPODZTWG1ubkgydzBGMXZWV2tqOWdFWTRaQjlDUEJUYmtudHUxajZiLV90anYyLWQ4LXUxbkFaejE0cTJGY2dQRHlJN3otVU1UWTBvdVN4SVJwblJMMGhkSlpXLWJ4a192eU1vQ2ozMFhhempJcDZaNkFnVHdCMFRPSklaSEFSUFkxekJGTFlfMURNSVgxM2Zldm12cTlfUnN2S0phN1k?oc=5",
-    "date": "Mon, 16 Mar 2026 07:00:00 GMT",
-    "source": "Investing.com India",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "GASCO urged to establish Saudi Aramco-Riyadh gas pipeline - argaam.com",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMEhxSk1Kdm1VdU5UU19SQ2dRaXZLalFVMnlNMFVZTlFUM1cxQ0UzVXFrUTdEM2czUE56N2tWdkkzaEJqdWhrMkxzWWJEN2lQMDlxV0Z0aERsREhkYmR5SEJoSV9FZTk5WG40TVFINkROcndDb3B4djd6cTFKTGZYSnRUbWxkQlZZaTREMk03M25pM0FFekpVSW0yVHlKYXpRaWFJeVVFR0laV1RhUnlN?oc=5",
-    "date": "Mon, 26 Oct 2015 07:00:00 GMT",
-    "source": "argaam.com",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Transport ministry’s case against GASCO postponed to Dec. 12 - argaam.com",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE56V0FLcFZnWVc2eFlyVEhxUjlUS1lyQUU5TG4xcUJJdHlZSEtESTdCdE9pSGM0cUhYaUlfY3U1Tk5ZQ2ZCMlhHUDFoaVRzZ3pxVHNEMWI2cVJVZzJ3U2FBcWVXTkMwalQt?oc=5",
-    "date": "Sun, 14 Oct 2018 07:00:00 GMT",
-    "source": "argaam.com",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "2080 Stock Price and Chart — TADAWUL:2080 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9wWU9lbXE4cl95bmRCaWxpWWY0NEZta3pxVEM1blVHZnl1bnB5YV95RnNZVFMwclZJYXo5dm16RXZCQ0J6V1YyNU8wZk01R3Y5RXNfeVBlQW9LRlF2a3c?oc=5",
-    "date": "Fri, 22 Dec 2017 20:45:53 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 6,
-   "pos": 0,
-   "neg": 0,
-   "mood": "neutral",
-   "src": "google"
-  }
- },
- "1810": {
-  "items": [
-   {
-    "title": "Lumi Rental’s shareholders approve transferring SAR 55m to retained earnings account",
-    "url": "https://english.mubasher.info/news/4629990/Lumi-Rental-s-shareholders-approve-transferring-SAR-55m-to-retained-earnings-account",
-    "date": "2026-06-22T06:59:59.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Seera shareholders approve capital cut due to surplus capital",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1909844",
-    "date": "2026-06-03T09:50:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Seera issues supplementary circular for 8.65% capital cut",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1909485",
-    "date": "2026-06-01T18:54:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 2,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1830": {
-  "items": [
-   {
-    "title": "Multi Business Group terminates deal with Leejam Sports",
-    "url": "https://english.mubasher.info/news/4630169/Multi-Business-Group-terminates-deal-with-Leejam-Sports",
-    "date": "2026-06-22T11:36:42.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Leejam scraps contract signed with Multi Business to build sports club",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1914242",
-    "date": "2026-06-21T17:45:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Leejam Sports’ shareholders nod for dividend payout, other items at general assembly",
-    "url": "https://english.mubasher.info/news/4629762/Leejam-Sports-shareholders-nod-for-dividend-payout-other-items-at-general-assembly",
-    "date": "2026-06-21T15:45:40.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 2,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "2081": {
-  "items": [
-   {
-    "title": "Alkhorayef Water boasts 50% market share, SAR 6.6B backlog: CEO",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1843470",
-    "date": "2025-09-16T15:55:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Alkhorayef Water’s backlog revenue likely to grow 25% in 2025: CEO",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1798613",
-    "date": "2025-03-19T15:21:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Alkhorayef Water and Power Technologies Co. Announces the Awarding of Contract for “Operation and Maintenance of Hameema Water Treatment Plant, Hail Province” with Saudi Water Authority",
-    "url": "https://english.mubasher.info/news/4351964/Alkhorayef-Water-and-Power-Technologies-Co-Announces-the-Awarding-of-Contract-for-Operation-and-Maintenance-of-Hameema-Water-Treatment-Plant-Hail-Province-with-Saudi-Water-Authority",
-    "date": "2024-10-10T05:04:53.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "2070": {
-  "items": [
-   {
-    "title": "CanSino Biologics : CanSinoBIO and SPIMACO Forge Strategic Partnership to Advance Accessibility of Cutting-Edge Vaccines -December 18, 2023 at 03:50 am EST",
-    "url": "https://www.marketscreener.com/quote/stock/CANSINO-BIOLOGICS-INC-59318312/news/CanSino-Biologics-CanSinoBIO-and-SPIMACO-Forge-Strategic-Partnership-to-Advance-Accessibility-of-C-45587955/",
-    "date": "2023-12-18T08:50:01.000000Z",
-    "source": "marketscreener.com",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 1,
-   "pos": 1,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1831": {
-  "items": [
-   {
-    "title": "Saudi Arabia stocks higher at close of trade; Tadawul All Share up 0.24% By Investing.com",
-    "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-024-3808099",
-    "date": "2025-01-12T12:50:03.000000Z",
-    "source": "investing.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Saudi Arabia stocks higher at close of trade; Tadawul All Share up 0.07% By Investing.com",
-    "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-007-3800131",
-    "date": "2025-01-07T12:50:04.000000Z",
-    "source": "investing.com",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Saudi Arabia stocks higher at close of trade; Tadawul All Share up 1.14% By Investing.com",
-    "url": "https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-114-3629779",
-    "date": "2024-09-24T12:45:04.000000Z",
-    "source": "investing.com",
-    "sentiment": "negative"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 1,
-   "neg": 1,
-   "mood": "neutral",
-   "src": "marketaux"
-  }
- },
- "2040": {
-  "items": [
-   {
-    "title": "Saudi Ceramics generates 6% higher profits in Q1-26",
-    "url": "https://english.mubasher.info/news/4612905/Saudi-Ceramics-generates-6-higher-profits-in-Q1-26",
-    "date": "2026-05-14T05:33:50.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Saudi Ceramic Company announces its Interim Financial results for the Period Ending on 2026-03-31 ( Three Months )",
-    "url": "https://english.mubasher.info/news/4611130/Saudi-Ceramic-Company-announces-its-Interim-Financial-results-for-the-Period-Ending-on-2026-03-31-Three-Months-",
-    "date": "2026-05-12T05:03:51.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Sadr Logistics Co. Announces the Signing of a Contract with Saudi Ceramic Company (Related Party)",
-    "url": "https://english.mubasher.info/news/4604229/Sadr-Logistics-Co-Announces-the-Signing-of-a-Contract-with-Saudi-Ceramic-Company-Related-Party-",
-    "date": "2026-04-30T05:14:00.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 2,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1320": {
-  "items": [
-   {
-    "title": "Saudi Steel Pipe signs SAR 300M offshore project contract",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1875934",
-    "date": "2026-01-28T17:00:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Tadawul: 77 firms, 1 fund at 52-week lows",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1802666",
-    "date": "2025-04-06T13:32:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Saudi Steel Pipe Co. Board invites its shareholders to attend the Ordinary General Assembly Meeting the (First Meeting) via Modern Technology Means",
-    "url": "https://english.mubasher.info/news/4299289/Saudi-Steel-Pipe-Co-Board-invites-its-shareholders-to-attend-the-Ordinary-General-Assembly-Meeting-the-First-Meeting-via-Modern-Technology-Means",
-    "date": "2024-06-03T12:38:38.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1834": {
-  "items": [
-   {
-    "title": "How many employees work at Saudi Manpower Solutions? - Revelio Labs",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50amRzNVQyb3g3V0FETWNpV29qbjRLNWZwSnFFMnR5LUxQeXlVUjdBdzVHY3JWZE5JTHJGMldsNjFRbWo3MVdadEpyN3U0OHhja01CX2V5TS00NXh3OWZMV1Z4QWczdk1kR0RCOERnYndqb2tqWnlfdzV2eGU2Zw?oc=5",
-    "date": "Thu, 09 Apr 2026 01:51:47 GMT",
-    "source": "Revelio Labs",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Closing Bell: Saudi main market sheds to close at 11,009 points with $2bn in turnover - Arab News PK",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1pc0c5VXVDbUI4R3QtcFFRUDFsSDNaRDFPTmZyNWJyYU9jTlU4WldDY0VkNThia2tOY0ZfaHJDdTZ6ZS0waGgtVHM3andESm1oTWRvX1F4eENxOGhqTHZLOXQzMA?oc=5",
-    "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+    "title": "Closing Bell: Saudi main index rises to close at 11,104 - Arab News PK",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBySkJyUHdIQXh2ckZ3VWNVOEQwRmNzTG9wYlgxQlBwcUpaWjJwTW1nam00M01PUWh4azVEOE1TOEZJNlMxV1MwQ1dXS0xGTlFzVWladm9LY2hqdW9NOTVkM3QtZw?oc=5",
+    "date": "Sun, 14 Jun 2026 07:00:00 GMT",
     "source": "Arab News PK",
-    "sentiment": "neutral"
+    "sentiment": "positive"
    },
    {
-    "title": "SMASCO CEO explains key drivers behind growth in business, individuals segments - argaam.com",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RVHNaQ3R1TDl0YzdpaFhrSjhNMG5KNzkwS1IxQVpYcW53dnl0NXVPOWFZZFdHeVlPUjRJbkNyaTU2ejdXNFYwTkNkakRiTENPNjZpNnBTaVM0Tnktc05KMGhmZzJXRkZuSUE?oc=5",
-    "date": "Wed, 12 Nov 2025 08:00:00 GMT",
+    "title": "SAL maintains profit margins as handling volumes normalize: CEO - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NVmJSZ2NyYk1kVnhzbkVzM3Q0OXNzM1c3SXR1MlJoeG1rYU5oLV9yVXRPQkdyNEs4NnJOOW1KOTF0SmNKMXdmQzZjV0RyX3BwM2RqVEZDX3RsdjJiSWc5U1EtdWNTbnU0Nmc?oc=5",
+    "date": "Wed, 11 Feb 2026 08:00:00 GMT",
     "source": "argaam.com",
     "sentiment": "positive"
    },
    {
-    "title": "Saudi Networkers Services appoints Bandar AlDahash as CHRO - Indiatimes",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPa29HZExDaW40TzlIMUUyYVNKRFppSHdqejdGTFdLQWdvLUJObkI0ODBuYWtPcmRTdWJpRG5qSUo0VXppaDlCUUxleTN0LWNSWHNucE9aV2c4SjBIZTBaM0NubXJ2REJfaGlWWFROVEZDLXg2cUxhYjlBRE9aMnhISmRXUFlIemlZazR1SERJdHNZSUJSMGpGY3ppSXpPXzM2SGx6eThFMzE5ZlVVaU1hV21heFUxdVRsakhRRDV6eUFtZ9IBxwFBVV95cUxQMHF5VTE0X0o0dlFRdmZvTlE3WVozeko4ODRSZW4zMlNvdk1lVW1JVUZJRG1xZklVU2ZBUjNwWHhURWptTkp4bTdTRXZ2Yi1pdUI2cFc3OEFNYnFGazhCV0IydzU2dnpmNEZNeUxfLWRXano2UFJ0clJ0SkhJWjl0WkZydUdTcERld0h5aU85VTBKZExWS3lTcW1jVVRBakVqdllMVm9aNlN2ZThtOVFHWklacHVqaXQwaFpZWGFZZm4yTjJ0TXQ0?oc=5",
-    "date": "Thu, 25 Sep 2025 07:00:00 GMT",
-    "source": "Indiatimes",
+    "title": "SAL delivers revenue of SAR 446mln (+16%) in Q1 2026 as disciplined platform execution bolsters performance - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOM1JyRXJrRG5xSmxHWVBkY1FvbndXb0lFeDdadWlac2o4WFhBbVpQdFJQSzVTenJNOXMzSFN1ejIweFNxRmhVcFlOTUdhU216TFBxY3g1cW1QWDNxY3VlMWpWbzRVRTQzbVlHOWhJYXpzWHJGaEpzWjNHWV9iVUlfY19Fdm8tN2l5VUYyZlhTZExFcWFRbUNnbkcyLUFZczhXdm4taUFyQTUtTml5ay1YbGY5cl9jTmppLWlGcE9sS0JHb1pwbDVZSlNOUW5kcjB1MVo2aHRvbmtyUGo5OFVudk1TY0Q5OTFJVk9Hd3c1M0pkVXc1dDczOXJ3?oc=5",
+    "date": "Sun, 03 May 2026 07:00:00 GMT",
+    "source": "ZAWYA",
     "sentiment": "neutral"
    },
    {
-    "title": "1834 Stock Price and Chart — TADAWUL:1834 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBja1lFNlZXUVUwMDc3MV9oN1VnYVBEREhIWlhxa0czUGtmdTF1b1F6TUhQNlFoUkpXR21sVVE3SlJoWmNSbXh3MVRXdFBMa0VGNU9pNFVQcmo3cHVEWmc?oc=5",
-    "date": "Wed, 12 Jun 2024 08:17:12 GMT",
-    "source": "TradingView",
+    "title": "SAL Signs Agreement with Riyadh Air to Provide Logistics Services and Lease Operational Facilities - صحيفة مال",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBia3JCREJoNUFfbG9YZ3hFUVB6SkFCeGxZQnlEVmluMTl1R05qLWw3Ync1OEpabF9ZV2o3QnZEaXlDbFpuUjljRXA1ZjBZd0w3MWYzZXZSWGhNN3BQRl9XaDM0OTludVhvdi1N?oc=5",
+    "date": "Thu, 27 Nov 2025 08:00:00 GMT",
+    "source": "صحيفة مال",
     "sentiment": "neutral"
    },
    {
-    "title": "MSCI removes 6 Saudi stocks from indices - argaam.com",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9oMmowRFloUWpJSFdlMkNfRlFXNTFmdXBOV0E5ODgybDVTOGpab3Fpci1yRTJzUndpS3ZjeVg2RUp5MEw1QVNFMHpXbmdCWEFCdDBHeUV6Mk1Vb1plNGFFakZMR2s4eE54ZXc?oc=5",
-    "date": "Wed, 13 May 2026 07:00:00 GMT",
+    "title": "SAL signs two-year logistics agreement with Saudi Motorsport - argaam.com",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hLU1NZ21TUkJxMUdkOFdETUpMNTFuZHdoYUo4Q0ZLUE05X3k4VWM2RGtiUVlDbEtZdFV0cEVuTWhKS1NUZ015UThFMDliU2JSYlI3Zl9EUWQ3NEJkZ0NRWUQ0TEx5WEpEanc?oc=5",
+    "date": "Sun, 01 Feb 2026 08:00:00 GMT",
     "source": "argaam.com",
     "sentiment": "neutral"
    }
   ],
   "summary": {
    "n": 6,
-   "pos": 1,
-   "neg": 0,
-   "mood": "positive",
-   "src": "google"
-  }
- },
- "1302": {
-  "items": [
-   {
-    "title": "TASI: 4 stocks fall to 52-week lows",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1915942",
-    "date": "2026-06-28T11:05:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "negative"
-   },
-   {
-    "title": "TASI: 4 stocks fall to 52-week lows",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1915414",
-    "date": "2026-06-25T11:18:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "negative"
-   },
-   {
-    "title": "Bawan nods for dividend retention, reviews financial performance",
-    "url": "https://english.mubasher.info/news/4631566/Bawan-nods-for-dividend-retention-reviews-financial-performance",
-    "date": "2026-06-24T12:31:02.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 1,
-   "neg": 2,
-   "mood": "negative",
-   "src": "marketaux"
-  }
- },
- "1304": {
-  "items": [
-   {
-    "title": "Al Yamamah Steel reinforces unit’s financial position through capital raise",
-    "url": "https://english.mubasher.info/news/4632705/Al-Yamamah-Steel-reinforces-unit-s-financial-position-through-capital-raise",
-    "date": "2026-06-28T04:52:24.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Al Yamamah Steel to hold 51% stake in subsidiary post-capital hike",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1915588",
-    "date": "2026-06-25T19:18:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Al Yamamah Steel Industries Company announces an update on the subscription to the capital increase of Al Yamamah Company for Reinforcing Steel Bars (a subsidiary – a closed joint-stock company).",
-    "url": "https://english.mubasher.info/news/4632308/Al-Yamamah-Steel-Industries-Company-announces-an-update-on-the-subscription-to-the-capital-increase-of-Al-Yamamah-Company-for-Reinforcing-Steel-Bars-a-subsidiary-a-closed-joint-stock-company-",
-    "date": "2026-06-25T13:02:26.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
    "pos": 3,
    "neg": 0,
    "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1833": {
-  "items": [
-   {
-    "title": "1833 Stock Price and Chart — TADAWUL:1833 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KNzZhZkliLUt0Si1pVEgxVmU0N3ZCU1k2VzZHNlVnWHFhdWdLR29vUnpzamV6amU3QXNfOEV0Z2dBTW9TR3BUazFHTUl5WVNHWjJ3TnJqbzZUNV9sNmc?oc=5",
-    "date": "Fri, 16 Jun 2023 18:06:20 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 1,
-   "pos": 0,
-   "neg": 0,
-   "mood": "neutral",
    "src": "google"
-  }
- },
- "2170": {
-  "items": [
-   {
-    "title": "Alujain to acquire GOSI’s entire ownership in NATPET",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1652415",
-    "date": "2023-06-20T10:32:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Alujain’s profits tumble to SAR 119m in H1-22 initial financials",
-    "url": "https://english.mubasher.info/news/3992397/Alujain-s-profits-tumble-to-SAR-119m-in-H1-22-initial-financials",
-    "date": "2022-08-07T12:58:26.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "AXA Cooperative, Alujain change company name",
-    "url": "https://english.mubasher.info/news/3976082/AXA-Cooperative-Alujain-change-company-name",
-    "date": "2022-06-26T11:55:51.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1202": {
-  "items": [
-   {
-    "title": "Middle East Paper Co. Actuals & Estimates (TADAWUL:1202) - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWklTclRobTYyZ2R4alNldWF3NG91UzU3dTFlSnh1YjdVWm5VNks3X3RxNHM3Z2RBbDVEN2hIQUNqQVdkWXlmYUF2T0lCdXlFTW54NGNIUllHN3pPV1Z0dENwQU5jTE84UmdaUUhpcVJPaG1OeldwUEotVDB0dXJYX21oaENiemM?oc=5",
-    "date": "Fri, 26 Jun 2026 08:52:47 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Middle East Containerboard Prices: Demand Overview - Fastmarkets",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV19BbWtiQ0k1ZjRiRVNlZVdSdmxFeWJQOFQ4bkRHOGZ6a1lWOG1yNm05QVFWX1BpNTYzU1FXM0ZnWVRrNkNqYzBFU3BvYjl1bUxOeEVrcDhpdHB3YXNQUWJVR21Ic3dEcEdVS2FSaVB5TUU2RVBiZ0NiUWtyM1Q1b0J3S255WkVrQzdXQXNSMU5XcVhWUkh5dXhQaFBpVXhXMmUwYmRKUlE?oc=5",
-    "date": "Mon, 12 Jan 2026 08:00:00 GMT",
-    "source": "Fastmarkets",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "1202 Forecast — Price Target — Prediction for 2027 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE04dFJUVVkwcVQteHhrelhUM0c0b1FITHRvVE1xNGdPU2Q3djZ6SXpLTUZ6M21jdVF1dDV3UzFIbjNqcF9CQWhXdU9hNjFFZVgtZlVVUUZrbnh1SHZNMDQwVzQ5bXk0cWxLamwzcEtDai04NGtDa2tRTkFJUQ?oc=5",
-    "date": "Thu, 25 Jun 2026 19:58:57 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "2024-05-13 VP MEPCO commissions Voith with construction of complete production line for recycled containerboard at its Jeddah mill in Saudi Arabia - Voith",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQenU5RFY3YVVucVFPdVNPZjBibHNxSlRIMmlSNm1fTEllMFZjX2Z6WFJwLXNYSDN6SXU5VnNKMXh2b05lYVlldkJFRWRfcEtGRjlCNzl6NXhzSHN3ZWMweUFLcWJaX0VCOTFHTjNUSnUzSDd4SUVzd0tsWGJrMW9UVHplRlE5V1laaHN5ZWVJUk9maTU2REJrYVpsTFFpcVcyVEZRSDAwbDYwOXhmUEJlZXN5S01ZQQ?oc=5",
-    "date": "Thu, 29 May 2025 07:54:47 GMT",
-    "source": "Voith",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "PIF Announces Completion of Investment in the Middle East Paper Company (MEPCO) - Public Investment Fund",
-    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQVlJFTGM5VkM1WU8xNy1aV2s1Vjg2Vkp4OVVZR194NE9MMV8ySmhWemx4Skx3ZVllV0xvSEtNeE1wMDhHVkgyT1lOaU5oR1BIQlU1Q0lRLUFleW00N2pwc2ZURDZua3ctOHI0Q2xlSVlBVWpMTVNfaWYwUXIwSW1JVU1nUktTc0toSFdtMExvREZmQjJPZUJpQlZLQnZTZzJGS19VbzYtZEpxOWxaN3p1c0pSRHJvWlZ3WUtVLUh2WktGUGQ5Tk5yTnFid0N5eTJEV1E?oc=5",
-    "date": "Thu, 28 Mar 2024 20:14:12 GMT",
-    "source": "Public Investment Fund",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "PIF Starts 2024 with Impact, After Year of Massive Investments - Global SWF",
-    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcGZlNEJZZ0FXdEFmMHRwTzBhYlUtSlFKdXpIRlhWVzdIeHRZRzJQS2pHdUM3SVpxYWoxQTA5Xzk2aE1kei0tbXdrcGFlWVVfeGYxSlBJbkd6SXhDUUYtOFBRSnBxMEQ1djlMOGhBcWlxNUJSSHFYdXY2NzNBRnRsTFgtNW5EZkJaQUtCVkptS3ZrUQ?oc=5",
-    "date": "Thu, 04 Jan 2024 08:00:00 GMT",
-    "source": "Global SWF",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 6,
-   "pos": 0,
-   "neg": 0,
-   "mood": "neutral",
-   "src": "google"
-  }
- },
- "1183": {
-  "items": [
-   {
-    "title": "1183 Stock Price and Chart — TADAWUL:1183 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MdnZMc0ZrU0JUTG85dy0yblFEMlp6N0RDZVdLQXp1NC1kd1VBVWo2NkVZTTE1SkpJUFN3VFJKdk9VQ056Szd2eXctTFU2TlVERjZrVm00QnNydUcyQlE?oc=5",
-    "date": "Thu, 29 Feb 2024 08:00:00 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Weekly Watch | US PCE & US-Iran Talks in Focus; Nvidia Event, MU & FDX Earnings Ahead; Saudi Dividends Reminder: SHL (1183), RETAL (4322) And FLYNAS (4264) - Sahm",
-    "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQVEhNMGxDRy1BbmtOMGpSbUFLeVlfXzFVeXBVa3dmM3h4ZFZZaUlkNjR6b2ZncXpQMHp5UWk3VUZncnM1cXpnQXctZDNaZkFZNTk0VXNrd1VKU0tSLTQxTU8yQm9Ddlh3NGl5Ul9VLXQxOHA0YkV4Mjl0Ymd0M2cxekZaNXZ0QnJ1bGtJcXY2SWtiTFFudEVCS0RlRWFqTk1DS2M3dWNDTnRWNDYxdXhuR0pDWTVwcWxscjlyZ1VrRVRNT0M0V0lsVXQ5UGdHQ3ljWmtEdEN4UUFXeDB1Y0dEakZ3aHlkNkF2NTlzb3JFUGxkN3BkcGJBTHZsN1JXT0w0M0M2MGdyU1BOSnV4QTBTYlN0ZGRETTQtQXc?oc=5",
-    "date": "Fri, 19 Jun 2026 07:00:00 GMT",
-    "source": "Sahm",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Closing Bell: Saudi main market holds steady in Monday trading - Arab News",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5nZVdYZ21ISmxZS1MwR3p5eWxhdEJVWEhnTTQwVnptdTQxeWF6M09mbkhTbzJZdlBGSXRyOHBMV0VwcXpVbXE2bVJrZ3V5YzZrc1ZLNmZ3eklhOGdvUHp2TlRzVDE?oc=5",
-    "date": "Mon, 20 Apr 2026 07:00:00 GMT",
-    "source": "Arab News",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Acwa Power-backed firm to develop SAR 2.5 bn desalination plant - EnterpriseAM",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQLXpJbGUxM25nTTZVOFZkaUVsUm5IZXFMYWQ5QXRkTnNUMElBV2ZSLVBINTEtemtUNEpOS3Exb0hFeDVJb1BSZFA3eUdOMHhQdm1RWjQteTZGOW15N0VfTkhXb090U2w2Q0djel9YZmlsTDhfM1h3RG12aTFlSmk2RUpvWkdpU25zVjN3S2E5NmFkWUlzZXVVemlvZmFuakt0ODRuVHB6bw?oc=5",
-    "date": "Thu, 06 Feb 2025 08:00:00 GMT",
-    "source": "EnterpriseAM",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "SHL seals SAR 200M credit facility deal with SIB - argaam.com",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBxbWo4VkFrREltSHlCT1dJaGRlQjZlZE1fcEJyV1R1ZTRpM19kcG5kSk02elJaUE95UWNpRkJYRmhqcHVPczZMMjJSRGMtN0ZfVWRUZkVxZW1haXY4a0VDV3N4bVJLTnRWcGc?oc=5",
-    "date": "Sun, 10 May 2026 07:00:00 GMT",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "4260 Stock Price and Chart — TADAWUL:4260 - TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5meHctM19IV3ZjMC1ITjVScDdFV1JiSUE1Q18xbGw1X1JTMjVfSkh5em9hN1A2YklMbVVOOGh1bmt1LUFIWkdER21SVDhfamE3dXR6dlI1b1U3ZXBmWUE?oc=5",
-    "date": "Sat, 10 Sep 2022 07:00:00 GMT",
-    "source": "TradingView",
-    "sentiment": "neutral"
-   }
-  ],
-  "summary": {
-   "n": 6,
-   "pos": 2,
-   "neg": 0,
-   "mood": "positive",
-   "src": "google"
-  }
- },
- "1820": {
-  "items": [
-   {
-    "title": "Abdulmohsen Al-Hokair Group for Tourism and Development Announces the appointment of the Chairman of the Board of Directors and Vice Chairman of the Board of Directors, the formation of committees, an",
-    "url": "https://english.mubasher.info/news/4278611/Abdulmohsen-Al-Hokair-Group-for-Tourism-and-Development-Announces-the-appointment-of-the-Chairman-of-the-Board-of-Directors-and-Vice-Chairman-of-the-Board-of-Directors-the-formation-of-committees-an",
-    "date": "2024-04-23T04:46:00.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "neutral"
-   },
-   {
-    "title": "Abdulmohsen Al Hokair Group for Tourism & Development has announced that it has entered into negotiations with Abdulmohsen Al Hokair Holding Group (a related party) to acquire hotel assets",
-    "url": "https://english.mubasher.info/news/4008793/Abdulmohsen-Al-Hokair-Group-for-Tourism-Development-has-announced-that-it-has-entered-into-negotiations-with-Abdulmohsen-Al-Hokair-Holding-Group-a-related-party-to-acquire-hotel-assets",
-    "date": "2022-09-11T05:01:07.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 2,
-   "pos": 1,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
-  }
- },
- "1213": {
-  "items": [
-   {
-    "title": "Naseej International calls on shareholders to vote on SAR 163.5m capital hike",
-    "url": "https://english.mubasher.info/news/4631818/Naseej-International-calls-on-shareholders-to-vote-on-SAR-163-5m-capital-hike",
-    "date": "2026-06-25T03:42:52.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Naseej EGM to vote on capital hike through rights issue on July 22",
-    "url": "https://www.argaam.com/en/article/articledetail/id/1915235",
-    "date": "2026-06-24T17:46:00.000000Z",
-    "source": "argaam.com",
-    "sentiment": "positive"
-   },
-   {
-    "title": "Naseej International Trading Company invites its shareholders to attend the Extraordinary General Assembly Meeting that includes company’s capital increase (First Meeting) by Attendance in-person and ",
-    "url": "https://english.mubasher.info/news/4631586/Naseej-International-Trading-Company-invites-its-shareholders-to-attend-the-Extraordinary-General-Assembly-Meeting-that-includes-company-s-capital-increase-First-Meeting-by-Attendance-in-person-and-",
-    "date": "2026-06-24T12:47:31.000000Z",
-    "source": "english.mubasher.info",
-    "sentiment": "positive"
-   }
-  ],
-  "summary": {
-   "n": 3,
-   "pos": 3,
-   "neg": 0,
-   "mood": "positive",
-   "src": "marketaux"
   }
  }
 }
