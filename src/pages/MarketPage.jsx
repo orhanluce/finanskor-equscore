@@ -17,16 +17,21 @@ const SHARIA = [
   { id: 'non-compliant', label: 'Non-compliant' },
 ];
 
+const BOARDS = [{ id: 'all', label: 'All boards' }, { id: 'DFM', label: 'DFM' }, { id: 'ADX', label: 'ADX' }];
+
 export default function MarketPage() {
   const [q, setQ] = useState('');
   const [sector, setSector] = useState('All');
   const [sharia, setSharia] = useState('all');
+  const [board, setBoard] = useState('all');
   const [sort, setSort] = useState('score');
+  const showBoards = COUNTRY.modules.dualBoard;
 
   const rows = useMemo(() => {
     let r = STOCKS.filter((s) => {
       if (sector !== 'All' && s.sector !== sector) return false;
       if (sharia !== 'all' && s.sharia !== sharia) return false;
+      if (showBoards && board !== 'all' && s.board !== board) return false;
       if (q) {
         const t = (s.ticker + ' ' + s.name).toLowerCase();
         if (!t.includes(q.toLowerCase())) return false;
@@ -37,7 +42,7 @@ export default function MarketPage() {
       sort === 'score' ? b.total - a.total : sort === 'discount' ? b.discount - a.discount : b.change - a.change
     );
     return r;
-  }, [q, sector, sharia, sort]);
+  }, [q, sector, sharia, board, sort, showBoards]);
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -63,15 +68,28 @@ export default function MarketPage() {
             <option value="All">All sectors</option>
             {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
-          <div className="flex rounded-full border border-border bg-card p-0.5">
-            {SHARIA.map((s) => (
-              <button key={s.id} onClick={() => setSharia(s.id)}
-                className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
-                  sharia === s.id ? 'bg-sharia text-white' : 'text-muted-foreground hover:text-foreground')}>
-                {s.label}
-              </button>
-            ))}
-          </div>
+          {showBoards && (
+            <div className="flex rounded-full border border-border bg-card p-0.5">
+              {BOARDS.map((b) => (
+                <button key={b.id} onClick={() => setBoard(b.id)}
+                  className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+                    board === b.id ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
+                  {b.label}
+                </button>
+              ))}
+            </div>
+          )}
+          {COUNTRY.modules.sharia && (
+            <div className="flex rounded-full border border-border bg-card p-0.5">
+              {SHARIA.map((s) => (
+                <button key={s.id} onClick={() => setSharia(s.id)}
+                  className={cn('rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
+                    sharia === s.id ? 'bg-sharia text-white' : 'text-muted-foreground hover:text-foreground')}>
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          )}
           <div className="flex rounded-full border border-border bg-card p-0.5">
             {SORTS.map((s) => (
               <button key={s.id} onClick={() => setSort(s.id)}

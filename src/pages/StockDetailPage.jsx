@@ -9,6 +9,7 @@ import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
 import EquityStarFull from '@/components/EquityStarFull.jsx';
 import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
 import ShareButtons from '@/components/ShareButtons.jsx';
+import CountryLens from '@/components/CountryLens.jsx';
 import NEWS from '@/data/news_live.json';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
@@ -111,7 +112,10 @@ export default function StockDetailPage() {
             <span className="font-mono text-base font-bold text-primary">{s.ticker}</span>
             <Badge variant="muted">{s.sector}</Badge>
             {s.nomu && <Badge variant="muted" className="text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10">NOMU · parallel market</Badge>}
-            <ShariaBadge status={s.sharia} />
+            {COUNTRY.modules.dualBoard && s.board && (
+              <Badge variant="muted" className="font-mono">{s.board}</Badge>
+            )}
+            {COUNTRY.modules.sharia && <ShariaBadge status={s.sharia} />}
           </div>
           <h1 className="mt-1 font-serif text-4xl font-bold">{s.name}</h1>
           <div className="mt-2 flex items-baseline gap-3">
@@ -158,6 +162,9 @@ export default function StockDetailPage() {
             </Card>
           </div>
         )}
+
+        {/* Country-specific lenses (UAE zero-tax/contrarian · Egypt FX-risk/real-growth/concentration) */}
+        <CountryLens stock={s} />
 
         {/* Fair value */}
         <Card>
