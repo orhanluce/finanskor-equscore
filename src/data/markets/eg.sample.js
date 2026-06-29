@@ -4,7 +4,7 @@
 //   nominalGrowth : headline growth (inflation-inflated); realGrowth derived in the UI
 // EGP floats, so valuation needs an inflation/FX lens (unlike pegged GCC).
 
-export const EG_INFLATION = 12.0; // current YoY CPI (%), used to derive real growth
+export const EG_INFLATION = 14.9; // current YoY CPI (%), Apr 2026 (CAPMAS/CBE), used to derive real growth
 
 export const EG_SECTORS = [
   'Banking', 'Financials', 'Real Estate', 'Materials', 'Consumer Staples',

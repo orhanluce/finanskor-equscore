@@ -25,9 +25,9 @@ const MACRO_BY_COUNTRY = {
   EG: [
     { label: 'EGX 30', value: '31,420', change: 1.1 },
     { label: 'USD/EGP', value: '48.30', change: 0.6, note: 'floating' },
-    { label: 'CBE rate', value: '24.0%', change: -1.0 },
-    { label: 'Inflation', value: '12.0%', change: -0.8 },
-    { label: 'Reserves', value: '$46.5B', change: 0.5 },
+    { label: 'CBE rate', value: '19.0%', change: -1.0 },
+    { label: 'Inflation', value: '14.9%', change: -1.2 },
+    { label: 'Reserves', value: '$53.1B', change: 0.6 },
     { label: 'Brent', value: '$78.20', change: -0.8 },
   ],
 };

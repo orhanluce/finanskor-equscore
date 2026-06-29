@@ -1,1 +1,638 @@
-{}
+{
+ "COMI": {
+  "items": [
+   {
+    "title": "Major Gulf markets ease as US-Iran tensions keep investors on edge - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQ21DMGprc2RVb1JSN0xfZnM1a09SMFdpYnlhdk5Ec3p5T0VYbi1ma1ZCWk1qdUNEOFZ3X05OOV9iRGd6QzFzMnlvaUVvNDJrMTJSWGVIQl9GWng2U051S1dyWXpOMjJ6eExNRDZ2WldyR1RKX2JGbUppTFFFa1U1R1Y1Z3MyWFlhay1JWTRYWTFvYWNCelVGVUtrQkRBUm5aUURpLWwyU29MWEotdVhYSkVEbVU?oc=5",
+    "date": "Mon, 29 Jun 2026 14:04:55 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Enterprise value to revenue forward of Commercial International Bank - Egypt (CIB) S.A.E. – EGX:COMI - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUXp2aW0tRWpXbEJqN0ZLVnp6N2ZhV2RXUXdOMnloN0pMN1Ria1NSWmQ4Z1gwRHJ2V2tCTDBycHB5U0h4ZkN3WEZUYl9pdlFwakthZVRBV3RHcC1uZUYtZDBudEI1dXFvNWhwZjA1WGxkMU5DR3AyYUh5UHU1MlVLcjNCSTVqVnh0djNZd3JFYU5HSzNGZGktUVI1eWZOamhCSjhlZTNtQXQ?oc=5",
+    "date": "Sat, 27 Jun 2026 17:41:26 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Mastercard has collaborated with Commercial International Bank (CIB) to support digital payments innovation - Mastercard",
+    "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNZng4MHN1MjF4TzVWSE8yckdJdXVSZ2prdEJuZU9SdWQzcXJpZDZ6aGtRb3k5X0VvNTRsckJNQzJMSnBYNVZFZUFvUEp6aXRDUU14LWo4SzU4TjdfaGN2NVVtT2xzS0ZIYW43S1VNY2Z3QzVVN0xDeVdPR1JoWU1SV0xSUU9nR1BaSnh4Z3ZtWnN2c1NuM3BkYUVSNnlFZ2pnQ20xeW1WQ0UyMFlhamJLVjN4VnVNa21EaVBSNmN6enlrVmdCOFFneVlaNkZRR1hTd1lVblB4M2FlaUlfeTU5N0lZdXJpUk9IYTU4Mkp4TWdGYl9qZm9sNThfN0xyeTZ2dmFhYTdJVm1XU0NtdFdaeQ?oc=5",
+    "date": "Wed, 20 May 2026 07:00:00 GMT",
+    "source": "Mastercard",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt: Hisham Ezz Al-Arab reappointed as head of Commercial International Bank - Financial Afrik",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYkt6bjM2QWNrbmxTVDIwNVBBSk44OWlKbnNDT1FpTFk3d0JYWWJSWUgyMlA4RkxmN0JTb1FzUmx0cjZSLU55ZXgyZzlMcWl4Ni1oQ0liNXNHMEFoN053Q1E3R2ljRERFSkVQckJ1c0t3ejhXcEdlajk0MmlKTmk3Y1JLV19KNnVybFVGM3BPVEZsNFdUQkpIakJkNWEtRWwwMG03b2xfdmxwNkR4c2hWNnc3aVB0VXBuZzVCbjRwejk?oc=5",
+    "date": "Tue, 17 Mar 2026 07:00:00 GMT",
+    "source": "Financial Afrik",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt’s best transaction bank 2025: Commercial International Bank - Euromoney",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS2FINENrVzd5SFhVTUNjajhSam1nSENHUGpKOUM3NFkzMzZLczJaVzFKMzZvdnBZdWhkaE1GVHhtZFZJXzQ2YkJNZ3Fpb1VrRkRNQ2c3SV9pRGdzdHE5NnIwR2drclNHMWZrSGJMcW1BRWxMSENmYVA2VFgtZWNKZVFvakFOZUhfWU5MSmQ0QXdsel9pUG8tWk15OGZLWTQxOFoxTkhrY3NOVjZZV0RGc3pPRUc4NzljTHBiS0VPdXJTQQ?oc=5",
+    "date": "Fri, 14 Nov 2025 08:00:00 GMT",
+    "source": "Euromoney",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Commercial International Bank completes EGP 2.18bn securitisation for Drive Finance - Dailynewsegypt",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRkRDWVZBaS01TnZCaVlhN2tocDdjTVhnbW1STWhCcldxVjd1eGNHZXBCVVRfMzgxbmVJQ3NPNlBuOUFtMGhRemU3bThIQV9fY0g3UVd1NnVybGRTYWJBYXR1U2swQk44V3hfT0FkSEQwRVRBSXBoSVpHVlEzMVMxc3BQejVlV09VdUstVDNBakhlSTM4SXVodXNlTDVWcWNNWmtheEw2SDhVVnlWeXhGWUduVDRSdWU3Ri1lNFRXVlBzLUJP?oc=5",
+    "date": "Mon, 04 May 2026 07:00:00 GMT",
+    "source": "Dailynewsegypt",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "SWDY": {
+  "items": [
+   {
+    "title": "Elsewedy Electric Unveils USD 200M Manufacturing Push to Expand Egypt’s Industrial Base - waya.media",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeG5kZlNMd0FwaXN0Mlh1eHZpOVpPNGF0b2NCVC1rdmd2UUdyb2ZwLUE2cnp4NzVkYldqd3hQU0ZBS2w3WXhLNUl1MWdTdDdqd2x6TExvdVNpS0ZKT2t3bnJtdWE1WThSeXVJaHBMbUJ2VkVwWUpJZUtiTE13a1dnT2hPMXR3bUJIOGVjT0hfWE5yQW1sWmRSeFROTlZVSFBDLUF5M3pmcG5Hdw?oc=5",
+    "date": "Thu, 25 Jun 2026 07:23:32 GMT",
+    "source": "waya.media",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Elsewedy Electric launches $200 million industrial push - Billionaires.Africa",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTUxVWWQ4NWpJazJ6bGY1ODZmUzROdDVhampjVmpTeE1GajFQdk8tY1FLS3JtVG9mMGIweVdKRGVMY09FLWNaUGVjcUhOWkN4YnZNNURucTViNC1pTGtJZm90ejVXa0VuQ0ZfODJISExxWjlMWE41T216RHIyZVYxeXFRTExseUZUSE13c2g3YUoxTnNlTU12eHpvSXdTZmdMX3hhWXdXZUxrU2xmS0IwUl9pYzFCSEVtMHJ5MzJ3RFF0NW5PWFpPUV9VeXMzVjZzcEFOTjd0cw?oc=5",
+    "date": "Fri, 26 Jun 2026 07:00:08 GMT",
+    "source": "Billionaires.Africa",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Elsewedy Electric launches 3 industrial projects with $200mln combined investments - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNazNtUGxTai1Gak0xekhzZ2Rtb0xhOGRRclBHckt6bXhLVUw3ZTlZWFNVS2c0SzU0cXZ4M0YtRTQzeFlKS0tPQmVtdW9GUkhoZlNTTFFJMFJqMmFxR2dpd0Y2UzdSaVRGVng2Z3pmSEpzSWFGZjFrSUpLYmpnYXlSYVBKRlMwYkY2U3lNQ3ZZamVON21PeE42QW5FRzZrU3E0b1JxbWhuNmUxMzBfQ1hwZnFPTDdXMjB4cDI1TUh1Uk9xN3J6aFJzemducEZqVkxjWnF5bzJPckFlQQ?oc=5",
+    "date": "Thu, 25 Jun 2026 10:35:39 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Elsewedy Electric to invest $200m in Egypt’s industrial sector - Arabian Gulf Business Insight | AGBI",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUUVWd0Q1XzJCSTBxVURZY09MOWQ3MklCT1U2ZWtReVVFZ3FsLXRtZFcwRm9tb2ItalVBa0U0NkJQaXdaRnZUNkFCU2dBZVpPX1ppUHI2dHZhRWN4S3BEWnhVMVVOZXYtcmlJZ05SRWtLZ2FnV1B5X19Qc3poSjdvbzZxWUU5cktGQ1VSQnpTQWVxU0dTTVdLWk96R093cUNR?oc=5",
+    "date": "Thu, 25 Jun 2026 11:30:00 GMT",
+    "source": "Arabian Gulf Business Insight | AGBI",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "SUTech, Elsewedy Electric, and El Daheeh partner to promote AI, - Fintechgate",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNc19sNFVnVHgtQ1I0Mzl6RFp0aHhCYXBRX0NKeHN6c05EcFU0dEJ5cl9hVEx1eWxSYWxyTktrN3hhdjZURWZJMmFobFpzM2E1MmNYNWRMR244YVBNTUZXaVdGdkkyR3lEemt3X3FrckREeVZTal9Oenp4RTFzNEFBd3FnSHVKS2p6c2NfTGxnSm9lY042NE1pS1pUZFZMODlrRmt4enAyZFE4aG8zM1ZUQ2E1ajM3TWM2dmFtQl9uR2w2b0JpRy1ONGt5ci03MmN5bWNJWDNUcVNfYTRFblhtejZ3?oc=5",
+    "date": "Thu, 25 Jun 2026 07:29:13 GMT",
+    "source": "Fintechgate",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Madbouly, Elsewedy Electric discuss expansion plans, new investments - Dailynewsegypt",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPejFiUEJrRkNFa3czRnVNdVNXVENPbGY1NXpuZjZHdkNWQ055aFphb3I2RW52cWo4LWQ3d2E1aGVWaldheFVjQmVVTFBLSjU3Tlo4dzh4dk05S1QwUGNFZTA5RXE3SVAwZ29LNHF1aUN6Mkp1SUVIblNIRHRfa1c4cjdGczZET2cwaXFHTnVUM1RXdlNNT1RHeWdTY3o3QjZhRENvR2UyYm9GX2NkV1E?oc=5",
+    "date": "Sun, 24 May 2026 07:00:00 GMT",
+    "source": "Dailynewsegypt",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "TMGH": {
+  "items": [
+   {
+    "title": "Enterprise value to revenue forward of Talaat Moustafa Group Holding – EGX:TMGH - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWlhjV3FDQnBhSWx3SGpuNmJ4OXFDUjlpU3hkYkIyRURib2lUY3dxdExxZjdJZDZOa0tJY3ZHbG81NDdKZVpkQ1pPbVcxYXdnMkRydXM2TWs0TnR6b1F1cktqZnV6VFk1NW93NUlzdnBJYlBvOVdhZTZmOGVheWl6VlhIU1JsTUZNcXV1UmdJTGNNSjlZcFUtcDV5RTQzZHVBUDM4T3pkdDA?oc=5",
+    "date": "Sat, 27 Jun 2026 18:12:43 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt's Talaat Moustafa Group to build $27 billion city east of Cairo - CNBC",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQX1V4alZLUTVXNVhZa2xpUkFBQ3ItcmlxbDRjYTlmYlNwcDVwQnc5REQyR3dyQmFyWjMyZzhZcDBEX0diVlphSm1td3F4OGdTX1lfSlpfVy1OdEFqdEpxQVl0VW5BUFFhTkN6Z0hvSFRsNXlMNjU1MGc0MGIyWEVwX1RULWl0dXZqVXFwN3phaXhfd0hXdk80bzEzT01vbDlibTNleENPb9IBrAFBVV95cUxOSUlJemkwYkhySkdxMGtwZ2VtTVhwYVAxUDVCWFNDSzNXdFc3TUM2Tks3a2Q4Wjdwa1ZUbDBqa0hwOW5URVN3aWFFZ2d5dzVSVWszb0NTTWxuUVdVN2tsV3hDT1JPdnYySkI5NDNTc2daWjhmWmFRNzJ6aFJ4clQzLVRjRi15cGNhdC1MZTljTzJPa0dDT2dCTUwtclFTY1FTcWV1MXkzREpsMEwz?oc=5",
+    "date": "Sat, 18 Apr 2026 07:00:00 GMT",
+    "source": "CNBC",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Saudi Arabia’s Sela and Egypt’s Talaat Moustafa Group form entertainment consortium - Dailynewsegypt",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPejR0R3RJN2lkUUhlM1lUVThsRlg1MUVhWGZBZ25JS2hfRGJmaWI1WEI5SUc0YjViRHFpR2dRUXRLQ3h1dnlMU1UtQXZQbjR6QmVZTWFacGRSdUxUTTl2bmhGMHZWdkpELTRQS0JybTFlajM0RmZ2cW9tS3dQZnBmZzAycm5YWFN5cnBlQzNpX3R3REFyOFlyYXpYaWgwXzZXM1BxSHZaaFVDTl9uSGlMRFk4aFV0TEVROUE?oc=5",
+    "date": "Thu, 21 May 2026 07:00:00 GMT",
+    "source": "Dailynewsegypt",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt’s Talaat Moustafa Unveils Plan for $27 Billion New City - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdm1oQjFvX1VQbmVvV1JpTnV2cUVqdmV4NHJzOUZ0eDZ4bFNINExtX1NLSEZfbDhiT0d0Q0xBcHZGQm1mM1V1ZFhHN0dCNm5lSlVVWW1IVWNRN19rcXkxUEVFdi1ZVUF4bHhpdE1hMXd6Y1hkbExIZU16akxPeFlpUmpsek5hTkZGZVM2Zm5uMGIxWG5LVkxWSWVybzJuRGVqTGpHUm43MXJ1clV0M2hUUg?oc=5",
+    "date": "Sat, 18 Apr 2026 07:00:00 GMT",
+    "source": "Bloomberg.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Talaat Moustafa unveils $27bn urban development in Cairo - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZ1lZU2huRk1ONzJkNjFVS0dIX1pCWXFrTGx5QXB4NW1PcTZaMmlZTHFBNlprei1FT1pLNFZoY0lmaTFILWZfajdBQ2RqNXhSUU1iU3gtaXJUWFI2TDFqYkdHTzRCejZpZEVFalEwMUhYMGJudERaTHA0aFRNQVk1M1ZBOXdfUXBTSjNDMG9wdWJkakpVZ19sN1NibWFOSnBF?oc=5",
+    "date": "Tue, 21 Apr 2026 07:00:00 GMT",
+    "source": "Yahoo Finance",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "African billionaire's real estate firm lands an $18.8 billion deal in the Middle East - Business Insider Africa",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMmpXd2c4MXpTODRfU3FRVWEzR1U2Um9MT1FrYm1QNFhTbHJxOXJkY2tsTDFvVm5aZ0VCbV94V3NoVHhlbHRKX1JVT2dSVHhLMHdjRVlvMzlwaFlsYWM0UWF5aTdISmZUak1HTTBiT09sVmdxU0NsbUVGeVNrUDhYQjZONTY2aHZfRnBtTndIenI1V2pmeHZDZnJ0UGxuMjgxU0tYYnJubDF5bHVaYVZsTnJlMFYwYzNRU0pTWnRKQjBYUDBSQml0bG9NY0EtQm90ZzdEbA?oc=5",
+    "date": "Tue, 02 Jun 2026 07:00:00 GMT",
+    "source": "Business Insider Africa",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "ETEL": {
+  "items": [
+   {
+    "title": "REG - Telecom Egypt S.A.E - Consolidated FS Prepared with IFRSs For FY 2025 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQV0ltN2hBNzV3Sl9qOVhsV3NncUpsLURIU1RUcDdlZ1p1N0lZV1NmeVIzU21FWVRJd0drVV9HMjJzdWZldXRKdDBtZkswbWhnZ1VDTUV4QWJyTHZUZkREdTVMdWpjSFMydE5kekFsUjh3bG90b1kxTk5PT3N5V1doZ1BqeVBLSTVLVUNCcFptOTZCVC1ob0RGOFhhNzF6bFpXTTZyUEUzbDhybTZRS3FaeEl3eWEtQWNoS3V2TDB4cHVzSzdNOEJwVTZpVWtfSXNaWndmSVZ1bGFLZ1ZoZlRjSQ?oc=5",
+    "date": "Fri, 26 Jun 2026 06:18:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Telecom Egypt Partners VIE Communities to Develop Smart Gated Communities in Egypt - TechAfrica News",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ0dxSFZxcHVSTENoUGJ1SWRkSjB2a2YteER0TW5nVXgwTE1ZYVVFMUZVMGdfcDczdUdyakFBS09BSkxkWTFHbWdPQWlTRi1lcm5ydjdpRnpPS1JOdHpyVWxWNFd1eHhhT1UtVlFDUVRreExRTTJldFlTZnVTQTZIb2NIckgwb2xGVTZ1S29IM3B1dnNPamwyMDZnOTd1MDBKTDF3LXhEd3FqSURLVDhsX2g4SFdTMnlUWkJtYW9n?oc=5",
+    "date": "Wed, 24 Jun 2026 12:49:49 GMT",
+    "source": "TechAfrica News",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Telecom Egypt to bring FTTH to New Cairo property development - Telecompaper",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc2wwS1FHQ2oxSTFUdGFVV0llWjFwMWpjcGhBZzZGRnF2X0VScWh3STYxRDFubjZEMk1hcUZ5THoxUHRJX2tRYVgtZldSNUYxS1pHUWFTOEdIUlFOcXFoTjlSWk4xdVpCQVBVOGlhTTMzSzQtb05iOHhNQXAwbnpXRjB6T0NHZV9zVmI4OUdWUFg1cE5vRFdxX3FWWFBaRXVlbGZfMVFZYw?oc=5",
+    "date": "Wed, 24 Jun 2026 09:32:15 GMT",
+    "source": "Telecompaper",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Hyperscalers and data centers: Egypt's next digital growth bid - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPemVmbV9PYTJBcWx1cXczM0NQSGI5M0xuMzllZmVzcDdhZHNlNm5xaERzU1VCS1VZQnhKdmNjZmNLZndNS2ktSVJTWU1SUG1hbjlETDVMRkwzbFN2QVJNUDE0ZExYdVdDTXJoc0lrQkxrN2ZFeHFHRVlkd3N2bXdZSE1tQXVmOF9jQl80UXdHdEhGWS1Dbjk1TDVXbGIxbzJNRWJLOFJKLWdKZW9FenlnMlBrZ3l0dw?oc=5",
+    "date": "Mon, 29 Jun 2026 07:22:40 GMT",
+    "source": "ZAWYA",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Telecom Egypt showcases student innovation at WE Shine - Tech Review Africa",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRkRzWjJocXVXZEVpNjdsY2dLaGpoWGpsbHpnWElIS1lwc3o4OVF3b2JkdzJ0Y3UzVktKT0JyVHhsRTlpV0lJVGdDaHNhZDUxR1VvMjJFaTBPQlA2eGs5VlZwLWoySm5xTl8tQjZZSG1OUk1YNDJ3V09rTGRsRDQ3aW42bDlXYmtEeks2UVFwbUNJcmY2dDBpMg?oc=5",
+    "date": "Sun, 28 Jun 2026 12:40:19 GMT",
+    "source": "Tech Review Africa",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Telecom Egypt denies move to turn data center complex into ‘cash-generating asset’ - Data Center Dynamics",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMWhmS3VMTV9DOGhVczdIV3RVdXB0bUR5Mm9OcWxvX2YyS29QanVfQnBNQ041UFB6ZDdkQlAwd2liVnRza3JPR2V1OTNtX214dDZsX1hZSFBNV3dyN2lCQmU5OTZJNHZKUmppZ04zTlNqWi1PWWtKQm4tZURqQXFOX3huaUxDd1E2Q3RYMFlKZEhDWVhkTXEtR3o5T1htQ0xoai1zQVFYOXVmY3dtZU1LZUZTT2ZXZzgxWXNmalZUcUtCZw?oc=5",
+    "date": "Fri, 03 Apr 2026 07:00:00 GMT",
+    "source": "Data Center Dynamics",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "ABUK": {
+  "items": [
+   {
+    "title": "Abu Qir Fertilizers & Chemical Industries Company (S.A.E) Stock (ABUK) - Quote Egyptian Exchange - marketscreener.com",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVno1MWlSQlNWamhqQnVxRHRXUjctWXU1Zk5hYkZsYlREMXZBaFBYQmhlNXIyS3ZwX2M2MXBSRDJMSFItaERTdFJ6RDk5TE9QdEduUHF0QXZIRzl6RmxGMXFYcmRwTG1yQ1p6bmVMd0gwdThieG1qd3c2UVJrOXk3WC1HWQ?oc=5",
+    "date": "Thu, 02 Apr 2026 15:51:50 GMT",
+    "source": "marketscreener.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Abu Qir Fertilizers & Chemical Industries Company - Forbes Middle East",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXpwcVRhUkhWSC1kTGthWDVVYjRsTUdINk05S2MwNktnY0NoZ09YQUV1c2pTdks5YXUwZmZBdlRpRDVWYldyazV5MUdBWXg2QXk3dVU2czVtLTlHQm4tOEctLUhEQU9lajhJNUdCLS12N29lVTFRWWM1RjB4UXdCS1piVW5KRi1Oa2FheHlPQlYta3VrX1g2WHMzb2V4Q2JuYTRBSE4zZG1SaVVnaU9WckNxQWNJeGdzZXRRMVhmYThqeTc2?oc=5",
+    "date": "Thu, 26 Mar 2026 07:00:00 GMT",
+    "source": "Forbes Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Abu Qir Fertilizers Secures License to Operate 2.6 MW Solar Plant for Self-Consumption - Egypt Oil & Gas",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQkhWbWotWXFlV21BYmg3bWJKeEkyQkF1Z2d5MHJEVmJmTUpNeGh6cmZpSkNNZ0lpM2FzdDNiR2pnaVkxRGY3R09LUDEzSWtHVmZ4c3JnUFB6MW15TkVRM1NGTUNJUUJ1WVRtem9xT21PdEp2OUlqSkQzSE1ZTkd2aHp5S2NGdGdMNktiaUU3cGhyd3J1emxSeXZQdm9uQXE4TjJKbjFibWtDX1k2SGJtaUUzUG42UWhf?oc=5",
+    "date": "Tue, 23 Dec 2025 08:00:00 GMT",
+    "source": "Egypt Oil & Gas",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Government looks to transfer EgyptAlum, Heliopolis Housing, Abu Qir, Mopco, and others to the Sovereign Fund of Egypt - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQSkhCMjNFMFN6bk1BbmtCd05ERDR1SUZNdXFwaTlMWC1BMHFBTFRDVFJyRzBxM2JxRFBhY2NmNkpzSmhHR19DWnZhdm80TUdjaWlUZVBJSXlsV0RqeS1reXZQQXRFRUpvQm1oSjZ0czFRcDNwLTEtWHgyNC1aclBOTjJyVmFYUlZ2TXphdW1CWERLZHIxazBjcFFSNkVRYXE0cXBfX0xoT1dEWUw4eFB1b21NblFzVE9mOF81WVYweFJsZVFsaUxhTndXanJSQ0thYVgzTzR6N3J5cGFLRklyVG9XZlhHVXdaU3BPRg?oc=5",
+    "date": "Mon, 02 Mar 2026 08:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt: Abu Qir Fertilizers approves $5.6mln coated urea project with 400 tons/day capacity - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPREI3Mk1pZkpsRXBpWGN3YTVtLUdIRy1YSXQ5aHc3TnRqdUFjVTBSWVBzOUdpVFJJeDNpRWQ2RHhUZ2ZyM29TM01EZnBOaFI4elFtRzhjdDFhZnVHYmNyY2lHUWRUTkRDeVVDcFZKUGducm92ZnFaRDlJc0tNdkFwaUphLWZQVDVvU3cyelpNWldENktQSmI4SElodE45SHF0U1ItSHF5cW8xYTZZdVpjRjMyWHV3SjhCWVNCVFFoM0xUWURFLVJFSC0ydkxCYm1sTnJtZWJyRThJUQ?oc=5",
+    "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Abu Qir Fertilizers, AlexFert, Orascom Construction, UEG & Valmore Sign MoU for 500 MW Green Hydrogen Hub in Alexandria - SolarQuarter",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUkNlaDU0TkV2ZnBYX194aHVIbEF1V2hfTXV6cmlQTEkzNkZJbXRwb3hEX2xNN0xGajY3ZXFKa1pabDNXOHNTZ19OTDZqSFFQVmFoUGdhZnY1WGdmRGJEVHgtWi1wU3Y4UEZhZnk4bGJ6U3lOMmRqNFItMVBDOVl6ZmlWNGdOOTJ0eVBRaGxHcy02bzh4NFN5RnU3S0YwTkpvYUVycDhoRldqSVNwUUh6RzVtRHlxYkpZblEyNzlvbkNTTU5nSi1kZkhYWVJHUFNrZ3IyYUVTb3B0YWpQT05TMnU1TkR5QQ?oc=5",
+    "date": "Tue, 21 Apr 2026 07:00:00 GMT",
+    "source": "SolarQuarter",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "EAST": {
+  "items": [
+   {
+    "title": "Eastern Company Actuals & Estimates (NASDAQ:EML) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNS2xFSjRJOERVX1pZZzNReWp2eExMdlZCY3VuRmdwREVlcnNSZjJYOWEzQTM1QzlwZkMzNGc1TWlrVHF2SDRUOU9LMzc4RmQ1XzNaYXZLX25odGtWbW5NZzlRSzhCS01lS01mVlFXNnZxSUxWdjFDeWtjS19LaS1vbTBHMk8?oc=5",
+    "date": "Fri, 26 Jun 2026 10:49:18 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "$22.8M-a-year aerospace parts makers Sungear, Crown sold to Eastern - Stock Titan",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSWRHOHhoamV3WkVoRWhJVnJCeTVRWjBuaEt5a0VTNHRjelU2ZGhTLVFseEdWUXh2UU52M2o2NWVoRVFycDl4bVkyZ2dMOEpDTk1Jc21iLW1yRlFPWXpYU1BweWtNVlU1SDJMSkl0TE9qdUoxSXF4NmloRU93aVprWjBNWDBhVWhMUlcxRWxLVm1PZVFXdExGek1NSzlCeGl4YkE?oc=5",
+    "date": "Tue, 02 Jun 2026 07:00:00 GMT",
+    "source": "Stock Titan",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt: Eastern Company sees 23% YoY profit drop in 3 months - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQ3pRVTgxYUp0TENTZ0pwVUdCbkxUVHJMVG9YMXhfR25ZeDNOSUpMNGM2M3psdGw4OGRnVWNUeHlnaWdYN2hzNzBaaWdVanNuYXcybmNYQ2dzZUQ2eGlrOXdqMUVMQmZEMDUxY0RqbGZDTnZscWRhN3E2SWZubzA5clhjemNtRGNGdXhCaXc4NUxHTERwMnBNV1VDY0tPX243LW9fQU92RW9uMXZWX0VoZ1ZCRHU3U28?oc=5",
+    "date": "Mon, 15 Jun 2026 07:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Eastern Company revenue 2020 to 2024 - Statista",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rTnpJeU5sUTdMaVNlOFVHU0RheHlkalY4a1V1a3pfalJqclFrUkJwOFY0djEweGk2cmEtczZ3Z2JNaldGM09IQVFSSGUyQjJFQmlvYXgxQjdrTkcydjNidk1ZSWJ5SFE4a2czQlE2WVd5eE9JdUpJ?oc=5",
+    "date": "Mon, 16 Mar 2026 07:00:00 GMT",
+    "source": "Statista",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Eastern co director Frederick DiSanto buys $6,192 in stock - Investing.com",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaTYzR0FLcldFcjh4WENsOGlJVFBzSkpqLTRWeVFMUUlfb04xUHpIQkRIMGhoNmJGYVRvUUlUeGtlb2FxZkxPYU5TdHM3bXVFbmp3a2JpbDgwTHhYMEFIVEFINXRGc0VyTUZnMnJLU3pNeFdCaGtyeC1MWG5lR0pxM0xYeEdXQjdNUkVPeVJab2RpdkpfOVhWQ2pvT1FNOUswUnNmTjVmbVNXaFQ1dXI5TzdxOGZ4di1ISGJ0RUZR?oc=5",
+    "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+    "source": "Investing.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Eastern Co (EML) director granted 940 shares as fees, boosting holdings - Stock Titan",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMm1rbk1IQ1dpUmdQTzY4a0xVNERJdndyZWdYd056aXBlMnJ0dEJ5WG5yQTZKYUJfTm9xdEp2eDAtU0x2bzkzWUt4aE5ocmI0QUZPNGVKY1R5dDRIS1pFUkRvX1JtSkRqZGRDdklsZU1YRV9oT1U4YU82RzFjZ3Z3QTBHM19HTjNJNktxN3ZqNWF5V19pa2JqYWxtQkJvTkpybGxsMWxR?oc=5",
+    "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+    "source": "Stock Titan",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "HRHO": {
+  "items": [
+   {
+    "title": "HRHO Stock Price and Chart — EGX:HRHO - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1GTUVOU0Q5elVZYmVEcU5Fa0d1eVhheENkak5oeEs2RkpvSFdOd3MzUkN2NlZhQUc1WmNKMjVNbngxNUo5S3o3dmQwQ1JXT2k4elJ6d2dQVjI?oc=5",
+    "date": "Sun, 08 Feb 2026 08:00:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt: EFG Holding advises on Premium’s $4.8mln securitized bond issuance - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSjhqNE4yRFRXeGxYZ29pOXJxb2VvekwyMFlnSHN4blo1MEw2X19pQUlwTFZJdFMxeVBMSzJ4S0Fwc1E5VFFxc1ZaMWMzR2cxa2hmODc5Y0hDQjRpMWtXN3o2bUFlZ0txZTN4T3VOV2QweVNrYU10dDRrNFhqTElFeWpvdWRNU1B5QkF3d3FZcDV4LWlmdmhhT2Ztd2t4LTNmUjdJWTUwZjVEVjNlcjRycEY5a0tMc0NVcjNlUDdVWl8tQQ?oc=5",
+    "date": "Thu, 25 Jun 2026 11:00:12 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "ZAWYA: EFG Hermes completes advisory on Premium’s EGP 239 Million securitized bond issuance - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTDJOSEQ5eGlJTkh0U3BxMWQyeUpvTkc3T3ZvT1E2bGZHdnBIU19OR1JaN051ek5PcGJ3Sl9fV25DM3B0ckM2cDNfWS1FcVRHTkRONFFTbEMwdmgyMXN1QXpLQ21kVEctQUJHeDdFSkxUbU0wSElkVE9QTjlxMWM3dFo0bnV5NHdXdE5rQlkyLWM0Yk1ucTI2aVNtT2xLejRaVFNtdVdCeTg5bkk5V3ZjN0dwbFFYVm5kWXVoRG5tUlQzOUNZbzFvTlI0VUxVU3RkZTJsanV2T2lXWkN4ZFBsTU5wblRIblNTQTJNUHFFLV8ydXktcTA4Q1Bn?oc=5",
+    "date": "Wed, 24 Jun 2026 14:15:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "EFG Holding announces plans for Valu listing on EGX - Gulf Business",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcVFXOEF3MWxmNDBNTXAxZHNFU0lNUFRISlFPZUM5QVdJMDdlYkVQNUZ3N2VCa2tGZ1pYLTZxbUNHTHVaelh0blNpR1pXZmhHRGFMcTJyZ1l6TGdwYkUybmhOa2dxUll2Zkhwdi1aZ2ZmN2dBVHd5QXI1aTFEcFBqTGFB?oc=5",
+    "date": "Thu, 16 Apr 2026 21:23:45 GMT",
+    "source": "Gulf Business",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "EFG Holding posts 18% revenue growth as Bank NXT outpaces - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWkloVHktZVRJeFRhUzluSUhhbzBLTWIwOFhYbExtQzJKQ25tel9KSkdBYnVfNXdFMndsNzNCRnVNM0JiV21NdGJSZWVHcUozMHlkbWVUdTI2TUU2anEzYTBJVDg0V3pWRjc1VVlQcFYwLVdQdk1rWXo4M3FvMnZsSmNSZXhnR3dLQS13Y1FiM2NMQ2tYUklyWTVVcWdic2Vi?oc=5",
+    "date": "Thu, 21 May 2026 07:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "positive"
+   },
+   {
+    "title": "EFG Hermes launches 5 investment funds for individuals in Egypt via its digital app EFG Hermes ONE - جولة",
+    "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1tLV9saTJPT3ZzZkZxSlRLNDRzZWNYemM5QmxtNHR5OGNwVUN4X0xubG53WWZ0Q2VvQmMtMktJQQ?oc=5",
+    "date": "Wed, 25 Feb 2026 08:00:00 GMT",
+    "source": "جولة",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "FWRY": {
+  "items": [
+   {
+    "title": "NARD and Fawry Partner to Deliver Seamless Integrated POS and Payment Solutions for Retailers - Fintechgate",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQ0hZY3lWWFBSbGxUZFVNV1JteHVDRTVHU2JOS1VXM0xWT2hsOUNXQ0dKbExyZmxPX2Q5eUE3UjVhb1d4OVZ1dzlUVFlMRlBSRFlMem10RWxBdk90dXZJV1BpZkM3NDVlbk5WUXptVUpZYUdzamxZU25BMThvelpPc09uQlNORldGSHFSc3N0OHVhX3JzRW5xRGJYNXRVcGVmbWc5dWV1ODE5LUttVmptdGthaU1QOWtXRmFWS0hobEc2bklsTnhrZQ?oc=5",
+    "date": "Mon, 29 Jun 2026 12:55:47 GMT",
+    "source": "Fintechgate",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "EBRD, EU and Fawry support young entrepreneurs in Egypt - EBRD",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUVNRYW5CLWtPUGhEaUdfV3Zadl9GUlBkckJyN2QyR0pmTXpaOFUxbjI2aW9TTFJBSGRDN0hOVXRPQTk4d1BHdE9mV1ZsZHZNY1RxUXQ2QU12WHg0Ykl1bkdORFl0eC1RRUV6RlpNSWpRMUZsT241eGdHeTBZWnYzLS05V1kyYnVqS2gwd2M0am9DUWFVS2ZsOWJaLWdLVm9yR09pcDNZU2ExenJOczFDazZB?oc=5",
+    "date": "Mon, 27 Apr 2026 07:00:00 GMT",
+    "source": "EBRD",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Fawry NARD team up to boost POS digital payment solutions for retailers in Egypt - Markets & Companies - Business - Ahram Online",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPOC1uX2RDX3pPOUgwTm8zVEFtQTBiYzZHSmNYN3ltV2w0NFZKTG9tZVhCdWYzXzFKWk1Yc0FueG5nYVNwV0s0MVdha1RwQlJlaURnaVFMdi1ybGM5a1h2TVMtYWloRExjTktlbGdCbWxTWm9mbE5qdUhCUFNNQXhzdUpNQ0FHWE5aY0NOWDRJMXVRdzREOURYU0xpWHIxTDQ2RG1kTFBTR0dkZGZEclNwblhaUGxLZ2RsWGh3Q0JRbTlWMFBHYS1SMEl5RHJfVmh5ZHc?oc=5",
+    "date": "Mon, 29 Jun 2026 16:03:04 GMT",
+    "source": "Ahram Online",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Fawry Banking and Payment (FWRY) Stock Chart - Investing.com",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9lRlM1MExUZXlwNUt3R0laZzU2VGtBcHdkTXYxcWRMT1pJSmkxTUdobW11WTEyQzZuOG5RQ2c2NmlnandyWmd6ajJYT0FXSDlLMC1CenhVVGJJQlRlT0lVS1hlWUEtWGk0RTBEZDNpXzVJQTVF?oc=5",
+    "date": "Thu, 25 Jun 2026 11:16:59 GMT",
+    "source": "Investing.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Finovate Global Egypt: Investing in Digital Payments, Innovation, and Future Tech Talent - Finovate",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWkFweUlmbWg2UTlhdnVYT296cUlfVlN1ZXJNQ1BMS1JoRlRobWZLcTNKdE52V2g5VmIwYmN3T1JyaW5lLXpZSW15NVpTSVM5TlZjZ09WNnQ2RExzbEo0WUxVc2w0djZUcEE4RU9iLTBjWVFkVmxGQUs1M01NYjNfQ00xUFRqYm5mRS0tOVdfZ01ocjZERHA5QnBWVmxqN0VhNzRHdUxoWG5PMFU?oc=5",
+    "date": "Fri, 07 Nov 2025 08:00:00 GMT",
+    "source": "Finovate",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Fawry Reports Record FY2025 Growth, Driven by Diversified Financial Services - TechAfrica News",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQ2xQeWowVjZmTXpsU2IzT0FsUHZZNlhwWE50RFlOclV6UXp6SDRQY3U0dWVvQU0wdFp2bkxVUDFzb21GUXc2Rjlvd1Vwc0R5VG9HaTJ2aHVSUTQwcmVjekVNRXdwUjZLb0Q1Ny1OTzBHS0M5MUtqTmNMVkpWTjdaRHlnR0pKb3RzaFRFMExGRHlqcDdWSEJac1JyNk56d1A5YWpOdzMteTFDeTZTSjMyNC1PLVQ?oc=5",
+    "date": "Thu, 05 Mar 2026 08:00:00 GMT",
+    "source": "TechAfrica News",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "ALCN": {
+  "items": [
+   {
+    "title": "ZAWYA: ADQ moves to consolidate control of Egypt's Alexandria Containers under AD Ports - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQV2hDQVVud3pNOVJwWWhBc2JKNmNlcktURVJmUUQyclY1WFJ5dmxtTjZ4YU1NNHpQVW9rckxNMGFfT01TMHZWb0VKUENqRWpiMTE0MlU2dDVTNTlNZnhKZ2hkZzNpeWZvSC11MXJmUkFOSTd6TUhYMkVKUmk2Uk9uZEdJZGhtVnpiMzFJWFllRmJfY3NDcWhQdE9zY1BlVUxnb0t5T0wwZ2VnT0FSNlh3QVZsM3dEclJLWktsYl9uS01lUmxjcnU5VmhhekxicmFpTmJUWXplT0pieFI3UGY1eFo1bjZqZUFyZjdkMVZ4ckFGU3Fy?oc=5",
+    "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "News AD Ports launches takeover bid for Egyptian terminal operator ALCN - The Loadstar",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeURsQWM2QU82NFpHNEotZEM1M0RNdDFoQlY1YUxRWlltLURLNkYtNjN5djRxcXlJMEllbmxOaUVyTGZhRnNoVUk5dldfQVk3czNuU3RPNWFrblBhVmtzOTk1WUotOGx6enRFZzM5ZVI1anMxMkhOWXR4dDl0MXJlS0kyVDhmanpqbmFZa0RMMHFnVkdfMmc?oc=5",
+    "date": "Mon, 15 Dec 2025 08:00:00 GMT",
+    "source": "The Loadstar",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "AD Ports Announces Intent to Acquire Majority Stake in Alexandria Container Company - waya.media",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdFFRbVktUGVVd24xQ0dySURqcS0zVm9qeTRCTVpnbUp2aXpaTElUZDB6SHYzRFRvQ1hQN2tWbEtPWVZHZ2lmbnlHRDU2cjc3OWllVVZrQnkycXZRai0xTTFtUEJBV3h0QTZ1S1BfRmU5SGEzQU9mOVNIV25XZHFxeDZMMkJMaUpaRnlsSlZKelc5X0dacV9TTnVPRzJkUXVzYVQ3R3VR?oc=5",
+    "date": "Tue, 16 Dec 2025 08:00:00 GMT",
+    "source": "waya.media",
+    "sentiment": "positive"
+   },
+   {
+    "title": "AD Ports moves to raise stake in Alexandria Containers firm - Logistics Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOR3lqRnR1SGdwZGtDNTl4NUtuSXBEYWtId000OHpZQm1QMVF0UE45Rmp1NnFGSDJQSnVmT1ZVZm8ySU5QbzJrTHlqMmRXeVpsS2owcWlFSkNuanBtbmE1TWJKVWJlakwwRkZtUkZWNGxIWVBBV2MyTGlFc09BcHAzYW5fa0J6bVYwbS1HYzl2M1M5bFBiYVkxNWhhNGNXd2lPVnc?oc=5",
+    "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+    "source": "Logistics Middle East",
+    "sentiment": "positive"
+   },
+   {
+    "title": "AD Ports Group acquires 19.3% stake in Egypt’s Alexandria Container & Cargo Handling from Saudi Egyptian Investment Company - african markets",
+    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNUlU5b2tHME92V2JKWTBXU20wbExBaDVFcFJIWHdleDlVa1JCcnNBZ2VTQmZGc2s1RkZMY21oSzlfUVJNUFNvUlI0Z2x0dzlnYkZKLTlmMTUzUk9CZElKMmMxcmprWVFhcVFzNDBhS2lSOXl4TjVxU2Nha1N4aldwSkJtNGx5WlY1OHdEbGI1MmZ2TDlhMC1SbEVmM1JEZFNFWjB2NkFwZlhHOXFubERHUFlaaXpWaEcyNWw2UnplWDgydXRkdWRoWTdvb3FTUkZvSXJwaXczUUlvWVQ1Vzc0aENZanl6VzN3cElKRzhSUnRsU0RIa1pQVTVZd2NBUHVlV2c?oc=5",
+    "date": "Sat, 22 Nov 2025 08:00:00 GMT",
+    "source": "african markets",
+    "sentiment": "positive"
+   },
+   {
+    "title": "AD Ports takes stake in Egyptian box terminal operator - Splash247",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaU9ObXYtcmNrQjUwWDU5VC1LLUJIWngtd044U0xvV1ZCbm9rTTVLQmFKRmx1S0NBWG9HNk5URnBJN0UzUElXMDQySVJ5bUMxaE9ablZrY3RyQW40UXh4SklpNmJLNHd3YmEwcEJFZGxkdFhmYmp4bWQyeG1OSHUwM09DMA?oc=5",
+    "date": "Fri, 21 Nov 2025 08:00:00 GMT",
+    "source": "Splash247",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 4,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "JUFO": {
+  "items": [
+   {
+    "title": "JUFO Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5jdzJsczVvUmp3bnpkYVZYS1FVU2lTbWNQM3JZSkc2dVJYZ0dGRXBPM2tHZVMzbGVFckZJY2tOanVsWDVVQVFnQ2pQc2tEMTFnRTJVaWhmT2o5V0tONUVzUjgxV3ItTkZIdVF4c1ZSdkc5YS14NFE?oc=5",
+    "date": "Thu, 25 Jun 2026 11:26:01 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Juhayna Food Industries - Forbes Middle East",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeFhfaUNaZjdlYmN3OEYzWHMyUTFTbUs0TW9kTEZFbzBCb0xocjVIcFBmLUxuV3JFSlJGYnVEOTJwdTJSMWdmbjRKT3RRS3lMREdsb2d5QktWOXA5ekVZUXpkOGhOOUN0MUJxMDBlTlgzXzBPdjNheThDOVMtYVNTTk1fSVhzZzRuTU1ReGhjSmg0WERBNEhfQUs3ZW82dm9ZMVl0Sg?oc=5",
+    "date": "Thu, 26 Mar 2026 07:00:00 GMT",
+    "source": "Forbes Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Juhayna Food Q1 2026 profit doubles to EGP 668.6 million - Billionaires.Africa",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNdDVfX2JTYTV5c2tkN3hiVkl6dXEzSEhxSmtPZjRjU0xqNEZCV0pQTHkydG43Sm5US252UTNVWDY1TktOUmZrWF9xemQ1TXB1RWVhWC1udGtYX3R1aWJrcFI5THMwOUNRcUFIT2ttRHRhWnJqZVk4eFNfaG1QTU5Vdzh1T04zRHNDQzRlUDdRRWxhNEo5UUQ3elZUZWE2UDc0bHRIbVl0Z292X2RvUzh3Uk5EcGViLVh2WHV0VFFHQ190YU5oNTJyNFlzcG5XSWdVQ2lsVEQ3UEdJczBtcDE3YmhnRQ?oc=5",
+    "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+    "source": "Billionaires.Africa",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Juhayna participates in key AmCham Egypt events - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOHNUWEstcl92dm4zX0dZNEktRkwtaVFKUGJEUzJzbUhsTkcxdVBjQTlhYTJmcXByMUFQZTB1NVJBS2lEQlFaaHZqdi1MdjhSSElUbnVKU2NfbU5hT1d4bkVaX0Rtak1ka2FmNkN0a0VyT043cFlNa2RNREhHdUVNTHd2RW5HQlVCWE1pOURNY2JfWG1wbFFpVmZacjZwYXJBeHlLRS1BNHppME50R3hj?oc=5",
+    "date": "Wed, 17 Jun 2026 11:29:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Mohamed Siam Appointed Chief Commercial Officer at Juhayna Food Industries - hrtoday.in",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ3g1SHNWa1pUWjZyei1Jd1lseXlGR0dHYXFiaHhUQmV4UkdaakQ4R3pQcDgyX2lLMldoSzY3amxMd1l0MVp4NWU0Yk1DdVJIZFdYeGVZRGIzT215b2VSR3UyMDJhLXlOMDc0U0pjRWphTEhuUGVoOGFzMzdHQ3A5YWJPZkFpUFJVWGd0LTkzbGt6WXp3R1dyVXN3?oc=5",
+    "date": "Sun, 11 Jan 2026 18:07:14 GMT",
+    "source": "hrtoday.in",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Juhayna, Egypt’s Leading Dairy Producer, Expands Portfolio with New Turkish Labneh Flavors - Dairy News Today",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa1M3NlZtRVFyNno0YXJBTmh6WGd0aEZwZmtGSXNaeXRIYnotLVo1THRKUExQclFGeFdMS093MWFEbzhzcldIeDJFWlBXUFdET2Z2Qk12TDNsR2FleWJOd3poZnFISTZRejIyNXBFVW1LS1loNlBMaE1zZHMwbFR5YkRyTmxFRmd5dFhCcUgtVXVtWmt0bkNVVkhILV9MendtaWtCQ2JFa3I?oc=5",
+    "date": "Fri, 15 May 2026 07:00:00 GMT",
+    "source": "Dairy News Today",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "CLHO": {
+  "items": [
+   {
+    "title": "Cleopatra Hospitals Group - Forbes Middle East",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3VOeTBmVUJ4LXRKb3ZnSnZCZWhLMHRHeWZVa3lKd3lOUnZMNnhKZm9Sd3BYQkx2V1Fzdm9FOTNGMmlYQlp6T0RkV1dwYXhpeWRQeG9fbGpjRTZMVFVaMkFRWXVEeHR1X281TVU3b2dKZXY0T18xYXdHY3M1amxZQ1FVMVpHR0RMbXdKRXJORlFtQ2VuZlpGTWR5a1ZhR2JvSHJjeE5XQQ?oc=5",
+    "date": "Thu, 26 Mar 2026 07:00:00 GMT",
+    "source": "Forbes Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Cleopatra Hospitals stock (EGS729J1C018): what Egypt’s leading private hospital group means for in - AD HOC NEWS",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbXJaUklvd2V3ZzlVMENlQnRaX3NDRE1OU1pqNjVhMGVxV1NTcVhreXVnRjMydTFMMXBUd1R4dGZaTUVYZ0lIUk0zWElweVZVV2Z1OXZYejllY29rc1JsWGI5WXE1RlU3WVRkUTNYaG16VkV3eWttbEFyZktpUFhBT3FIeGV2VWE0LUxXVHI4TThmVHFjOVFONWVJQ3gxTnJiRVFoaU1LYUdNdHhNYUk4Q2V6R2djdUlaalIyUU00QS1hNE5L?oc=5",
+    "date": "Tue, 09 Jun 2026 07:00:00 GMT",
+    "source": "AD HOC NEWS",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egypt opens EGP 3.5bn Cleopatra Sky hospital under private-public partnership model - Dailynewsegypt",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNaEZybHNSdzMyUmd3UVMzY0hfdWUxbU9xelB6RW9UMmdaSzFBeGQ1ZFhKZDJFYzVtdVU3d3BjNUZpeDBVT2JfbkpNRDN5bWZXNkxmb3NPTWQzY1ZZMjlJcDQzR0lYY1R6ckx6d05hdzZxcWxlRlpqdnlreEU3UF8yNzdaZ25neE5rTklBQnk4LWRfZlJ0WE4tLTFrYTFrM3I1d0JMSUV2ZjZaOGR6V01TU2lyV1g5NXJKYjN2ZTZHaTZRdGJ3?oc=5",
+    "date": "Tue, 27 Jan 2026 08:00:00 GMT",
+    "source": "Dailynewsegypt",
+    "sentiment": "positive"
+   },
+   {
+    "title": "PM inaugurates Cleopatra Sky Hospital in New Cairo - الهيئة العامة للاستعلامات",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc0dMSTBfZlVweFljWW1mNHdJVHNMQXR6MlVhNHVCZzczX0hldHhiamxLMU5ORGx5SzduVnM1SlZQRXNRLXRodEpkTEpBSEZEcHY4QnJlbEk3NlNOdzFqVm40VlFmTGx5bzg5aGFOd2JjcTlwalllaHdlV2dway0xa21CUzdkZ2Z2OEFDVHhGZWd0LUk2cFE?oc=5",
+    "date": "Tue, 27 Jan 2026 08:00:00 GMT",
+    "source": "الهيئة العامة للاستعلامات",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "PM Madbouly inaugurates Cleopatra El-Tagamoa Hospital - Health - Egypt - Ahram Online",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lR01qR1Z3UG9Jb0gtamZPSDAweEpHVWZZMGE2M0tHWGJ5MGJ2ZGlVb2hUazAtNVJTWVlneDdZWkZ1QUdQS2dwTndSTGowNFZ3cklpTHVNUl8?oc=5",
+    "date": "Tue, 27 Jan 2026 08:00:00 GMT",
+    "source": "Ahram Online",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Egyptian Drug Authority Discusses Cooperation Prospects with Cleopatra Hospitals to Enhance Quality of Medical Services - هيئة الدواء المصرية",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPa3RRcU5hd1pGbkJhel9VZGxTd0FtODdsOUlRNnVPTUVxNjBrMHE0bm5GNUdCMXlGcWhyMHRRMzBpR1hnY3JwYUwyUkZDUXJDYl9meTZjbFVKOVNMWTJpRWJKU0NHSjREU0czSThGcGE0ZWVRZkRhUDhKRWp6eGNDc05DdjlqOVphZUFzRHprRVdrdkU1LVNsS1k5Xy0yclB5cHgtaktXc0xwbS1kQXlJd1pRck9zalpJQnI1bVNzSG8yRFVtZWxrczhkaFBYU215NVJDdEJIYWRYa2ptckhuTkRGak92NHNvRFk1RUFRR2xGbFdrQ1NxeA?oc=5",
+    "date": "Mon, 15 Dec 2025 08:00:00 GMT",
+    "source": "هيئة الدواء المصرية",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "SKPC": {
+  "items": [
+   {
+    "title": "Sidi Kerir Petrochemicals Actuals & Estimates (EGX:SKPC) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVDZReGdsTUJQS09td0NaSW5Zc0d3QXV1RHBWdUVkWVVWY3F3QllSRkhNano5S1NjMlpTczhtcUlkOXVwM1paM3JiYVQ1aUFTck45UktlUlNNZXlQcXBaNU9BNFluWmRKdjdnaDFjMmpOQXVYWUtUcXJjaGNrQmlrZ0FR?oc=5",
+    "date": "Fri, 26 Jun 2026 01:07:16 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "SKPC Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GRFcyNExGNDc1Tm9RcXBxam1NZGVMTzFBRFN5VXV5b254dGRPcFVPc0M1N3Y2VFpZU01FUWMxYUo2czdFQU0zdzRpR2Zlb0N3WlVYMlpVd09VMmJDMW9KODNERzBkSXFNdVRZNkpvQWdvNTFleVE?oc=5",
+    "date": "Thu, 25 Jun 2026 19:08:17 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "SIDPEC Revenues Grow by 4.8 % in Q1 2026 - Egypt Oil & Gas",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX1gtQmZzdWlCODZMd1FUR1pYTEpsa2dteWdwV2FQOTB6MV9yYmkySXRTRmtTT0FfalZPbjQtVFBqcFJGWHBNcWE0OTNNQi1wWlVSUTBCbVJrNHhyNjlXU0FPT1hxOGpnajhKN2xpbUw3YUdxTnVxQWZkVGlJajF2M29oUDFHc0pvYXduWGJONnhpaFd3a3c?oc=5",
+    "date": "Thu, 21 May 2026 07:00:00 GMT",
+    "source": "Egypt Oil & Gas",
+    "sentiment": "positive"
+   },
+   {
+    "title": "SIDPEC Reports Marginal Increase in Sales in 2025 - Egypt Oil & Gas",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSHpzZlJQcEtxckw5UWFKMHVFRG1QUmtGN2htRzFKa3E0QjgzRVdZVTFSMTd1TVpfb2cyQzdFQU1SaDZjUDhsMzRiRG1sTi1lc2pWSGlVc3dlQng3aDc0V0tXMVZNTUVCRzYxbWt5dXFDNWJtdEVEelpiNWpyR3R2WjBFSUdGNVU?oc=5",
+    "date": "Sun, 01 Feb 2026 08:00:00 GMT",
+    "source": "Egypt Oil & Gas",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Arab Finance - Company Profile - آراب فاينانس",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9PYlo1UUJXVktUZVJvN0RCZVQ0SWhxeDZldjFpOE1OMnMwX1QwM0VmbjA1Tlk2N2xRRjZiZ0JrakhqN181bGJReWQyUGlXVkExbkllU04xcUl5SW96NjNCUFFXRHlVUQ?oc=5",
+    "date": "Sun, 23 Nov 2025 11:33:08 GMT",
+    "source": "آراب فاينانس",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Sidpec to Inject EGP 5.6 Bn in Strategic 2026 Investment Budget - Egypt Oil & Gas",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaVFpeGh5NjIwSnNoVjY3VUVvU1VxWmJremF0Mkp2NEZsVzd3SXZySEtlRHdWWHZWajN5ajR6TFBWU2x1OFg2U2d5SGpZMkwwVnc5SWN1OGJvWWVoTHdaYjVXc0dCZmtTS0J4ZkNybjd6Z1ZjNTBKVUREY1g3Z3AyWGtwRUxmb1RTTUxGb2o2OFhPSHZzZHBZYXh3?oc=5",
+    "date": "Tue, 30 Dec 2025 08:00:00 GMT",
+    "source": "Egypt Oil & Gas",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ }
+}

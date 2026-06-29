@@ -93,18 +93,43 @@ export const BASKET_DEFS = [
 ];
 
 // ─────────────────────────────── Brokers ───────────────────────────────
-// CMA-licensed brokerages (illustrative directory).
-export const BROKERS = [
-  { name: 'Al Rajhi Capital', research: true, score: 92, note: 'Largest retail brokerage; deep Arabic + English research desk.' },
-  { name: 'SNB Capital', research: true, score: 90, note: 'Bulge-bracket equity research and IPO bookrunner.' },
-  { name: 'Riyad Capital', research: true, score: 85, note: 'Strong macro & banking-sector coverage.' },
-  { name: 'Aljazira Capital', research: true, score: 82, note: 'Sharia-focused research and advisory.' },
-  { name: 'BSF Capital', research: true, score: 80, note: 'Mid-cap and petrochemical coverage.' },
-  { name: 'Derayah Financial', research: false, score: 74, note: 'Popular low-cost digital trading platform.' },
-  { name: 'Alistithmar Capital', research: true, score: 78, note: 'Asset management + selective single-stock notes.' },
-  { name: 'EFG Hermes KSA', research: true, score: 88, note: 'Regional powerhouse; institutional flow and frontier research.' },
-  { name: 'Yaqeen Capital', research: false, score: 70, note: 'Brokerage and margin services.' },
-];
+// Licensed brokerage directory per market (illustrative). `share` = market share %.
+export const BROKERS_BY_COUNTRY = {
+  SA: [
+    { name: 'Al Rajhi Capital', research: true, score: 92, note: 'Largest retail brokerage; deep Arabic + English research desk.' },
+    { name: 'SNB Capital', research: true, score: 90, note: 'Bulge-bracket equity research and IPO bookrunner.' },
+    { name: 'Riyad Capital', research: true, score: 85, note: 'Strong macro & banking-sector coverage.' },
+    { name: 'Aljazira Capital', research: true, score: 82, note: 'Sharia-focused research and advisory.' },
+    { name: 'BSF Capital', research: true, score: 80, note: 'Mid-cap and petrochemical coverage.' },
+    { name: 'Derayah Financial', research: false, score: 74, note: 'Popular low-cost digital trading platform.' },
+    { name: 'Alistithmar Capital', research: true, score: 78, note: 'Asset management + selective single-stock notes.' },
+    { name: 'EFG Hermes KSA', research: true, score: 88, note: 'Regional powerhouse; institutional flow and frontier research.' },
+    { name: 'Yaqeen Capital', research: false, score: 70, note: 'Brokerage and margin services.' },
+  ],
+  AE: [
+    { name: 'EFG Hermes UAE', research: true, score: 91, note: 'GCC\'s largest independent broker; 50+ DFM/ADX names covered.' },
+    { name: 'Emirates NBD Capital', research: true, score: 86, note: 'Bulge-bracket research and DCM/ECM franchise.' },
+    { name: 'FAB Securities', research: true, score: 84, note: 'Institution-heavy coverage, Abu Dhabi flow.' },
+    { name: 'Arqaam Capital', research: true, score: 88, note: 'Deepest regional research — 70+ GCC names, public notes.' },
+    { name: 'SHUAA Capital', research: true, score: 76, note: 'Dubai-focused advisory and asset management.' },
+    { name: 'ADCB Securities', research: true, score: 78, note: 'Sector-led coverage, strong retail base.' },
+    { name: 'EmiratesNBD Securities', research: false, score: 74, note: 'High-volume retail execution platform.' },
+    { name: 'Al Ramz Capital', research: false, score: 70, note: 'Market-making and liquidity provision.' },
+  ],
+  EG: [
+    { name: 'EFG Hermes', research: true, score: 93, share: 16.8, note: 'EGX #1 by market share; MENA\'s lead research house, 50+ EGX names.' },
+    { name: 'Thndr Securities', research: true, score: 85, share: 11.9, note: 'Fintech broker, 800K+ users (90% first-time). Research arm: Rumble.' },
+    { name: 'Mubasher Securities', research: true, score: 80, share: 6.7, note: 'EGX data & news partner — the KAP-equivalent disclosure feed.' },
+    { name: 'CI Capital', research: true, score: 84, share: 5.0, note: 'Second-largest research house; near-full EGX 30 coverage.' },
+    { name: 'Pioneers Securities', research: true, score: 75, share: 4.0, note: 'Active retail flow and mid-cap coverage.' },
+    { name: 'Beltone Financial', research: true, score: 78, note: 'Full-service investment bank with revived research desk.' },
+    { name: 'Arqaam Capital', research: true, score: 82, note: 'Regional research, EGX 30 + frontier coverage.' },
+  ],
+};
+
+export function getBrokers(countryId) {
+  return BROKERS_BY_COUNTRY[countryId] || BROKERS_BY_COUNTRY.SA;
+}
 
 // ─────────────────────────────── Stories ───────────────────────────────
 export const STORIES = [
