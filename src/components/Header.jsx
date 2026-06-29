@@ -59,7 +59,7 @@ function Brand() {
   return (
     <Link to="/" className="flex shrink-0 items-center" aria-label="EquScore home">
       <span className="inline-flex items-center rounded-2xl bg-white px-3 py-1.5 shadow-sm ring-1 ring-black/5">
-        <img src="/logo-transparent.png" alt="EquScore" className="h-16 w-auto sm:h-20" />
+        <img src="/logo-transparent.png" alt="EquScore" className="h-14 w-auto sm:h-[70px]" />
       </span>
     </Link>
   );
