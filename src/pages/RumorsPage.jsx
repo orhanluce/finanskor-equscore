@@ -4,7 +4,10 @@ import { Flame, AlertTriangle, Volume2 } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import JargonTip from '@/components/JargonTip.jsx';
 import { STOCKS } from '@/data/stocks.js';
+import { socialFor } from '@/data/social.js';
 import { cn } from '@/lib/utils.js';
+
+const lvl = (s) => socialFor(s.ticker)?.level || s.rumor;
 
 const LEVELS = {
   danger: { label: 'Dangerous', rank: 4, color: 'text-destructive', bg: 'bg-destructive', chip: 'danger', w: '100%' },
@@ -15,11 +18,11 @@ const LEVELS = {
 
 export default function RumorsPage() {
   const [filter, setFilter] = useState('all');
-  const ranked = useMemo(() => [...STOCKS].sort((a, b) => (LEVELS[b.rumor]?.rank || 0) - (LEVELS[a.rumor]?.rank || 0)), []);
-  const rows = filter === 'all' ? ranked : ranked.filter((s) => s.rumor === filter);
+  const ranked = useMemo(() => [...STOCKS].sort((a, b) => (LEVELS[lvl(b)]?.rank || 0) - (LEVELS[lvl(a)]?.rank || 0)), []);
+  const rows = filter === 'all' ? ranked : ranked.filter((s) => lvl(s) === filter);
   const counts = useMemo(() => {
     const c = { danger: 0, high: 0, medium: 0, low: 0 };
-    STOCKS.forEach((s) => { c[s.rumor] = (c[s.rumor] || 0) + 1; });
+    STOCKS.forEach((s) => { const L = lvl(s); c[L] = (c[L] || 0) + 1; });
     return c;
   }, []);
 
@@ -58,7 +61,9 @@ export default function RumorsPage() {
 
       <div className="mt-4 space-y-3">
         {rows.map((s) => {
-          const lv = LEVELS[s.rumor];
+          const level = lvl(s);
+          const lv = LEVELS[level];
+          const soc = socialFor(s.ticker);
           return (
             <Card key={s.ticker}>
               <CardContent className="flex items-center gap-4 py-4">
@@ -73,9 +78,10 @@ export default function RumorsPage() {
                   </div>
                 </div>
                 <div className="text-right">
-                  <Badge variant={lv.chip} className={s.rumor === 'high' ? 'text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10' : ''}>{lv.label}</Badge>
-                  {s.rumor === 'danger' && <div className="mt-1 text-[11px] text-muted-foreground">historically a fade signal</div>}
-                  {s.rumor === 'low' && <div className="mt-1 text-[11px] text-muted-foreground">possibly overlooked</div>}
+                  <Badge variant={lv.chip} className={level === 'high' ? 'text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10' : ''}>{lv.label}</Badge>
+                  {soc ? <div className="mt-1 text-[11px] text-muted-foreground">𝕏 {soc.n} posts · {soc.mood}</div>
+                    : level === 'danger' ? <div className="mt-1 text-[11px] text-muted-foreground">historically a fade signal</div>
+                    : level === 'low' ? <div className="mt-1 text-[11px] text-muted-foreground">possibly overlooked</div> : null}
                 </div>
               </CardContent>
             </Card>
@@ -84,7 +90,7 @@ export default function RumorsPage() {
       </div>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        Heuristic indicator based on chatter volume &amp; tone. Not a recommendation; Arabic-NLP social sentiment is a planned upgrade.
+        Live 𝕏 chatter (AR + EN), volume + tone, kept out of the score. Not a recommendation; deeper Arabic-NLP is a planned upgrade.
       </p>
     </div>
   );

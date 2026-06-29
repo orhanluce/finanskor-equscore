@@ -12,6 +12,7 @@ import ShareButtons from '@/components/ShareButtons.jsx';
 import CountryLens from '@/components/CountryLens.jsx';
 import TvChart from '@/components/TvChart.jsx';
 import { tvRating } from '@/data/tvSignals.js';
+import { socialFor } from '@/data/social.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
@@ -105,7 +106,9 @@ export default function StockDetailPage() {
   const news = NEWS[s.ticker];
   const a = s.analysts;
   const upside = a.target && s.price ? (a.target / s.price - 1) * 100 : null;
-  const r = RUMOR[s.rumor];
+  const soc = socialFor(s.ticker);
+  const rumorLevel = soc?.level || s.rumor;
+  const r = RUMOR[rumorLevel];
   const purify = s.shariaRatios.impureIncome;
   const tv = tvRating(s.ticker);
 
@@ -397,22 +400,47 @@ export default function StockDetailPage() {
               <div className="flex items-center gap-2">
                 <Flame className={cn('h-5 w-5', r.color)} />
                 <h2 className="font-serif text-xl font-bold"><JargonTip term="Rumor thermometer">Rumor Thermometer</JargonTip></h2>
+                {soc && <Badge variant="muted" className="ml-auto">𝕏 · {soc.n} posts</Badge>}
               </div>
               <div className="mt-4">
-                <div className={cn('inline-flex rounded-full px-3 py-1 text-sm font-semibold', r.bg, r.color)}>{r.label}</div>
+                <div className="flex items-center gap-2">
+                  <div className={cn('inline-flex rounded-full px-3 py-1 text-sm font-semibold', r.bg, r.color)}>{r.label}</div>
+                  {soc && (
+                    <Badge variant={soc.mood === 'positive' ? 'success' : soc.mood === 'negative' ? 'danger' : 'muted'} className="capitalize">{soc.mood}</Badge>
+                  )}
+                  {soc?.spike && <Badge variant="danger">⚠ spike</Badge>}
+                </div>
                 <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-muted">
                   <div className={cn('h-full',
-                    s.rumor === 'danger' ? 'bg-destructive' : s.rumor === 'high' ? 'bg-medal-bronze' : s.rumor === 'medium' ? 'bg-primary' : 'bg-success')}
+                    rumorLevel === 'danger' ? 'bg-destructive' : rumorLevel === 'high' ? 'bg-medal-bronze' : rumorLevel === 'medium' ? 'bg-primary' : 'bg-success')}
                     style={{ width: r.w }} />
                 </div>
                 <p className="mt-3 text-xs text-muted-foreground">
-                  Volume + tone of {COUNTRY.modules.facebookSentiment ? 'Facebook-group' : 'social'} chatter.
-                  {s.rumor === 'danger' && ' Heavily discussed — historically a fade signal.'}
-                  {s.rumor === 'low' && ' Quiet — could be an overlooked name.'}
+                  {soc ? 'Volume + tone of live 𝕏 chatter (AR + EN).' : `Volume + tone of ${COUNTRY.modules.facebookSentiment ? 'Facebook-group' : 'social'} chatter.`}
+                  {rumorLevel === 'danger' && ' Heavily discussed — historically a fade signal.'}
+                  {rumorLevel === 'low' && ' Quiet — could be an overlooked name.'}
                 </p>
-                {COUNTRY.modules.facebookSentiment && (
-                  <p className="mt-2 text-[11px] text-muted-foreground">On EGX, Facebook investor groups (300K+ members) are the dominant retail-sentiment channel.</p>
+                {soc?.spike && (
+                  <p className="mt-1 text-[11px] text-medal-bronze">Sudden one-sided chatter spike — watch for pump/manipulation.</p>
                 )}
+                {soc?.items?.length > 0 && (
+                  <div className="mt-3 divide-y divide-border border-t border-border">
+                    {soc.items.slice(0, 4).map((it, i) => (
+                      <a key={i} href={it.url} target="_blank" rel="noreferrer" className="flex items-start gap-2 py-2 hover:bg-muted/30 -mx-2 px-2 rounded-lg">
+                        <span className={cn('mt-1.5 h-2 w-2 shrink-0 rounded-full',
+                          it.sentiment === 'positive' ? 'bg-success' : it.sentiment === 'negative' ? 'bg-destructive' : 'bg-muted-foreground/40')} />
+                        <div className="min-w-0">
+                          <div className="text-xs leading-snug text-foreground/90 line-clamp-2">{it.text}</div>
+                          <div className="text-[10px] text-muted-foreground">@{it.author}</div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
+                <p className="mt-3 text-[11px] text-muted-foreground">
+                  Unverified retail chatter — kept out of the Equity Star score.
+                  {COUNTRY.modules.facebookSentiment && ' On EGX, Facebook groups (300K+ members) are the dominant channel; X is shown here.'}
+                </p>
               </div>
             </CardContent>
           </Card>
