@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import IslamicCalendarStrip from '@/components/IslamicCalendarStrip.jsx';
+import AiAsk from '@/components/AiAsk.jsx';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -15,6 +16,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <AiAsk />
     </div>
   );
 }

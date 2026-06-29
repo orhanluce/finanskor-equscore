@@ -1,15 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, TrendingUp, TrendingDown, Minus, ShieldCheck, ShieldAlert, ShieldX,
-  Users, Activity, Flame, Newspaper,
+  Users, Activity, Flame, Newspaper, Sparkles, Loader2,
 } from 'lucide-react';
 import { Card, CardContent, Badge } from '@/components/ui.jsx';
 import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
 import EquityStarFull from '@/components/EquityStarFull.jsx';
+import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
 import NEWS from '@/data/news_live.json';
 import { getStock } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
+import { supabase } from '@/lib/supabaseClient.js';
+
+async function fetchAiYorum(stock) {
+  const ctx = [
+    `Stock: ${stock.ticker} — ${stock.name} (${stock.sector})`,
+    `Price: ${stock.price} ${stock.currency}, change: ${stock.change > 0 ? '+' : ''}${stock.change}%`,
+    `Equity Star: ${stock.star?.total ?? '—'}/42`,
+    `Fair value: ${stock.fairValue} (${stock.discount >= 0 ? stock.discount + '% discount' : Math.abs(stock.discount) + '% premium'})`,
+    `P/E: ${stock.pe ?? '—'}, P/B: ${stock.pb ?? '—'}`,
+    `Sharia: ${stock.sharia}`,
+    stock.netFlowPct != null ? `Money flow: ${stock.netFlowPct > 0 ? '+' : ''}${stock.netFlowPct}% (SAHMK)` : null,
+    stock.maxScore != null ? `MAX score: ${stock.maxScore}σ (${stock.maxFlag})` : null,
+  ].filter(Boolean).join('\n');
+
+  const { data, error } = await supabase.functions.invoke('ai-ask', {
+    body: {
+      question: `Give a 3-sentence plain-English summary of this stock's current situation based on the EquScore data. Focus on the most interesting signal — whether it looks cheap or expensive, any standout strength or risk. End with one key thing to watch.`,
+      ticker: stock.ticker,
+      history: [{ role: 'user', content: `Stock context:\n${ctx}` }, { role: 'assistant', content: 'Understood. I have the stock data.' }],
+    },
+  });
+  if (error) return null;
+  return data?.answer ?? null;
+}
 
 const RUMOR = {
   low: { label: 'Low', color: 'text-success', bg: 'bg-success/10', w: '25%' },
@@ -39,6 +64,20 @@ function ShariaRatio({ label, value, threshold }) {
 export default function StockDetailPage() {
   const { ticker } = useParams();
   const s = getStock(ticker);
+  const [aiYorum, setAiYorum] = useState(null);
+  const [aiLoading, setAiLoading] = useState(false);
+
+  useEffect(() => {
+    if (!s) return;
+    const cacheKey = `ai_yorum_${s.ticker}`;
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) { setAiYorum(cached); return; }
+    setAiLoading(true);
+    fetchAiYorum(s).then((txt) => {
+      if (txt) { setAiYorum(txt); sessionStorage.setItem(cacheKey, txt); }
+      setAiLoading(false);
+    });
+  }, [s?.ticker]);
 
   if (!s) {
     return (
@@ -93,16 +132,45 @@ export default function StockDetailPage() {
           <EquityStarFull stock={s} />
         </div>
 
+        {/* AI Analysis */}
+        {(aiLoading || aiYorum) && (
+          <div className="lg:col-span-3">
+            <Card className="border-primary/20 bg-primary/5">
+              <CardContent>
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                  </div>
+                  <h2 className="font-serif text-xl font-bold">AI Analysis</h2>
+                  <span className="text-xs text-muted-foreground ml-1">· EquScore data</span>
+                </div>
+                {aiLoading ? (
+                  <div className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
+                    <Loader2 className="w-4 h-4 animate-spin" /> Generating analysis…
+                  </div>
+                ) : (
+                  <p className="mt-3 text-sm leading-relaxed text-foreground/90">{aiYorum}</p>
+                )}
+                <p className="mt-2 text-[11px] text-muted-foreground">Not investment advice. Generated from live EquScore metrics.</p>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
         {/* Fair value */}
         <Card>
           <CardContent>
-            <h2 className="font-serif text-xl font-bold">Fair Value</h2>
-            <p className="mt-1 text-xs text-muted-foreground">Sector-relative multiples (P/E reversion + analyst), USD-native — riyal is pegged.</p>
+            <h2 className="font-serif text-xl font-bold">
+              <JargonTip term="Fair value">Fair Value</JargonTip>
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">Sector-relative multiples (<JargonTip term="P/E" inline>P/E</JargonTip> reversion + analyst), USD-native — riyal is pegged.</p>
             <div className="mt-4 space-y-3">
               <Row label="Last price" value={money(s.price, s.currency)} />
               <Row label="Fair value" value={money(s.fairValue, s.currency)} />
               <div className="flex items-center justify-between border-t border-border pt-3">
-                <span className="text-sm text-muted-foreground">{s.discount >= 0 ? 'Discount' : 'Premium'}</span>
+                <span className="text-sm text-muted-foreground">
+                  <JargonTip term="Discount" inline>{s.discount >= 0 ? 'Discount' : 'Premium'}</JargonTip>
+                </span>
                 <span className={cn('font-serif text-2xl font-bold', s.discount >= 0 ? 'text-success' : 'text-destructive')}>
                   {s.discount >= 0 ? '' : '+'}{Math.abs(s.discount).toFixed(1)}%
                 </span>
@@ -126,7 +194,7 @@ export default function StockDetailPage() {
               {s.auto && <Badge variant="muted" className="ml-auto">Auto-screen</Badge>}
             </div>
             <p className="mt-1 text-xs text-muted-foreground">
-              AAOIFI Standard No. 21 — financial ratios.
+              <JargonTip term="AAOIFI" inline>AAOIFI</JargonTip> Standard No. 21 — financial ratios.
               {s.auto && ' Status estimated from sector + live debt ratio — verify with a Shariah board.'}
             </p>
             <div className="mt-3 divide-y divide-border">
@@ -136,7 +204,7 @@ export default function StockDetailPage() {
             </div>
             <div className="mt-3 rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
               {purify != null
-                ? <>Purification estimate: <span className="font-semibold text-foreground">{purify}%</span> of dividend income.</>
+                ? <><JargonTip term="Purification" inline>Purification</JargonTip> estimate: <span className="font-semibold text-foreground">{purify}%</span> of dividend income.</>
                 : <>Debt ratio is live; the cash-interest & impermissible-income ratios need a deeper financials source (auto-screen).</>}
             </div>
           </CardContent>
@@ -147,7 +215,9 @@ export default function StockDetailPage() {
           <CardContent>
             <div className="flex items-center gap-2">
               <Users className="h-5 w-5 text-primary" />
-              <h2 className="font-serif text-xl font-bold">Analyst Consensus ★</h2>
+              <h2 className="font-serif text-xl font-bold">
+                <JargonTip term="Analyst consensus">Analyst Consensus</JargonTip> ★
+              </h2>
             </div>
             <p className="mt-1 text-xs text-muted-foreground">{a.count || '—'} analyst forecasts.</p>
             {a.buy != null ? (
@@ -164,7 +234,7 @@ export default function StockDetailPage() {
             <div className="mt-4 space-y-3">
               <Row label="Median target" value={money(a.target, s.currency)} />
               <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Implied upside</span>
+                <span className="text-sm text-muted-foreground"><JargonTip term="Upside" inline>Implied upside</JargonTip></span>
                 <span className={cn('font-semibold', upside >= 0 ? 'text-success' : 'text-destructive')}>{pct(upside)}</span>
               </div>
             </div>
@@ -176,7 +246,9 @@ export default function StockDetailPage() {
           <CardContent>
             <div className="flex items-center gap-2">
               <Activity className="h-5 w-5 text-ai-navy" />
-              <h2 className="font-serif text-xl font-bold">Money Flow ★</h2>
+              <h2 className="font-serif text-xl font-bold">
+                <JargonTip term="Foreign flow">Money Flow</JargonTip> ★
+              </h2>
             </div>
             {s.netFlowPct != null ? (
               <>
@@ -245,13 +317,15 @@ export default function StockDetailPage() {
           <CardContent>
             <div className="flex items-center gap-2">
               <Flame className="h-5 w-5 text-medal-bronze" />
-              <h2 className="font-serif text-xl font-bold">Retail Attention (MAX)</h2>
+              <h2 className="font-serif text-xl font-bold">
+                <JargonTip term="MAX score">Retail Attention (MAX)</JargonTip>
+              </h2>
             </div>
-            <p className="mt-1 text-xs text-muted-foreground">Biggest 1-day jump in volatility units (lottery-seeking signal).</p>
+            <p className="mt-1 text-xs text-muted-foreground">Biggest 1-day jump in <JargonTip term="Volatility" inline>volatility</JargonTip> units (lottery-seeking signal).</p>
             <div className="mt-4">
               <div className="font-serif text-3xl font-bold">{s.maxScore != null ? `${s.maxScore}σ` : '—'}</div>
               {s.maxFlag === 'trap' ? (
-                <div className="mt-2 inline-flex rounded-lg bg-medal-bronze/10 px-3 py-1.5 text-sm font-semibold text-medal-bronze">⚠ Value-trap risk</div>
+                <div className="mt-2 inline-flex rounded-lg bg-medal-bronze/10 px-3 py-1.5 text-sm font-semibold text-medal-bronze">⚠ <JargonTip term="Value trap" inline>Value-trap</JargonTip> risk</div>
               ) : s.maxFlag === 'strong' ? (
                 <div className="mt-2 inline-flex rounded-lg bg-success/10 px-3 py-1.5 text-sm font-semibold text-success">▲ Attention + strong profits</div>
               ) : (
@@ -277,7 +351,7 @@ export default function StockDetailPage() {
               </Badge>
               <span className="ml-auto text-xs text-muted-foreground">{news.summary.n} recent headlines</span>
             </div>
-            <p className="mt-1 text-xs text-muted-foreground">News &amp; disclosure sentiment. Tadawul shows post-earnings drift (PEAD) — reactions tend to persist.</p>
+            <p className="mt-1 text-xs text-muted-foreground">News &amp; disclosure <JargonTip term="Sentiment" inline>sentiment</JargonTip>. Tadawul shows <JargonTip term="PEAD" inline>post-earnings drift (PEAD)</JargonTip> — reactions tend to persist.</p>
             <div className="mt-3 divide-y divide-border">
               {news.items.map((it, i) => (
                 <a key={i} href={it.url} target="_blank" rel="noreferrer" className="flex items-start gap-3 py-2.5 hover:bg-muted/30 -mx-2 px-2 rounded-lg">
