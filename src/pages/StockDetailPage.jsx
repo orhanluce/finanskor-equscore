@@ -10,7 +10,7 @@ import EquityStarFull from '@/components/EquityStarFull.jsx';
 import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
 import ShareButtons from '@/components/ShareButtons.jsx';
 import CountryLens from '@/components/CountryLens.jsx';
-import NEWS from '@/data/news_live.json';
+import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';

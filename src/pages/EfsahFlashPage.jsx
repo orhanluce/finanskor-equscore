@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Newspaper, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import JargonTip from '@/components/JargonTip.jsx';
-import NEWS from '@/data/news_live.json';
+import NEWS from '@/data/news.js';
 import { STOCKS } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
 

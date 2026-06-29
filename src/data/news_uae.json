@@ -1,0 +1,1340 @@
+{
+ "ADNOCGAS": {
+  "items": [
+   {
+    "title": "Adnoc Awards Contracts for 1.5 Bcfd Abu Dhabi Project",
+    "url": "https://www.rigzone.com/news/adnoc_awards_contracts_for_15_bcfd_abu_dhabi_project-06-oct-2023-174262-article/",
+    "date": "2023-10-06T12:37:42.000000Z",
+    "source": "rigzone.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Adnoc Retail Unit Seeks Investments Head Amid Expansion Plans",
+    "url": "https://financialpost.com/pmn/business-pmn/adnoc-retail-unit-seeks-investments-head-amid-expansion-plans",
+    "date": "2024-08-12T13:22:49.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Abu Dhabi's oil champion ADNOC bets on global expansion",
+    "url": "https://www.marketscreener.com/quote/commodity/WTI-2355639/news/Abu-Dhabi-s-oil-champion-ADNOC-bets-on-global-expansion-45016480/",
+    "date": "2023-10-09T04:00:00.000000Z",
+    "source": "marketscreener.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "EMIRATESNBD": {
+  "items": [
+   {
+    "title": "Emirates NBD revives equities business with Dubai IPOs",
+    "url": "https://financialpost.com/pmn/business-pmn/emirates-nbd-revives-equities-business-with-dubai-ipos-2",
+    "date": "2022-10-21T10:37:54.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Taxi IPO: 25% stake to list on Dubai Financial Market",
+    "url": "https://gulfbusiness.com/dubai-taxi-to-25-stake-in-ipo-on-dfm/",
+    "date": "2023-11-13T10:09:54.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Leading UAE banks, international entities among arrangers for VakıfBank’s $870m equivalent facilities",
+    "url": "https://english.mubasher.info/news/4381914/Leading-UAE-banks-international-entities-among-arrangers-for-Vak%C4%B1fBank-s-870m-equivalent-facilities",
+    "date": "2024-12-17T15:59:43.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "FAB": {
+  "items": [
+   {
+    "title": "Abu Dhabi's Lunate Partners With JPMorgan for First UAE Bond ETF",
+    "url": "https://financialpost.com/pmn/business-pmn/abu-dhabis-lunate-partners-with-jpmorgan-for-first-uae-bond-etf",
+    "date": "2024-03-13T06:22:25.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Flight Status LIVE on March 3: Dubai airport, Abu Dhabi airport begin limited operations; Emirates flight lands in India",
+    "url": "https://www.livemint.com/news/world/flight-status-live-on-march-3-dubai-airport-abu-dhabi-airport-begin-limited-operations-emirates-flight-lands-in-india-11772496487295.html",
+    "date": "2026-03-03T00:37:04.000000Z",
+    "source": "livemint.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "WeRide and Uber Begin First Commercial Robotaxi Service in Downtown Abu Dhabi",
+    "url": "https://www.manilatimes.net/2026/02/12/tmt-newswire/globenewswire/weride-and-uber-begin-first-commercial-robotaxi-service-in-downtown-abu-dhabi/2276785",
+    "date": "2026-02-12T06:20:21.000000Z",
+    "source": "manilatimes.net",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "EAND": {
+  "items": [
+   {
+    "title": "UAE raises Dhs404m for '1 Billion Meals' Campaign",
+    "url": "https://gulfbusiness.com/dhs404m-raised-for-1-billion-meals-campaign/",
+    "date": "2023-04-04T10:57:03.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "United Arab Emirates Data Center Market Investment Analysis Report 2022-2027: Focus on Investments in IT, Electrical, Mechanical Infrastructure, General Construction, and Tier Standards",
+    "url": "https://www.prnewswire.com:443/news-releases/united-arab-emirates-data-center-market-investment-analysis-report-2022-2027-focus-on-investments-in-it-electrical-mechanical-infrastructure-general-construction-and-tier-standards-301709100.html",
+    "date": "2022-12-22T19:00:00.000000Z",
+    "source": "prnewswire.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Powering up GCC’s cloud: Oracle EMEA EVP talks growth, future plans",
+    "url": "https://gulfbusiness.com/gcc-oracle-cloud/",
+    "date": "2024-02-03T05:33:04.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "DEWA": {
+  "items": [
+   {
+    "title": "Dubai Kicks Off IPO Rush With Landmark Listing of Utility DEWA",
+    "url": "https://financialpost.com/pmn/business-pmn/dubai-kicks-off-ipo-rush-with-landmark-listing-of-utility-dewa",
+    "date": "2022-03-15T05:54:24.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai expands EV Green Charger network to 1,860 stations",
+    "url": "https://gulfbusiness.com/dubai-expands-ev-green-charger-network/",
+    "date": "2026-01-20T08:41:21.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai: DFM to launch pilot carbon credits programme at COP28",
+    "url": "https://gulfbusiness.com/dfm-to-launch-pilot-carbon-credits-program-cop28/",
+    "date": "2023-11-26T03:33:03.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "EMAAR": {
+  "items": [
+   {
+    "title": "Dubai's Emaar considers sale of e-commerce business Namshi -sources",
+    "url": "https://financialpost.com/pmn/business-pmn/dubais-emaar-considers-sale-of-e-commerce-business-namshi-sources",
+    "date": "2021-08-31T12:38:58.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai leads major Gulf markets higher",
+    "url": "https://financialpost.com/pmn/business-pmn/dubai-leads-major-gulf-markets-higher",
+    "date": "2021-02-01T08:30:51.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "From Palm Jebel Ali to Emaar Hills: UAE’s hottest new homes, waterfront villas revealed",
+    "url": "https://gulfbusiness.com/uaes-hottest-new-homes-waterfront-villas-revealed/",
+    "date": "2025-10-27T10:10:25.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "ADNOCDRILL": {
+  "items": [
+   {
+    "title": "UAE markets reopen after 2 day shutdown: Dubai, Abu Dhabi stocks tumble as Iran war shock hits investors",
+    "url": "https://timesofindia.indiatimes.com/business/international-business/uae-markets-reopen-after-2-day-shutdown-dubai-abu-dhabi-stocks-tumble-as-iran-war-shock-hits-investors/articleshow/129021879.cms",
+    "date": "2026-03-04T10:48:21.000000Z",
+    "source": "timesofindia.indiatimes.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Fertiglobe IPO price range implies equity value of up to $6 bln",
+    "url": "https://financialpost.com/pmn/business-pmn/fertiglobe-ipo-price-range-implies-equity-value-of-up-to-6-bln",
+    "date": "2021-10-13T05:24:41.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai Kicks Off IPO Rush With Landmark Listing of Utility DEWA",
+    "url": "https://financialpost.com/pmn/business-pmn/dubai-kicks-off-ipo-rush-with-landmark-listing-of-utility-dewa",
+    "date": "2022-03-15T05:54:24.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "BOROUGE": {
+  "items": [
+   {
+    "title": "The sheikh’s empire driving Abu Dhabi’s meteoric stock market rise",
+    "url": "https://www.ft.com/content/5c8c3dc3-d08a-498a-9ca9-c294db9a3180",
+    "date": "2023-02-05T05:00:21.000000Z",
+    "source": "ft.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "OMV AG: There May Be The Chance To Make A Deal With ADNOC (OTCMKTS:OMVJF)",
+    "url": "https://seekingalpha.com/article/4612958-omv-ag-there-may-be-the-chance-to-make-a-deal-with-adnoc",
+    "date": "2023-06-22T08:42:46.000000Z",
+    "source": "seekingalpha.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "New Rising Stars Are Powering Gulf's $50 Billion Spending Spree",
+    "url": "https://financialpost.com/pmn/business-pmn/new-rising-stars-are-powering-gulfs-50-billion-spending-spree",
+    "date": "2023-09-01T05:32:17.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "ADCB": {
+  "items": [
+   {
+    "title": "WeRide and Uber Begin First Commercial Robotaxi Service in Downtown Abu Dhabi",
+    "url": "https://www.manilatimes.net/2026/02/12/tmt-newswire/globenewswire/weride-and-uber-begin-first-commercial-robotaxi-service-in-downtown-abu-dhabi/2276785",
+    "date": "2026-02-12T06:20:21.000000Z",
+    "source": "manilatimes.net",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Archer: Abu Dhabi First City With Commercial EVTOL Air Taxis In 2025",
+    "url": "https://www.forbes.com/sites/jamesmorris/2024/12/21/archer-abu-dhabi-first-city-with-commercial-evtol-air-taxis-in-2025/",
+    "date": "2024-12-21T10:22:35.000000Z",
+    "source": "forbes.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Flight Status LIVE on March 3: Dubai airport, Abu Dhabi airport begin limited operations; Emirates flight lands in India",
+    "url": "https://www.livemint.com/news/world/flight-status-live-on-march-3-dubai-airport-abu-dhabi-airport-begin-limited-operations-emirates-flight-lands-in-india-11772496487295.html",
+    "date": "2026-03-03T00:37:04.000000Z",
+    "source": "livemint.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "ALDAR": {
+  "items": [
+   {
+    "title": "Apollo Provides $1 Billion Hybrid Capital Solution to Aldar",
+    "url": "https://www.manilatimes.net/2026/02/20/tmt-newswire/globenewswire/apollo-provides-1-billion-hybrid-capital-solution-to-aldar/2281727",
+    "date": "2026-02-20T06:10:47.000000Z",
+    "source": "manilatimes.net",
+    "sentiment": "positive"
+   },
+   {
+    "title": "UAE-listed stocks top $1 trillion in value for the first time",
+    "url": "https://economictimes.indiatimes.com/markets/stocks/news/uae-listed-stocks-top-1-trillion-in-value-for-the-first-time/articleshow/115385988.cms",
+    "date": "2024-11-17T12:24:25.000000Z",
+    "source": "economictimes.indiatimes.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "MENA green bonds see 155% jump in issuances; UAE, Saudi Arabia lead",
+    "url": "https://english.mubasher.info/news/4241705/MENA-green-bonds-see-155-jump-in-issuances-UAE-Saudi-Arabia-lead",
+    "date": "2024-01-31T14:17:03.000000Z",
+    "source": "english.mubasher.info",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "EMAARDEV": {
+  "items": [
+   {
+    "title": "From Palm Jebel Ali to Emaar Hills: UAE’s hottest new homes, waterfront villas revealed",
+    "url": "https://gulfbusiness.com/uaes-hottest-new-homes-waterfront-villas-revealed/",
+    "date": "2025-10-27T10:10:25.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "UAE markets reopen after 2 day shutdown: Dubai, Abu Dhabi stocks tumble as Iran war shock hits investors",
+    "url": "https://timesofindia.indiatimes.com/business/international-business/uae-markets-reopen-after-2-day-shutdown-dubai-abu-dhabi-stocks-tumble-as-iran-war-shock-hits-investors/articleshow/129021879.cms",
+    "date": "2026-03-04T10:48:21.000000Z",
+    "source": "timesofindia.indiatimes.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai: DFM to launch pilot carbon credits programme at COP28",
+    "url": "https://gulfbusiness.com/dfm-to-launch-pilot-carbon-credits-program-cop28/",
+    "date": "2023-11-26T03:33:03.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "DIB": {
+  "items": [
+   {
+    "title": "Dubai Taxi IPO: 25% stake to list on Dubai Financial Market",
+    "url": "https://gulfbusiness.com/dubai-taxi-to-25-stake-in-ipo-on-dfm/",
+    "date": "2023-11-13T10:09:54.000000Z",
+    "source": "gulfbusiness.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai, UAE, Abu Dhabi News LIVE updates: UAE mulls freezing Iranian assets to punish Tehran for attacks – Report",
+    "url": "https://www.livemint.com/news/world/dubai-uae-abu-dhabi-news-live-updates-iran-tehran-aerial-strike-us-israel-war-11772758185141.html",
+    "date": "2026-03-06T01:30:19.000000Z",
+    "source": "livemint.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai leads major Gulf markets higher",
+    "url": "https://financialpost.com/pmn/business-pmn/dubai-leads-major-gulf-markets-higher",
+    "date": "2021-02-01T08:30:51.000000Z",
+    "source": "financialpost.com",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 3,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "marketaux"
+  }
+ },
+ "DU": {
+  "items": [
+   {
+    "title": "du Pay turns Dubai telco into a digital bank - PCMag Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPc3VJcjg4QU1mbDlkYlE5NW9IdWRobnNvazRwdUtvS0l0YTNuSHRVN2ViU3BNQTRlU1VBTnRXNDRvODBRMUh6OVhZM1FFRXpTWDR5VFkwX1lpU2d6UGNobUlNRnpybHhsa2dxbFRIWlg1Ny0wb0lGVTBNVDlNSHQwVkEzVE1GOEluNXc?oc=5",
+    "date": "Mon, 22 Apr 2024 07:00:00 GMT",
+    "source": "PCMag Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "du launches 5G home wireless service in the UAE - My Startup World",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbjMwRXkzc1VESE9XYUFwNEhFNVk0VTVnMDlWZFNvb2dvNnd0dThtQXBPOVFDU2tKTGhld1R1ZlZ5c1dvMm9QTk9LcFNMcy1XN29aZEhLZ0VLTEVNUERJMVJhempMSmQzTENSeTlYNnN5ZjhpWnhmS0ZicEx3cjNkeg?oc=5",
+    "date": "Fri, 22 Apr 2022 07:00:00 GMT",
+    "source": "My Startup World",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "MENA Broadcast, Media Technology & Satellite News - BroadcastPro ME",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObmhuQ0oyWWlFRHJ5ZGJCSEk0NHRUWU9zRXJTdzRLX3ljbkx4OEZhcmstX3ZyU1BzaHkzdzlmZVh5SXY0cDFPOGpxeHlOay1hSnZtazF2dks1dUVzd2M0Z0R1aUlGVkU2RHhfT2IyOEdsVUhUWHNlWE9UcUp3THA5MjhkRkdXMUFIMjg1bWRINzdMZHNka0YyNWRUbmhSZXFmREE4RnZkVVI?oc=5",
+    "date": "Sat, 16 Mar 2019 07:00:00 GMT",
+    "source": "BroadcastPro ME",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai telco EITC inks deal to open up data highway to China - Arabian Business",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVUoxLWhRNV92anhYMXNERV9SWmlGN3JTeXBIQzg4ZkJSaGRxM001ZDNKakM1TkxPc0djZUg0aVFtZjE5aVA3a0VhYmRvNV9ablZZSW5ON1daZW5TRkZLbk45d29tVWl3c0otUnBIQ3NZNnpFZG5JTmlBNGpBMlUzdnVNemt2RkhjRi1aNGd5M2dTRENTNkY0Z0pvOU96OWdlMDNORXlsOGJ1cjA?oc=5",
+    "date": "Wed, 24 Jul 2019 07:00:00 GMT",
+    "source": "Arabian Business",
+    "sentiment": "positive"
+   },
+   {
+    "title": "du posts 54.2% rise in first-half net profit, hikes interim dividend - Gulf News",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRy1Lei1NeXVrT2ZjOHB4SDE0RzdvYWlvQ0J6N2swVmxJWHVrS2dfbXpzd1AyX0lRUi1NamdKWWJHQlVXdmZtbjVWUjctWG1SU1NWQWVMQkIxeEg3d0tqVExVd1ZoMW5zaVIyWl9VWWhWWTBaREV2OXY0Vm00Y1E1T1JSNzBySFVyZG8tSl96dzFNSWk0MTVYM3JfeTVwVkF3T1BWQnlyclBRQVZYWHZsYnctR3dhQWM3eHZj0gHOAUFVX3lxTE1nZUIzVEdrZDF0S3g2WmlqTHhaU0REWXZaZDRteWRReWFXUnp1M0xPc2lyT0V5WHRLU05mSUpCZlNLYnRBTVpweHVXRTRLdG1HX29yS2dNRFNRMS1PUW5ON2YySzF2LTdqdDU3eUhBSk5JWC1YSzZCSjk0OHF5X3piN0s0QXMtb2todmhkOExHZnBsQmIyV1JsQ2hvT3hFWHhKQkpCRF8taVZ0MkZ1YlB6Sjk5Y005VXhsdXhETzA0MTBsV3VlUTdQUFFxWW9n?oc=5",
+    "date": "Mon, 22 Jul 2024 07:00:00 GMT",
+    "source": "Gulf News",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai telco du appoints Fahad Al Hassawi as CEO - ITP.net",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdGJzX3Qwd2VjbVR2UWg3SERHSTNQZjhzODJySzNKTjJ1aW1ib21nc2ZYd0kwYVU3UENHbmJoYkZBY1MyWFh6Z29GVUJYc3BPdFhFYnZzTFNnOGxwQzBtRXdlNEgxVW91U28tYTY1eDgtbUNqeXZZLWdIbk92ZjhuT1BvTHhocHFqV1E?oc=5",
+    "date": "Wed, 09 Jun 2021 07:00:00 GMT",
+    "source": "ITP.net",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "MASQ": {
+  "items": [
+   {
+    "title": "Loan losses (actual) to loan loss reserve of Mashreqbank PSC – DFM:MASQ - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQb01jSm1aZ3d5ZUF5d0NXRmhFaTlPUTJDNTlBU0VKOTJ4LWY2SjBsUGh3Nm12NGVzcTY2bmx5RF9pTURFYW4yUW5OWHdGMFBkWGRiQklxeVU3ZEZGRUQ3b01TU2lQUEU0dFVVNl95MVB3OTcxWWJHdTd0Q1hWX09tcnk2Zm1YTXVnYVlmcDBWT1Z6SUhhWUt0bWhmSlBLR0RTREp6QnZBV0I1M3hJM2c?oc=5",
+    "date": "Fri, 26 Jun 2026 19:00:51 GMT",
+    "source": "TradingView",
+    "sentiment": "negative"
+   },
+   {
+    "title": "UAE’s Mashreqbank mandates USD 5.5-year AT1 - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOR2J6NUJOVWdoLUlkZWt2c3ExVjhuZFlqMkZPZk1qMGpKb05RekhqU3ltQ0F1ZHlWbXFYeDlSYUxXLTBOWmtrblNLRHBleWF3MXRDbEs5WS1HNGY1Nm5sLTA0d1VfcG14R0M5dThmOFB1UXpRSWpWVlU5MzZDMVZoaTM4SWxNUUFBNy12VUE4YXp1RUJYMUZlM201QzVSQQ?oc=5",
+    "date": "Mon, 29 Jun 2026 09:37:40 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dentons advises Mashreqbank PSC and Abu Dhabi Commercial Bank PJSC on US$100 million acquisition financing for United Energy Group - Dentons",
+    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQQXd3dzJFNk0xYlZMajQwWjVQOG1qSGFBbGR5bXFJUHN1c05tN0QtaF8xaXBXUl9UbU1YRDV4QkMxV3J2QzdpOWR5Ukl4RVB2NEZOT0stR2J3VDFLSmlFNXg3dnltdVJ1ZVZlS2N0VmoyZE1sRHVOejRJd3RsNkRHQ2xNZzQtUERJcXVKNlI4WnNCZkZmOWZsTEVHUzFTWHpDVWRxMkYxZERXWHN2QUJ2b3dpSDMwSlVOb0hRdnkyd1lZUEVydTYwN3p6ODFuc0dyTVV2dlNwSWtzV1JsSEhVT3dYMFBmMGlQQXVKdnhMQkc4OXU2UnpfS0pIOTdBS0F5MzZCVExBNlZLeG8?oc=5",
+    "date": "Wed, 10 Dec 2025 08:00:00 GMT",
+    "source": "Dentons",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Mashreqbank to start UAE's subordinated issuance for 2026 - Global Capital",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPLTR4dENQZEJObTF1OVg3Y1lYSUxRelg1MWVtellWaV9land1U203emJiWWRGVzg3ZlhTcmZxTXdUUHhYbVRiLWZlVnZnbU5lRHFocHhMekdNTHF6czdjUHpHaE1wbUZZWVJJRG1xVTBLSnF5Q2Z4VEptQ3pLQ1Zxb3U4enllWGZaN2huNS1EbTJFMHNxQ2FreE9FODlnMjkwWWtSYWNoNV85MjJqOXRCdWVlWW9WQzgzWktITVdmVVpsM3FEVENFQVNWYi1ZQQ?oc=5",
+    "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+    "source": "Global Capital",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Mashreqbank PSC's (DFM:MASQ) Dividend Is Being Reduced To AED10.20 - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVjhmY0RKWXdlazl4aWIwQlpxOFpDUkZuNGZfc09fRkdQZmdtc2lGMEFfN1ZaRklFWGp2UXhZUHZweGdJblZsLWhTalZ4VHF1T2x0eXRoOGRGTnh0N2g5aDUwR2NuVEtJRkxqRXRZdjZTVlY0dVl1bXFvd0hkY0FZRGJUblJrMUF1TjJVOHNOaE0xaUlQN1Y0ZzJFMm40b2NjaGVGbVU2dHgxRjgtVXg5ZUh2RDJVZ1dLWmRvcmZPZVk1Smd3aG9GNnhMZ1hSOEZV0gHWAUFVX3lxTFBMcy12czhYRzZMYnc1a0hTVklJVW9qcTUtX005U0xmeXl0ckhGTWpQRUZiTGI4ZlM5SFN1eEhmSVJQMFVMbmc2WGpZeU1ONEIwRGFuYms3cnBYWm40UXkwRUU0TjdRRGJxQjJRU3hIWmtidzVlNy1DTWRLR0c4dWNwc1pubmd1ejdXMHh2YXpqcFV5WjNVMWFERWJZNElLM0xvZDVOY0NlUmtQM2MxZlg5TXZlUGZvbl9CM2pjM0xCWVViTUVReWpVeDFFZkpuWF9odHl5RVE?oc=5",
+    "date": "Thu, 05 Feb 2026 08:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai bank to pay $100M to NYDFS to settle Sudan sanction violations - Banking Dive",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVDY1cFcxQW1WSHZjWGlrcC0zQTV0d25DWFZXU0ItQkQwVU9PRDlpRUFXNjFfVTVnY2MxVzNIZ2xNZlJBdkpTQUs3eXFRaEQ3ZmlYTURnQWlwRDdlclJtWjB2UzB1WWxYSEdhN1ZLdTR2blpEOXFlVVBodHRKcDFwdEJYOHNidWtSeDlzSHhXY1NCRXViYlVNT0pKVGFEVDlhN09KdzBlT0tDYjRT?oc=5",
+    "date": "Wed, 10 Nov 2021 08:00:00 GMT",
+    "source": "Banking Dive",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 1,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "SALIK": {
+  "items": [
+   {
+    "title": "Price to earnings forward of Salik Company PJSC – DFM:SALIK - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN1hOcEJpci1ZYXRQMTdEU1FvajJ3Y2hZTS11eTJIZURtMVhVQjFKRUNub3FFeF9adFN6ZzFHUWdnaUx2U21pTVdkcWhiZnJqcnh5SEhCek5FeGxqTU5IaDdwdS1xOV9obk5iS3JKQklIMkQtZ1kyYzV0ZUpTbnJRazFndjhZZFBWNmdoN3JZQmpZTTI2dV8yNGRJYjVDVXM?oc=5",
+    "date": "Mon, 29 Jun 2026 11:26:30 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dividend Investors: Don't Be Too Quick To Buy Salik Company P.J.S.C. (DFM:SALIK) For Its Upcoming Dividend - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbFZ2eVUyOU9laGFQUmRpNzY2NWU5OXYySThGNy1tYVNERzZHSVlDQ0dHM2JwLXNWdFJoQkpNYVVwVHVyYVBZcmp4RzVvdGVwSXJMVExQbE43TURNczRVdU5EQURkT2o2RkJJemt4Um5BNkNFNjAwNnVwb0h6YjJaWktJQjRVUjhFbjBuQm5wZDlXQjhZcTA1cUpKVGJsUTBHVUJpWllVQWFEcmdyNDBFenh2b0ltV1I1RWJodmlBd2ZnU0RCY1NldEpJaWE5T0QwNUllMDM4dmg2bHpYenpCSVB30gHnAUFVX3lxTE43cXFXbHhpQjA2ZEVaMnk1aGJyNEdHWGZ4ZFNFVHhFZDhINVRKUU9jdUE4bThjR3pqN2tSNXV0eHNwU0NXT3FKdjlMNW9kbjlERnB3WEg1YVc0SEZ0WFl3TEttSUJmWVF1SkpYdHZYcmhfUVlKTFYweW1xXzJlZlh1cUZiTFEzNTl0T2E2Wkpta21TS1h4MEJMUFJpSnd2YkJCazJkclRHQ1d3RzdLcUFYREo4SXJHOHlLendYejNJUTFSM0NpREN6VnlEMFVnWW9IVHVDV1oxSnJyQmN0NUJQSWhmdGsyMA?oc=5",
+    "date": "Mon, 13 Apr 2026 07:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Salik Company PJSC Actuals & Estimates (DFM:SALIK) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR01kdmhHdWRKMzJQNlJDR2Jmc2otczh1UlktM3JYcU50SlJPcGxEM0NzNnpoYmZVbGlPSEt1ZG03NDdmUGNuR1B2Zm42Z0RfMkg3OTlOSTFJY2VSaWRzNEVfSF9ZNlBac25OUGUzMzIydW0talZFejhSbFlyZ3hlWWg0WQ?oc=5",
+    "date": "Fri, 26 Jun 2026 05:34:52 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Salik Achieves Stable Results Supported by High Resilience AED 728.9 million Salik’s Revenue in Q1 2026 - Government of Dubai Media Office",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tVFFXaWQ4WGNrNWJseVlzd0t6Q1dSOXVOZ0tjUlJwR29vNjNRYUJDY1ZnTW5SMFZHem42dWZUNlM1TlotSkJtdGNQbW1vZUwya3hCZ0t4SDRBU0J0dWtiNQ?oc=5",
+    "date": "Mon, 11 May 2026 07:00:00 GMT",
+    "source": "Government of Dubai Media Office",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai’s Salik posts 33.4 percent net profit surge to $422 million; approves $242.4 million H2 dividends - Economy Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTnRpV20zci1UZnEwbTFTQUZiM1dLLWJGbTViMnd6VF9pMXRfV0NhNXpkSE5LQjJ2X0tWZTNydmpwTkRrc2lHZHFHT3pWWFlFTk1RV05QRjVNMW5KQUhpTVBxc0lyaGR6ZG5RcENpaXR2aC1IQzlZRnZIWkRDelZaTUhxSGQzcmRhU3JRaExqTjhMcTRWRDJZVm1rY2Q2WnNuaDM4VVEwVDdVMVRwQk1yaHBoT0J2YTNKQU1sVTRocWNVMjVZMk16Mg?oc=5",
+    "date": "Fri, 10 Apr 2026 07:00:00 GMT",
+    "source": "Economy Middle East",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Salik proposes total dividend of Dhs890.3m for second half of 2025 - Gulf Today",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeGltMjB6QmkzMXFXa1pvSFViQl8ydmZsQ3pxS1dpbG5zLUViZldSTHF6STkzRWNpZi1RRk1SV0hRTkMwZWdyOGN5NXFZUWQ5MGc4cXJ5ZWZ3V1p3UFZSTGJKVEFrUzdNSjJVT2VobGlWZVUxM2pHeVZCejhDemNIblJqMnBuTFZ2VVlmNVZnVzQtZHF5MXVKLTVtMjVWejlsandRWDdNVWdFRkMzV01R?oc=5",
+    "date": "Wed, 04 Mar 2026 08:00:00 GMT",
+    "source": "Gulf Today",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 4,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "PRESIGHT": {
+  "items": [
+   {
+    "title": "High Growth Tech Stocks Including Presight AI Holding and Two Others - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbmhSYk5mYUt3ZUFnYnIxN1B2V0twWGRYZW9nSnVscDg3d1o4TmJPSHFEcEV0WmR6NC0xWVBBUnk4VEVtZ0dtWjZQa2lnQlFRZm9SeHB5MUJ6c2UtRnAycnFBWXhOOGFjNG1MSldwTE9xbnJQdG53di1naVZZUUtqZjUtTkNmbXUzUnpxb0ZBZ205UEwzZkFnRjdrdDhqTXNicHVHSGt3SEc3WFZleGtjeG9TWW9MeHNHdkVDd19aS215RmtibFQ4QW0xV2xQRmPSAc8BQVVfeXFMT25oUmJOZmFLd2VBZ2JyMTdQdldLcFhkWGVvZ0p1bHA4N3daOE5iT0hxRHBFdFpkejQtMVlQQVJ5OFRFbWdHbVo2UGtpZ0JRUWZvUnhweTFCenNlLUZwMnJxQVl4TjhhYzRtTEpXcExPcW5yUHRud3YtZ2lWWVFLamY1LU5DZm11M1J6cW9GQWdtOVBMM2ZBZ0Y3a3Q4ak1zYnB1R0hrd0hHN1hWZXhrY3hvU1lvTHhzR3ZFQ3dfWktteUZrYmxUOEFtMVdsUEZj?oc=5",
+    "date": "Mon, 29 Jun 2026 09:40:27 GMT",
+    "source": "simplywall.st",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Presight AI Holding PLC Actuals & Estimates (ADX:PRESIGHT) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYzVzZE5VcVVFQXhCZnVrUlVaQkpxZUZ5MVRKVUsxZnZfb2syU2pYTXBBdU8zbkNSVkl3cUJDRktSbnRnSjFtNTk1MTZBaDY5aVQ4UUI4ckRkMTdqREV1S2dabUpISFg1Q3lKNXU3eG53VTU1UVpkT0Vqa0hwajZncHFPREJGcmM?oc=5",
+    "date": "Fri, 26 Jun 2026 07:32:54 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Presight announces Cohort II of global AI companies joining its AI Accelerator Programme - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSFhjM1NpbURGSm1kRlNlNUZhdGNIRk01ZTk4YUp6bWZ4M1FGQ0IzbVZHY3REc3NQNGNLV0dwQ3dZVXpYUVc4YXE4Sno2bUVnYXBZUVJzcFVILVJ5SFVPeG9oTDdLRVlqbjVFWFc1eXdnam9pU3Q3dWxKSEtzYm52bU5oc1BkUUVOZ2xkeENLNHZTeDJJOVByWGMybWRyQjRkZXNIQWJKa2YtX2Q0cklOMU1tWWttZS14ZTNraU43QlFEUEtSbDJ4ZTRkWjQzZFRWRDJQWXgtMEJ1QkdiZlBCR2NKUmRuQQ?oc=5",
+    "date": "Thu, 25 Jun 2026 08:37:35 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Presight Delivers 22.2% Revenue Increase and Double-Digit Growth in EBITDA and Profit After Tax in Q1-2026 - G42",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcE11WFkzUHoxMWtEY2U5OVVQTjh0YlVtV29fNzJHQTByaXFoQ0k4RmhfaVNWamZCLS1Gc0NGZW5BVU41dEJuOUEyOG9DdkhIR3pKR1B5V09KVkZwbV9uUlpPSmM5RmVXaXJXWUhTRkgwT3M2Y1BHaXQ3X0FNZkNLV3JnaTRnZHQ0d2JMSDFGN2h6djFvQWpnMEpUcmNhNkhHRmFHNnMxb1RsNU1LS0RTMkVJQkFVTS11c0NPeTdfQ2JkdWhCQkkxWm4tSlo?oc=5",
+    "date": "Wed, 13 May 2026 06:04:34 GMT",
+    "source": "G42",
+    "sentiment": "positive"
+   },
+   {
+    "title": "MangoBoost Partners with UAE G42 Group to Accelerate Entry into Middle Eastern AI Market - 아시아경제",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JZHNuOTVsUUdXbGFQQ3g1MDlwWkYzemtpM1lTTER4SkhYaWo3Szh4NlNxb1BqTEhPMVl2eTQydm1ROGptdXJwNVowSkVDR0tsWmdGVml4MzUzU1ZGNkhTQklxY3U?oc=5",
+    "date": "Fri, 26 Jun 2026 08:58:23 GMT",
+    "source": "아시아경제",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Presight’s Dr Adel Alsharji on building the future of AI-powered government - Gulf Business",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQUpNSWF3YmlUZjMydTU3eFU3eTJ6bjRNXzU3aFVkZlJ2eGlVMmhlbzRfSjM0eFB0UDhkeXE0MWJBV2dRYWQzM0VqT09Ca3FoOUZRc0txTl9vMXBBQTg4X2pWWW9oZTlELW81NVRWWFlkZWlnNGJxSnVMVzU2VDBTUjZHTTRwTHF5MDdObjZMM1R4aVU?oc=5",
+    "date": "Tue, 02 Jun 2026 07:00:00 GMT",
+    "source": "Gulf Business",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "TALABAT": {
+  "items": [
+   {
+    "title": "Talabat Holding Plc Actuals & Estimates (DFM:TALABAT) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPODl2OWtsQlpVS0lXVnFWa0hQRnF1ODFiRXREMFdlYVJ1TUpIVnBTOUpna0JDNWc3M192bWRlcnRkbWVDZlpuY3Y0emFGY1l3YTBoaVdnVlY1elpCQkcyc2NPLUdLUnJYWWllT3VyV09fa1JGMDJzRmp1cG5LYUExRG80TXpxdw?oc=5",
+    "date": "Thu, 25 Jun 2026 18:27:51 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "TALABAT Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5mZk1pb3I0MDZORGZENVVoMzUzbnJ2U1QwcndrX1FFQlZJNFBTOEthc3J6empRNE0yU3U2SG56aWVmS2VQZ1U0UGpqUXVfVDNFNVgxSjVKZVczaDI2U04tMEZEWFBDMXQ4eG01ZzlKVjFEcjZ2d2FRMW9n?oc=5",
+    "date": "Thu, 25 Jun 2026 14:09:17 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Delivery Hero's Talabat set to raise $2 bln from Dubai IPO as offering priced at top end - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSnlaNVNNdnBfbDJ4aEh5bnBTZFdUSHc4aU51Y3NKdDdnV2FRdmdkQWVEeGJZRm1ZQmFVWnpGZEtaLTgxOEFBd0ZuNzNCTG1rWnNUMlVfZjlQbnM5cGEyRkZwaU92OU1haVBHX1hUOTJSVkJSYkZOSTllUkxxY3pCeHNlVG85LUxHem53TUl5WV9yc3NkaUN0aEwxUnREUHVpdktSMlA5ZjBLZXotQ1M3MWwzTmpyMkRjbHI3R0NKUjExdw?oc=5",
+    "date": "Fri, 29 Nov 2024 08:00:00 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Talabat delivers strong q3 performance, reaffirms full-year outlook - Khaleej Times",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVUE3VmxZR0lpalFXZUw0cGlsYXZiU2NfQXdpUFFFSF9CNGc4U1hEU1Z3dEhyU181bkFQU2lIanNSTHpodE1iRC16Wmg4THdaOVBBY1lpalVrZzVWb3NQd3BpU0wzRGFYX3VlTXJINFFqRnBaYTNQdk0wQ1puaFNDXzEyeUUzbzVReW1DMk94MnZiSDl4N01qUjc2aW00QUNXWkFmUlBtSdIBrwFBVV95cUxQdF91bjdpWndtYlhVLXI0Mlk4eHpBMkRRVzRVOEtFVUJDSi10NkpvSUpDaFVEeWVEQ2ZFellnZ3NCam9ubUtaRl96SDZMcElEZVpCRXRpRk9WVEtiQ1VLNS1Ma2FzMlNyZUEwMVl1VGp3UTNzQlJMMkFNcHB3a2VlU1hobk5qcVRDTE8zaDVON1ZRcy1MdEktbmdpY3V5Y2JhNURnaG13QlBQLUJONlZr?oc=5",
+    "date": "Mon, 10 Nov 2025 08:00:00 GMT",
+    "source": "Khaleej Times",
+    "sentiment": "positive"
+   },
+   {
+    "title": "talabat plans to buy back up to 5% of its shares - Arabian Business",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSnVKRllscU9ydHVTMzlnbUZJUV9Ucl9hTy1EMVctX0dZdktZS0NPbFkxSmRiZ2YyRkl1ZWxjX1RyZE5YXzhmT2RzMTAtYXVlY1l4NFl2WWZiZnJ0U2RHelBvWHZLeG5IX3VibGZ1dnRYTTZJWTlSVGM1em9LSnkydXNhSnotMThZUG9MUVI3WTRaQQ?oc=5",
+    "date": "Mon, 16 Mar 2026 07:00:00 GMT",
+    "source": "Arabian Business",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Delivery Hero to Pursue IPO of 15% of Talabat Unit in Dubai - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaVhtejlqZUNGVmZvbWwxUktFMFRXZVJmMjcyRmNKTXVnU2VxNkdOWExFZUEzNFYyRW12d2dHaDZnVDdCbkRnRmk5UFBPaHFPNE9icDZYeVZfNG9aZ2hCNHpGbjdLY3J3aXNCQktaTnFKd2ZXcWNfX1UwMkxzMG1uMWFwYndoQlQ5UmRhNE0ySGQ0UG9odXJtSVpBLWROaXlYdkNaTDFTOExRX0xINjhfYURn?oc=5",
+    "date": "Sun, 10 Nov 2024 08:00:00 GMT",
+    "source": "Bloomberg.com",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "CBD": {
+  "items": [
+   {
+    "title": "Middle Eastern Dividend Stocks Featuring Commercial Bank of Dubai PSC And 2 More - Yahoo Finance",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQWR5bnhsblk3emcwRXFhbEl5dWUwRV81MExhRVk3RHh6dHBzRkN0alg0RkZYQlVzQVExMWxuWFZxbWYyTXhPQmw3czFkM0RuOVQ0bXJCUl93M1JyVTExQS02ZjhZbG1IUnhITV9Pano3elpqSGY3YVJGLTQxWFJqRklLWkh4QlFxeFEwVkpEUzY0dFZfRzZMQWROM2ZmOFpObmZpeVA3bFg?oc=5",
+    "date": "Sun, 29 Mar 2026 07:00:00 GMT",
+    "source": "Yahoo Finance",
+    "sentiment": "positive"
+   },
+   {
+    "title": "UAE central bank launches due diligence platform for individuals and businesses - Global Government Finance",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRHB1RDdNc1pPVzVzenRxcUxlWGRvaHdaZ3JGdXoxYjRtc09PS09kOXVjdmhpZDhDYXY4V0ZLcVowd091bW5QSkdJOFRWdW9ISnpzVDFjLTFadm8wa0liM0FHWHRVZG9xSGxaWXMydjYxSXdSY2huUXY3cjYxWUZZWHpHRHIxREF6b19qenVIXy16VWl1V0E?oc=5",
+    "date": "Wed, 15 Apr 2026 07:00:00 GMT",
+    "source": "Global Government Finance",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Commercial Bank of Dubai sets milestone with Open Finance activation - Open Banking Expo",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNclJHMC14U290UURDMkhQeWpqUERValpGRTJHRzNmM0xwWGY2bk15NlNYOVg5bW1rU2h2RUdRWGpWal8yd1JWbjlWVmxoVk1USjJCNXQ0SklqZ0dfdW50UVBqRldRVWtGXzZ3TGoxTU5KS2w1ZEtPWkV6d2dfLWdvMEFySEU5cWlyMmw0TmFUMmRwWmw2UXQtYXhIZHFVbmZRUlNONGpCcU5xUQ?oc=5",
+    "date": "Mon, 05 Jan 2026 08:00:00 GMT",
+    "source": "Open Banking Expo",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Architecting a Digital-First Bank: How Commercial Bank of Dubai Is Transforming Banking in the UAE - MIT Sloan Management Review Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPYnpjRGtlaFFmWEozXzl5Q2dTd3VVa01RUUhNWndDQ3c5bWtFY0ZtbWloTWZKVDEwWnJEaEh4QUctSk1TQ25IX2FheFlXR0ZxZ1MxVmJuSnFhWUdBWExpMldObDFRVHcxdF82SzBSOG5JN2M3ckNUa3Fhdkh4d194MGtfRTZCTGplSXJqTDdtX0UySmRUVTFudnhOcXZDbUlTUUtrQzkwSWcyZC1qLTUtbHVEUDFyRWVZZ3N0S0NDX3dMY1l3UXVWLU96WQ?oc=5",
+    "date": "Tue, 16 Dec 2025 08:00:00 GMT",
+    "source": "MIT Sloan Management Review Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "ALVAREZ & MARSAL RELEASES Q3 2025 UAE BANKING PULSE - Alvarez & Marsal",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa3J2Ym1UNVFzejdSZWxqUUN6RTF0Q3BFWFVjMVpJSjdsSG9wNG43WE11VWNDVzlYeWpHT1p2Nl9QN0RVX2tBdU5sWUkxaHRTYUdxbjEzX0tRNlA0UVl2cllGelRMVlF1cVNKbC1QdjAwNloyVmRkVjYyR2pycUZ3dkVnMlkwMF9waC1NVU9UTHFQNHo4dlZVVF9IYTY?oc=5",
+    "date": "Thu, 11 Dec 2025 08:00:00 GMT",
+    "source": "Alvarez & Marsal",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "United Arab Bank shines, Commercial Bank of Dubai steadies the ship, du on solid footing in 1Q - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNWhWblltN2RyZ0JxQVIyZUQwUjBxTlN5cEdxRFdlc2ZMTmtYRVBleE4tdG4teTIxZ0pnMXJ1SmdaOFlwZnFrc05BamJmbW41SXFJaFJrMllrcGtsR2VtYnpFWlBubXA4am5Ka1dYM2tqaUJhNGZIT1V0ME1RNGkzcFhYV3M2LVQ0Z3VVZGlNSGo5SlQ4d3NXUHBYY1RnbURGeVpSN2czODBVWGpzTXFNR283bnBlSFNWb2NvSTA0T2YyZ2JFZTBzU185d1haQQ?oc=5",
+    "date": "Thu, 23 Apr 2026 07:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "MULTIPLY": {
+  "items": [
+   {
+    "title": "UAE investment firm acquires majority stake in Italian luxury packaging group - Packaging Insights",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdFNEUlh2N0pRNjEzNHBkNlY5OElOeWk1MW1qa3YxelRnWmhXdW1XTlYxMzJPaktBc2ctQzYzd0hDZEZQRkt4QWs0RUZSejduYVdtN3FKSkVLZGpfYW1QVnAxVm9iZEJvMXE3d3daMGxFQzVJYnJxMTVkeXBlTWRKemgwSUdvbG8?oc=5",
+    "date": "Mon, 13 Oct 2025 07:00:00 GMT",
+    "source": "Packaging Insights",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Multiply Group Announces Plans to Acquire 2PointZero and Ghitha Holding via Share Swap - Business Wire",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSWVuaHhtVS1rR1pDbXkzVEZhejJpcmE2anZHUVFRN0ZTa18yTjhRSEtTVFVSVTVVaDlad3pqTWRBeWZ4S0Q2VHc5TEp4dkdISS1FNmdNUE9pUnltWnZCOGszWk55SlNVZDc3MlZfYlpXdUxJVG9JWHM3NmVqbkdBeDgtQjV5TW9DWW92RFpLNFZnSUlXRDBnbFBTUG1PMmZoQWFaeEpDTHNXNXJjYzgxRTRfXy1uX0tabk0xS3VGNWRRSVd2Z2FKWmRRUVp2SlNKVkVxZ2lTc3cycGc?oc=5",
+    "date": "Wed, 15 Oct 2025 07:00:00 GMT",
+    "source": "Business Wire",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Multiply Group’s Emirates Driving Company concludes strategic investment in Mwasalat Holding - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOX1MzTEZiTGxjUTlnSVpfYl82VXF5Ri1ZcjdTT01YcHAzOHVOME1lcU9rUnk4emFuSVdxWURCbzNVRWNJR1N2LUpMdmlYTWhjUWMtUkY4c0duM1VzWkM4VU15Q2FrdERKZWdkZnJac0NaQzFEeVpTcURlNnhGemRtWFhENlJwbDZXX1Fid0g4aHFOTkl0ajl5dXRoQ194dUpnT3VfLXIyYmRUSEYwSWRlU2RoZV96MUJ2SHRZM1RVOUdFUjdubGh1Qkh3am1jRVNGRVdaZzBBVVlMdmU1c3I1Q251TjlaWEdCRzdFbXYwZXlZNXQ2Mlctck1MYXk?oc=5",
+    "date": "Mon, 20 Oct 2025 07:00:00 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "UAE’s Multiply Group to Acquire 2PointZero & Ghitha in USD 1.6B Deal - waya.media",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQ2Q3NWh5R3FZSGhsNEllQVpQNm1kRG13c2lyazhpNW1fZGxQbjZuVXNBY1o1dnFhQjJaOEZkZG5uV1NiVnp5M1NxWm1vRkR6NHRLb05zdXp0dUxfLWpRMkxhbUpybDRmMUJDTU83anZQYzVsbHdaNXZNdWd2SWQxQ2s5Z3YwSF9BelZjMlF3?oc=5",
+    "date": "Thu, 16 Oct 2025 07:00:00 GMT",
+    "source": "waya.media",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Abu Dhabi's Multiply Group sets sights on high-growth sectors and food security - The National",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQbzVuSjZSeXdGZkhJV2pEckJBaVktdU1XekZPVUw2bkRvanhSQTk4cGlvVEpETENsZ0UyYUJabXoxNTI2aDlQSFRSMGFPSVlBUEhtR3k0RXlpcVA4WTAzX0NsbzdqclVYZ1JPOU05NnBsQ29tc3FNWm41YWNiUHl0cUtCYU04SndFUDRtWHFNbzRTUzNNdk5PV0R1S2RzQndZWFF4S1ExRXU5OWxQUm1CQ2hmc3NuSDhCcUJzTlJmdFV3MlJ1UWdaZllQQjNrSkF5clRYZUtB?oc=5",
+    "date": "Wed, 29 Oct 2025 07:00:00 GMT",
+    "source": "The National",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Multiply Group Acquires Tendam, Doubling EBITDA and Expanding Global Reach - World Business Outlook",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaTlMemt3YWVvc2xHa29xemRBaHI2cllzR1pHQWFDaFdESkhUVjA0OF94WEQ4YWp6SzAzMFNrTHNjLWRnQ05qejZDd2l6dlJPX3hwTmZSUGRxMDNzMF9LT0RnT3lHTlN1enpEYWppWE1QdWlHMDl2UndjazI3eTlPOEp6Y2NraE1mLTc2MEJZaWVTY2tZVzJ4UDhXSWhKTlA2YjNwekdfS0E0MWM?oc=5",
+    "date": "Mon, 28 Jul 2025 07:00:00 GMT",
+    "source": "World Business Outlook",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "AIRARABIA": {
+  "items": [
+   {
+    "title": "UAE Leads UK Travel Revolution as Air Arabia Introduces Aggressive Low Cost Direct Flights from Sharjah to London Gatwick, Disrupting Traditional Airline Pricing and Redefining Long Haul Passenger Demand Across Europe and the Middle East - Travel And Tour World",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UZlVWR2hmN29rRmJ4Ymw4OXFZRlE2Y3dpTkZkYlhsb3MyNzFxbnljTmUtRVJ2ZmxFWU9yVHk4Mktva2RnX2o1UWNMd2FCT01LaGZpYTVWQ3NkZzZ5YnV2WFhPS0xaeE1vdEhNbGpB?oc=5",
+    "date": "Mon, 29 Jun 2026 10:07:50 GMT",
+    "source": "Travel And Tour World",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Major airline launches low-cost direct flight to London from the UAE - Arabian Business",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Pd2txTDN4Q0lnVldLTGZWQ0FRN0gtRVlTYlg1d29Qdk1YLUJpcFB2VmtyamZ4X3dxWmZ6TE9VSjJDZUNxV2Q5VExKNl9STE1hMXA4M1JxZG5sbEEwaU13MEVLZHV1TkM2N0JxU2loUW8xVUtTeDFXX0Y4Wlc5eHM?oc=5",
+    "date": "Mon, 29 Jun 2026 05:33:23 GMT",
+    "source": "Arabian Business",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Air Arabia Abu Dhabi to launch direct flights to Aleppo from July 7 - The National",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRHl3aXloUlZyX280YmYwY2Y2SWFzUmZRRzBWQ2wwdlFfR2lJUFY3cVJQN1QwZWpJMlhvdmZXcm5YY2RCc2luSDhlXzJHemxjQl9SNnRwRmx4VHpjX1JONDY2N0F6bEJRWld4N2cxbHpKbVZHVDNvME1nUGM3d0dhaFMwby1odE9iNEpJallaLWJmY0piZy1LQjlFQTdyX3luTHZJRE53ZzV2NnZRbHkwbVRXc0NWUDUtNUE?oc=5",
+    "date": "Wed, 24 Jun 2026 11:12:08 GMT",
+    "source": "The National",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Air Arabia sets July debut for Sharjah–London flights - connectingtravel.com",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXJKV0VETWZabEZ2UlI5Z19lSzZhTjQ3VXFGUnNWbmpSV2tyUzJtOWJ1WlZlM21MZUkxbDZZOWYycEhwQV9XaUlQemJIWU9aNzRSRGtPMWRXYTZfZEFFczlVc0dCRkZoNi11R0lSa3NTLXBzNmZGUUZuNDJQdjBCUlV4OUhaUmFER2xSc3Uybw?oc=5",
+    "date": "Tue, 23 Jun 2026 17:28:38 GMT",
+    "source": "connectingtravel.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Air Arabia Abu Dhabi Launches Aleppo Flights - Rus Tourism News",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPc3hsRjdOcmxOV2tGaTZ1QmFWOWg1b2duNGdDTXNQSS1wZlBaNWVaYnFibEZFR0JrMzgxZ2E0UlNYaFR0dFpxWFFVOXE4UlhENEN1ZEZzNUJjcXlVWmRtZHdnekgyOVRueGVwbXluM3FtWDk1RlZZSkIyYTQ4UnZZdDdscHFqNzRlSU0zalR6LU4?oc=5",
+    "date": "Thu, 25 Jun 2026 12:45:47 GMT",
+    "source": "Rus Tourism News",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Middle East conflict dents Air Arabia’s first-quarter performance - FlightGlobal",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRzNqMGlaazlrbUQwb2doaDU1ejhxbjE3WWk4aTY0OWpfT05zSEx1MWlZUDlNLXVfN1h1ZnMtYTA4Mnp1bl8zdkxyaWRVcm0xdXBnR1RjNnNhQUM5bDAyMTRxaUVJUWtoTTlPX2ZKS0hOdk1XVnNzdjhFak5qUno5M2pKaWU2VnlJUGRNdy1JZTNqZU56cW4wWFBUYUJ2Sm1YdkU1aWI5UDc4VzBkX0Y4?oc=5",
+    "date": "Mon, 18 May 2026 07:00:00 GMT",
+    "source": "FlightGlobal",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "AMERICANA": {
+  "items": [
+   {
+    "title": "Earnings call transcript: Americana Restaurants sees strong growth in Q4 2025 - Investing.com",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNLWN5NVdBMGtseGRSUExOQnEzbHJIU2Nfa3NLMTJMS1RMUDNuUW9HNkEwODB0WDRKVDRJeGVueDVfeENhMmNER2ZDTGpVNUc4am9NTW1PSUJfcVBCSUh1WDFlTS16Wmt5UjBaMmhwTnBiakpuZkswVWZBMnpmZUVTWGRlaUduNTlFT3haM2w5ell0TlpDazhrRGxrUXJDbjRxOG5nQnFrVWk5R3hhc190VnprNFFYQWlyYURmVDVMQnFrWWF5aEJDTElEUXE?oc=5",
+    "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+    "source": "Investing.com",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Americana secures 75-year Malak Al Tawouk licence and acquires UAE and KSA units - Verdict Food Service",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9sc1d3WGtFZjVlbW92dGxVbUZNSzVkV09LbkxxRGZSNTdIZGU1NVBwdF96MmllUTVVaTg1emFjV0xIQ0FYTzlIVUo4MVJVWHBVWVc5RU5NQ3FZS25KUUx4LVRWRmkzeDBEZlR3T3hvN3U2ZXZU?oc=5",
+    "date": "Mon, 09 Feb 2026 08:00:00 GMT",
+    "source": "Verdict Food Service",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Americana Restaurants to open 200 fast food in service stations across the Middle East - QSR Media Asia",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQ1JGSDduNW5xaFc3RENmRW9ES3FuRFRWQ0VIWEVHSl91N2RnaThscTFCOUJDdnF1ZzVfT2R6a25JWThrMng0V2R5ZHdvUXF2SG1PWm5OcWFZbDcwNU1iU19yUnVaYkdmZmlQeW5GV0U1NGlheUtfVGtRNmw3Z0xPY0h5TjNCNWNtV0xqMnZCZXRVZGJYaU81QUVEODNFTVg0WjVnWjNCM2NLLXM1Y1lFMGNn?oc=5",
+    "date": "Wed, 20 May 2026 07:00:00 GMT",
+    "source": "QSR Media Asia",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Americana Restaurants International PLC Just Beat Earnings Expectations: Here's What Analysts Think Will Happen Next - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNUVpmWk9pVzhMM1Q1VEUwTjlaN2VwTFFPM2c4M0JneUwzVlNyczRMS2d4cWF2TWdlTXE0QUZXN3c3X2lWM2xQSzBpZVYyZzBma1pXV19kVTRzZFo2UEZIc2FYUTVNbEVKRHN6b19MVkZMSkNtWUJtdWNXRTg2dE5tVkZXWlByUTVRVnJjYy1OZV9yMmN5dlVhRGRSczBReFROdDFMY2JPeUg1QXBPQTc1eFNKT290U2dYUkM4X21aWGJmRTFwT2RvV1BZTkpCb2JQWWptQ0xnb0t3WmI5ZURYcllLbGdjMjJiazdmQ0JaazZ3SlJ2U2xBbTdn0gH_AUFVX3lxTE5QZkdNMlZGb1J5OVBsSlpHUDZWZXN3WWdsSmpxLTdMU25aYkJualRRSmZQSmhxSEhJLXlscENmbGZlZmU0VlJROF9lVFBYWjVZSDk3QnVVY19Xam1kbXFYZTdqVUtlZ0lYRVdZN2V6NUt4a1F3Y0EtM09TajNkd3VlR0lnSE9UcWVsNW4yUFc0NFRRWlJBdzJmSEVFeUxsN05IVEhJNlFwdU0weFRidGhhUUw2NXJ1QXlpQWtQNGhNLUhaS2duZWJEX0NWS05wOWJUOGdidE1lcmVkUmdtUVNmTXRTWGNfY0Zyc3p2T1ZTU3RSb211NkMteFVjS3NjRQ?oc=5",
+    "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "positive"
+   },
+   {
+    "title": "ADNOC Distribution and Americana to open 200 restaurants - Oil & Gas Middle East",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzcE9KRzYyaFk0SFJlSzg3ZEVHWW9wbVJIV1RLajdnR3Y3WEVjSnlmakd4OVBTdmJtdVhDMm1CYnJ2MWdRd0Y2QWpQUnZleFNUTXV5MDhVZ1Q3eDFsRGI0MXkzdEFzcHd0TzB4VjB3?oc=5",
+    "date": "Wed, 20 May 2026 07:00:00 GMT",
+    "source": "Oil & Gas Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Americana Restaurants welcomes Malak Al Tawouk to its brand portfolio to lead Arabic QSR expansion - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNmRaWlpfR0ljTTdUVUxSYUhXTC1qOVd6S1Fmcl9NMmJqZXBnWkNCSHRabWwxaEdjaWJtVFBDU2JVeFdXdjdpOS1YdzBQTHhacjFuMUFjb0FNd0F6RHJSb1d3bVh4QjNEYWt3WTljaVh6anVQWW5iLXdEVkdRRWRLREJIWG52RmVTVjZmNHJ1T3NPcl8yWnVPTnpkX3hNNmE4dXBjeWl5dmtjemRjNEtmb0FTbGhYbHVlbkVFdGNmMVIyRU9hbmRDbHZ0M0dnazFneUN3eUpLYWxockRxa2tyNWxocWl2bll5WTFGODBCMDM0NEk?oc=5",
+    "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 3,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "PARKIN": {
+  "items": [
+   {
+    "title": "Parkin Company P.J.S.C. (DFM:PARKIN) Is About To Go Ex-Dividend, And It Pays A 4.8% Yield - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNTERtTlhYLVlwdXJ2LV8talZ2eTBxVmUtZ19tY2FLdmNEUDVsUTVQYzh2eWVqamFkMDg1M21hZ2Y4d1ZjVmhmVy1nVDh2aHFaNUlwMWRrdm16R3gyWkhyWnBQMVl2S0VEcjA1QkpKT1FHbnZrd25lVW5NM0FrZDNKVXNmRXVNWGRCekdOR29KN3BwOGJXajVaQTBEbW5LSnhwS1otRTNCNHlvVmw3WTFlM01lM1dZVWtQVHlUS0ZGS2ZIMHlIb0x4NkxxYUNYYldYRnFQdGxQYkp3VnJjTlRWT1pEcExRRmRTUFRN0gHwAUFVX3lxTFAyaEhqVjA3MS1NQ29yTWoxdUZ1ZlBkazRxTDgwSmRXWjhYVGxnTVJGWm9teFRFa1A1bGlWaDV5Y3AyaEZoVUotNUYtNDJlVll0TV9yWVpEYlhWakxyd3hqZzFFVFJzR1U1Q3JOWURCVV9EM3p6SjM2SzA1b3JraklSTm1xVkVxb2N5dnJHTG93eE5DQ3hjczk2OXdzN0diclUyTDN4N0dLSHRVV05EYXhQa3ZKNldtUF9JUkxGTmJ1d3ozM3JVRTMxV2RHMFUtTDFjR3gxV1hRQjN1a2RDM0xXSUN1M2FvcWt4VEl1VFV2dw?oc=5",
+    "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Parkin’s Q1 2026 Results Demonstrate Resilience and Growth Momentum - Government of Dubai Media Office",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQWNoSzJDaDQzS0Z3ZVBycU1rSlpuSEowWWRZRlc5RFJ4cFJlRGlTcHVDbHB1WGJTYUpacDdoQU1IUDYwQzk5QU40dFlVa0R4V0VfNHdEWHFMaEZxdDhFeVRUNGVXLTBPM3hPTHlBNWgwcGctdXZEeGJISVQ4enZyTHFGdHBYN29ZLWFyRjloOWZuVHJGbG5Ga0JySG13YzhBbTRzcjhObl9yWkQwa2xTVQ?oc=5",
+    "date": "Wed, 06 May 2026 07:00:00 GMT",
+    "source": "Government of Dubai Media Office",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Parkin and Secure Parking Partner to Launch 60,000 Barrierless Spaces Across the UAE - The Fintech Times",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVDF3Q2ZBbkxESkRhNU53S0RtMHd4dEdzUnlUMERBRHIyc2g5UWZ5TmN3bDR6TW5sZWN4d0NFWVRZbmplaEhETHZnRnk1UW9BMnFUSmkwdEg4WEdsenlFTmFqVVltODNSdjI2SVJwVTlMV2J6T3ZlTXpZem12VzVMbGdJdzk1dWc5U1RfdWtiU1NQeUJQTkVidG9reE43UDBRZHdHcjJRdmxRUkFBbk5TemdR?oc=5",
+    "date": "Mon, 20 Apr 2026 07:00:00 GMT",
+    "source": "The Fintech Times",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Parkin’s Q1 2026 results demonstrate resilience and growth momentum - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS3UzLUtCY3dwZzFGRjlsd3FYQmZLR0Y1MEZLaVM2UEhhRWdmZnhaX0d3eTZwZXBWelo2b2l3cUlIZ3hNcWpCLVFQbl9qOHl0UnB3NkgxRGtBZV9QTGRQMVh6aVloblhKcWczWUpDLXU4N0E0Q0lGcVZ0Vkd6YkFJaUFUVEw0WENidXBnblNJdUhoMHRQNVVoeDRRUUZtSUMxZE80aklHQWlfVmRMVXZjYWJmOGJCN01QTnRkOE50UDl3UC1qZWNTMQ?oc=5",
+    "date": "Wed, 06 May 2026 07:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai’s Parkin posts 41% rise in Q1 revenue as parking portfolio expands - Gulf Business",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSUphS2VYb1NMTlVQQ2VJSFhBVE9PT1dGeDRmcDhjVGVWWXdBYzZvZGQzSGZ2ZUZ1X0FQWkw2MkNtNWZQQjVkR3NObU9Hb29WaE1fZDdvRUtfRzVRS1l4UzVzUVZ1RVJZSTQ1ZTZFYTlQdDZ1V3hEWXd0WTloNTNGa29LeFNoQmZIMm9LY1RrZVJjZ2Izd2pNdmFBQTF0TU1aejR0eW5vZDJub1k?oc=5",
+    "date": "Thu, 07 May 2026 07:00:00 GMT",
+    "source": "Gulf Business",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Parkin Company P.J.S.C. (DFM:PARKIN) is largely controlled by institutional shareholders who own 79% of the company - simplywall.st",
+    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQcUxqNGJGMkNfMVg0WE43X2VUUV9NNDV5SFpMZ2tLNTJ5eE5tUXZJTG5tSDRsTFVET2hLLXRETVdBanRnZUtqTDJZeEx0UjA3ZEo3TDd6c2tFUFd4aGphMi1pLVZtYlc5X2taYWFWY1ZzRTd0bl9xa2lKdngxWkxkcWdYbXJkZnllQjdWSVBvZk1PcW84dENDTmEwTzZEZkRvcXBNSEdPa0MwV0pqQmJ1MjlOdWpyWkZVRXVUYnhaMjV1bmpzZEpxbEFIWVl3TmVKa2xabW93Zkoxbk1sOVh6anlJbUthQU0zU0dB0gHwAUFVX3lxTFB3V1NSeDNmOXFmeXdLS3U5cXNxMlhQQ3JkRnZhU1o3OE9PbmM4d2R0cTFaQmEyeUFyTjdyaGZGNGU0ZWQ3MTVGUHp1d0hTdnM5QVVvZWhvOFh2LUQ4NG1MYjVvRnJWcTFKNnk2R253Z2ZIM005NFJ5a2o1cWJUdVZGSFU3X18xVXRmVE15X2VSR183R2JYU2JkU3lXdWFrY1VjVF94bTFjYnRpNUdUMmVaSTlTVkJpUFQtWkZnd3dQazMxM0VObUQ2bFlPb0JfZ0hjYlF4dmtRaWU0TGRhaFFZclFTT19FRlpOSS1kRVBwVQ?oc=5",
+    "date": "Wed, 15 Oct 2025 07:00:00 GMT",
+    "source": "simplywall.st",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 4,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "TECOM": {
+  "items": [
+   {
+    "title": "TECOM Group PJSC Actuals & Estimates (DFM:TECOM) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVzRwMkgzSmI1TEVjTENlNzJXTmN3MVBxNWVRVWs0U2dPVEZPV2NuNE91Q24yS1VHblBVTlhISjg2WWdjdVlGWU5aY2pKLV9QZjg5ODIxLUhnZmtVaHdQdDJTS2VXMHJzQ2pZYS1Pd3dlUWhHb2JDelk2M1lRcnBFS0w5MA?oc=5",
+    "date": "Sat, 27 Jun 2026 07:26:18 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "TECOM Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tQjJGN1U5QlVMdGo1N2oxNzhYTXg3WUVCc0ZxY0VrTzUzY3c0WU9vMzRmNllJUERFeVpGRHVLTTVNU1dNQzdwQ0ZOMjJ6QURQUEwxNHRSRTBYTUpSMEVZMUQ2bVAzUkppRnJuaTRDMmx0ZDA0aXJF?oc=5",
+    "date": "Fri, 26 Jun 2026 14:54:15 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Science Park celebrates two decades of enabling science to strengthen knowledge- and innovation-led economy - PR Newswire",
+    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNdmdXaGdCM1p3MUdRbmd4LVhBcVlpQzBxbEpFQWdsYmVVZFMtR3ZLOGdUbVU4aFJyQjVWVXd4cTczSERUSzJRTktodGVVZWVpV0NXci03ZnEyWTVQcm1sRzI5dEo2TTg2ZHR1VHg5dGoyMU84clh4YUlmN0pBQTJMekVtZ3hJOGx5ZlpIODl6alZZRXNQVERIWlhtMzJpNEY2UVpFVzZPMnNqV1NSeHl2Uk1zMnVlSzNaV08xUV9rUFVOWGFlUU5VVUxmUlV2bGVxRWpWa3FVeVJuOEx6Vkp4TzN2dDgzVjUxU1RKT0JQRkZPYl9TRUxyc1VuRnRaSEUtYkE?oc=5",
+    "date": "Thu, 05 Feb 2026 08:00:00 GMT",
+    "source": "PR Newswire",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "In 2026, it’s time for CEOs to rethink HQs and look to Dubai’s playbook for growth - Fortune",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaTk5Q2NtcFNDZzBwbUNrT1V5TlJZOGx4bXVNNDB4Yjd5Y3BlUE0yYkc2M21VMGIxWVlLUkcxV3NNRjFrLTNxNFBLSkNtSTdyTmFDcFhsRDVndTE2elA1Y1ZoQkNBLWR3ajV1eUIydzhMdFFiSm1vNk1EdjF1M2dXV1FRWWdBczM5SjRBeHoycnFtVGM?oc=5",
+    "date": "Wed, 04 Feb 2026 08:00:00 GMT",
+    "source": "Fortune",
+    "sentiment": "positive"
+   },
+   {
+    "title": "TECOM Group shareholders approve cash dividend for H2 2025 and endorse 2026 dividend policy at Annual General Assembly Meeting - Government of Dubai Media Office",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xVF8yZVpDYVhCcGItQURhS09ETUhaVUNvYnZYZGRfWkxOV0xjSE5fZV8yZWRIdU9aUjZSOFVHdmdqZG5UcW85TDVaajBZR2RoUVVvTHgwZGJfdVh4bTRhQlV3UlJJWDVQ?oc=5",
+    "date": "Wed, 11 Mar 2026 07:00:00 GMT",
+    "source": "Government of Dubai Media Office",
+    "sentiment": "positive"
+   },
+   {
+    "title": "TECOM Group Launches Phase 4 of Innovation Hub at Dubai Internet City - TechAfrica News",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcXM5UUpQVUpOVklUdXFQVXNmMTBCNlRza3hPQjZmVmJpUGVTc2ZWQlZpeWo4MmsxQXlfQzE4Vm1KUUdXdWdISjJJVVZmWDJVakVCVW1UTmNPUGlfU1FRU3U5U19yV3F6bVdWbTZlQ0xwWkJrQm5XZmhyQmlISFFELXNCMHNzVzlBbG5ZLVBWeWxsMjdBaEJQUHNRSVJSbktyS0RQaTdrZS1KdHRh?oc=5",
+    "date": "Thu, 18 Dec 2025 08:00:00 GMT",
+    "source": "TechAfrica News",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "EMPOWER": {
+  "items": [
+   {
+    "title": "UAE Business: Empower signs international MoU to promote district cooling - Gulf Daily News (Bahrain)",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1Y0lJQ2dGc2MtaVJ1amI3UG9GOUR4SlJETzRzMEZITm5yX3g5WDFHLTM1UFgzQW1QMm4wbVdUQ01MVERNQWIxczA1UjV3N1A2NUVF?oc=5",
+    "date": "Mon, 29 Jun 2026 07:04:01 GMT",
+    "source": "Gulf Daily News (Bahrain)",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Mawaheb Talent Hub, ADGM Academy, Khalifa Fund for Enterprises Development and Sindan empower UAE talent in Al Ain Region through Future Entrepreneurs Programme 3D Printing - مكتب أبوظبي الإعلامي",
+    "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNcWtRNGdEYkFJclFHOTRDM2NpbmtoeDhYQy1aTEs5SFZuMm5SdzV1aUwzZEhBZldTeGxMTTNFRUIyaXhVX1E4cFNWT2Y3NGJMZEdhNTlfV1RtSC1PM1VoOUpsNDdpaHltdTEtTFBSNzdwLUNUdFdUOEI5RFN2TW1mZlRreE8tcE4yR095NHpTMi1jRFNUXzNLRkRlNjZXd3VOTTRJTUE4Vk0yVTdkOE15YnM4b19sRVZxd2MyUUNXcjdIU19EcjRHbW9SeUxWN1VJNEJHb2NOWmExYzBZcHBCUUtKb2VLUFd1WGs1ZGJHZllFX1o3RGZvUU9aWTliZjBWMExOSE9OU1hkY09XQ0JKVWNoZFJnalFELW1pY0Q1ZVFKUk1uZWZXcXpSdEc5azE1WGQ4QkpndzFyTkVDbVE?oc=5",
+    "date": "Fri, 26 Jun 2026 10:00:48 GMT",
+    "source": "مكتب أبوظبي الإعلامي",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "DEWA buys Dubai Holding's 24% Empower stake for $1.41 billion - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ29wbXVma1UzODR5TkM5TFUtR3J5YXJtaVQxbDlLdklqeS1sdUtSdXZzYWdzYkVGZUpWZGU4SDd1SXlQRTJscTBpRjZ1Rnl0dnN6VF9XY2N2SmlpT3ZXamk1UkxkUlc0ajQ0aDhXdU95VzY4R2FURERnY2oyRlpzczRoeTZLV245WkMyb1dvU0I5emVaLXpEdmUwUlBLQlBGLXJDSElYalU?oc=5",
+    "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+    "source": "Reuters",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Yuze and Zand in Strategic Alliance to Empower SMEs in UAE - FF News",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQXzNBcEJIRE1Lb2ctMER0dGh0M0pHS0g4TnJZZG9yaUowd2tlR3JJUTZqRzQ3T3Fqek9wbWF1QldiTTBjRFRJWUJQc3Uya0hpX0w3SnV6QUhzVlhWd29lNWRwRE9SNXJWLXVTQ3V3TmdtNGtXODFIZnVMZlVTdklBb2pBZE4zM3N5aEE?oc=5",
+    "date": "Tue, 23 Jun 2026 09:21:34 GMT",
+    "source": "FF News",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Empower CEO Ahmad Bin Shafar rejoins IDEA board - Utilities Middle East",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5emRsajZxS2hRRE1OcUhBSDZ3c25FcHg3ekN6QTFtZy1ockxUSmx1TUE2Q05MOWRvbXlyWV9GWThpS3RGNC1OSlRtQXpkemo3a1dKbEV4Z0x3SmhzYmV4RmxFeVdEQUNOVXY1bVZ2SQ?oc=5",
+    "date": "Tue, 23 Jun 2026 07:30:00 GMT",
+    "source": "Utilities Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "AI for All: Partnering with the UAE AI Office to empower everyone with future-ready skills - blog.google",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVDF2VkJVVl80NElhTldwXy1UTTdrcGVORVlOdUEwYVd3dHo3empDWXpmRTB2Ty1PNTdlRFZDV2xlWDlvNlh0eFFITFYzNmhVWWNnSkkzSFRHNTFYOGFKQ21mOW5EV0pCVjI3X015R0FxQ2FKTjh1b3p1VnJvR1hlZkdZZU9JMWdZc29DZWYxaE5pSGxhLU5NdVRWOF9IVnFlNGZZaFFGM1ZFYWJIQ0psY1dnU09PX1VXbmJ6TVNXdUFVX2U3aElaMUhLNGhrSUlLbHlhR1duUTJPaDJWNGdjUWJmcHJUR1dTamdBYkFR?oc=5",
+    "date": "Wed, 29 Oct 2025 07:00:00 GMT",
+    "source": "blog.google",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "DIC": {
+  "items": [
+   {
+    "title": "Dubai Investments renews Liquidity Provision agreement with xCube - Middle East Construction News",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTnNJUUFFSlhFMkh2UmFINmlzQmVLWkFXOWFVUm05UWpnUFFHZHA5OTctTHNTNmR1MTBpdEM5d3puTUlyMklUUktxNW5KZ1hycmhHOEx3TE1GSUY2OW9zVFdWdm9yQW1Ocng3RmN6dnRLaDJnR2Z5VGZhS2RiRjIyVlB5ekExNXF3S3RndFozS3hkWlpReHctQmk3ZkFZZVR2R2RiaA?oc=5",
+    "date": "Thu, 25 Jun 2026 07:28:55 GMT",
+    "source": "Middle East Construction News",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Investments Said to Tap HSBC, Citi, Emirates NBD for Unit’s IPO - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUWdvNDMxQWhLVkJxTnNPVnVFZjcxU0JGMmY2VG1WcWQ0bnVWNHZ1ZlZ6WXJtMlAtcU9yNXlBWDJweU0xZFMyLW1WOUdVQTl5OWpZVU1rWm90UURpekVDLUtBMkROZ0RNeU02b29YaEFvR1VYc0pUSDg0RUV3eUNCRUFWOEpxbmF1Q3BWaldRTVFrUVFzZUVSUVBVTFU5dzNobzgybEdVN2EzVDF3UDVYUm1ESjFweWJKcHc?oc=5",
+    "date": "Wed, 15 Oct 2025 07:00:00 GMT",
+    "source": "Bloomberg.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Investments to Launch IPO of Dubai Investments Park Stake Before Year-End - Moomoo",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOajlLUUc4alhiWjFEa3VfRGs4MmRPWmpzajNlakN3em0wVXRoWEN4MmQzVTVFb1FRbXFLeFhILW5ZS2UxQXg3MmwtYkdxVXZwaFNrRkhzWmtCenctU2NtZG02TkJDT2ZuUVphbGpoMlY1V3gtNzRIQzhBck5YNkR3a2UtTldNY29tTmZkWUtSNFBPOHp3eWw5NE0xN29SenpBSlN1N252VzI?oc=5",
+    "date": "Thu, 21 May 2026 07:00:00 GMT",
+    "source": "Moomoo",
+    "sentiment": "positive"
+   },
+   {
+    "title": "THIS MORNING: Lawyers told to come back to the office as ceasefire holds (for now) + Dubai Investments might push IPO to the fall - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbGRocnBPWFVuU0dfNXMwaVhtekZPbFh3RTdzWEZwUmZCNnhPMDd6WGdMVzE5NGJVVnJMa25tN2FwMUZkNzU1UkN1ZV84REQ4Q2NYWHV3akprYTJCd3BJMmd1NGlzc1J2TWg4UENUOFFXdTRJVVNmanpsbzNHM01EeFBnQTdQV1V5ZUxSWmN1NFVKOVA0WC1NYlRXbUpWZ3h4R0EwcFBPc1pCZzFmUFBBM2d4bDZqcV9kY2VXYUdaVjRNZjRWQXU2SXFQRGszOWNOSjBXakZDZVJzeHpsYmNnWk5CUExuSkxKNHQxMXlKWEVVQm1jMk5VSQ?oc=5",
+    "date": "Mon, 27 Apr 2026 07:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "negative"
+   },
+   {
+    "title": "Dubai Investments pushes ahead with DIP listing - MSN",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNLThtX28wNVNpN2p0czNKV0dUdzZqcVRreEhiOEtETGgtWnQ2cnRMZ20tX0ZZQm1zN3U0blJSZk1VUTdRRFVrNDFISmEwUkNxTjhTOGFqLVcwRmZFa2d5SWtIemxCeTIwUlJScmhXeFFJSHVGaTVTZVN4b3ZhS3BXOWJHbUVLbkFPRFNoWS1lZTNRZG15QkNEc3JvSmg2YTJJ?oc=5",
+    "date": "Mon, 22 Jun 2026 11:59:54 GMT",
+    "source": "MSN",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Investments PJSC renews liquidity provision agreement with xCube - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRldKUTBJdENrV1FqMzJKMlhBUnlGZUZpQlJ0dGVrSnRUUzg4MGZiZ3F6ZWNRY3Q2Xzk3U2FqYXJyV1BXUTQtZTYtazZQMUJzU2NwalhVQWphNDVlN3I2MFlneUIzc2QxWmxmdnY2T3BCX3RyYjMtNktIZGlETExXUW43STJySzczekRIVFAwYVVDQURmd254aFpmWGNZcGFCWE1Gb2NZWFk3UGNOM1FIbi1fRDAwSHRmdlg1VTNCaXVmQXNkV3dEOHRTODdlQQ?oc=5",
+    "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 1,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "DFM": {
+  "items": [
+   {
+    "title": "Dubai Stocks Set for Best Quarter in a Year as War Premium Ebbs - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQV81c09va1hkTzF5bzFNbUdfNG5XZDI1M19fSy1zUkZKT2M5NWNNb3Z6ZGJYbUI3eDVmNEV5TVVZcEdUMHl4eU52VHVWRkJrQU91UDV0cDFZWnJFTkExTGF5MmRyT2R5aHlNcElmODlsS1VuSHJXVzRib19nM2dXYWNEU3Bya1E0TXVidDkxbngtdjk4aWhXN2VIMXNwampVampGamRkZXg2ZWxjNXM4RjdPZEs?oc=5",
+    "date": "Mon, 29 Jun 2026 08:56:15 GMT",
+    "source": "Bloomberg.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Market Rebounds Amid Ceasefire, Investors Return - GuruFocus",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQ0NuNkgzcW04MGwtS0V5LTB3a250R2dxNzNkdkdoRGYzZlBqdVBweXV6OEM2OFRnSk42eEdUT3VtMXNyVUdyVXZGX2M0cGotWE9idFhCVjQ4RmU1dVhsZDJiS0dONzhETEdGRmJ3ZWFIOGRwbkc5QjRfckRSeGs0a0QxOWI2MzBUNDlqaHJxOS1vNjQxOWJV?oc=5",
+    "date": "Mon, 29 Jun 2026 10:51:29 GMT",
+    "source": "GuruFocus",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Gulf markets mixed as US-Iran trade attacks - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPN0w3QkJTYncxeTYxQlBfSFJ4TDRIRFYwR0tmMTdnUXFVZDhudGpnOG9aeXBNMWZtYzF5M2dkaENRU2p1RVVuVmsyZjVPWHU1NHloT3duaTRuREwzX292VzVuYXd1RW5tZ0NjYkQxUnJYOWtLT1RVX0I3Z29QYU1SZ241SkpScnBNdWF0dm12REhmR0ozS1BzeXNB?oc=5",
+    "date": "Sun, 28 Jun 2026 13:11:43 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Enterprise value to EBITDA forward of Dubai Refreshment Company P.J.S.C – DFM:DRC - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVzlpcjE2MlpGclFVZmROZTBsYTlTbGRLYWtzN0QwSk5vTHpYRDJjWE1UeklGQjI0SUJFTHN4R0ktbnBNOXdyZWowNkl4UGV5NXlKNy1OZ21mTHZ6bmNkQkYwX2ZUcmNFOUs4MGtyc3YwUVJVQndKeFhlUVJhcmtCZEhTdW9TRFRfV3RpRjZIR2xXUGticzRwQ24tMkMxTGNFOXh5VWlTR20?oc=5",
+    "date": "Mon, 29 Jun 2026 04:59:57 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Financial Market receives FINMA recognition to operate as a foreign trading venue - The TRADE",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSUJJZmxXeXNMakh0UnA5WDNXWllhb1dLekhjTEJXc2JSVnM4Q0pmRDFNZmNFRVVEQUZDVVVqdTdQWHVVMmlpVm1HMnRlZTluQkhqVmRRV253OU5wamNxVGF2Q3c4V2g0M1FadGZfRmRpRXRmdG9ucjBrRzFuX0R3ZHVISlVYSFE2R21KdWM1Q1BlQmtZM05NcmxpdXB0UFRJYlNpWmI2YU9BcXVBeVh1V2k5blFPN3Y4?oc=5",
+    "date": "Fri, 12 Jun 2026 09:59:55 GMT",
+    "source": "The TRADE",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Financial Market market capitalisation tops 1 trillion UAE dirhams - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ0RxMkJ4QzNQYjJsRlc0U3V1dlVPRmZja25jeVFRWDdWUWdkMl9VYW40c3FNaGY1Zk1DVkpKX0pVeWxlME5jR2E1WE4tMU13enR4QTJqTjV5NkdpcHpPekN5YVVaRWtXQ1dNYnlfN1VMOHZUbXJ2WHRMOThwcTZnbWZBcVJVUlg0bTJvY25ucGVfbVFCdWZDZDVGVHlYN2dYLUlqN0R6ZVlqNkFfR25PM3U5YkFXbVRvZnIzRTRhVTdXWGxw?oc=5",
+    "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+    "source": "Reuters",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "NIND": {
+  "items": [
+   {
+    "title": "Dubai, Abu Dhabi stock markets drop in early trade - Khaleej Times",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNemx6Y0xSSFV2S0p4LVlKUnE3WnA2aWQyMTNHUUtmcnZtc2hIYnRfWjY4MVZ4UmNjY0d5RTN0RS1rZkpTM25ZUm5lSHFxd202Z3hBd3dCdnRuSWRlWk9tMDlpbmNmdmo2Yy0zbldPWWRHRlkwX3U4ZEx5UXVvQTBnU1ZpRml5d09jeE54bVd4V0ZWNXp0WFFlaWZJSdIBowFBVV95cUxNQ3lwRERUb3pzNzBFcGQ4TTR4alVQSXNWcDFvX2FhOU1ra3F1eFJmSGljbVZQRGlxUGQ5OG5iSHRMT2puUDduU08wd250Ujl6amIteENKLWJwOHZ0S0ZJcFhRMWtPTmU4VDBOTkItUHF6UloyeWdmVzAwcnREVWttM1RGaUtFSndhRUxtaDZxR1htMnBHOHdQUzJIZW81SEQzVERV?oc=5",
+    "date": "Mon, 18 May 2026 07:00:00 GMT",
+    "source": "Khaleej Times",
+    "sentiment": "negative"
+   },
+   {
+    "title": "Maha Al Ghunaim: The woman behind Global Investment House - Euromoney",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZWtGZl94QUtCZWZEVHVVaXFicnRzWjU5b2RCck1LaWV0S2g0S0NFYnNOVm55RnB4QmJXeFZkcUVvRE9iNDVUdDlmYzNxQ092V1BQQlZQV3p2Tk1OZ0VmeFRNSVI4cV9SclpZX3NYMkV6QkJWYXlFYkRlRHhTMGx4cktSZklBenI3LTczVklxQ2ZmUzRCRTBhNlJRWWpvZGxYdEt3WU9JNUd5QzBOZlM3YjA5akdQekpQSnZvYUN3?oc=5",
+    "date": "Fri, 02 Nov 2007 07:00:00 GMT",
+    "source": "Euromoney",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Adani’s regulatory unlock lands four days after Modi’s UAE visit - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNmY3R2lrMFJYenJHZ3JmNk84ZU5BLUNkeEllY1RqcktCbzcwdWI2SDRNUC1saWtTSkZ1OW1VUHFUTm5jOGJhdmZqQkN3Zl9mQTBFa2JuT2g1SG9CTlQ0STdwN1k2bUZtMG0yNTdYZDBNNkpGZ3o2SVZmVEhkRXdvU0phQkZySVlrWEFLM2RHMjQ3eHRFNjg4OXh5RXF0bFlSSlV0a013?oc=5",
+    "date": "Wed, 20 May 2026 07:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "UAE Stocks: Americana Restaurants, Agility Public Warehousing - The Armchair Trader",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWC1CUzdUdFpDVTN6dThYUDV3Y0Q0dndMRHpJVEZFTko1UWptcWI2dFgydVZCT0htZm1jTWdjVGp4M1RoeUVCT2kzZC1TSmxXWXJadUd1SXNKcnlXaWgwNEJtTHkwdGJPa3gyLVU1dGhqcHlQWTNLTVAta3lXSDN5MFpVR04yMnRoM1NmN2RkamMyQVBqTjNMVDBOaVZCdlBIVmJuY0Z2RXgzUQ?oc=5",
+    "date": "Mon, 28 Apr 2025 07:00:00 GMT",
+    "source": "The Armchair Trader",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "“If power companies cannot recover their legitimate costs, the consumers will suffer along with the sector” - Aurora Magazine",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOOWlLTENjSDdPaUhVMktCS2o2MlFaZ2o3LU5LcnBXSVZXS1pwc3NUVFhwd0llTE1QZi1sSDdCbGgya3RoMnRkaWJZRzBPU1hUMExnbjVadUh4NURmbnpZZ1pJY1hpZ2huLTdpQXZPSFFNRGZsc2JOZXBXbjB4VHFiX3ZhSUoxX0lZVDJsbDB3YW9mR3NWOFI2OGd3MDZOVThWWXNQZ3NHdXBUZXVRQjlpVHRNM2dyUFhJb0R0Q2hRQ3hZajQ0OWlQMlBVOVFZVWh4Rmdna1VjTTXSAVJBVV95cUxNclZkTUxkLWpHcjhNR0tQVFhjYnd6OXNTMlNHalR1SkpYa01mR05vS0hWaG51NUNyUnc1a191QWNrOW5MZ1k1UnVKVVI0QlVRTlVB?oc=5",
+    "date": "Fri, 27 May 2022 07:00:00 GMT",
+    "source": "Aurora Magazine",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Shanghai Electric Power expresses intention to acquire K-Electric - The Express Tribune",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZE84SDBJeWY2bTZoMFMtbEtwc0dBaFF6eGQweXc4MDRXa1F1LXdKVWtLSk5NSnB5ZkdKenZycC1rakJIZ1FDV0FRcGZ4YlV5d0I5Y3dicF9YWVdKYVFZNVl4RnlkckkyMXFrM1BqaUtBR0U3bEhvZEIwRTB5Mk0xZkJBeXFtdmdpQ2RBTV9makZkc1lvU3FUZlZlSTNLSE1XYmRKNFM0eDFkMmlLVHlEQmZxc2VKUnhaTHBLQdIBxAFBVV95cUxPbFVoWU1LNkk3U18zNXlWZXZsN1NOR1poODVJdW5qeVVqS3lTQkEwUjBobUdCNlRpS1F0M3VDekVfaXJBWHZ2V00wUHNUNlQ3QzRGQ3RELW9XdXBSWHFjcHhUWVlLMy1FSmdVcC1DM200UUNDb3p1ZEtRdGVoNUxXUnhuNHFTSjRjTlFRYzJzajNwYU80NU90RHM3b0tJeW5UUWZfNjJybTJ3MGN2VXV0OTd0QWZzd21nZGJ5MFpIVjBZZGZq?oc=5",
+    "date": "Tue, 30 Aug 2016 07:00:00 GMT",
+    "source": "The Express Tribune",
+    "sentiment": "positive"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 1,
+   "mood": "neutral",
+   "src": "google"
+  }
+ },
+ "GFH": {
+  "items": [
+   {
+    "title": "Gaw Capital Partners and GFH Partners Form JV to Develop UAE Industrial and Logistics Development Platform - Scott Coop",
+    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQbndsODQtZWQtNHc0VkNlQWxLZkN0M0loMDF4YnJVY3ItdlBWUWdlNHVLZkJyUlhGZmdJYXptWjAtWW1RMDl5R1FWNXNTaWhDQkM3OGFRMUVTc1czSkl0Q2FfV2tRbzBZMS1WclhQWWZXRC1zbElXV0FINUh4WEw5YlMtSjZTdXExX3BDYUVDbGkwd0c5WUV6QW1HQkdhOFhOMi02NTRva2w4UmRrck5hRmlnSzNtZnZyXzl2aXpHQ2NjTmg3YkFLNzd0cU1ZTlllcUdieDAtZ1hMeENPOTRDR29LUzQyS3dmbzFHQUctWDZrbnNOVDh5c2hZRFNyOHNyMFFpUUphZw?oc=5",
+    "date": "Mon, 05 Jan 2026 08:00:00 GMT",
+    "source": "Scott Coop",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "GFH reports an 18.2% increase in net profit attributable to shareholders for 2025, reaching US$140.11 million - ZAWYA",
+    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOX0FZaU5WNk1xSXdlejdKYjRTV3JjSE9JdlRwY0g0Q0RtRUtYMVUtcHFyeVhnbXV2Q29vVm83ZXlGbGdqdHRQb0dYcWZWcXhDV3c2LUpWLWc1QWJBM2RSNHUtZ0NqUFlhX19Yb3J6UF9CRC0yTTRYMTBId1dEV0RYLXFPM3h2WkdYQlprWHEwdThUaEcwelA5Z1BVb0VMc3lSY182Y0llZm1CSDF1NkJzWEFuTlZwUGhnSGtYLWJ0VVpjTnB5UVhIeGh4dTFlX2hvRXlHN1JGclNqdG5GS0ltQy1mR3ZZYjJ6WkVPZGxldklsQ1oyakNaSTJpZw?oc=5",
+    "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+    "source": "ZAWYA",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Middle East’s best for alternative investments 2025: GFH Financial Group - Euromoney",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQXzhfUTJsRTFKY0xtQ01PVF9TdHp0RXp1eUU1YW1LT3E2WkNnbGpoREp0d09uMURIQTZXZnZxS2dlS1NKWnZteGhOQ01Hd3AzUFRQMkpkaXJBNGVzNkFEeDJvc3N1UzFJdGtJUy1DV21fa05sQWxpZjNZNFQzRU1Gd0lqX2hGQzJGd1JSakI0NzdPVDJwNEs5aDQ5MFFkNkU4SGI2a2tWVnVoQVJDcnR4djVOWmptaE1sYmd1MFVrT1RkTzNYNEVFb0RmYW5JWnk1bmRWN3B1clZUNU9oTlJXVE14WF9GWjVvbWdrZHZR?oc=5",
+    "date": "Fri, 28 Mar 2025 07:00:00 GMT",
+    "source": "Euromoney",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "GFH Partners acquires a majority stake in UAE’s Devmark Real Estate Brokers - Arabian Business",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM2NrSkVka1lpTU4yVEs1OFJNcy1lQW0xcU5fZnFfQnE1TERvX09jb253OVE1WVpnckdxTzd3d0hJdzVLNHFXeHRNUk9icGt4R3NjeXQtcmp1TzFDRDNiNzFNb0F6M29YQXBSMURxTVVzMGVVUVUtWE56Q0ppOXlkUHBHbTg5cFFMTXJoQTlSM0hlU01nSHIwWGJrU2paQW9aVzNQOGdCbXlHamtnV3l1TVIwX3RUMndJV0E?oc=5",
+    "date": "Wed, 26 Nov 2025 08:00:00 GMT",
+    "source": "Arabian Business",
+    "sentiment": "positive"
+   },
+   {
+    "title": "USD 6 million blow for Dubai financial services company - CDR News",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQM0VvY3I5b01iYWQzUFkzRE5RSnBha0daMzBfX0Z0cTdiZTJOYjRFUDJJaWhjNHotUzhnRWFwalNhZHlkaXFrM0JSYzBROGtQVDFKcG9wNWFpVk52eWxWS1ZHMTBDYXdycHh5QXBVSDJXeVVFbno3aDYwOFV3OVF3QjhfXzNlOUV1c2EyQTVUeHZrWUtMYWRtTVNWQkN1NlFBa3A1VXZOQlJjTUwwVmc?oc=5",
+    "date": "Mon, 05 Feb 2024 08:00:00 GMT",
+    "source": "CDR News",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "The new GFH Capital HQs in Dubai Financial District - IFDM",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSzdIMFEyT00tWmE4dktmRjdzTGE0LXdYUEFZbmRrQk95RDZRS2ZzbG5MOHAxQ3hYMFlpc3lhWF9zYjUybmRZOHUzR2xlYjNoYl9LVTBqampVdE9WczFIdDR4X2dNNDMyalZLcm1fN2MwWXl0LUFwMU9RNTNPNHhnYW9WLU5UMXNXNENz?oc=5",
+    "date": "Mon, 27 Nov 2023 08:00:00 GMT",
+    "source": "IFDM",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 2,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "DTC": {
+  "items": [
+   {
+    "title": "White & Case advises National Taxi on sale to Dubai Taxi Company - White & Case LLP",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZVJKM1ZyRWZEQ1B5STljWGxlcFE5ZHBrRlFGVy1ZTGEtZEI2OVVyb1lZOW51RzFYbVVqTHRkWnN0YjJJQ1lJdzloeGdGZjNCTWdEWHAwdEpKeXBsTDZVVG1FWGVZTWEtbjY4Q1d4VGk4amRRRWdlMlFQeE9UcEdhMFYtY1FwNnFIN2pTSFI4TjZlSHVhRTRZc2FSU1N1eDJSSl9v?oc=5",
+    "date": "Fri, 15 May 2026 07:00:00 GMT",
+    "source": "White & Case LLP",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Baidu's Apollo Go Commences Fully Driverless Commercial Ride-Hailing in Dubai, Partners with Dubai Taxi Company - PR Newswire",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNeHpxLTZ2QkhES09XOW9ZNFlfbEl1RXRJQTRxcjNyaTVIdGo0a3BrQmhGYmNDa2k0U1oxRnFkaVZRMUl3UE02d0NkX2FGQjM5R3g5dEhpR3U4SXNqS1JGWl96SkJ2UHIxRU4tb2F2eDRCNlhKT05NbF9uSFhpYVA5SFJ6Ni1wUFc0aGxGVFRIamNUUlRNOHpmTHFlbXpEeUVwVV9zelBFUHJ3REFNcEU0enYtWWQ5WUdSUzZhZlNwVDRsNUY4d1ZhZlp0RXJqRkg1NUxaeFBJbHplZ2RXYlFLR1haQzJ1cHR0enRfWnpJVGRLMVEtaTBGcQ?oc=5",
+    "date": "Wed, 01 Apr 2026 07:00:00 GMT",
+    "source": "PR Newswire",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Taxi Company Group CEO Mansoor Rahma Alfalasi on building trust in a driverless future - Fast Company Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcFVkdmZIdGJqZnB4V09hNjhRMm11WnlfNEpESmYtUkRRZ2RRVEF0OUhMQWptdFdURk5FOVQ4bE1USVJ0cGlTVzBMM2I2a1NfaGdrdGprcjV6NjQtNnVHR3lPQnEyZlhRUnd5eVVhQkVDNkllYl84R3hSclZRaHVWTWFDS1pEeUVmMzVCbTFTUjJMaUVwZ2xieU8xUEJyamEyRmhmNDZjS2dPbHEzWUF4aGM4RjNFU2FsLXlYbkxsY08xRmNiRW54TU5R?oc=5",
+    "date": "Tue, 02 Jun 2026 06:44:52 GMT",
+    "source": "Fast Company Middle East",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai Taxi Company Partners with JOOD to Expand Digital Giving - Construction Business News Middle East",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTThBUFVXelE2bnBZbzBzRElKOXBmLXhEcjZ4U3Ata2tMVnFqNDFobjFoa3NTZ1d2S1VENUFrTVQ3QVpiUzEwM0w5M2hjS05TWlVMTzRTY1Y2QXlHTTRiQUlaV19qbTdCUzFqZFc1U1ZLT0NJd0hoellGNUNac2djelZfM1pSZzVVdDdra296bXMwVXJzYlUwNzVxUkp6alo5c3c?oc=5",
+    "date": "Wed, 17 Jun 2026 08:22:52 GMT",
+    "source": "Construction Business News Middle East",
+    "sentiment": "positive"
+   },
+   {
+    "title": "Dubai Taxi Company, JOOD explore digital donation services through taxis, ride-hailing app - Gulf Business",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcFhBNXlvMDhjeFViYm1oX1VPb2hhOGplZC1Ic3dNNmdkMkcycUp1aUE4eTZzOEZBTXNJTlBSNWtKczMwZ1hlTFBsbndIUkUwSUFiOU9hMWZoc0JENW9aRzNjYThhWUZfNGVnajZpOWdaYl9hNmJyZjVlc0pqZFJ0MDVMV1ZpTFRSUGhWNDJWRXh2cnJrWTJBNm5jT3lzUl8zbkl4UXZsVng2Z0hBaFViWFoyVkRobnNKb0VJUmVGSFRTaWwtcVJKdg?oc=5",
+    "date": "Wed, 24 Jun 2026 06:50:36 GMT",
+    "source": "Gulf Business",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Dubai riders can now hail Baidu's fully driverless taxis - Stock Titan",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU09IQmpxNUpEd0ZRYkhNTmxzYWNRbWxVdEVTT0dUWkY0RTJHNTdhS21IV2xvb2czTkFUMmN4SEg4Y0dxajVWN0dQajg5dDlwY1VqMnR5TWt1cjZOTjduVXNlYzh2QkkyUGJUUlJWUmh5T0t4RS1wY0NGSlJidTdwY01heVJzcHZVR2Vsa3JjRUg5Ym5uRUItWnFuRkFsOEprQlZjc0w4NThMWTFjT0VMVzd4ZUpaYW0yQU5mRGptb0c?oc=5",
+    "date": "Wed, 01 Apr 2026 07:00:00 GMT",
+    "source": "Stock Titan",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 1,
+   "neg": 0,
+   "mood": "positive",
+   "src": "google"
+  }
+ },
+ "SPINNEYS": {
+  "items": [
+   {
+    "title": "SPINNEYS Forecast — Price Target — Prediction for 2027 - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5Bb3Y1MFRzOFlhTUdrWTNBTGFZUTlmM3phd1VqSGh4eGNjTGJlRlFRTnY2V1k1SnhCdTM2X3llQU1MeGNJVnZ1dS04aUhob3N6NHVtZHE4NzM3Z055UWxzMXhCNmxuSjZ5d2pHZ3NXVEZmOFVTMXJnanZ0Yw?oc=5",
+    "date": "Fri, 26 Jun 2026 05:38:19 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Watch Spinneys CEO: Transport Costs Not Passed to Consumers - Bloomberg.com",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcWV6clcwUEF2SUNQYmkzNEN3T2tIN3gyeXZ3UHFsdFBPM0trWXBUVEItREtJYjZHcGx5NExTMnVuNkRwZXlzN0RyVlItelcyNjhGb3J4ckVpR29Ick5oaTBKQUdfVkktc2JVVDhKb0JWeUtzaFVhcmkwZGpjN3JkUGRkSC1BQURfMnZ4RmVFb3ZvT2EwcnRrT1NtOEV1Mm5ON2NrMnRKV2l0Sk0?oc=5",
+    "date": "Fri, 13 Mar 2026 07:00:00 GMT",
+    "source": "Bloomberg.com",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Spinneys 1961 Holding plc Actuals & Estimates (DFM:SPINNEYS) - TradingView",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOWnRYQkYwbEltM003aGRUdGR2N21kNmx3ZkZFYlFsLUxOQXg3amZ1RHFiUGY1V1RmVVc4ZVB6ek5mNW5qalBoM0R0ZHBGcVdJQ1Q2SlA4OVRtcllzbXZpbjYyblNWUk43TDJKbHc3VThxZnc3R0pjMHVKS01McVNxbE81Ny1ER2c?oc=5",
+    "date": "Fri, 26 Jun 2026 05:00:52 GMT",
+    "source": "TradingView",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Is Gourmet the next Spinneys UAE, and will regional investors bite? - EnterpriseAM",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZy0tby1IZ3BZeWlTQlp3MTFrY2Y0YVFfdEJGb1lCUjVNMjJjS0JFM3BTUWtrTWJyUzRlMDVCR3BwZ0ZJZjc3cGoyVmFBMXprd1lqUmJBNHYtWEEtQTdIRVNHNGJhT2g2RVA1dkJpUDRaTENSdUxJTFREMG9DR2I1a01acHMyZndxUVpPVkh5Ql9vclc0Z1o0a3A0NW1tQUZZWTFlQlA4aXlodmg0?oc=5",
+    "date": "Mon, 19 Jan 2026 08:00:00 GMT",
+    "source": "EnterpriseAM",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Spinneys supermarket to open 12 stores in the Philippines - Fruitnet",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWW9fOXV3YzRaenk5WVBaRC1YTVE5QWJfOHpyTWVHWHlhdVJnSzBUb2tpYlJLN0NIdHdaQlVvUXZldnI3M1ljNHlOVDc0RUhlc2xncFNzaTlRbkhBNklxbGFVZ1dRNE5JSU5yOFhaaWczVmY3V1lINDBtQjcxdk9MQWdmbzF3OUxnOG9BZTlpVmVlbzJLTUR6aHN5S2o3MHFWd0g1Mkw0ZTNZSEk?oc=5",
+    "date": "Thu, 29 Jan 2026 08:00:00 GMT",
+    "source": "Fruitnet",
+    "sentiment": "neutral"
+   },
+   {
+    "title": "Spinneys CEO: supermarkets and restaurants ‘coexist’ as diners shift habits - Caterer Middle East",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeXBlamxycC1GSXg0enc5Z0VLT3I1ZVlhUHNRWTVPUzQ0SnNjYVpkSDczRW5Fa2VuWnhhbkVzMWNLUXRMa2xkejcwaGhiNzdVZlEzNW00dGtqNGlyZmdyZFVVeVBGTFBMd25rRnBNVFp5YS1QRzNYekFqektNYUZKdVg3dmwzck44WTc5dmkxMGVqQ3ZTczZrUWZfcEtWVXFxdlhVR2Q3ZTU4dWMyTE51dg?oc=5",
+    "date": "Wed, 10 Jun 2026 07:00:00 GMT",
+    "source": "Caterer Middle East",
+    "sentiment": "neutral"
+   }
+  ],
+  "summary": {
+   "n": 6,
+   "pos": 0,
+   "neg": 0,
+   "mood": "neutral",
+   "src": "google"
+  }
+ }
+}
