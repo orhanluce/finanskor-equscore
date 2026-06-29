@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 29% 93%;      /* Light Beige #F4F0E8 */
+    --foreground: 215 21% 11%;     /* #161B22 */
+
+    --primary: 28 72% 41%;         /* #B5651D Amber */
+    --primary-foreground: 0 0% 100%;
+
+    --success: 120 30% 37%;        /* #4F7942 Green */
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 45% 40%;      /* #963838 Red */
+    --destructive-foreground: 0 0% 100%;
+
+    --ai-navy: 220 40% 20%;
+    --analyst-amber: 28 72% 41%;
+    --crowd-green: 120 30% 37%;
+    --negative-red: 0 45% 40%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 21% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 21% 11%;
+    --secondary: 0 0% 42%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 40 10% 85%;
+    --muted-foreground: 215 15% 40%;
+    --accent: 28 72% 41%;
+    --accent-foreground: 0 0% 100%;
+    --border: 40 15% 82%;
+    --input: 40 15% 82%;
+    --ring: 28 72% 41%;
+    --radius: 0.75rem;
+
+    --medal-gold: 45 93% 47%;
+    --medal-silver: 0 0% 65%;
+    --medal-bronze: 30 61% 50%;
+
+    /* EquScore: Sharia status + Gulf teal accent */
+    --sharia: 158 64% 32%;         /* deep emerald-green */
+    --sharia-foreground: 0 0% 100%;
+    --teal: 178 56% 42%;
+  }
+
+  .dark {
+    --background: 215 21% 11%;
+    --foreground: 40 29% 93%;
+    --primary: 28 72% 51%;
+    --primary-foreground: 0 0% 100%;
+    --success: 120 30% 45%;
+    --destructive: 0 45% 55%;
+    --accent: 28 72% 51%;
+    --accent-foreground: 0 0% 100%;
+    --secondary: 0 0% 30%;
+    --secondary-foreground: 40 29% 93%;
+    --muted: 215 15% 20%;
+    --muted-foreground: 0 0% 60%;
+    --border: 215 15% 25%;
+    --card: 215 21% 14%;
+    --card-foreground: 40 29% 93%;
+    --popover: 215 21% 14%;
+    --popover-foreground: 40 29% 93%;
+    --input: 215 15% 25%;
+    --ring: 28 72% 51%;
+    --ai-navy: 220 40% 30%;
+    --analyst-amber: 28 72% 51%;
+    --crowd-green: 120 30% 50%;
+    --negative-red: 0 45% 55%;
+    --sharia: 158 54% 42%;
+    --teal: 178 50% 50%;
+  }
+
+  * { border-color: hsl(var(--border)); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-feature-settings: 'kern' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4, h5, h6 { font-family: Georgia, 'Times New Roman', serif; text-wrap: balance; }
+  .font-serif { font-family: Georgia, 'Times New Roman', serif; }
+  .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  input[type='text'], input[type='number'], input[type='email'], input[type='search'], select, textarea {
+    @apply bg-card border border-border rounded-lg px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-foreground/40;
+  }
+  .surface-dark { --foreground: 215 21% 11%; --background: 40 29% 93%; --muted-foreground: 40 15% 70%; }
+}
+
+@layer utilities {
+  .bg-success { background-color: hsl(var(--success)); }
+  .text-success { color: hsl(var(--success)); }
+  .border-success { border-color: hsl(var(--success)); }
+  .bg-destructive { background-color: hsl(var(--destructive)); }
+  .text-destructive { color: hsl(var(--destructive)); }
+  .bg-ai-navy { background-color: hsl(var(--ai-navy)); }
+  .text-ai-navy { color: hsl(var(--ai-navy)); }
+  .bg-analyst-amber { background-color: hsl(var(--analyst-amber)); }
+  .text-analyst-amber { color: hsl(var(--analyst-amber)); }
+  .bg-crowd-green { background-color: hsl(var(--crowd-green)); }
+  .text-crowd-green { color: hsl(var(--crowd-green)); }
+  .text-sharia { color: hsl(var(--sharia)); }
+  .bg-sharia { background-color: hsl(var(--sharia)); }
+  .border-sharia { border-color: hsl(var(--sharia)); }
+  .text-teal { color: hsl(var(--teal)); }
+  .bg-teal { background-color: hsl(var(--teal)); }
+  .text-medal-gold { color: hsl(var(--medal-gold)); }
+  .text-medal-silver { color: hsl(var(--medal-silver)); }
+  .text-medal-bronze { color: hsl(var(--medal-bronze)); }
+  .custom-scrollbar::-webkit-scrollbar { height: 6px; width: 6px; }
+  .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+  .custom-scrollbar::-webkit-scrollbar-thumb { background: hsl(var(--foreground) / 0.1); border-radius: 10px; }
+}

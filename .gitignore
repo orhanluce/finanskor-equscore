@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+*.log
+*.local
+.vite
+
+# secrets — ASLA commit edilmez (anon key dist'e build'de gömülü, ayrı konu)
+.env
+.env.local
+.env.*.local
+
+# NOT: dist/ BİLEREK takip ediliyor — Hostinger GitHub'dan build YAPMADAN
+# hazır statiği servis etsin diye. Güncelleme döngüsü: npm run build + commit + push.
