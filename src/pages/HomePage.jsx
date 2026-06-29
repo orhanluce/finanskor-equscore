@@ -1,3 +1,4 @@
+import { t } from '@/i18n.js';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -42,11 +43,11 @@ export default function HomePage() {
         <div className="relative z-20 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <Badge variant="primary" className="mb-6 px-4 py-1.5 text-sm uppercase tracking-widest">
-              The accountability & trust layer for Gulf markets
+              {t('The accountability & trust layer for Gulf markets')}
             </Badge>
             <h1 className="font-serif text-5xl font-bold leading-[1.08] text-foreground md:text-7xl" style={{ letterSpacing: '-0.02em' }}>
-              Not hype.<br />
-              <span className="italic text-primary">Track record.</span>
+              {t('Not hype.')}<br />
+              <span className="italic text-primary">{t('Track record.')}</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/70 md:text-2xl">
               Who said it, did it work, {COUNTRY.modules.sharia ? <>is it <span className="text-sharia font-semibold">Sharia-compliant</span>, </> : ''}
@@ -54,10 +55,10 @@ export default function HomePage() {
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button as={Link} to="/market" variant="primary" className="h-14 px-8 text-lg">
-                Explore {COUNTRY.short} <ArrowRight className="h-5 w-5" />
+                {t('Explore')} {COUNTRY.short} <ArrowRight className="h-5 w-5" />
               </Button>
               <Button as={Link} to="/methodology" variant="outline" className="h-14 px-8 text-lg">
-                How it works
+                {t('How it works')}
               </Button>
             </div>
 

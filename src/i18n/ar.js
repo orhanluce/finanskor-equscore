@@ -102,6 +102,18 @@ export const AR = {
   'Doubtful': 'مشكوك فيه',
   'Non-compliant': 'غير متوافق',
 
+  // ── Footer ──
+  'Data sources': 'مصادر البيانات',
+  'The accountability & trust layer for Gulf equity markets. Score the analysts, screen for Sharia, follow the smart money — starting with Tadawul.':
+    'طبقة المساءلة والثقة لأسواق أسهم الخليج. قيّم المحلّلين، افرز وفق الشريعة، وتابع الأموال الذكية — بدءاً من تداول.',
+
+  // ── Market page subtitle / bits ──
+  'Top {n} by Equity Star · switch to Grid for all {total}': 'أعلى {n} حسب نجمة السهم · بدّل إلى الشبكة للكل {total}',
+
+  // ── Home hero ──
+  'Not hype.': 'ليست ضجّة.',
+  'Track record.': 'بل سجلّ أداء.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

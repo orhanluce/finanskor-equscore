@@ -3,6 +3,7 @@ import { Search, LayoutGrid, CircleDot } from 'lucide-react';
 import StockCard from '@/components/StockCard.jsx';
 import EquityRing from '@/components/EquityRing.jsx';
 import { Badge } from '@/components/ui.jsx';
+import { t } from '@/i18n.js';
 import { cn } from '@/lib/utils.js';
 import { STOCKS, SECTORS, IS_LIVE, COUNTRY } from '@/data/stocks.js';
 
@@ -54,7 +55,7 @@ export default function MarketPage() {
       <Badge variant={IS_LIVE ? 'success' : 'muted'} className="mb-3">
         {COUNTRY.flag} {COUNTRY.exchange} · {IS_LIVE ? 'live — Yahoo Finance (delayed)' : 'sample dataset'}
       </Badge>
-      <h1 className="font-serif text-4xl font-bold">Market</h1>
+      <h1 className="font-serif text-4xl font-bold">{t('Market')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
         Every name with its Equity Star (out of 42){COUNTRY.modules.sharia ? ', Sharia status' : ''} and discount to fair value.
       </p>
@@ -70,7 +71,7 @@ export default function MarketPage() {
         </div>
         <div className="flex flex-wrap items-center gap-2">
           <select value={sector} onChange={(e) => setSector(e.target.value)} className="text-sm">
-            <option value="All">All sectors</option>
+            <option value="All">{t('All sectors')}</option>
             {SECTORS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
           {showBoards && (
@@ -111,12 +112,12 @@ export default function MarketPage() {
             <button onClick={() => setView('ring')}
               className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
                 view === 'ring' ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground')}>
-              <CircleDot className="h-3.5 w-3.5" /> Ring
+              <CircleDot className="h-3.5 w-3.5" /> {t('Ring')}
             </button>
             <button onClick={() => setView('grid')}
               className={cn('inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors',
                 view === 'grid' ? 'bg-foreground text-background' : 'text-muted-foreground hover:text-foreground')}>
-              <LayoutGrid className="h-3.5 w-3.5" /> Grid
+              <LayoutGrid className="h-3.5 w-3.5" /> {t('Grid')}
             </button>
           </div>
         </div>
@@ -129,12 +130,12 @@ export default function MarketPage() {
         </>
       ) : (
         <>
-          <div className="mt-4 text-sm text-muted-foreground">{rows.length} stocks</div>
+          <div className="mt-4 text-sm text-muted-foreground">{rows.length} {t('stocks')}</div>
           <div className="mt-3 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {rows.map((s) => <StockCard key={s.ticker} s={s} />)}
           </div>
           {rows.length === 0 && (
-            <div className="mt-16 text-center text-muted-foreground">No stocks match your filters.</div>
+            <div className="mt-16 text-center text-muted-foreground">{t('No stocks match your filters.')}</div>
           )}
         </>
       )}
