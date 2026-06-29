@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import IntelligenceCube from '@/components/IntelligenceCube.jsx';
+import { t } from '@/i18n.js';
 
 // Interactive 7-dimension Equity Star (port of FinanSkor's Hisse Yıldızı):
 //  · hover/select a corner -> highlighted slice + synced cube face
@@ -86,8 +87,8 @@ export default function EquityStarFull({ stock }) {
   return (
     <div className="rounded-3xl border border-border bg-card p-6 sm:p-9">
       <div className="text-center mb-6">
-        <h2 className="font-serif text-3xl md:text-4xl font-bold">Equity Star</h2>
-        <p className="text-foreground/60 mt-1">{aktif === 7 ? '7 dimensions · max 42 points' : `${aktif} of 7 selected · out of ${maxScore}`}</p>
+        <h2 className="font-serif text-3xl md:text-4xl font-bold">{t('Equity Star')}</h2>
+        <p className="text-foreground/60 mt-1">{aktif === 7 ? t('7 dimensions · max 42 points') : `${aktif} ${t('of 7 selected · out of')} ${maxScore}`}</p>
       </div>
 
       {/* Star */}
@@ -119,7 +120,7 @@ export default function EquityStarFull({ stock }) {
           {AXES.map((label, i) => {
             const { x, y } = labelPos(i);
             return <text key={`lab-${i}`} x={x} y={y} textAnchor="middle" dominantBaseline="middle" fill={colorFor(i)}
-              fontSize="11.5" fontWeight={i > 4 ? 'bold' : '600'} opacity={enabled[i] ? 1 : 0.35}>{label}{i > 4 ? ' ★' : ''}</text>;
+              fontSize="11.5" fontWeight={i > 4 ? 'bold' : '600'} opacity={enabled[i] ? 1 : 0.35}>{t(label)}{i > 4 ? ' ★' : ''}</text>;
           })}
           {AXES.map((_, i) => (
             <path key={`hit-${i}`} d={hitPath(i)} fill="transparent" className="cursor-pointer"
@@ -140,7 +141,7 @@ export default function EquityStarFull({ stock }) {
               return (
                 <div key={`row-${i}`} className={`flex items-center gap-2 transition-opacity ${enabled[i] ? '' : 'opacity-40'}`}>
                   <button type="button" onClick={() => toggleDim(i)}
-                    title={enabled[i] ? `Remove ${label}` : `Add ${label}`}
+                    title={enabled[i] ? `${t('Remove')} ${t(label)}` : `${t('Add')} ${t(label)}`}
                     className="shrink-0 w-5 h-5 rounded border flex items-center justify-center"
                     style={enabled[i] ? { backgroundColor: colorFor(i), borderColor: colorFor(i) } : { borderColor: '#D9D3C5' }}>
                     {enabled[i] && <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M10 3L4.5 8.5L2 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>}
@@ -148,7 +149,7 @@ export default function EquityStarFull({ stock }) {
                   <button type="button" onClick={() => setSelected(selected === i ? null : i)}
                     onMouseEnter={() => setHovered(i)} onMouseLeave={() => setHovered(null)}
                     className={`flex-1 flex items-center gap-4 text-left rounded-lg px-2 py-1.5 transition-colors ${selected === i ? 'bg-muted' : 'hover:bg-muted/60'}`}>
-                    <div className="w-28 text-sm font-medium shrink-0">{label} {i > 4 && <span style={{ color: colorFor(i) }}>★</span>}</div>
+                    <div className="w-28 text-sm font-medium shrink-0">{t(label)} {i > 4 && <span style={{ color: colorFor(i) }}>★</span>}</div>
                     <div className="w-8 text-right font-mono font-bold text-sm shrink-0">{scores[i]}/6</div>
                     <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden"><div className={`h-full ${barColor} rounded-full`} style={{ width: `${(scores[i] / 6) * 100}%` }} /></div>
                   </button>
@@ -157,13 +158,13 @@ export default function EquityStarFull({ stock }) {
             })}
           </div>
           <p className="text-xs text-foreground/50">
-            Tick to add/remove a dimension — the score is computed over the selected ones ({aktif}/7, out of {maxScore}).
-            {aktif < 7 && <button type="button" onClick={() => { setEnabled([true, true, true, true, true, true, true]); try { localStorage.removeItem(LS_KEY); } catch { /* ignore */ } }} className="ml-1 text-primary font-medium hover:underline">Restore all</button>}
+            {t('Tick to add/remove a dimension — the score is computed over the selected ones')} ({aktif}/7, {t('out of')} {maxScore}).
+            {aktif < 7 && <button type="button" onClick={() => { setEnabled([true, true, true, true, true, true, true]); try { localStorage.removeItem(LS_KEY); } catch { /* ignore */ } }} className="ml-1 text-primary font-medium hover:underline">{t('Restore all')}</button>}
           </p>
           {active !== null && (
             <div className="mt-5 rounded-xl border border-border bg-muted/40 p-4">
               <div className="flex items-center justify-between mb-1">
-                <span className="font-serif font-bold" style={{ color: colorFor(active) }}>{AXES[active]}{active > 4 ? ' ★' : ''}</span>
+                <span className="font-serif font-bold" style={{ color: colorFor(active) }}>{t(AXES[active])}{active > 4 ? ' ★' : ''}</span>
                 <span className="font-mono font-bold text-sm">{scores[active]}/6</span>
               </div>
               <p className="text-sm text-foreground/75 leading-snug">{explanations[active]}</p>
@@ -172,8 +173,8 @@ export default function EquityStarFull({ stock }) {
         </div>
 
         <div className="flex flex-col items-center">
-          <h3 className="font-serif text-xl font-bold mb-1">Intelligence Cube</h3>
-          <p className="text-sm text-foreground/55 text-center mb-6 max-w-xs">Each face is a dimension — why this stock earned that score. Rotate, explore, or pick from the Star.</p>
+          <h3 className="font-serif text-xl font-bold mb-1">{t('Intelligence Cube')}</h3>
+          <p className="text-sm text-foreground/55 text-center mb-6 max-w-xs">{t('Each face is a dimension — why this stock earned that score. Rotate, explore, or pick from the Star.')}</p>
           <IntelligenceCube axes={AXES} scores={scores} explanations={explanations} activeIndex={selected} onSelect={(i) => setSelected(selected === i ? null : i)} />
         </div>
       </div>
@@ -181,16 +182,16 @@ export default function EquityStarFull({ stock }) {
       {/* three mini cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 pt-8 border-t border-border">
         <div className="bg-muted p-5 rounded-r-xl border-l-[4px]" style={{ borderLeftColor: FUND }}>
-          <h4 className="font-serif font-bold mb-1">How is the company?</h4>
-          <p className="text-sm text-foreground/70 font-medium">Value · Growth · Quality · Health · Dividend</p>
+          <h4 className="font-serif font-bold mb-1">{t('How is the company?')}</h4>
+          <p className="text-sm text-foreground/70 font-medium">{t('Value · Growth · Quality · Health · Dividend')}</p>
         </div>
         <div className="bg-muted p-5 rounded-r-xl border-l-[4px]" style={{ borderLeftColor: KONS }}>
-          <h4 className="font-serif font-bold mb-1">Are the forecasters right? <span style={{ color: KONS }}>★</span></h4>
-          <p className="text-sm text-foreground/70 font-medium">Hit-rate-weighted analyst consensus</p>
+          <h4 className="font-serif font-bold mb-1">{t('Are the forecasters right?')} <span style={{ color: KONS }}>★</span></h4>
+          <p className="text-sm text-foreground/70 font-medium">{t('Hit-rate-weighted analyst consensus')}</p>
         </div>
         <div className="bg-muted p-5 rounded-r-xl border-l-[4px]" style={{ borderLeftColor: PARA }}>
-          <h4 className="font-serif font-bold mb-1">Where's the money going? <span style={{ color: PARA }}>★</span></h4>
-          <p className="text-sm text-foreground/70 font-medium">Foreign + institutional smart-money flow</p>
+          <h4 className="font-serif font-bold mb-1">{t("Where's the money going?")} <span style={{ color: PARA }}>★</span></h4>
+          <p className="text-sm text-foreground/70 font-medium">{t('Foreign + institutional smart-money flow')}</p>
         </div>
       </div>
     </div>

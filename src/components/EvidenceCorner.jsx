@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookMarked, ExternalLink } from 'lucide-react';
 import { Card, CardContent, Badge } from '@/components/ui.jsx';
+import { t } from '@/i18n.js';
 
 // Rotating "why we built it this way" academic-basis card.
 const EVIDENCE = [
@@ -28,11 +29,11 @@ export default function EvidenceCorner() {
       <CardContent>
         <div className="flex items-center gap-2">
           <BookMarked className="h-5 w-5 text-ai-navy" />
-          <h3 className="font-serif text-lg font-bold">Evidence Corner</h3>
-          <Badge variant="muted" className="ml-auto">Why it's built this way</Badge>
+          <h3 className="font-serif text-lg font-bold">{t('Evidence Corner')}</h3>
+          <Badge variant="muted" className="ml-auto">{t("Why it's built this way")}</Badge>
         </div>
-        <p className="mt-3 font-serif text-base font-semibold text-foreground">"{e.claim}"</p>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{e.body}</p>
+        <p className="mt-3 font-serif text-base font-semibold text-foreground">"{t(e.claim)}"</p>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t(e.body)}</p>
         <div className="mt-3 inline-flex items-center gap-1.5 text-xs text-ai-navy">
           <ExternalLink className="h-3.5 w-3.5" /> {e.source}
         </div>

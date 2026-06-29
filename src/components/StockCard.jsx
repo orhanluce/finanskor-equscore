@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { pct, money } from '@/lib/utils.js';
 import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
+import { t } from '@/i18n.js';
 
 export default function StockCard({ s }) {
   const up = s.change >= 0;
@@ -33,15 +34,15 @@ export default function StockCard({ s }) {
       </div>
 
       {s.maxFlag === 'trap' && (
-        <div className="mt-2 text-[11px] font-semibold text-medal-bronze">⚠ High attention · weak profits — value-trap risk</div>
+        <div className="mt-2 text-[11px] font-semibold text-medal-bronze">{t('⚠ High attention · weak profits — value-trap risk')}</div>
       )}
       {s.maxFlag === 'strong' && (
-        <div className="mt-2 text-[11px] font-semibold text-success">▲ High attention · strong profits</div>
+        <div className="mt-2 text-[11px] font-semibold text-success">{t('▲ High attention · strong profits')}</div>
       )}
       <div className="mt-3 flex items-center justify-between border-t border-border pt-3">
         <ShariaBadge status={s.sharia} />
         <span className={cn('text-xs font-medium', s.discount >= 0 ? 'text-success' : 'text-destructive')}>
-          {s.discount >= 0 ? 'Discount' : 'Premium'} {Math.abs(s.discount).toFixed(0)}%
+          {s.discount >= 0 ? t('Discount') : t('Premium')} {Math.abs(s.discount).toFixed(0)}%
         </span>
       </div>
     </Link>

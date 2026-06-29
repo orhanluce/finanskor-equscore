@@ -14,8 +14,7 @@ export default function Footer() {
               <img src="/logo-transparent.png" alt="EquScore" className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-sm text-sm text-background/70">
-              The accountability & trust layer for Gulf equity markets. Score the analysts,
-              screen for Sharia, follow the smart money — starting with Tadawul.
+              {t('The accountability & trust layer for Gulf equity markets. Score the analysts, screen for Sharia, follow the smart money — starting with Tadawul.')}
             </p>
             <div className="mt-4"><ShareButtons title="EquScore" text="EquScore — accountability & Sharia scoring for Tadawul" /></div>
           </div>
@@ -44,10 +43,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-background/15 pt-6 text-xs text-background/50 leading-relaxed">
-          Prototype for the {COUNTRY.exchange} market. Scores are informational/statistical analysis, not investment
-          advice or a personal recommendation under {COUNTRY.regulator} rules.
-          {COUNTRY.modules.sharia && ' Sharia status is an AAOIFI-style screen for guidance only — consult a qualified Shariah advisor before investing.'}
-          {COUNTRY.modules.currencyRisk && ' EGP figures carry currency risk; valuations shown without an FX hedge are indicative only.'}
+          {t('Prototype for the')} {COUNTRY.exchange} {t('market. Scores are informational/statistical analysis, not investment advice or a personal recommendation under')} {COUNTRY.regulator} {t('rules.')}
+          {COUNTRY.modules.sharia && ` ${t('Sharia status is an AAOIFI-style screen for guidance only — consult a qualified Shariah advisor before investing.')}`}
+          {COUNTRY.modules.currencyRisk && ` ${t('EGP figures carry currency risk; valuations shown without an FX hedge are indicative only.')}`}
           {' '}© 2026 EquScore.
         </div>
       </div>

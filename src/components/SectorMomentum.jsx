@@ -3,6 +3,7 @@ import { Layers } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui.jsx';
 import { STOCKS, SECTORS } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 const avg = (arr) => (arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0);
 
@@ -21,15 +22,15 @@ export default function SectorMomentum() {
       <CardContent>
         <div className="flex items-center gap-2">
           <Layers className="h-5 w-5 text-primary" />
-          <h3 className="font-serif text-lg font-bold">Sector Momentum</h3>
+          <h3 className="font-serif text-lg font-bold">{t('Sector Momentum')}</h3>
         </div>
-        <p className="mt-1 text-xs text-muted-foreground">Average move today, with mean Equity Star per sector.</p>
+        <p className="mt-1 text-xs text-muted-foreground">{t('Average move today, with mean Equity Star per sector.')}</p>
         <div className="mt-4 space-y-2">
           {rows.map((r) => {
             const pos = r.change >= 0;
             return (
               <div key={r.sector} className="flex items-center gap-3">
-                <span className="w-32 shrink-0 truncate text-sm text-foreground/80">{r.sector}</span>
+                <span className="w-32 shrink-0 truncate text-sm text-foreground/80">{t(r.sector)}</span>
                 <div className="relative h-2 flex-1 rounded-full bg-muted overflow-hidden">
                   <div className={cn('absolute top-0 h-full', pos ? 'bg-success left-1/2' : 'bg-destructive right-1/2')}
                     style={{ width: `${(Math.abs(r.change) / maxAbs) * 50}%` }} />

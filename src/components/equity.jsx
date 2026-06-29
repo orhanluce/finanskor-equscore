@@ -4,6 +4,7 @@ import { ShieldCheck, ShieldAlert, ShieldX } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { STAR_DIMS, SHARIA_LABEL, scoreColor } from '@/data/stocks.js';
 import { Badge } from '@/components/ui.jsx';
+import { t } from '@/i18n.js';
 
 export function ScorePill({ total, size = 'md' }) {
   const cls = size === 'lg' ? 'text-4xl' : 'text-2xl';
@@ -22,13 +23,13 @@ export function ShariaBadge({ status, withRatios }) {
   return (
     <Badge variant={variant} className={status === 'doubtful' ? 'text-medal-bronze border-medal-bronze/30 bg-medal-bronze/10' : ''}>
       <Icon className="h-3.5 w-3.5" />
-      {meta.text}
+      {t(meta.text)}
     </Badge>
   );
 }
 
 export function StarRadar({ star, height = 240 }) {
-  const data = STAR_DIMS.map((d) => ({ dim: d.label.replace(' ★', ''), v: star[d.key] }));
+  const data = STAR_DIMS.map((d) => ({ dim: t(d.label.replace(' ★', '')), v: star[d.key] }));
   return (
     <ResponsiveContainer width="100%" height={height}>
       <RadarChart data={data} outerRadius="72%">
@@ -49,7 +50,7 @@ export function StarBars({ star }) {
         const isSignal = d.key === 'consensus' || d.key === 'flow';
         return (
           <div key={d.key} className="flex items-center gap-3">
-            <div className="w-28 text-xs text-muted-foreground shrink-0">{d.label}</div>
+            <div className="w-28 text-xs text-muted-foreground shrink-0">{t(d.label)}</div>
             <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
               <div
                 className={cn('h-full rounded-full', isSignal ? 'bg-ai-navy' : 'bg-primary')}

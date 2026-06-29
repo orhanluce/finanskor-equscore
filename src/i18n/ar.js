@@ -601,6 +601,199 @@ export const AR = {
   'LinkedIn (optional)': 'LinkedIn (اختياري)',
   'Please enter your full name.': 'يرجى إدخال اسمك الكامل.',
 
+  // ── Home QUICK / stats (eksikler) ──
+  'Find a Stock': 'ابحث عن سهم',
+  'names scored': 'سهم مُقيَّم',
+  'Sharia-compliant': 'متوافق مع الشريعة',
+  'is it': 'هل هو',
+  'Who said it, did it work,': 'من قاله، هل نجح،',
+  'and where is the money flowing? Score every': 'وأين تتدفق الأموال؟ قيّم كل',
+  'stock in a single glance.': 'سهم في لمحة واحدة.',
+  'rolling out': 'قيد الإطلاق',
+  'A purpose-built scoring engine for': 'محرّك تقييم مصمَّم خصيصًا لـ',
+  'with the local lenses each market needs —': 'مع العدسات المحلية التي يحتاجها كل سوق —',
+  ' a Sharia screen in place of the real-return lens that low inflation and the dollar peg make redundant here.':
+    ' فرز شرعي بدلًا من عدسة العائد الحقيقي التي يجعلها التضخّم المنخفض وربط الدولار زائدة هنا.',
+  ' an inflation & FX lens where the local currency floats.': ' عدسة تضخّم وصرف حيث تعوم العملة المحلية.',
+  'Highest Equity Stars on': 'أعلى نجوم الأسهم في',
+
+  // ── MarketPulse ──
+  'Market Pulse': 'نبض السوق',
+  'advancing': 'صاعد',
+  'declining': 'هابط',
+  'of names higher today': 'من الأسهم أعلى اليوم',
+  'Top gainer': 'الأكثر ارتفاعًا',
+  'Top loser': 'الأكثر انخفاضًا',
+  'Average discount to fair value:': 'متوسط الخصم عن القيمة العادلة:',
+  'the board screens cheap on average.': 'السوق يبدو رخيصًا في المتوسط.',
+  'the board screens rich on average.': 'السوق يبدو غاليًا في المتوسط.',
+
+  // ── SectorMomentum ──
+  'Sector Momentum': 'زخم القطاعات',
+  'Average move today, with mean Equity Star per sector.': 'متوسط الحركة اليوم، مع متوسط نجمة السهم لكل قطاع.',
+
+  // ── Sectors (data) ──
+  'Energy': 'الطاقة', 'Banking': 'البنوك', 'Materials': 'المواد', 'Telecom': 'الاتصالات',
+  'Utilities': 'المرافق', 'Consumer Staples': 'السلع الاستهلاكية', 'Retail': 'التجزئة',
+  'Health Care': 'الرعاية الصحية', 'Technology': 'التقنية', 'Insurance': 'التأمين',
+  'Real Estate': 'العقارات', 'Consumer': 'المستهلك', 'Transport': 'النقل',
+  'Investment': 'الاستثمار', 'Financials': 'المالية', 'Industrials': 'الصناعات',
+  'Fintech': 'التقنية المالية', 'Logistics': 'الخدمات اللوجستية',
+
+  // ── DubaiRealEstate ──
+  'Dubai Real-Estate Pulse': 'نبض عقارات دبي',
+  'DFM is real-estate-led — Dubai Land Department transaction trends move Emaar, Deyaar & peers.':
+    'سوق دبي يقوده العقار — اتجاهات صفقات دائرة أراضي دبي تحرّك إعمار وديار ونظائرها.',
+  'Transactions': 'الصفقات', 'AED value': 'القيمة بالدرهم', 'Investors': 'المستثمرون',
+  'Property momentum': 'زخم العقار',
+  'is positive — a tailwind for DFM developers this quarter.': 'إيجابي — رياح داعمة لمطوّري سوق دبي هذا الربع.',
+  'Real-estate names': 'أسهم العقارات',
+  'Source: Dubai Land Department open data (dubaipulse.gov.ae). Illustrative snapshot.':
+    'المصدر: البيانات المفتوحة لدائرة أراضي دبي (dubaipulse.gov.ae). لقطة توضيحية.',
+
+  // ── EvidenceCorner ──
+  'Evidence Corner': 'ركن الأدلّة',
+  "Why it's built this way": 'لماذا بُني هكذا',
+  'The MAX effect is strong on Tadawul.': 'تأثير MAX قوي في تداول.',
+  'High-attention "lottery" stocks underperform when profitability is weak — so MAX is read together with the Quality dimension, never alone.':
+    'أسهم "اليانصيب" عالية الاهتمام تتراجع عند ضعف الربحية — لذا يُقرأ MAX مع بُعد الجودة، لا منفردًا.',
+  'Post-earnings drift persists for weeks.': 'انجراف ما بعد الأرباح يستمر لأسابيع.',
+  'Prices keep moving in the direction of an earnings surprise long after the announcement — the basis for Efsah Flash sentiment.':
+    'تستمر الأسعار في الاتجاه نفسه لمفاجأة الأرباح بعد الإعلان بفترة طويلة — أساس مشاعر إفصاح فلاش.',
+  'Institutions trade on value, retail on attention.': 'المؤسسات تتداول بالقيمة والأفراد بالاهتمام.',
+  'With ≈90% of Tadawul volume from retail, licensed net-flow is a genuine smart-money signal — the Money-Flow ★ dimension.':
+    'مع ≈90% من حجم تداول من الأفراد، صافي التدفق المرخّص إشارة أموال ذكية حقيقية — بُعد التدفق المالي ★.',
+
+  // ── Macro ──
+  'Macro': 'الاقتصاد الكلي',
+
+  // ── StockCard ──
+  '⚠ High attention · weak profits — value-trap risk': '⚠ اهتمام مرتفع · أرباح ضعيفة — خطر فخّ القيمة',
+  '▲ High attention · strong profits': '▲ اهتمام مرتفع · أرباح قوية',
+
+  // ── Footer disclaimer ──
+  'Prototype for the': 'نموذج أوّلي لسوق',
+  'market. Scores are informational/statistical analysis, not investment advice or a personal recommendation under':
+    '. النقاط تحليل معلوماتي/إحصائي، ليست نصيحة استثمارية أو توصية شخصية وفق أنظمة',
+  'rules.': '.',
+  'Sharia status is an AAOIFI-style screen for guidance only — consult a qualified Shariah advisor before investing.':
+    'حالة الشريعة فرز بأسلوب AAOIFI للإرشاد فقط — استشر مستشارًا شرعيًا مؤهّلًا قبل الاستثمار.',
+  'EGP figures carry currency risk; valuations shown without an FX hedge are indicative only.':
+    'أرقام الجنيه تحمل مخاطر عملة؛ التقييمات المعروضة بدون تحوّط صرف استرشادية فقط.',
+
+  // ── CountryLens ──
+  'Devaluation winner': 'رابح من خفض القيمة',
+  'Devaluation exposed': 'مكشوف لخفض القيمة',
+  'Mixed FX exposure': 'تعرّض صرف مختلط',
+  'EGP Currency Risk': 'مخاطر عملة الجنيه',
+  'The EGP floats — hard-currency revenue is a natural hedge, imports are a cost risk.':
+    'الجنيه يعوم — إيرادات العملة الصعبة تحوّط طبيعي، والواردات مخاطرة تكلفة.',
+  'USD revenue': 'إيرادات الدولار', 'import dependence': 'الاعتماد على الاستيراد',
+  'Hard-currency revenue': 'إيرادات العملة الصعبة', 'Import cost exposure': 'تعرّض تكلفة الاستيراد',
+  'Real vs Nominal Growth': 'النمو الحقيقي مقابل الاسمي',
+  'Headline growth is inflated by ~': 'النمو المعلن منتفخ بنحو ~',
+  '% inflation. Real growth is what compounds wealth.': '% تضخّم. النمو الحقيقي هو ما يراكم الثروة.',
+  'Nominal': 'اسمي', 'Real (inflation-adj.)': 'حقيقي (معدَّل للتضخّم)',
+  'Index Concentration': 'تركّز المؤشّر',
+  'This name alone is roughly a third of the': 'هذا السهم وحده يشكّل نحو ثلث',
+  'Index funds and foreign flows are heavily exposed to it — a single-stock concentration risk for the whole market.':
+    'صناديق المؤشّر والتدفقات الأجنبية مكشوفة له بشدّة — مخاطرة تركّز سهم واحد على السوق كله.',
+  'Net-of-Tax Yield': 'العائد بعد الضريبة',
+  'UAE has zero capital-gains and zero dividend tax — gross yield is net yield.':
+    'الإمارات بلا ضريبة أرباح رأسمالية ولا ضريبة توزيعات — العائد الإجمالي هو الصافي.',
+  'dividend you actually keep': 'التوزيعات التي تحتفظ بها فعلًا',
+  'For an income-focused investor comparing against a ~1.3% S&P 500 yield, a tax-free':
+    'لمستثمر يركّز على الدخل مقارنةً بعائد ~1.3% لمؤشّر S&P 500، فإن',
+  '% is a meaningful pickup.': '% معفاة من الضريبة تُعدّ إضافة مهمّة.',
+  'Short-Term Contrarian': 'معاكس قصير الأجل',
+  'markets show little momentum but strong short-term': 'الأسواق تُظهر زخمًا ضعيفًا لكن',
+  'over-reaction': 'مبالغة قصيرة الأجل في رد الفعل',
+  "Today's": 'اليوم',
+  'sharp rise': 'الارتفاع الحاد', 'sharp drop': 'الهبوط الحاد',
+  'may fade': 'قد يتلاشى', 'has historically tended to bounce': 'مال تاريخيًا للارتداد',
+  'classic 12-1 momentum does not work here.': 'زخم 12-1 الكلاسيكي لا يعمل هنا.',
+
+  // ── EquityStarFull ──
+  '7 dimensions · max 42 points': '7 أبعاد · 42 نقطة كحد أقصى',
+  'of 7 selected · out of': 'من 7 مختارة · من',
+  'Value': 'القيمة', 'Growth': 'النمو', 'Quality': 'الجودة', 'Health': 'الصحة',
+  'Dividend': 'التوزيعات', 'Consensus': 'الإجماع', 'Money Flow': 'التدفّق المالي',
+  'Consensus ★': 'الإجماع ★', 'Money Flow ★': 'التدفّق المالي ★',
+  'How cheap is it vs earnings & book?': 'ما مدى رخصه مقابل الأرباح والقيمة الدفترية؟',
+  'Revenue, earnings & equity expansion.': 'توسّع الإيرادات والأرباح وحقوق الملكية.',
+  'Returns on assets/equity & margins.': 'العوائد على الأصول/حقوق الملكية والهوامش.',
+  'Leverage and interest cover.': 'الرافعة المالية وتغطية الفائدة.',
+  'Yield and payout reliability.': 'العائد وموثوقية التوزيع.',
+  'Hit-rate-weighted analyst view.': 'رأي محلّلين موزون بنسبة الإصابة.',
+  'Foreign + institutional smart money.': 'أموال ذكية أجنبية + مؤسسية.',
+  'Remove': 'إزالة',
+  'Tick to add/remove a dimension — the score is computed over the selected ones': 'حدّد لإضافة/إزالة بُعد — تُحسب النقاط على الأبعاد المختارة',
+  'out of': 'من', 'Restore all': 'استعادة الكل',
+  'Intelligence Cube': 'مكعّب الذكاء',
+  'Each face is a dimension — why this stock earned that score. Rotate, explore, or pick from the Star.':
+    'كل وجه بُعد — لماذا حصل هذا السهم على تلك النقاط. أدِر، استكشف، أو اختر من النجمة.',
+  'How is the company?': 'كيف حال الشركة؟',
+  'Value · Growth · Quality · Health · Dividend': 'القيمة · النمو · الجودة · الصحة · التوزيعات',
+  'Are the forecasters right?': 'هل المتوقّعون مُصيبون؟',
+  'Hit-rate-weighted analyst consensus': 'إجماع محلّلين موزون بنسبة الإصابة',
+  "Where's the money going?": 'إلى أين تذهب الأموال؟',
+  'Foreign + institutional smart-money flow': 'تدفق أموال ذكية أجنبية + مؤسسية',
+
+  // ── Islamic calendar ──
+  'Hijri risk overlay': 'طبقة مخاطر هجرية',
+
+  // ── AiAsk ──
+  'Ask AI': 'اسأل الذكاء الاصطناعي',
+  'Context:': 'السياق:', 'Plain-English answers': 'إجابات بلغة بسيطة',
+  'Hi 👋 I answer questions about EquScore data in plain English.': 'مرحبًا 👋 أجيب عن أسئلة بيانات EquScore بلغة بسيطة.',
+  "You're viewing": 'أنت تشاهد', 'ask anything about it.': 'اسأل أي شيء عنه.',
+  'Open a stock page or ask about a term.': 'افتح صفحة سهم أو اسأل عن مصطلح.',
+  'Ask something…': 'اسأل شيئًا…',
+  'Generated from EquScore data. Not investment advice. Always verify independently.':
+    'مُنشأ من بيانات EquScore. ليست نصيحة استثمارية. تحقّق دائمًا بشكل مستقل.',
+  'What kind of company is': 'ما نوع شركة',
+  '— cheap or expensive right now?': '— رخيص أم غالٍ الآن؟',
+  'What does the money flow tell us about': 'ماذا يخبرنا تدفق الأموال عن',
+  'What is P/E ratio?': 'ما هي نسبة م/ر؟',
+  'How do I read the Equity Star score?': 'كيف أقرأ نقاط نجمة السهم؟',
+  'What does Sharia-compliant mean for a stock?': 'ماذا يعني التوافق الشرعي لسهم؟',
+
+  // ── AuthModal ──
+  'Create account': 'إنشاء حساب',
+  'Account created — check your email to confirm, then sign in.': 'تم إنشاء الحساب — تحقّق من بريدك للتأكيد ثم سجّل الدخول.',
+  'Something went wrong': 'حدث خطأ ما',
+  'Join the contest and start your decision journal.': 'انضم للمسابقة وابدأ يوميات قرارك.',
+  'Welcome back to EquScore.': 'مرحبًا بعودتك إلى EquScore.',
+  'Username': 'اسم المستخدم', 'Email': 'البريد الإلكتروني', 'Password (min 6)': 'كلمة المرور (6 أحرف على الأقل)',
+  'Already have an account?': 'لديك حساب بالفعل؟', "Don't have an account?": 'ليس لديك حساب؟',
+  'Sign up': 'إنشاء حساب',
+
+  // ── PremiumGate ──
+  'Premium feature': 'ميزة مميّزة',
+  'Sign in to unlock this — free during the preview.': 'سجّل الدخول لفتح هذا — مجاني أثناء المعاينة.',
+  'See premium': 'شاهد المميّز',
+
+  // ── InvestorsPage / VerifyPage / NotFound ──
+  'Real, identity-checked investors — a deliberate counter to anonymous pump accounts.':
+    'مستثمرون حقيقيون موثّقو الهوية — ردّ متعمَّد على حسابات الضخّ المجهولة.',
+  'No verified investors yet — be the first.': 'لا مستثمرين موثّقين بعد — كن الأول.',
+  'Verification curbs fake accounts and pump campaigns. Approved investors appear on the':
+    'التوثيق يكبح الحسابات الوهمية وحملات الضخّ. يظهر المستثمرون المعتمَدون على',
+  'verified investors': 'المستثمرين الموثّقين', 'wall.': '.',
+  'Sign in to request verification.': 'سجّل الدخول لطلب التوثيق.',
+  'You are listed on the verified investors wall.': 'أنت مُدرَج على جدار المستثمرين الموثّقين.',
+  'Your request is under review.': 'طلبك قيد المراجعة.',
+  'Not approved this time.': 'لم يُعتمَد هذه المرة.',
+  'Not verified': 'غير موثّق',
+  'Enter a display name.': 'أدخل اسمًا للعرض.',
+  'Display name': 'اسم العرض', "How you'll appear": 'كيف ستظهر',
+  'Public handle (X / LinkedIn)': 'المعرّف العام (X / LinkedIn)',
+  'Short statement': 'بيان قصير', 'A line about your investing focus…': 'سطر عن تركيزك الاستثماري…',
+  'Submit for verification': 'إرسال للتوثيق',
+  'Page not found': 'الصفحة غير موجودة',
+  "The page you're looking for doesn't exist.": 'الصفحة التي تبحث عنها غير موجودة.',
+  'Back home': 'العودة للرئيسية',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

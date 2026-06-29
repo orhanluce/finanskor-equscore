@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Sparkles, X, Send, Loader2 } from 'lucide-react';
 import { supabase } from '@/lib/supabaseClient.js';
+import { t } from '@/i18n.js';
 
 function useTicker() {
   const { pathname } = useLocation();
@@ -61,14 +62,14 @@ export default function AiAsk() {
 
   const suggestions = ticker
     ? [
-        `What kind of company is ${ticker}?`,
-        `Is ${ticker} cheap or expensive right now?`,
-        `What does the money flow tell us about ${ticker}?`,
+        `${t('What kind of company is')} ${ticker}?`,
+        `${ticker} ${t('— cheap or expensive right now?')}`,
+        `${t('What does the money flow tell us about')} ${ticker}?`,
       ]
     : [
-        'What is P/E ratio?',
-        'How do I read the Equity Star score?',
-        'What does Sharia-compliant mean for a stock?',
+        t('What is P/E ratio?'),
+        t('How do I read the Equity Star score?'),
+        t('What does Sharia-compliant mean for a stock?'),
       ];
 
   return (
@@ -80,7 +81,7 @@ export default function AiAsk() {
           aria-label="Ask AI"
         >
           <Sparkles className="w-5 h-5" />
-          <span className="font-medium text-sm hidden sm:inline">Ask AI</span>
+          <span className="font-medium text-sm hidden sm:inline">{t('Ask AI')}</span>
         </button>
       )}
 
@@ -94,7 +95,7 @@ export default function AiAsk() {
               <div>
                 <div className="font-bold text-sm text-foreground leading-tight">EquScore AI</div>
                 <div className="text-[11px] text-muted-foreground leading-tight">
-                  {ticker ? `Context: ${ticker}` : 'Plain-English answers'}
+                  {ticker ? `${t('Context:')} ${ticker}` : t('Plain-English answers')}
                 </div>
               </div>
             </div>
@@ -107,8 +108,8 @@ export default function AiAsk() {
             {messages.length === 0 && (
               <div className="text-sm text-muted-foreground">
                 <p className="mb-3">
-                  Hi 👋 I answer questions about EquScore data in plain English.{' '}
-                  {ticker ? `You're viewing ${ticker} — ask anything about it.` : 'Open a stock page or ask about a term.'}
+                  {t('Hi 👋 I answer questions about EquScore data in plain English.')}{' '}
+                  {ticker ? `${t("You're viewing")} ${ticker} — ${t('ask anything about it.')}` : t('Open a stock page or ask about a term.')}
                 </p>
                 <div className="flex flex-col gap-1.5">
                   {suggestions.map((s) => (
@@ -146,7 +147,7 @@ export default function AiAsk() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(e); } }}
                 rows={1}
-                placeholder="Ask something…"
+                placeholder={t('Ask something…')}
                 className="flex-1 resize-none bg-background border border-border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary max-h-24"
               />
               <button type="submit" disabled={busy || !input.trim()}
@@ -155,7 +156,7 @@ export default function AiAsk() {
               </button>
             </div>
             <p className="text-[10px] text-foreground/40 mt-2 leading-snug">
-              Generated from EquScore data. Not investment advice. Always verify independently.
+              {t('Generated from EquScore data. Not investment advice. Always verify independently.')}
             </p>
           </form>
         </div>

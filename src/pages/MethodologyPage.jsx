@@ -35,8 +35,8 @@ export default function MethodologyPage() {
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {STAR_DIMS.map((d) => (
             <Card key={d.key}><CardContent className="p-4">
-              <div className="font-serif font-bold">{d.label}</div>
-              <div className="mt-1 text-sm text-muted-foreground">{d.hint}</div>
+              <div className="font-serif font-bold">{t(d.label)}</div>
+              <div className="mt-1 text-sm text-muted-foreground">{t(d.hint)}</div>
             </CardContent></Card>
           ))}
         </div>

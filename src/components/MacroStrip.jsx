@@ -2,6 +2,7 @@ import React from 'react';
 import { TrendingUp, TrendingDown } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { COUNTRY } from '@/data/stocks.js';
+import { t } from '@/i18n.js';
 
 // Per-country macro snapshot (illustrative). Pegged GCC currencies are flagged "pegged";
 // Egypt shows a floating EGP and the inflation lens that matters there.
@@ -36,7 +37,7 @@ export default function MacroStrip() {
   const macro = MACRO_BY_COUNTRY[COUNTRY.id] || MACRO_BY_COUNTRY.SA;
   return (
     <div className="flex flex-wrap items-center gap-x-6 gap-y-2 rounded-2xl border border-border bg-card px-5 py-3">
-      <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{COUNTRY.flag} Macro</span>
+      <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{COUNTRY.flag} {t('Macro')}</span>
       {macro.map((m) => {
         const flat = m.change === 0;
         return (
