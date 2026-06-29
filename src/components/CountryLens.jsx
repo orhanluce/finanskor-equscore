@@ -2,6 +2,7 @@ import React from 'react';
 import { Coins, Banknote, AlertTriangle, Globe2, RefreshCw, TrendingUp, TrendingDown } from 'lucide-react';
 import { Card, CardContent, Badge } from '@/components/ui.jsx';
 import JargonTip from '@/components/JargonTip.jsx';
+import DubaiRealEstate from '@/components/DubaiRealEstate.jsx';
 import { COUNTRY } from '@/data/stocks.js';
 import { EG_INFLATION } from '@/data/markets/eg.sample.js';
 import { cn } from '@/lib/utils.js';
@@ -11,6 +12,11 @@ import { cn } from '@/lib/utils.js';
 export default function CountryLens({ stock: s }) {
   const m = COUNTRY.modules;
   const cards = [];
+
+  // ── UAE: Dubai real-estate pulse on property names (DFM is RE-led) ──
+  if (m.realEstate && s.sector === 'Real Estate') {
+    cards.push(<DubaiRealEstate key="dld" compact />);
+  }
 
   // ── Egypt: EGP currency-risk / hard-currency hedge ──
   if (m.currencyRisk && s.usdRevPct != null) {

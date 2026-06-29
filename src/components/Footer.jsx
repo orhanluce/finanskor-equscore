@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ShareButtons from '@/components/ShareButtons.jsx';
+import { COUNTRY } from '@/data/stocks.js';
 
 export default function Footer() {
   return (
@@ -33,13 +34,20 @@ export default function Footer() {
               <li>🇦🇪 DFM / ADX — live</li>
               <li>🇪🇬 EGX — rolling out</li>
             </ul>
+            <div className="mt-4 text-sm font-semibold text-background">{COUNTRY.flag} Data sources</div>
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {(COUNTRY.sources || []).map((src) => (
+                <span key={src} className="rounded-full border border-background/20 bg-background/5 px-2 py-0.5 text-[11px] text-background/70">{src}</span>
+              ))}
+            </div>
           </div>
         </div>
         <div className="mt-10 border-t border-background/15 pt-6 text-xs text-background/50 leading-relaxed">
-          Prototype with illustrative sample data for the Tadawul market. Scores are informational/statistical
-          analysis, not investment advice or a personal recommendation under CMA regulations. Sharia status is an
-          AAOIFI-style screen for guidance only — consult a qualified Shariah advisor before investing.
-          © 2026 EquScore.
+          Prototype for the {COUNTRY.exchange} market. Scores are informational/statistical analysis, not investment
+          advice or a personal recommendation under {COUNTRY.regulator} rules.
+          {COUNTRY.modules.sharia && ' Sharia status is an AAOIFI-style screen for guidance only — consult a qualified Shariah advisor before investing.'}
+          {COUNTRY.modules.currencyRisk && ' EGP figures carry currency risk; valuations shown without an FX hedge are indicative only.'}
+          {' '}© 2026 EquScore.
         </div>
       </div>
     </footer>

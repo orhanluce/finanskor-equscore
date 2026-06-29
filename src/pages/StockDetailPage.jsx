@@ -385,8 +385,8 @@ export default function StockDetailPage() {
       )}
 
       <p className="mt-8 text-xs text-muted-foreground">
-        Illustrative sample data. Informational/statistical analysis, not investment advice under CMA regulations.
-        Sharia status is an AAOIFI-style screen for guidance only.
+        Informational/statistical analysis, not investment advice under {COUNTRY.regulator} rules.
+        {COUNTRY.modules.sharia && ' Sharia status is an AAOIFI-style screen for guidance only.'}
       </p>
     </div>
   );

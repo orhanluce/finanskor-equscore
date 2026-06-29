@@ -9,6 +9,7 @@ import MacroStrip from '@/components/MacroStrip.jsx';
 import MarketPulse from '@/components/MarketPulse.jsx';
 import SectorMomentum from '@/components/SectorMomentum.jsx';
 import EvidenceCorner from '@/components/EvidenceCorner.jsx';
+import DubaiRealEstate from '@/components/DubaiRealEstate.jsx';
 import { Button, Badge, Stat } from '@/components/ui.jsx';
 import { STOCKS, COUNTRY } from '@/data/stocks.js';
 import { LEADERBOARD } from '@/data/community.js';
@@ -100,8 +101,11 @@ export default function HomePage() {
         <div className="mt-5 grid gap-5 lg:grid-cols-3">
           <MarketPulse />
           <SectorMomentum />
-          <EvidenceCorner />
+          {COUNTRY.modules.realEstate ? <DubaiRealEstate compact /> : <EvidenceCorner />}
         </div>
+        {COUNTRY.modules.realEstate && (
+          <div className="mt-5"><EvidenceCorner /></div>
+        )}
       </section>
 
       {/* MODULES */}
