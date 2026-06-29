@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Search, X } from 'lucide-react';
 import { STOCKS, scoreColor } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 
 export default function StockSearch({ compact = false }) {
   const [q, setQ] = useState('');
@@ -54,7 +55,7 @@ export default function StockSearch({ compact = false }) {
         onChange={(e) => { setQ(e.target.value); setOpen(true); }}
         onFocus={() => setOpen(true)}
         onKeyDown={onKey}
-        placeholder="Search ticker or company…"
+        placeholder={t('Search ticker or company…')}
         className="w-full rounded-full border border-border bg-card !pl-9 !pr-8 h-9 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
         aria-label="Search stocks"
       />
@@ -88,7 +89,7 @@ export default function StockSearch({ compact = false }) {
       )}
       {open && q.trim() && results.length === 0 && (
         <div className="absolute z-50 mt-2 w-full sm:w-80 right-0 rounded-2xl border border-border bg-card px-4 py-3 text-sm text-muted-foreground shadow-xl">
-          No match for "{q}".
+          {t('No match for')} "{q}".
         </div>
       )}
     </div>

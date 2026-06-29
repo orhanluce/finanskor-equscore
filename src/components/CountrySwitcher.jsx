@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Check, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
+import { t } from '@/i18n.js';
 import {
   COUNTRIES, SUPPORTED, ACTIVE_ID, setActiveCountryId,
   hasChosenCountry, countryFromGeo, DEFAULT_COUNTRY,
@@ -61,7 +62,7 @@ export default function CountrySwitcher() {
       {open && (
         <div className="absolute right-0 top-full mt-2 w-60 overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
           <div className="flex items-center gap-1.5 px-4 py-2 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
-            <Globe className="h-3.5 w-3.5" /> Choose market
+            <Globe className="h-3.5 w-3.5" /> {t('Choose market')}
           </div>
           {SUPPORTED.map((id) => {
             const c = COUNTRIES[id];

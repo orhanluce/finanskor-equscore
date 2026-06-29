@@ -87,6 +87,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 { font-family: Georgia, 'Times New Roman', serif; text-wrap: balance; }
+  /* Arabic: switch to an Arabic-friendly family + relax serif headings (no Arabic serif). */
+  html[dir='rtl'] body, html[dir='rtl'] .font-serif,
+  html[dir='rtl'] h1, html[dir='rtl'] h2, html[dir='rtl'] h3, html[dir='rtl'] h4 {
+    font-family: 'IBM Plex Sans Arabic', 'DM Sans', system-ui, sans-serif;
+  }
   .font-serif { font-family: Georgia, 'Times New Roman', serif; }
   .font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
