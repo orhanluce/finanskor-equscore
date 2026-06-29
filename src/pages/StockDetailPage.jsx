@@ -10,6 +10,8 @@ import EquityStarFull from '@/components/EquityStarFull.jsx';
 import JargonTip, { JargonText } from '@/components/JargonTip.jsx';
 import ShareButtons from '@/components/ShareButtons.jsx';
 import CountryLens from '@/components/CountryLens.jsx';
+import TvChart from '@/components/TvChart.jsx';
+import { tvRating } from '@/data/tvSignals.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
@@ -97,6 +99,14 @@ export default function StockDetailPage() {
   const FlowIcon = s.foreignFlow === 'in' ? TrendingUp : s.foreignFlow === 'out' ? TrendingDown : Minus;
   const flowText = s.foreignFlow === 'in' ? 'Net foreign inflow' : s.foreignFlow === 'out' ? 'Net foreign outflow' : 'Flat foreign flow';
   const r = RUMOR[s.rumor];
+  const tv = tvRating(s.ticker);
+  const TV_META = {
+    STRONG_BUY: { label: 'Strong Buy', color: 'text-success', bg: 'bg-success' },
+    BUY: { label: 'Buy', color: 'text-success', bg: 'bg-success' },
+    NEUTRAL: { label: 'Neutral', color: 'text-primary', bg: 'bg-primary' },
+    SELL: { label: 'Sell', color: 'text-destructive', bg: 'bg-destructive' },
+    STRONG_SELL: { label: 'Strong Sell', color: 'text-destructive', bg: 'bg-destructive' },
+  };
   const purify = s.sharia !== 'non-compliant' ? s.shariaRatios.impureIncome : s.shariaRatios.impureIncome;
 
   return (
@@ -137,6 +147,56 @@ export default function StockDetailPage() {
         <div className="lg:col-span-3">
           <EquityStarFull stock={s} />
         </div>
+
+        {/* Live price chart (TradingView embed) */}
+        <Card className="lg:col-span-3">
+          <CardContent>
+            <div className="flex items-center gap-2">
+              <Activity className="h-5 w-5 text-primary" />
+              <h2 className="font-serif text-xl font-bold">Price Chart</h2>
+              <Badge variant="muted" className="ml-auto">TradingView</Badge>
+            </div>
+            <div className="mt-3"><TvChart stock={s} /></div>
+          </CardContent>
+        </Card>
+
+        {/* TradingView technical rating (derived signal) */}
+        {tv && (() => {
+          const meta = TV_META[tv.rec] || TV_META.NEUTRAL;
+          const total = tv.buy + tv.sell + tv.neutral || 1;
+          return (
+            <Card className="lg:col-span-3">
+              <CardContent>
+                <div className="flex items-center gap-2">
+                  <Activity className="h-5 w-5 text-ai-navy" />
+                  <h2 className="font-serif text-xl font-bold">Technical Rating</h2>
+                  <Badge variant="muted" className="ml-auto">TradingView · daily</Badge>
+                </div>
+                <div className="mt-4 flex flex-wrap items-center gap-6">
+                  <div>
+                    <div className={cn('font-serif text-3xl font-bold', meta.color)}>{meta.label}</div>
+                    <div className="text-xs text-muted-foreground">summary of oscillators &amp; moving averages</div>
+                  </div>
+                  <div className="flex-1 min-w-[220px]">
+                    <div className="flex h-3 w-full overflow-hidden rounded-full">
+                      <div className="bg-success" style={{ width: `${(tv.buy / total) * 100}%` }} />
+                      <div className="bg-muted-foreground/30" style={{ width: `${(tv.neutral / total) * 100}%` }} />
+                      <div className="bg-destructive" style={{ width: `${(tv.sell / total) * 100}%` }} />
+                    </div>
+                    <div className="mt-1.5 flex justify-between text-xs text-muted-foreground">
+                      <span className="text-success">Buy {tv.buy}</span>
+                      <span>Neutral {tv.neutral}</span>
+                      <span className="text-destructive">Sell {tv.sell}</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-3 text-[11px] text-muted-foreground">
+                  Derived from TradingView&apos;s technical-analysis summary. Indicative direction only, not a recommendation.
+                </p>
+              </CardContent>
+            </Card>
+          );
+        })()}
 
         {/* AI Analysis */}
         {(aiLoading || aiYorum) && (

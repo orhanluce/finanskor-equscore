@@ -1,0 +1,128 @@
+{
+ "ADNOCGAS": {
+  "rec": "BUY",
+  "buy": 12,
+  "sell": 4,
+  "neutral": 10
+ },
+ "EMIRATESNBD": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ },
+ "FAB": {
+  "rec": "SELL",
+  "buy": 2,
+  "sell": 14,
+  "neutral": 10
+ },
+ "EAND": {
+  "rec": "BUY",
+  "buy": 14,
+  "sell": 3,
+  "neutral": 9
+ },
+ "DEWA": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ },
+ "EMAAR": {
+  "rec": "NEUTRAL",
+  "buy": 8,
+  "sell": 9,
+  "neutral": 9
+ },
+ "ADNOCDRILL": {
+  "rec": "SELL",
+  "buy": 7,
+  "sell": 11,
+  "neutral": 8
+ },
+ "BOROUGE": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ },
+ "ADCB": {
+  "rec": "BUY",
+  "buy": 13,
+  "sell": 4,
+  "neutral": 9
+ },
+ "ALDAR": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ },
+ "EMAARDEV": {
+  "rec": "SELL",
+  "buy": 1,
+  "sell": 15,
+  "neutral": 10
+ },
+ "DIB": {
+  "rec": "SELL",
+  "buy": 3,
+  "sell": 13,
+  "neutral": 10
+ },
+ "DU": {
+  "rec": "BUY",
+  "buy": 15,
+  "sell": 3,
+  "neutral": 8
+ },
+ "MASQ": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ },
+ "SALIK": {
+  "rec": "BUY",
+  "buy": 12,
+  "sell": 4,
+  "neutral": 10
+ },
+ "PRESIGHT": {
+  "rec": "NEUTRAL",
+  "buy": 9,
+  "sell": 8,
+  "neutral": 9
+ },
+ "TALABAT": {
+  "rec": "NEUTRAL",
+  "buy": 10,
+  "sell": 7,
+  "neutral": 9
+ },
+ "CBD": {
+  "rec": "BUY",
+  "buy": 14,
+  "sell": 2,
+  "neutral": 10
+ },
+ "AIRARABIA": {
+  "rec": "BUY",
+  "buy": 12,
+  "sell": 4,
+  "neutral": 10
+ },
+ "PARKIN": {
+  "rec": "NEUTRAL",
+  "buy": 8,
+  "sell": 8,
+  "neutral": 10
+ },
+ "TECOM": {
+  "rec": "BUY",
+  "buy": 11,
+  "sell": 5,
+  "neutral": 10
+ }
+}
