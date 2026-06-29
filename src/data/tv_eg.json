@@ -1,1 +1,74 @@
-{}
+{
+ "COMI": {
+  "rec": "SELL",
+  "buy": 3,
+  "sell": 15,
+  "neutral": 8
+ },
+ "SWDY": {
+  "rec": "SELL",
+  "buy": 4,
+  "sell": 13,
+  "neutral": 9
+ },
+ "TMGH": {
+  "rec": "SELL",
+  "buy": 4,
+  "sell": 13,
+  "neutral": 9
+ },
+ "ETEL": {
+  "rec": "SELL",
+  "buy": 3,
+  "sell": 13,
+  "neutral": 10
+ },
+ "ABUK": {
+  "rec": "SELL",
+  "buy": 3,
+  "sell": 15,
+  "neutral": 8
+ },
+ "EAST": {
+  "rec": "STRONG_SELL",
+  "buy": 0,
+  "sell": 16,
+  "neutral": 10
+ },
+ "HRHO": {
+  "rec": "SELL",
+  "buy": 1,
+  "sell": 15,
+  "neutral": 10
+ },
+ "FWRY": {
+  "rec": "SELL",
+  "buy": 2,
+  "sell": 14,
+  "neutral": 10
+ },
+ "ALCN": {
+  "rec": "SELL",
+  "buy": 3,
+  "sell": 14,
+  "neutral": 9
+ },
+ "JUFO": {
+  "rec": "SELL",
+  "buy": 6,
+  "sell": 10,
+  "neutral": 10
+ },
+ "CLHO": {
+  "rec": "BUY",
+  "buy": 14,
+  "sell": 2,
+  "neutral": 10
+ },
+ "SKPC": {
+  "rec": "SELL",
+  "buy": 5,
+  "sell": 14,
+  "neutral": 7
+ }
+}
