@@ -1,62 +1,103 @@
 # EquScore — Proje Durumu & Session Devir Notu
 
 **Canlı:** https://equscore.com · **Repo:** github.com/orhanluce/finanskor-equscore (branch `main`)
-**Son güncelleme:** 2026-06-29 · **Yerel:** `C:\Users\orhan\finanskor-equscore`
-
-MENA hisse skorlama platformu — FinanSkor (BIST) motorunun Körfez/Mısır'a uyarlanmış hali.
-3 borsa: 🇸🇦 Tadawul · 🇦🇪 DFM+ADX · 🇪🇬 EGX. Ortak imza: Hisse Yıldızı (Equity Star /42),
-Karar Aynası, Söylenti Termometresi, AI, JargonTip.
+**Son güncelleme:** 2026-07-01 · **Yerel:** `C:\Users\orhan\finanskor-equscore`
+**Amaç:** Yeni session'ların buradan devam edebilmesi için mevcut durum + geliştirme özeti.
 
 ---
 
-## 1. Mimari / Stack
-- **Frontend:** Vite + React 18 + react-router 7 + Tailwind. `src/` altında pages/components/data/lib.
-- **Sunucu:** `server.js` = minimal Express (statik `dist/` + SPA fallback + `/api/geo`). `.nvmrc`=22, `npm start`.
-- **Deploy:** Hostinger Node.js sitesi, GitHub auto-deploy. **Hostinger KENDİ `npm run build`'ini çalıştırır** (kendi asset hash'i; ~2-15 dk gecikme). Döngü: `npm run build` (lokal test) → `git add -A && commit && push`.
-- **Backend:** Supabase proje `zmfxcwdnjevgjnwtutet` (EquScore, eu-central-1). Tablolar: profiles, stocks, predictions, decisions, social_posts, brokers, leaderboard, **portfolio, memberships, verifications** + RLS + `is_admin()` (email allowlist: orhhanisik@gmail.com). Edge fn `ai-ask` (Groq llama-3.3-70b).
+## 0. Genel Bakış
 
-### ⚠️ KRİTİK: Supabase env
-`.env` gitignore'lu + Hostinger build'i `.env`siz çalışır → `VITE_SUPABASE_*` bundle'a girmezdi.
-**Çözüm:** `src/lib/supabaseClient.js`'te URL+anon key **fallback gömülü** (public, RLS korur). Bunlara dokunma.
+- **Ürün:** EquScore — MENA (TASI / DFM-ADX / EGX) perakende yatırımcıları için hesap verebilirlik & güven platformu. "Hype değil, sicil." TipRanks + Estimize + Xueqiu modeli + AAOIFI Şeriat taraması.
+- **Kardeş ürün:** FinanSkor (BIST) — **AYRI** repo, ayrı session'lar. **Bu asistanın işi SADECE EquScore; FinanSkor'a karışılmıyor.**
+- **Stack:** React + Vite SPA · Tailwind · react-router · Recharts · Supabase · lucide-react.
+- **Deploy:** Hostinger (Node+Express, `server.js`). GitHub push → otomatik build & deploy.
+- **Build akışı:** `npm run build` (vite) → `git add -A && commit && push`. **dist git'te.**
+- **Supabase:** proje `zmfxcwdnjevgjnwtutet`. URL+anon key `src/lib/supabaseClient.js`'te public (RLS korumalı).
+- **Edge fn:** `ai-ask` (Groq llama-3.3-70b) — AI Analysis, AI Fundamental Brief, AI'a Sor.
+- **Çoklu pazar:** `src/data/countries.js` + `/api/geo` → ziyaretçi ülkesine göre pazar. `COUNTRY` aktif meta.
 
-## 2. Çok-ülke
-- `src/data/countries.js` — registry (SA/AE/EG, `modules` bayrakları, regulator, sources).
-- `src/data/stocks.js` — aktif-ülke selektörü (localStorage `equscore_country`; switch=reload). Pages değişmeden çalışır.
-- IP-geo oto-tespit (`/api/geo`) + header'da CountrySwitcher.
+> **VERİ NOTU:** Prototip; veri örnek/EOD (Yahoo .SR) + bazı alanlar pipeline-besli (netFlowPct/SAHMK, social, foreignFlow). Z-Score web tarafında **illüstratif** (Health/Quality/Value yıldız + kaldıraçtan türetilmiş).
 
-## 3. Veri kaynakları & güncelleme komutları (hepsi `py scripts/...`)
-| Veri | Komut | Kaynak / Not |
+---
+
+## 1. Dil / i18n (TAMAM)
+
+- **Tüm site Arapça süpürmesi** yapıldı — her sayfa+bileşen `t()` ile sarıldı, `src/i18n/ar.js`'te ~500+ Arapça çeviri.
+- **MENA varsayılan Arapça/RTL** (geo). `t(s)=AR[s]??s` (eksikse İngilizce'ye düşer). Yeni her özellik tam Arapça.
+
+---
+
+## 2. Bu Oturumda Eklenen Özellikler (hepsi CANLI)
+
+| Özellik | Route | Dosya |
 |---|---|---|
-| Tadawul fiyat/skor | `py scripts/fetch_tadawul.py` | Yahoo `.SR` (401 hisse). SAHMK 100/gün. |
-| UAE | `py scripts/fetch_uae.py` | DFM=Yahoo `.AE` canlı; **ADX curated** (ücretsiz kaynak yok). |
-| Egypt | `py scripts/fetch_egx.py` | EODHD EOD canlı fiyat; **fundamental free-tier'da bloklu → estimate**. |
-| Haber (Efsah) | `py scripts/fetch_news.py` (SA), `_uae`, `_egx` | Marketaux **search**-bazlı (symbol/exchange 0 döner) + Google fallback. Marketaux **100/gün**. |
-| Sosyal/Söylenti (X) | `COUNTRY=SA py scripts/fetch_social.py` | twikit X scrape (AR+EN). x_cookies.json gerekir. Düşük bütçe → günde 1, ~12-15 hisse. |
-| Telegram | `COUNTRY=SA py scripts/fetch_telegram.py` | X feed'ine merge. tg_session gerekir. SA zengin; AE/EG Arapça-ad alias eksik → düşük. |
-| Telegram keşif | `COUNTRY=SA py scripts/discover_telegram.py` | Yeni kanal bul → telegram_channels.txt. |
-| TradingView teknik | `COUNTRY=SA TOP=80 py scripts/fetch_tv.py` | tradingview_ta. **Burst throttle** → küçük parti/yavaş. |
+| Sektör Isı Haritası | `/heatmap` | `pages/HeatmapPage.jsx` (treemap, mcap-boyut, bugün%/Equity Star) |
+| Screener presetleri (9, **Z-Solid** dahil) | `/explore` | `pages/ExplorePage.jsx` |
+| Makro Pusula | `/macro` | `pages/MacroCompassPage.jsx` (makro sürücü→sektör matrisi SA/AE/EG) |
+| AI Temel Brief | hisse sayfası | `pages/StockDetailPage.jsx` (7 bölüm, ai-ask, Arapça) |
+| Vitrin Portföyü | `/showcase` | `pages/ShowcasePage.jsx` (public + skor + takip) |
+| Yabancı Akış (QFI) | `/foreign-flow` | `pages/ForeignFlowPage.jsx` + `data/foreignFlow.js` |
+| Sentiment Endeksi | `/sentiment` | `pages/SentimentPage.jsx` (social_posts → 0-100 + z-skor) |
+| Yatırımcı Akademisi | `/academy` | `pages/AcademyPage.jsx` (12 ders, çapraz-link) |
+| Tahmin Olayları | `/events` | `pages/EventsPage.jsx` + `data/predictionEvents.js` |
+| **Altman Z-Score** (Finansal Sağlık) | hisse kartı + `/financial-health` | `data/zscore.js` + `pages/FinancialHealthPage.jsx` |
 
-## 4. ÖNEMLİ: gitignore'lu yerel dosyalar (git'te YOK)
-Yedek: `C:\Users\orhan\equscore-secrets-backup\`. Yeni klonda geri koy:
-- `.env` (tüm API anahtarları)
-- `scripts/x_cookies.json` (X oturumu)
-- `scripts/tg_session.session` (Telegram oturumu)
-`.env` anahtarları: VITE_SUPABASE_*, SAHMK, MARKETAUX, EODHD, TWELVEDATA, X_*, TELEGRAM_*, OPENROUTER/CEREBRAS/HF/GITHUB_MODELS/OLLAMA/AI (çoklu-LLM, FinanSkor otomasyonundan aktarıldı).
+**Z-Score detay:** Z″=6.56A+3.26B+6.72C+1.05D; bölge (Güvenli/Gri/Sıkıntı) + sektör-percentile (mutlak eşik tek başına değil); banka/sigorta hariç→CAR/Solvency; TASI/DFM/EGX piyasa notları.
 
-## 5. Tamamlananlar
-- 29 route: çekirdek (Market+Halka/Izgara, StockDetail **sekmeli**: Star/Flow/Fair Value/Stories/Social/Predictions, Sharia, Explore, Compare) + sinyaller (Fear&Greed, Money Flow, Rumors, Efsah Flash, Signals) + keşif (IPO, Strategies+detay, Baskets, Brokers, Stories) + kullanıcı (Account, Portfolio, Competition, Premium, Membership, Verify, Investors, Admin) + dashboard (MarketPulse/MacroStrip/SectorMomentum/EvidenceCorner) + DubaiRealEstate (DLD).
-- Ülkeye özgü (CountryLens): EG FX-risk/reel büyüme/CIB konsantrasyon; UAE zero-tax/contrarian/board filtresi.
-- 3B Halka (EquityRing), global arama, ShareButtons, JargonTip, AI Analiz + AiAsk, tema dark/light, logo (şeffaf + dark varyant).
-- Söylenti = gerçek X+Telegram. TradingView grafik widget + teknik not.
-- **Arapça i18n TEMELİ:** RTL + MENA'da AR varsayılan + EN/ع toggle + Arapça font. Çevrildi: header/nav/footer/arama/ülke-switcher/ana-sayfa-kahraman/market-çekirdek.
+**Yeni helper dosyaları:** `data/zscore.js` · `data/foreignFlow.js` · `data/predictionEvents.js`.
 
-## 6. KALAN İŞLER (yeni session'larda)
-1. **Arapça süpürme (en büyük):** `t()` ile sarmalanmamış sayfa gövdeleri → StockDetail sekme içerikleri + ~20 sayfa (Explore, Compare, Fear&Greed, Money Flow, Rumors, Efsah, Signals, IPO, Strategies, Baskets, Brokers, Stories, Account, Portfolio, Competition, Premium, Membership, Verify, Investors, Admin, Methodology, Journal, Predict, Leaderboard) + uzun paragraflar. Yöntem: string'i `{t('...')}` yap, çevirisini `src/i18n/ar.js`'e ekle (Claude doğrudan çeviriyor). RTL'de fiziksel sınıflar (ml-/left-) için mantıksal (ms-/start) iyileştirme opsiyonel.
-2. **AE/EG Telegram:** hisselere `arName` (Arapça ad) alias ekle → Arapça kanallarda eşleşme artar.
-3. **TradingView SA/EG:** throttle nedeniyle kısmi (SA 11, EG 12, AE 21) — küçük partilerle tamamla.
-4. **Marketaux haber:** günde 1 tazeleme (100/gün). Egypt haberleri şu an Google fallback (Marketaux limiti) — yarın Marketaux ile tekrar.
-5. **Opsiyonel genişleme:** Qatar (QSE), lisanslı feed'ler (ADX canlı, EGX fundamental — EODHD ücretli/ICE/MIST-WSI), Arapça LLM sentiment (heuristik yerine), nightly fetch zamanlaması (Task Scheduler).
-6. **Güvenlik:** anahtarlar sohbetlerde paylaşıldı — periyodik rotate.
+---
 
-## 7. Yeni session başlangıcı
-"EquScore'a devam" de → bu dosya + hafıza ([[equscore-deploy-canli]]) yükler. Lokal hazır; `.env`/cookies yerinde. Build: `npm run build`. Preview bu makinede bazen innerWidth=0 raporlar (ölçüm kör), gerçek tarayıcıda sorun yok.
+## 3. Logo & Header (TAMAM)
+
+- **Yeni pusula logosu** (compass + boğa/ayı + ağ + "equscore"). Arka plan kaldırıldı.
+- **Dark/light normalize:** özdeş tuval **1017×648**, pusula aynı boyut+merkez → mod değişince kaymaz.
+- **Dosya adı v3** (cache-bust): `public/logo-dark-v3.png` · `public/logo-light-v3.png`. Favicon = pusula medalyonu.
+- **Header:** logo `h-16 sm:h-[105px]`, header `h-24 sm:h-32`. Menüler logoyla hizalı.
+- **Hijri tarih** menülerin altına alındı (mutlak konum, `HijriLine` Header içinde). Ayrı strip kaldırıldı.
+
+---
+
+## 4. Supabase (zmfxcwdnjevgjnwtutet)
+
+**Bu oturumda eklenen (RLS'li):** `showcase` · `showcase_follows` · `event_votes` + `portfolio`'ya "public showcase ise oku" SELECT politikası.
+**Mevcut:** profiles, stocks, predictions, decisions, social_posts, brokers, leaderboard, portfolio, memberships, verifications.
+
+---
+
+## 5. Tüm Route Listesi (`src/App.jsx`)
+
+`/` · `/market` · `/stock/:ticker` · `/sharia` · `/compare` · `/explore` · `/methodology`
+**Sinyaller:** `/heatmap` · `/macro` · `/financial-health` · `/money-flow` · `/foreign-flow` · `/fear-greed` · `/efsah-flash` · `/rumors` · `/sentiment` · `/signals`
+**Keşif:** `/strategies` · `/strategy/:slug` · `/baskets` · `/ipo` · `/brokers` · `/stories` · `/academy`
+**Topluluk:** `/predict` · `/events` · `/competition` · `/leaderboard` · `/journal` · `/portfolio` · `/showcase` · `/investors`
+**Hesap:** `/account` · `/premium` · `/membership` · `/verify` · `/admin`
+
+---
+
+## 6. Bekleyen / Sıradaki
+
+- **Gerçek-veri pipeline'ları:** SAHMK money flow, Tadawul haftalık QFI, social — örnek/kısmi; pipeline doldurunca gerçekleşir.
+- **Z-Score:** web illüstratif; gerçek bilanço gelirse `data/zscore.js` gerçeğe döner.
+- **Premium ödeme (E2):** paywall var, ödeme bağlantısı bekliyor.
+- **Açık uçlar:** AdminPage Arapça çevrilmedi (yalnız admin). Z-Score trend sparkline sentetik (geçmiş tutulursa gerçek).
+
+---
+
+## 7. Önemli Dosyalar
+
+- `src/i18n/ar.js` — Arapça çeviriler (yeni anahtar buraya)
+- `src/data/stocks.js` — STOCKS, COUNTRY, SECTORS, STAR_DIMS, SHARIA_LABEL, scoreColor
+- `src/data/zscore.js` · `foreignFlow.js` · `predictionEvents.js` — yeni helper'lar
+- `src/lib/db.js` — Supabase sorguları
+- `src/components/Header.jsx` — nav + logo + HijriLine
+- `src/pages/StockDetailPage.jsx` — hisse detayı (AI Analysis/Brief, Z-Score, QFI kartları, tab'lar)
+
+---
+
+## 8. Bağlam (VC)
+
+$750K seed turunda. Pitch: `OneDrive/Documents/EquScore-Seed-Pitch.pdf`. 212 & Revo'ya başvuruldu; sıradaki Türk VC: Inveo, Kuveyt Türk Lonca/Albaraka (Şeriat ayağı), Boğaziçi Ventures, Maxis. "Canlı + çalışan ürün" anlatısı önemli.
+
+İlişkili memory: [[finanskor-mena-yeni-ozellikler]] · [[equscore-deploy-canli]] · [[equscore-scope-only]]
