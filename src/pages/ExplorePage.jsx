@@ -4,6 +4,7 @@ import { SlidersHorizontal, ArrowUpDown, RotateCcw, Sparkles, X } from 'lucide-r
 import { Card, Badge, Button } from '@/components/ui.jsx';
 import { ShariaBadge } from '@/components/equity.jsx';
 import { STOCKS, SECTORS, scoreColor } from '@/data/stocks.js';
+import { computeZScore } from '@/data/zscore.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
 
@@ -69,6 +70,12 @@ const PRESETS = [
     desc: 'Heavy foreign ownership with active inflow — a quality / validation signal.',
     test: (s) => s.foreignFlow === 'in' && (s.foreignOwn || 0) >= 8,
     sort: { key: 'foreignOwn', dir: 'desc' },
+  },
+  {
+    id: 'z-solid', emoji: '🛡️', label: 'Financially Solid',
+    desc: 'In the Altman Z″ Safe Zone — low bankruptcy distress (banks/insurers excluded).',
+    test: (s) => { const z = computeZScore(s); return z.applicable && z.zone === 'safe'; },
+    sort: { key: 'total', dir: 'desc' },
   },
 ];
 

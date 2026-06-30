@@ -1097,6 +1097,16 @@ export const AR = {
   'Capital Adequacy Ratio (CAR)': 'نسبة كفاية رأس المال (CAR)',
   'Solvency / Combined Ratio': 'الملاءة / النسبة المركّبة',
 
+  // ── Financial Health board + Z-Solid preset ──
+  'Bankruptcy-distance for every': 'مسافة الإفلاس لكل',
+  'name (Altman Z″, emerging-market variant). Read within the sector — banks & insurers are scored differently and excluded here.':
+    'سهم (ألتمان Z″، متغيّر الأسواق الناشئة). يُقرأ ضمن القطاع — البنوك وشركات التأمين تُقيَّم بطريقة مختلفة ومستثناة هنا.',
+  'Scored': 'مُقيَّم',
+  'bank/insurer names are excluded — use CAR / Solvency instead.': 'أسهم بنوك/تأمين مستثناة — استخدم CAR / الملاءة بدلًا منها.',
+  'Financially Solid': 'متين ماليًا',
+  'In the Altman Z″ Safe Zone — low bankruptcy distress (banks/insurers excluded).':
+    'في المنطقة الآمنة لألتمان Z″ — مخاطر إفلاس منخفضة (البنوك/التأمين مستثناة).',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

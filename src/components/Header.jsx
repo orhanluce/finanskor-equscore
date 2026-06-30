@@ -5,7 +5,7 @@ import {
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
-  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2, GraduationCap, CalendarClock,
+  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2, GraduationCap, CalendarClock, HeartPulse,
 } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { useAuth } from '@/context/AuthContext.jsx';
@@ -38,6 +38,7 @@ const MENUS = [
       { to: '/sentiment', label: 'Sentiment Index', desc: 'Retail mood 0–100', icon: Gauge },
       { to: '/signals', label: 'Anomalies', desc: 'Unusual moves', icon: Zap },
       { to: '/macro', label: 'Macro Compass', desc: 'Macro → sector impact', icon: CompassIcon },
+      { to: '/financial-health', label: 'Financial Health', desc: 'Altman Z″ distress radar', icon: HeartPulse },
     ],
   },
   {

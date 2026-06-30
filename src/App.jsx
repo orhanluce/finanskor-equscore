@@ -22,6 +22,7 @@ import MacroCompassPage from '@/pages/MacroCompassPage.jsx';
 import ShowcasePage from '@/pages/ShowcasePage.jsx';
 import ForeignFlowPage from '@/pages/ForeignFlowPage.jsx';
 import SentimentPage from '@/pages/SentimentPage.jsx';
+import FinancialHealthPage from '@/pages/FinancialHealthPage.jsx';
 import AcademyPage from '@/pages/AcademyPage.jsx';
 import EventsPage from '@/pages/EventsPage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
@@ -54,6 +55,7 @@ export default function App() {
         <Route path="/foreign-flow" element={<ForeignFlowPage />} />
         <Route path="/rumors" element={<RumorsPage />} />
         <Route path="/sentiment" element={<SentimentPage />} />
+        <Route path="/financial-health" element={<FinancialHealthPage />} />
         <Route path="/efsah-flash" element={<EfsahFlashPage />} />
         <Route path="/signals" element={<SignalsPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
