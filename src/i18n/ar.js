@@ -816,6 +816,19 @@ export const AR = {
   "The page you're looking for doesn't exist.": 'الصفحة التي تبحث عنها غير موجودة.',
   'Back home': 'العودة للرئيسية',
 
+  // ── HeatmapPage ──
+  'Heat Map': 'الخريطة الحرارية',
+  'Whole market at a glance': 'السوق كله في لمحة',
+  'Market map': 'خريطة السوق',
+  'The whole': 'كامل',
+  "on one screen — each tile is a company, sized by market cap and coloured by": 'في شاشة واحدة — كل مربّع شركة، حجمه حسب القيمة السوقية ولونه حسب',
+  "today's move": 'حركة اليوم',
+  'its Equity Star': 'نجمة السهم الخاصة به',
+  '. Tap a tile to open the stock.': '. انقر على مربّع لفتح السهم.',
+  'Today %': 'اليوم %',
+  'Tile size = market capitalisation. Sample/delayed data; informational only, not investment advice.':
+    'حجم المربّع = القيمة السوقية. بيانات نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

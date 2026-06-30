@@ -5,7 +5,7 @@ import {
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
-  Trophy, CalendarDays, BookMarked, UserCheck,
+  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3,
 } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { useAuth } from '@/context/AuthContext.jsx';
@@ -27,6 +27,7 @@ const MENUS = [
   {
     label: 'Signals',
     items: [
+      { to: '/heatmap', label: 'Heat Map', desc: 'Whole market at a glance', icon: Grid3x3 },
       { to: '/money-flow', label: 'Money Flow', desc: 'SAHMK net flows', icon: Droplets },
       { to: '/fear-greed', label: 'Fear & Greed', desc: 'TASI sentiment index', icon: Gauge },
       { to: '/efsah-flash', label: 'Efsah Flash', desc: 'News sentiment feed', icon: Newspaper },
