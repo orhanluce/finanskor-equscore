@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { t } from '@/i18n.js';
 
 // Intelligence Cube — the 3D counterpart of the 7-dimension Equity Star.
 // 6 faces (Health + Dividend share the left face). Drag to rotate freely; click a
@@ -106,7 +107,7 @@ export default function IntelligenceCube({ axes, scores, explanations, activeInd
                         className={`flex-1 cursor-pointer text-left px-4 ${shared ? 'py-2.5' : 'py-4'} flex flex-col ${k > 0 ? 'border-t border-border' : ''} hover:bg-muted/40 transition-colors`}>
                         <div className="flex items-center justify-between mb-2">
                           <span className="font-serif font-bold text-foreground text-lg">
-                            {axes[i]} {starred && <span style={{ color: c }}>★</span>}
+                            {t(axes[i])} {starred && <span style={{ color: c }}>★</span>}
                           </span>
                           <span className="font-mono font-bold text-base" style={{ color: c }}>{scores[i]}/6</span>
                         </div>
@@ -126,7 +127,7 @@ export default function IntelligenceCube({ axes, scores, explanations, activeInd
         </div>
       </div>
       <p className="mt-5 text-xs text-foreground/45 italic text-center">
-        Tap a face: cube zooms · drag to rotate · tap or scroll to reset
+        {t('Tap a face: cube zooms · drag to rotate · tap or scroll to reset')}
       </p>
     </div>
   );

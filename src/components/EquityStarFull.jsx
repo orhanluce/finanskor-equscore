@@ -20,23 +20,23 @@ function buildExplanations(s) {
   return [
     // Value
     `P/E ${s.pe || '—'} · P/B ${s.pb || '—'}. ` +
-      (s.discount >= 0 ? `${nf(s.discount)}% below USD-native fair value.` : `${nf(-s.discount)}% above fair value.`),
+      (s.discount >= 0 ? `${nf(s.discount)}% ${t('below USD-native fair value.')}` : `${nf(-s.discount)}% ${t('above fair value.')}`),
     // Growth
-    m.revGrowth != null ? `Revenue growth ${nf(m.revGrowth)}% YoY.` : 'Expected earnings & revenue expansion.',
+    m.revGrowth != null ? `${t('Revenue growth')} ${nf(m.revGrowth)}% ${t('YoY.')}` : t('Expected earnings & revenue expansion.'),
     // Quality
     [m.roe != null ? `ROE ${nf(m.roe)}%` : null, m.roa != null ? `ROA ${nf(m.roa)}%` : null,
-     m.margin != null ? `net margin ${nf(m.margin)}%` : null].filter(Boolean).join(' · ') || 'Returns on assets/equity & margins.',
+     m.margin != null ? `${t('net margin')} ${nf(m.margin)}%` : null].filter(Boolean).join(' · ') || t('Returns on assets/equity & margins.'),
     // Health
-    sr.debt != null ? `Interest-bearing debt is ${nf(sr.debt)}% of market cap` +
-      (sr.debt < 30 ? ' — comfortably below the 30% line.' : ' — above the 30% Sharia threshold.') : 'Balance-sheet strength & leverage.',
+    sr.debt != null ? `${t('Interest-bearing debt is')} ${nf(sr.debt)}% ${t('of market cap')}` +
+      (sr.debt < 30 ? t(' — comfortably below the 30% line.') : t(' — above the 30% Sharia threshold.')) : t('Balance-sheet strength & leverage.'),
     // Dividend
-    s.divYield ? `Dividend yield ${nf(s.divYield)}%.` : 'No dividend — low score on this dimension.',
+    s.divYield ? `${t('Dividend yield')} ${nf(s.divYield)}%.` : t('No dividend — low score on this dimension.'),
     // Consensus ★
-    a.count ? `${a.count} analysts` + (a.target ? `, median target ${nf(a.target, 2)} SAR` : '') +
-      (m.upside != null ? ` (${nf(m.upside)}% ${m.upside >= 0 ? 'upside' : 'downside'}).` : '.') +
-      ' Hit-rate weighting activates with a licensed feed (Argaam).' : 'No analyst coverage on the free feed.',
+    a.count ? `${a.count} ${t('analysts')}` + (a.target ? `, ${t('median target')} ${nf(a.target, 2)} SAR` : '') +
+      (m.upside != null ? ` (${nf(m.upside)}% ${m.upside >= 0 ? t('upside') : t('downside')}).` : '.') +
+      t(' Hit-rate weighting activates with a licensed feed (Argaam).') : t('No analyst coverage on the free feed.'),
     // Money Flow ★
-    `Institutional ownership ${s.instOwn != null ? s.instOwn + '%' : '—'} — a smart-money proxy: institutions trade on value while retail (90% of Tadawul volume) chases attention. True QFI foreign-flow is a paid upgrade.`,
+    `${t('Institutional ownership')} ${s.instOwn != null ? s.instOwn + '%' : '—'} — ${t('a smart-money proxy: institutions trade on value while retail (90% of Tadawul volume) chases attention. True QFI foreign-flow is a paid upgrade.')}`,
   ];
 }
 

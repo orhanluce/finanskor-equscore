@@ -17,7 +17,7 @@ import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';
-import { t } from '@/i18n.js';
+import { t, LANG } from '@/i18n.js';
 
 async function fetchAiYorum(stock) {
   const ctx = [
@@ -33,7 +33,7 @@ async function fetchAiYorum(stock) {
 
   const { data, error } = await supabase.functions.invoke('ai-ask', {
     body: {
-      question: `Give a 3-sentence plain-English summary of this stock's current situation based on the EquScore data. Focus on the most interesting signal — whether it looks cheap or expensive, any standout strength or risk. End with one key thing to watch.`,
+      question: `Give a 3-sentence summary of this stock's current situation based on the EquScore data. Focus on the most interesting signal — whether it looks cheap or expensive, any standout strength or risk. End with one key thing to watch.${LANG === 'ar' ? ' أجب باللغة العربية بأسلوب واضح ومبسّط.' : ' Answer in plain English.'}`,
       ticker: stock.ticker,
       history: [{ role: 'user', content: `Stock context:\n${ctx}` }, { role: 'assistant', content: 'Understood. I have the stock data.' }],
     },

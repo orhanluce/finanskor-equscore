@@ -739,6 +739,28 @@ export const AR = {
   "Where's the money going?": 'إلى أين تذهب الأموال؟',
   'Foreign + institutional smart-money flow': 'تدفق أموال ذكية أجنبية + مؤسسية',
 
+  // ── IntelligenceCube + buildExplanations ──
+  'Tap a face: cube zooms · drag to rotate · tap or scroll to reset': 'انقر على وجه: يتكبّر المكعّب · اسحب للدوران · انقر أو مرّر لإعادة التعيين',
+  'below USD-native fair value.': 'أقل من القيمة العادلة بالدولار.',
+  'above fair value.': 'أعلى من القيمة العادلة.',
+  'Revenue growth': 'نمو الإيرادات', 'YoY.': 'سنويًا.',
+  'Expected earnings & revenue expansion.': 'توسّع متوقَّع في الأرباح والإيرادات.',
+  'net margin': 'هامش صافٍ',
+  'Returns on assets/equity & margins.': 'العوائد على الأصول/حقوق الملكية والهوامش.',
+  'Interest-bearing debt is': 'الدين المرتبط بالفائدة هو', 'of market cap': 'من القيمة السوقية',
+  ' — comfortably below the 30% line.': ' — أقل بأريحية من حدّ 30%.',
+  ' — above the 30% Sharia threshold.': ' — أعلى من حدّ الشريعة 30%.',
+  'Balance-sheet strength & leverage.': 'قوة الميزانية والرافعة المالية.',
+  'Dividend yield': 'عائد التوزيعات',
+  'No dividend — low score on this dimension.': 'لا توزيعات — نقاط منخفضة في هذا البُعد.',
+  'analysts': 'محلّلون', 'median target': 'الهدف الوسيط',
+  'upside': 'ارتفاع محتمل', 'downside': 'انخفاض محتمل',
+  ' Hit-rate weighting activates with a licensed feed (Argaam).': ' يتفعّل ترجيح نسبة الإصابة بتغذية مرخّصة (أرقام).',
+  'No analyst coverage on the free feed.': 'لا تغطية محلّلين في التغذية المجانية.',
+  'Institutional ownership': 'ملكية المؤسسات',
+  'a smart-money proxy: institutions trade on value while retail (90% of Tadawul volume) chases attention. True QFI foreign-flow is a paid upgrade.':
+    'وكيل للأموال الذكية: المؤسسات تتداول بالقيمة بينما الأفراد (90% من حجم تداول) يلاحقون الاهتمام. التدفق الأجنبي QFI الحقيقي ترقية مدفوعة.',
+
   // ── Islamic calendar ──
   'Hijri risk overlay': 'طبقة مخاطر هجرية',
 
