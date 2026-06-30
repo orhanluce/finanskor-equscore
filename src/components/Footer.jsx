@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <img src="/logo-transparent.png" alt="EquScore" className="h-10 w-auto" />
+              <img src="/logo-dark.png" alt="EquScore" className="h-10 w-auto" />
             </div>
             <p className="mt-3 max-w-sm text-sm text-background/70">
               {t('The accountability & trust layer for Gulf equity markets. Score the analysts, screen for Sharia, follow the smart money — starting with Tadawul.')}
