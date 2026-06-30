@@ -67,8 +67,8 @@ const MENUS = [
 function Brand() {
   return (
     <Link to="/" className="flex shrink-0 items-center" aria-label="EquScore home">
-      <img src="/logo-transparent.png" alt="EquScore" className="h-20 w-auto sm:h-[140px] dark:hidden" />
-      <img src="/logo-dark.png" alt="EquScore" className="hidden h-20 w-auto sm:h-[140px] dark:block" />
+      <img src="/logo-transparent.png" alt="EquScore" className="h-16 w-auto sm:h-[105px] dark:hidden" />
+      <img src="/logo-dark.png" alt="EquScore" className="hidden h-16 w-auto sm:h-[105px] dark:block" />
     </Link>
   );
 }
@@ -112,7 +112,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-28 sm:h-40 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-24 sm:h-32 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <Brand />
 
         {/* Centered nav */}
