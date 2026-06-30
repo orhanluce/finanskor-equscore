@@ -131,23 +131,25 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-24 sm:h-32 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-24 sm:h-32 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <Brand />
 
-        {/* Centered nav (menu row + Hijri date beneath it) */}
-        <nav className="hidden flex-1 flex-col items-center justify-center gap-2 lg:flex">
-          <div className="flex items-center gap-5 xl:gap-6">
-            {PRIMARY.map((n) => (
-              <NavLink key={n.to} to={n.to}
-                className={({ isActive }) => cn('inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium transition-colors hover:text-primary',
-                  isActive ? 'text-primary' : 'text-foreground/70')}>
-                <n.icon className="h-4 w-4" /> {t(n.label)}
-              </NavLink>
-            ))}
-            {MENUS.map((m) => <Dropdown key={m.label} menu={m} />)}
-          </div>
-          <HijriLine />
+        {/* Centered nav — menu row aligned with the logo */}
+        <nav className="hidden flex-1 items-center justify-center gap-5 xl:gap-6 lg:flex">
+          {PRIMARY.map((n) => (
+            <NavLink key={n.to} to={n.to}
+              className={({ isActive }) => cn('inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium transition-colors hover:text-primary',
+                isActive ? 'text-primary' : 'text-foreground/70')}>
+              <n.icon className="h-4 w-4" /> {t(n.label)}
+            </NavLink>
+          ))}
+          {MENUS.map((m) => <Dropdown key={m.label} menu={m} />)}
         </nav>
+
+        {/* Hijri date — sits a bit lower, centered under the menus */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-2 hidden justify-center lg:flex">
+          <HijriLine />
+        </div>
 
         {/* Right actions */}
         <div className="ml-auto flex shrink-0 items-center gap-2 lg:ml-0">
