@@ -20,6 +20,7 @@ import SignalsPage from '@/pages/SignalsPage.jsx';
 import HeatmapPage from '@/pages/HeatmapPage.jsx';
 import MacroCompassPage from '@/pages/MacroCompassPage.jsx';
 import ShowcasePage from '@/pages/ShowcasePage.jsx';
+import ForeignFlowPage from '@/pages/ForeignFlowPage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
 import StrategiesPage from '@/pages/StrategiesPage.jsx';
 import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
@@ -47,6 +48,7 @@ export default function App() {
         <Route path="/explore" element={<ExplorePage />} />
         <Route path="/fear-greed" element={<FearGreedPage />} />
         <Route path="/money-flow" element={<MoneyFlowPage />} />
+        <Route path="/foreign-flow" element={<ForeignFlowPage />} />
         <Route path="/rumors" element={<RumorsPage />} />
         <Route path="/efsah-flash" element={<EfsahFlashPage />} />
         <Route path="/signals" element={<SignalsPage />} />

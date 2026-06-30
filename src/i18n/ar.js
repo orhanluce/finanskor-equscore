@@ -925,6 +925,34 @@ export const AR = {
   'Published to Showcase.': 'تم النشر إلى الواجهة.',
   'Saved (private).': 'تم الحفظ (خاص).',
 
+  // ── Foreign Flow (QFI) ──
+  'Foreign Flow': 'التدفّق الأجنبي',
+  'QFI · foreign flow': 'QFI · التدفّق الأجنبي',
+  'QFI institutional flow': 'تدفّق المؤسسات الأجنبية',
+  'Where foreign institutions — the most informed players on': 'حيث تضع المؤسسات الأجنبية — أكثر اللاعبين اطّلاعًا في',
+  '— are putting money. Net buying into a name they already own heavily is a quality validation signal.':
+    '— أموالها. الشراء الصافي في سهم يملكونه بكثافة هو إشارة تأكيد جودة.',
+  'Foreign inflow': 'تدفّق أجنبي داخل', 'Foreign outflow': 'تدفّق أجنبي خارج',
+  'Avg foreign ownership': 'متوسط الملكية الأجنبية',
+  'Inflow': 'داخل', 'Outflow': 'خارج',
+  'foreign own': 'ملكية أجنبية',
+  'No names in this category right now.': 'لا أسهم في هذه الفئة الآن.',
+  'Foreign ownership & flow from exchange reports (Tadawul weekly QFI where available). Sample/delayed; informational only, not investment advice.':
+    'الملكية والتدفق الأجنبي من تقارير البورصة (QFI الأسبوعي لتداول حيث يتوفر). نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+  // signal labels + notes
+  'Institutional validation': 'تأكيد مؤسسي',
+  'Foreign accumulation': 'تجميع أجنبي',
+  'Foreign distribution': 'توزيع أجنبي',
+  'Foreign institutions are buying a name they already hold heavily — a strong quality signal.':
+    'مؤسسات أجنبية تشتري سهمًا تملكه بكثافة — إشارة جودة قوية.',
+  'Net foreign buying — institutions are building a position.': 'شراء أجنبي صافٍ — المؤسسات تبني مركزًا.',
+  'Net foreign selling — institutions are trimming exposure.': 'بيع أجنبي صافٍ — المؤسسات تقلّص انكشافها.',
+  'No clear net foreign flow.': 'لا تدفّق أجنبي صافٍ واضح.',
+  // stock detail card
+  'Foreign Flow (QFI)': 'التدفّق الأجنبي (QFI)',
+  'Foreign institutions are the most informed players on Tadawul.': 'المؤسسات الأجنبية أكثر اللاعبين اطّلاعًا في تداول.',
+  'See the whole foreign-flow board →': 'شاهد لوحة التدفّق الأجنبي كاملة ←',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

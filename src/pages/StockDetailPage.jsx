@@ -15,6 +15,7 @@ import { tvRating } from '@/data/tvSignals.js';
 import { socialFor } from '@/data/social.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
+import { foreignSignal, FOREIGN_TONE } from '@/data/foreignFlow.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';
 import { t, LANG } from '@/i18n.js';
@@ -385,6 +386,34 @@ export default function StockDetailPage() {
               )}
             </CardContent>
           </Card>
+
+          {/* QFI / Foreign Flow signal */}
+          {(s.foreignOwn != null || s.foreignFlow) && (() => {
+            const sig = foreignSignal(s);
+            const FIcon = s.foreignFlow === 'in' ? TrendingUp : s.foreignFlow === 'out' ? TrendingDown : Minus;
+            return (
+              <Card>
+                <CardContent>
+                  <div className="flex items-center gap-2">
+                    <Users className="h-5 w-5 text-primary" />
+                    <h2 className="font-serif text-xl font-bold"><JargonTip term="Foreign flow">{t('Foreign Flow (QFI)')}</JargonTip></h2>
+                  </div>
+                  <p className="mt-1 text-xs text-muted-foreground">{t('Foreign institutions are the most informed players on Tadawul.')}</p>
+                  <div className="mt-4 flex items-center gap-3">
+                    <span className={cn('inline-flex h-11 w-11 items-center justify-center rounded-xl bg-muted', FOREIGN_TONE[sig.tone])}>
+                      <FIcon className="h-6 w-6" />
+                    </span>
+                    <div>
+                      <div className={cn('font-serif text-xl font-bold', FOREIGN_TONE[sig.tone])}>{t(sig.label)}</div>
+                      <div className="text-xs text-muted-foreground">{s.foreignOwn != null ? `${s.foreignOwn}% ${t('foreign ownership')}` : ''}</div>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-xs text-muted-foreground">{t(sig.note)}</p>
+                  <Link to="/foreign-flow" className="mt-3 inline-block text-sm font-medium text-primary hover:underline">{t('See the whole foreign-flow board →')}</Link>
+                </CardContent>
+              </Card>
+            );
+          })()}
         </div>
       )}
 
