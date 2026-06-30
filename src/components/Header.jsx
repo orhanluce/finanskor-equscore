@@ -67,8 +67,8 @@ const MENUS = [
 function Brand() {
   return (
     <Link to="/" className="flex shrink-0 items-center" aria-label="EquScore home">
-      <img src="/logo-transparent.png" alt="EquScore" className="h-16 w-auto sm:h-[105px] dark:hidden" />
-      <img src="/logo-dark.png" alt="EquScore" className="hidden h-16 w-auto sm:h-[105px] dark:block" />
+      <img src="/logo-light-v2.png" alt="EquScore" className="h-16 w-auto sm:h-[105px] dark:hidden" />
+      <img src="/logo-dark-v2.png" alt="EquScore" className="hidden h-16 w-auto sm:h-[105px] dark:block" />
     </Link>
   );
 }
