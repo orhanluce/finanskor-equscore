@@ -953,6 +953,23 @@ export const AR = {
   'Foreign institutions are the most informed players on Tadawul.': 'المؤسسات الأجنبية أكثر اللاعبين اطّلاعًا في تداول.',
   'See the whole foreign-flow board →': 'شاهد لوحة التدفّق الأجنبي كاملة ←',
 
+  // ── Sentiment Index ──
+  'Retail sentiment': 'مشاعر الأفراد',
+  'Sentiment Index': 'مؤشّر المشاعر',
+  'Retail mood 0–100': 'مزاج الأفراد 0–100',
+  'Mood of retail chatter per name on': 'مزاج حديث الأفراد لكل سهم في',
+  ', scored 0–100. Extreme readings are flagged — crowded euphoria has historically faded. Kept out of the Equity Star score.':
+    '، مُقيَّم 0–100. القراءات المتطرفة مُعلَّمة — النشوة المزدحمة تراجعت تاريخيًا. مُستبعَد من نقاط نجمة السهم.',
+  'Average index': 'متوسّط المؤشّر',
+  'Euphoria flags': 'علامات النشوة', 'Panic flags': 'علامات الذعر',
+  'Only extreme readings': 'القراءات المتطرفة فقط',
+  'mentions': 'إشارات',
+  'Extreme euphoria': 'نشوة متطرفة', 'Extreme panic': 'ذعر متطرف',
+  'Positive': 'إيجابي', 'Negative': 'سلبي',
+  'Extreme reading': 'قراءة متطرفة',
+  'Engagement-weighted mood from live X/social chatter (AR + EN). A contrarian read, not a buy/sell signal; deeper Arabic-NLP is planned. Informational only.':
+    'مزاج موزون بالتفاعل من حديث 𝕏/التواصل الحي (ع + إ). قراءة معاكسة، ليست إشارة شراء/بيع؛ معالجة عربية أعمق مخطَّطة. للأغراض المعلوماتية فقط.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

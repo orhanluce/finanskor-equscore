@@ -21,6 +21,7 @@ import HeatmapPage from '@/pages/HeatmapPage.jsx';
 import MacroCompassPage from '@/pages/MacroCompassPage.jsx';
 import ShowcasePage from '@/pages/ShowcasePage.jsx';
 import ForeignFlowPage from '@/pages/ForeignFlowPage.jsx';
+import SentimentPage from '@/pages/SentimentPage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
 import StrategiesPage from '@/pages/StrategiesPage.jsx';
 import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
@@ -50,6 +51,7 @@ export default function App() {
         <Route path="/money-flow" element={<MoneyFlowPage />} />
         <Route path="/foreign-flow" element={<ForeignFlowPage />} />
         <Route path="/rumors" element={<RumorsPage />} />
+        <Route path="/sentiment" element={<SentimentPage />} />
         <Route path="/efsah-flash" element={<EfsahFlashPage />} />
         <Route path="/signals" element={<SignalsPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />

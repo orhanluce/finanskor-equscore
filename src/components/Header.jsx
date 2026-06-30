@@ -33,6 +33,7 @@ const MENUS = [
       { to: '/fear-greed', label: 'Fear & Greed', desc: 'TASI sentiment index', icon: Gauge },
       { to: '/efsah-flash', label: 'Efsah Flash', desc: 'News sentiment feed', icon: Newspaper },
       { to: '/rumors', label: 'Rumors', desc: 'Chatter thermometer', icon: Flame },
+      { to: '/sentiment', label: 'Sentiment Index', desc: 'Retail mood 0–100', icon: Gauge },
       { to: '/signals', label: 'Anomalies', desc: 'Unusual moves', icon: Zap },
       { to: '/macro', label: 'Macro Compass', desc: 'Macro → sector impact', icon: CompassIcon },
     ],
