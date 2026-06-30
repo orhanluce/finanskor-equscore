@@ -5,7 +5,7 @@ import {
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
-  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3,
+  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon,
 } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { useAuth } from '@/context/AuthContext.jsx';
@@ -33,6 +33,7 @@ const MENUS = [
       { to: '/efsah-flash', label: 'Efsah Flash', desc: 'News sentiment feed', icon: Newspaper },
       { to: '/rumors', label: 'Rumors', desc: 'Chatter thermometer', icon: Flame },
       { to: '/signals', label: 'Anomalies', desc: 'Unusual moves', icon: Zap },
+      { to: '/macro', label: 'Macro Compass', desc: 'Macro → sector impact', icon: CompassIcon },
     ],
   },
   {

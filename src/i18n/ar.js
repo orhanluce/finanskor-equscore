@@ -856,6 +856,41 @@ export const AR = {
   'Heavy foreign ownership with active inflow — a quality / validation signal.':
     'ملكية أجنبية ثقيلة مع تدفق نشط — إشارة جودة / تأكيد.',
 
+  // ── MacroCompassPage ──
+  'Macro Compass': 'البوصلة الاقتصادية',
+  'Macro → sector impact': 'الأثر الاقتصادي على القطاعات',
+  'Which macro forces are blowing for or against each sector on': 'أي قوى اقتصادية تدعم أو تضغط كل قطاع في',
+  '. Read the drivers, then the sector grid.': '. اقرأ المحرّكات، ثم شبكة القطاعات.',
+  'Tailwind': 'رياح داعمة', 'Mixed': 'مختلط', 'Headwind': 'رياح معاكسة',
+  'Favoured now': 'مُفضَّل الآن', 'Under pressure': 'تحت الضغط',
+  'No clear tailwind right now.': 'لا رياح داعمة واضحة الآن.',
+  'No clear headwind right now.': 'لا رياح معاكسة واضحة الآن.',
+  'Driver → sector impact': 'المحرّك ← أثر القطاع',
+  'Green = a rise in the driver helps the sector; red = it hurts. Intensity = strength.':
+    'الأخضر = ارتفاع المحرّك يفيد القطاع؛ الأحمر = يضرّه. الكثافة = القوة.',
+  'Driver': 'المحرّك',
+  'Curated sensitivities for guidance, not live regression output. Informational only, not investment advice.':
+    'حساسيات منسَّقة للإرشاد، وليست ناتج انحدار حيّ. للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+  // driver labels
+  'Brent Crude': 'خام برنت', 'SAMA Repo': 'ريبو ساما', 'Saudi PMI': 'مؤشّر مديري المشتريات السعودي',
+  'Foreign Flow': 'التدفّق الأجنبي', 'Vision 2030': 'رؤية 2030',
+  'Dubai Real Estate': 'عقارات دبي', 'EIBOR 3M': 'إيبور 3 أشهر', 'Tourism': 'السياحة',
+  'USD/EGP': 'دولار/جنيه', 'CBE Rate': 'سعر البنك المركزي المصري', 'Inflation': 'التضخّم', 'Suez Revenue': 'إيرادات السويس',
+  // driver notes
+  'Soft oil weighs on energy & the budget.': 'ضعف النفط يضغط على الطاقة والموازنة.',
+  'High rates: good for bank margins, heavy for real estate.': 'فائدة مرتفعة: تفيد هوامش البنوك وتثقل العقار.',
+  'Expansion (>50) supports consumer & industry.': 'توسّع (>50) يدعم الاستهلاك والصناعة.',
+  'Net foreign buying validates large caps.': 'شراء أجنبي صافٍ يؤكّد الشركات الكبيرة.',
+  'Diversification spend lifts non-oil sectors.': 'إنفاق التنويع يرفع القطاعات غير النفطية.',
+  'DLD transaction boom drives the DFM.': 'طفرة صفقات أراضي دبي تقود سوق دبي.',
+  'Elevated rates: bank margins up, property financing costlier.': 'فائدة مرتفعة: هوامش البنوك ترتفع وتمويل العقار أغلى.',
+  'Matters for ADX energy, lighter for Dubai.': 'مهم لطاقة أبوظبي، أخف لدبي.',
+  'Record arrivals lift consumer & transport.': 'أعداد زوّار قياسية ترفع الاستهلاك والنقل.',
+  'Weak pound: exporters win, importers squeezed.': 'جنيه ضعيف: المصدّرون يربحون والمستوردون يتضرّرون.',
+  'Very high rates: wide bank margins, costly credit.': 'فائدة مرتفعة جدًا: هوامش بنوك واسعة وائتمان مكلف.',
+  'Erodes real value; defensives hold up better.': 'يآكل القيمة الحقيقية؛ الدفاعية أكثر صمودًا.',
+  'Canal traffic drives logistics names.': 'حركة القناة تقود أسهم الخدمات اللوجستية.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',
