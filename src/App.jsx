@@ -23,6 +23,7 @@ import ShowcasePage from '@/pages/ShowcasePage.jsx';
 import ForeignFlowPage from '@/pages/ForeignFlowPage.jsx';
 import SentimentPage from '@/pages/SentimentPage.jsx';
 import AcademyPage from '@/pages/AcademyPage.jsx';
+import EventsPage from '@/pages/EventsPage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
 import StrategiesPage from '@/pages/StrategiesPage.jsx';
 import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
@@ -68,6 +69,7 @@ export default function App() {
         <Route path="/journal" element={<JournalPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/competition" element={<CompetitionPage />} />
+        <Route path="/events" element={<EventsPage />} />
         <Route path="/methodology" element={<MethodologyPage />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />

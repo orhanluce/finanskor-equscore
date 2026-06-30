@@ -5,7 +5,7 @@ import {
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
-  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2, GraduationCap,
+  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2, GraduationCap, CalendarClock,
 } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { useAuth } from '@/context/AuthContext.jsx';
@@ -54,6 +54,7 @@ const MENUS = [
     items: [
       { to: '/predict', label: 'Contest', desc: 'Submit a prediction', icon: Trophy },
       { to: '/competition', label: 'Competitions', desc: 'Monthly & quarterly', icon: CalendarDays },
+      { to: '/events', label: 'Prediction Events', desc: 'Call the big events', icon: CalendarClock },
       { to: '/leaderboard', label: 'Leaderboard', desc: 'Top forecasters', icon: Trophy },
       { to: '/journal', label: 'Journal', desc: 'Decision mirror', icon: BookMarked },
       { to: '/portfolio', label: 'Virtual Portfolio', desc: 'Paper-trade tracking', icon: Briefcase },

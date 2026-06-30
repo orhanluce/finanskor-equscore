@@ -1043,6 +1043,32 @@ export const AR = {
   'Their weekly net buying/selling is a quality validation layer.': 'شراؤهم/بيعهم الصافي الأسبوعي طبقة تأكيد جودة.',
   'Watch it alongside fundamentals, never alone.': 'راقبه مع الأساسيات، لا منفردًا أبدًا.',
 
+  // ── Prediction Events ──
+  'Event predictions': 'توقّعات الأحداث',
+  'Prediction Events': 'أحداث التوقّع',
+  'Call the big events': 'توقّع الأحداث الكبرى',
+  'Call the big upcoming events on': 'توقّع أبرز الأحداث القادمة في',
+  ". Virtual only — no money, just the crowd's read. See how the community is leaning.":
+    '. افتراضي فقط — بلا أموال، مجرّد قراءة الجمهور. شاهد ميل المجتمع.',
+  'votes': 'صوت',
+  'Sign in to cast your vote.': 'سجّل الدخول للتصويت.',
+  'Virtual event polls for engagement only — not a regulated prediction market, no wagering. Informational only.':
+    'استطلاعات أحداث افتراضية للتفاعل فقط — ليست سوق توقّعات منظَّمة، بلا مراهنة. للأغراض المعلوماتية فقط.',
+  // event questions
+  'Will Aramco beat Q2 2026 EPS consensus?': 'هل تتجاوز أرامكو توقّعات ربحية السهم للربع الثاني 2026؟',
+  'What does SAMA do at the September 2026 meeting?': 'ماذا يفعل ساما في اجتماع سبتمبر 2026؟',
+  'Where does TASI close Q3 2026?': 'أين يُغلق تاسي الربع الثالث 2026؟',
+  'Where does the DFM index close Q3 2026?': 'أين يُغلق مؤشّر دبي الربع الثالث 2026؟',
+  'Do Dubai property transactions keep growing YoY in Q3?': 'هل تستمر صفقات عقارات دبي بالنمو سنويًا في الربع الثالث؟',
+  'Is USD/EGP below 50 at year-end 2026?': 'هل دولار/جنيه دون 50 بنهاية 2026؟',
+  'Does the CBE cut rates again in Q3 2026?': 'هل يخفض البنك المركزي المصري الفائدة في الربع الثالث 2026؟',
+  // options
+  'Beat': 'تجاوز', 'In-line': 'مطابق', 'Miss': 'دون التوقّع',
+  'Cut 25bps': 'خفض 25 نقطة', 'Cut 50bps': 'خفض 50 نقطة', 'Hold': 'تثبيت', 'Hike': 'رفع',
+  'Above 12,000': 'فوق 12,000', '11,000–12,000': '11,000–12,000', 'Below 11,000': 'دون 11,000',
+  'Above 5,500': 'فوق 5,500', '5,000–5,500': '5,000–5,500', 'Below 5,000': 'دون 5,000',
+  'Yes': 'نعم', 'No': 'لا', 'Yes (<50)': 'نعم (<50)', 'No (>50)': 'لا (>50)',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

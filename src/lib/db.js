@@ -226,6 +226,35 @@ export async function unfollowShowcase(user, targetId) {
   if (error) throw error;
 }
 
+// ── Prediction events (virtual event contracts) ──────────────────────
+export async function getEventVotes(eventIds) {
+  if (!HAS_SUPABASE || !eventIds?.length) return {};
+  const { data, error } = await supabase
+    .from('event_votes').select('event_id, choice').in('event_id', eventIds);
+  if (error) return {};
+  const tally = {};
+  (data || []).forEach((v) => {
+    tally[v.event_id] = tally[v.event_id] || {};
+    tally[v.event_id][v.choice] = (tally[v.event_id][v.choice] || 0) + 1;
+  });
+  return tally;
+}
+
+export async function getMyEventVotes(userId, eventIds) {
+  if (!HAS_SUPABASE || !userId || !eventIds?.length) return {};
+  const { data, error } = await supabase
+    .from('event_votes').select('event_id, choice').eq('user_id', userId).in('event_id', eventIds);
+  if (error) return {};
+  return Object.fromEntries((data || []).map((v) => [v.event_id, v.choice]));
+}
+
+export async function castEventVote({ user, eventId, choice }) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('event_votes')
+    .upsert({ event_id: eventId, user_id: user.id, choice }, { onConflict: 'event_id,user_id' });
+  if (error) throw error;
+}
+
 // ── Membership (admin-approved access) ────────────────────────────────
 export async function getMembership(userId) {
   if (!HAS_SUPABASE || !userId) return null;
