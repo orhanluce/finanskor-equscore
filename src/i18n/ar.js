@@ -891,6 +891,14 @@ export const AR = {
   'Erodes real value; defensives hold up better.': 'يآكل القيمة الحقيقية؛ الدفاعية أكثر صمودًا.',
   'Canal traffic drives logistics names.': 'حركة القناة تقود أسهم الخدمات اللوجستية.',
 
+  // ── AI Fundamental Brief ──
+  'AI Fundamental Brief': 'موجز أساسي بالذكاء الاصطناعي',
+  '· 3–6 month view': '· أفق 3–6 أشهر',
+  'Generate': 'أنشئ',
+  'A structured read across valuation, growth, quality, catalysts and risks — generated from EquScore data.':
+    'قراءة منظَّمة عبر التقييم والنمو والجودة والمحفّزات والمخاطر — مُولَّدة من بيانات EquScore.',
+  'Not investment advice. Generated from EquScore data.': 'ليست نصيحة استثمارية. مُولَّدة من بيانات EquScore.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

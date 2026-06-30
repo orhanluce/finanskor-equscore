@@ -42,6 +42,54 @@ async function fetchAiYorum(stock) {
   return data?.answer ?? null;
 }
 
+// Structured "fundamental brief" (BridgeWise/Rakuten-style) generated on demand
+// from the EquScore data we already have. Returns labelled lines we render below.
+async function fetchAiBrief(stock) {
+  const a = stock.analysts || {};
+  const ctx = [
+    `Stock: ${stock.ticker} — ${stock.name} (${stock.sector})`,
+    `Price ${stock.price} ${stock.currency}, Equity Star ${stock.total}/42`,
+    `Fair value ${stock.fairValue} (${stock.discount >= 0 ? stock.discount + '% discount' : Math.abs(stock.discount) + '% premium'})`,
+    `P/E ${stock.pe ?? '—'}, P/B ${stock.pb ?? '—'}, dividend yield ${stock.divYield ?? 0}%`,
+    `Star dims — value ${stock.star.value}, growth ${stock.star.growth}, quality ${stock.star.quality}, health ${stock.star.health}, dividend ${stock.star.dividend}/6`,
+    `Sharia: ${stock.sharia}`,
+    a.count ? `Analysts: ${a.count}, median target ${a.target ?? '—'}` : 'No analyst coverage',
+    stock.netFlowPct != null ? `Money flow ${stock.netFlowPct > 0 ? '+' : ''}${stock.netFlowPct}%` : null,
+  ].filter(Boolean).join('\n');
+
+  const lang = LANG === 'ar' ? 'Arabic' : 'English';
+  const { data, error } = await supabase.functions.invoke('ai-ask', {
+    body: {
+      question: `Write a structured fundamental brief (3–6 month horizon) for this stock using ONLY the EquScore data. Output 7 lines, each starting with a bold label then a colon, in this exact order and labels (translate the labels to ${lang}): Valuation, Growth, Quality & Health, Dividend, Catalysts, Risks, Verdict. Keep each line to one sentence. Write in ${lang}. No preamble, no disclaimer.`,
+      ticker: stock.ticker,
+      history: [{ role: 'user', content: `Stock context:\n${ctx}` }, { role: 'assistant', content: 'Understood. I have the stock data.' }],
+    },
+  });
+  if (error) return null;
+  return data?.answer ?? null;
+}
+
+// Render "**Label:** text" or "Label: text" lines into styled rows.
+function BriefLines({ text }) {
+  const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
+  return (
+    <div className="mt-3 space-y-2">
+      {lines.map((line, i) => {
+        const clean = line.replace(/\*/g, '').replace(/^[-•\s]+/, '').trim();
+        const idx = clean.indexOf(':');
+        const label = idx > 0 ? clean.slice(0, idx) : null;
+        const body = idx > 0 ? clean.slice(idx + 1).trim() : clean;
+        return (
+          <div key={i} className="text-sm leading-relaxed">
+            {label && <span className="font-semibold text-foreground">{label}: </span>}
+            <span className="text-foreground/85">{body}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 const RUMOR = {
   low: { label: () => t('Low'), color: 'text-success', bg: 'bg-success/10', w: '25%' },
   medium: { label: () => t('Medium'), color: 'text-primary', bg: 'bg-primary/10', w: '50%' },
@@ -80,6 +128,8 @@ export default function StockDetailPage() {
   const s = getStock(ticker);
   const [aiYorum, setAiYorum] = useState(null);
   const [aiLoading, setAiLoading] = useState(false);
+  const [brief, setBrief] = useState(null);
+  const [briefLoading, setBriefLoading] = useState(false);
   const [tab, setTab] = useState('star');
 
   useEffect(() => {
@@ -93,6 +143,21 @@ export default function StockDetailPage() {
       setAiLoading(false);
     });
   }, [s?.ticker]);
+
+  // Lazy structured brief — restore from cache on ticker change, generate on demand.
+  useEffect(() => {
+    if (!s) return;
+    setBrief(sessionStorage.getItem(`ai_brief_${s.ticker}`) || null);
+  }, [s?.ticker]);
+
+  const generateBrief = () => {
+    if (!s || briefLoading) return;
+    setBriefLoading(true);
+    fetchAiBrief(s).then((txt) => {
+      if (txt) { setBrief(txt); sessionStorage.setItem(`ai_brief_${s.ticker}`, txt); }
+      setBriefLoading(false);
+    });
+  };
 
   if (!s) {
     return (
@@ -241,6 +306,34 @@ export default function StockDetailPage() {
               </CardContent>
             </Card>
           )}
+
+          {/* AI Fundamental Brief — structured, on demand */}
+          <Card className="border-ai-navy/20 bg-ai-navy/5">
+            <CardContent>
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="w-7 h-7 rounded-lg bg-ai-navy/10 flex items-center justify-center">
+                  <Sparkles className="w-4 h-4 text-ai-navy" />
+                </div>
+                <h2 className="font-serif text-xl font-bold">{t('AI Fundamental Brief')}</h2>
+                <span className="text-xs text-muted-foreground">{t('· 3–6 month view')}</span>
+                {(brief || briefLoading) ? null : (
+                  <Button variant="outline" className="ml-auto h-8 px-3 text-sm" onClick={generateBrief}>
+                    <Sparkles className="h-3.5 w-3.5" /> {t('Generate')}
+                  </Button>
+                )}
+              </div>
+              {briefLoading ? (
+                <div className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
+                  <Loader2 className="w-4 h-4 animate-spin" /> {t('Generating analysis…')}
+                </div>
+              ) : brief ? (
+                <BriefLines text={brief} />
+              ) : (
+                <p className="mt-3 text-sm text-muted-foreground">{t('A structured read across valuation, growth, quality, catalysts and risks — generated from EquScore data.')}</p>
+              )}
+              {brief && <p className="mt-2 text-[11px] text-muted-foreground">{t('Not investment advice. Generated from EquScore data.')}</p>}
+            </CardContent>
+          </Card>
         </div>
       )}
 
