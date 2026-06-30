@@ -22,6 +22,7 @@ import MacroCompassPage from '@/pages/MacroCompassPage.jsx';
 import ShowcasePage from '@/pages/ShowcasePage.jsx';
 import ForeignFlowPage from '@/pages/ForeignFlowPage.jsx';
 import SentimentPage from '@/pages/SentimentPage.jsx';
+import AcademyPage from '@/pages/AcademyPage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
 import StrategiesPage from '@/pages/StrategiesPage.jsx';
 import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
@@ -62,6 +63,7 @@ export default function App() {
         <Route path="/baskets" element={<BasketsPage />} />
         <Route path="/brokers" element={<BrokersPage />} />
         <Route path="/stories" element={<StoriesPage />} />
+        <Route path="/academy" element={<AcademyPage />} />
         <Route path="/predict" element={<PredictPage />} />
         <Route path="/journal" element={<JournalPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />

@@ -5,7 +5,7 @@ import {
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
-  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2,
+  Trophy, CalendarDays, BookMarked, UserCheck, Grid3x3, Compass as CompassIcon, Globe2, GraduationCap,
 } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { useAuth } from '@/context/AuthContext.jsx';
@@ -46,6 +46,7 @@ const MENUS = [
       { to: '/ipo', label: 'IPOs', desc: 'New listings', icon: Rocket },
       { to: '/brokers', label: 'Brokers', desc: 'CMA-licensed firms', icon: Building2 },
       { to: '/stories', label: 'Stories', desc: 'Investor education', icon: BookOpen },
+      { to: '/academy', label: 'Academy', desc: 'Learn to invest', icon: GraduationCap },
     ],
   },
   {
