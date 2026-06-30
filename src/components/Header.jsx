@@ -54,6 +54,7 @@ const MENUS = [
       { to: '/leaderboard', label: 'Leaderboard', desc: 'Top forecasters', icon: Trophy },
       { to: '/journal', label: 'Journal', desc: 'Decision mirror', icon: BookMarked },
       { to: '/portfolio', label: 'Virtual Portfolio', desc: 'Paper-trade tracking', icon: Briefcase },
+      { to: '/showcase', label: 'Showcase', desc: 'Public member portfolios', icon: Trophy },
       { to: '/investors', label: 'Verified Investors', desc: 'Identity-checked wall', icon: UserCheck },
     ],
   },

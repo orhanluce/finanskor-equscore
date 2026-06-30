@@ -899,6 +899,32 @@ export const AR = {
     'قراءة منظَّمة عبر التقييم والنمو والجودة والمحفّزات والمخاطر — مُولَّدة من بيانات EquScore.',
   'Not investment advice. Generated from EquScore data.': 'ليست نصيحة استثمارية. مُولَّدة من بيانات EquScore.',
 
+  // ── Showcase (Vitrin Portföyü) ──
+  'Showcase': 'الواجهة',
+  'Public portfolios': 'محافظ عامة',
+  'Public member portfolios': 'محافظ الأعضاء العامة',
+  'Real members sharing their virtual portfolios. Ranked by a transparent score — live return, holding quality, diversification and followers.':
+    'أعضاء حقيقيون يشاركون محافظهم الافتراضية. مرتَّبة بنقاط شفافة — العائد الحي وجودة الحيازات والتنويع والمتابعون.',
+  'Publish your portfolio': 'انشر محفظتك',
+  'No public portfolios yet — be the first to publish yours.': 'لا محافظ عامة بعد — كن الأول في نشر محفظتك.',
+  'Showcase score': 'نقاط الواجهة',
+  'Following': 'تتابعه', 'Follow': 'متابعة',
+  'Sectors': 'القطاعات', 'Followers': 'المتابعون',
+  'Top holdings': 'أكبر الحيازات',
+  'Sign in to follow portfolios.': 'سجّل الدخول لمتابعة المحافظ.',
+  'Paper portfolios shared by members. Score is illustrative, not audited. Not investment advice.':
+    'محافظ ورقية يشاركها الأعضاء. النقاط توضيحية وغير مدقَّقة. ليست نصيحة استثمارية.',
+  // PortfolioPage publish section
+  'Publish to Showcase': 'النشر إلى الواجهة',
+  'View Showcase': 'عرض الواجهة',
+  'Share this portfolio publicly. It gets a transparent score and others can follow you.':
+    'شارك هذه المحفظة علنًا. تحصل على نقاط شفافة ويمكن للآخرين متابعتك.',
+  'Blurb (optional)': 'وصف (اختياري)',
+  'e.g. Long-term Sharia dividend focus': 'مثال: تركيز على توزيعات شرعية طويلة الأجل',
+  'Make my portfolio public on the Showcase': 'اجعل محفظتي عامة في الواجهة',
+  'Published to Showcase.': 'تم النشر إلى الواجهة.',
+  'Saved (private).': 'تم الحفظ (خاص).',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',

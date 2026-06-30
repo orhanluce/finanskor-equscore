@@ -19,6 +19,7 @@ import EfsahFlashPage from '@/pages/EfsahFlashPage.jsx';
 import SignalsPage from '@/pages/SignalsPage.jsx';
 import HeatmapPage from '@/pages/HeatmapPage.jsx';
 import MacroCompassPage from '@/pages/MacroCompassPage.jsx';
+import ShowcasePage from '@/pages/ShowcasePage.jsx';
 import IpoPage from '@/pages/IpoPage.jsx';
 import StrategiesPage from '@/pages/StrategiesPage.jsx';
 import StrategyDetailPage from '@/pages/StrategyDetailPage.jsx';
@@ -64,6 +65,7 @@ export default function App() {
         <Route path="/methodology" element={<MethodologyPage />} />
         <Route path="/account" element={<AccountPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/showcase" element={<ShowcasePage />} />
         <Route path="/premium" element={<PremiumPage />} />
         <Route path="/membership" element={<MembershipPage />} />
         <Route path="/verify" element={<VerifyPage />} />

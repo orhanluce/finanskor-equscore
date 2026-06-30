@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, Plus, Trash2, Loader2 } from 'lucide-react';
+import { Briefcase, Plus, Trash2, Loader2, Trophy, Globe } from 'lucide-react';
 import { Card, CardContent, Badge, Button, Stat } from '@/components/ui.jsx';
 import { useAuth } from '@/context/AuthContext.jsx';
-import { getPortfolio, addHolding, removeHolding } from '@/lib/db.js';
+import { getPortfolio, addHolding, removeHolding, getShowcase, upsertShowcase } from '@/lib/db.js';
 import { STOCKS, getStock } from '@/data/stocks.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
@@ -17,8 +17,28 @@ export default function PortfolioPage() {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState(null);
 
+  const [sc, setSc] = useState({ display_name: '', blurb: '', is_public: false });
+  const [scBusy, setScBusy] = useState(false);
+  const [scMsg, setScMsg] = useState(null);
+
   const refresh = () => { if (user) getPortfolio(user.id).then(setRows).catch(() => {}); };
   useEffect(refresh, [user]);
+  useEffect(() => {
+    if (!user) return;
+    getShowcase(user.id).then((s) => {
+      if (s) setSc({ display_name: s.display_name || '', blurb: s.blurb || '', is_public: s.is_public });
+      else setSc((p) => ({ ...p, display_name: user.username || user.email?.split('@')[0] || '' }));
+    }).catch(() => {});
+  }, [user]);
+
+  const saveShowcase = async (e) => {
+    e.preventDefault(); setScBusy(true); setScMsg(null);
+    try {
+      if (!sc.display_name.trim()) throw new Error(t('Enter a display name.'));
+      await upsertShowcase({ user, displayName: sc.display_name.trim(), blurb: sc.blurb.trim(), isPublic: sc.is_public });
+      setScMsg(sc.is_public ? t('Published to Showcase.') : t('Saved (private).'));
+    } catch (e2) { setScMsg(e2.message); } finally { setScBusy(false); }
+  };
 
   const enriched = useMemo(() => rows.map((r) => {
     const s = getStock(r.ticker);
@@ -132,6 +152,36 @@ export default function PortfolioPage() {
               {enriched.length === 0 && <div className="py-10 text-center text-muted-foreground">{t('No holdings yet — add your first position above.')}</div>}
             </div>
           </Card>
+
+          {/* Publish to Showcase */}
+          <Card className="mt-5 border-primary/30 bg-primary/5"><CardContent>
+            <div className="flex items-center gap-2">
+              <Trophy className="h-5 w-5 text-primary" />
+              <h2 className="font-serif text-lg font-bold">{t('Publish to Showcase')}</h2>
+              <Button as={Link} to="/showcase" variant="ghost" className="ml-auto h-8 px-3 text-sm">{t('View Showcase')}</Button>
+            </div>
+            <p className="mt-1 text-sm text-muted-foreground">{t('Share this portfolio publicly. It gets a transparent score and others can follow you.')}</p>
+            <form onSubmit={saveShowcase} className="mt-3 grid gap-3 sm:grid-cols-2">
+              <div>
+                <label className="text-xs font-semibold text-muted-foreground">{t('Display name')}</label>
+                <input value={sc.display_name} onChange={(e) => setSc({ ...sc, display_name: e.target.value })} className="mt-1 w-full" />
+              </div>
+              <div>
+                <label className="text-xs font-semibold text-muted-foreground">{t('Blurb (optional)')}</label>
+                <input value={sc.blurb} onChange={(e) => setSc({ ...sc, blurb: e.target.value })} placeholder={t('e.g. Long-term Sharia dividend focus')} className="mt-1 w-full" />
+              </div>
+              <label className="inline-flex cursor-pointer items-center gap-2 text-sm sm:col-span-2">
+                <input type="checkbox" checked={sc.is_public} onChange={(e) => setSc({ ...sc, is_public: e.target.checked })} className="accent-primary h-4 w-4" />
+                <Globe className="h-4 w-4 text-muted-foreground" /> {t('Make my portfolio public on the Showcase')}
+              </label>
+              <div className="flex items-center gap-3 sm:col-span-2">
+                <Button type="submit" variant="accent" disabled={scBusy}>
+                  {scBusy ? <Loader2 className="h-4 w-4 animate-spin" /> : t('Save')}
+                </Button>
+                {scMsg && <span className="text-sm text-muted-foreground">{scMsg}</span>}
+              </div>
+            </form>
+          </CardContent></Card>
         </>
       )}
       <p className="mt-6 text-xs text-muted-foreground">{t('Paper-trading tool for tracking only. Prices are delayed/sample. Not investment advice.')}</p>

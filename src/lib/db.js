@@ -166,6 +166,66 @@ export async function removeHolding(id) {
   if (error) throw error;
 }
 
+// ── Showcase (Vitrin) portfolios — public, followable ─────────────────
+export async function getShowcase(userId) {
+  if (!HAS_SUPABASE || !userId) return null;
+  const { data, error } = await supabase
+    .from('showcase').select('user_id, display_name, blurb, is_public').eq('user_id', userId).maybeSingle();
+  if (error) throw error;
+  return data || null;
+}
+
+export async function upsertShowcase({ user, displayName, blurb, isPublic }) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('showcase').upsert({
+    user_id: user.id,
+    display_name: displayName,
+    blurb: blurb || null,
+    is_public: !!isPublic,
+    updated_at: new Date().toISOString(),
+  }, { onConflict: 'user_id' });
+  if (error) throw error;
+}
+
+// Public showcases + their holdings + follower counts, ready for client-side scoring.
+export async function getPublicShowcases() {
+  if (!HAS_SUPABASE) return [];
+  const { data: profiles, error } = await supabase
+    .from('showcase').select('user_id, display_name, blurb').eq('is_public', true);
+  if (error || !profiles?.length) return [];
+  const ids = profiles.map((p) => p.user_id);
+
+  const [{ data: holdings }, { data: follows }] = await Promise.all([
+    supabase.from('portfolio').select('user_id, ticker, shares, buy_price').in('user_id', ids),
+    supabase.from('showcase_follows').select('target_id').in('target_id', ids),
+  ]);
+
+  const byUser = new Map(profiles.map((p) => [p.user_id, { ...p, holdings: [], followers: 0 }]));
+  (holdings || []).forEach((h) => byUser.get(h.user_id)?.holdings.push(h));
+  (follows || []).forEach((f) => { const u = byUser.get(f.target_id); if (u) u.followers += 1; });
+  return [...byUser.values()];
+}
+
+export async function getMyFollows(userId) {
+  if (!HAS_SUPABASE || !userId) return [];
+  const { data, error } = await supabase
+    .from('showcase_follows').select('target_id').eq('follower_id', userId);
+  if (error) throw error;
+  return (data || []).map((r) => r.target_id);
+}
+
+export async function followShowcase(user, targetId) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('showcase_follows').insert({ follower_id: user.id, target_id: targetId });
+  if (error) throw error;
+}
+
+export async function unfollowShowcase(user, targetId) {
+  if (!HAS_SUPABASE || !user) throw new Error('Sign in required');
+  const { error } = await supabase.from('showcase_follows').delete().eq('follower_id', user.id).eq('target_id', targetId);
+  if (error) throw error;
+}
+
 // ── Membership (admin-approved access) ────────────────────────────────
 export async function getMembership(userId) {
   if (!HAS_SUPABASE || !userId) return null;
