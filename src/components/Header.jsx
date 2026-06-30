@@ -14,6 +14,8 @@ import StockSearch from '@/components/StockSearch.jsx';
 import ThemeToggle from '@/components/ThemeToggle.jsx';
 import CountrySwitcher from '@/components/CountrySwitcher.jsx';
 import LangToggle from '@/components/LangToggle.jsx';
+import { islamicSignal } from '@/lib/islamicCalendar.js';
+import { COUNTRY } from '@/data/stocks.js';
 import { t } from '@/i18n.js';
 
 const PRIMARY = [
@@ -106,6 +108,23 @@ function Dropdown({ menu }) {
   );
 }
 
+// Hijri date / Islamic-calendar signal, shown under the nav menus in the header.
+function HijriLine() {
+  if (!COUNTRY.modules.islamicCalendar) return null;
+  const sig = islamicSignal();
+  if (!sig) return null;
+  const warn = sig.level === 'warning';
+  const info = sig.level === 'info';
+  return (
+    <div className={cn('flex items-center gap-1.5 text-[11px] font-medium',
+      warn ? 'text-medal-bronze' : info ? 'text-primary' : 'text-muted-foreground')}>
+      <span className="text-sm leading-none">{sig.icon}</span>
+      <span>{t(sig.title)}</span>
+      {sig.note && <span className="hidden xl:inline max-w-md truncate text-muted-foreground">— {t(sig.note)}</span>}
+    </div>
+  );
+}
+
 export default function Header() {
   const [open, setOpen] = useState(false);
   const { user, signOut, openAuth, hasAuth } = useAuth();
@@ -115,16 +134,19 @@ export default function Header() {
       <div className="mx-auto flex h-24 sm:h-32 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <Brand />
 
-        {/* Centered nav */}
-        <nav className="hidden flex-1 items-center justify-center gap-5 xl:gap-6 lg:flex">
-          {PRIMARY.map((n) => (
-            <NavLink key={n.to} to={n.to}
-              className={({ isActive }) => cn('inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium transition-colors hover:text-primary',
-                isActive ? 'text-primary' : 'text-foreground/70')}>
-              <n.icon className="h-4 w-4" /> {t(n.label)}
-            </NavLink>
-          ))}
-          {MENUS.map((m) => <Dropdown key={m.label} menu={m} />)}
+        {/* Centered nav (menu row + Hijri date beneath it) */}
+        <nav className="hidden flex-1 flex-col items-center justify-center gap-2 lg:flex">
+          <div className="flex items-center gap-5 xl:gap-6">
+            {PRIMARY.map((n) => (
+              <NavLink key={n.to} to={n.to}
+                className={({ isActive }) => cn('inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium transition-colors hover:text-primary',
+                  isActive ? 'text-primary' : 'text-foreground/70')}>
+                <n.icon className="h-4 w-4" /> {t(n.label)}
+              </NavLink>
+            ))}
+            {MENUS.map((m) => <Dropdown key={m.label} menu={m} />)}
+          </div>
+          <HijriLine />
         </nav>
 
         {/* Right actions */}
