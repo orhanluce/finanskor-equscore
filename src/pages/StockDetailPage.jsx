@@ -16,6 +16,7 @@ import { socialFor } from '@/data/social.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { foreignSignal, FOREIGN_TONE } from '@/data/foreignFlow.js';
+import { computeZScore, zPercentile, zTrend, ZONE_META } from '@/data/zscore.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { supabase } from '@/lib/supabaseClient.js';
 import { t, LANG } from '@/i18n.js';
@@ -121,6 +122,112 @@ function ShariaRatio({ label, value, threshold }) {
         </span>
       </div>
     </div>
+  );
+}
+
+// Tiny sparkline for the Z″ trend.
+function Sparkline({ data, color = 'currentColor' }) {
+  if (!data?.length) return null;
+  const w = 120, h = 28, max = Math.max(...data), min = Math.min(...data), rng = max - min || 1;
+  const pts = data.map((v, i) => `${(i / (data.length - 1)) * w},${h - ((v - min) / rng) * h}`).join(' ');
+  return (
+    <svg width={w} height={h} className="overflow-visible">
+      <polyline points={pts} fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx={w} cy={h - ((data[data.length - 1] - min) / rng) * h} r="2.5" fill={color} />
+    </svg>
+  );
+}
+
+const ZONE_BADGE = { success: 'success', 'medal-bronze': 'muted', destructive: 'danger' };
+const ZONE_TEXT = { success: 'text-success', 'medal-bronze': 'text-medal-bronze', destructive: 'text-destructive' };
+
+function ZScoreCard({ s }) {
+  const z = computeZScore(s);
+  if (!z.applicable) {
+    return (
+      <Card>
+        <CardContent>
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-5 w-5 text-muted-foreground" />
+            <h2 className="font-serif text-xl font-bold">{t('Financial Health')}</h2>
+          </div>
+          <p className="mt-3 text-sm text-muted-foreground">
+            {t('Altman Z-Score does not apply to this sector (balance-sheet structure differs). Use the alternative instead:')}{' '}
+            <span className="font-semibold text-foreground">{z.alternative === 'CAR' ? t('Capital Adequacy Ratio (CAR)') : t('Solvency / Combined Ratio')}</span>.
+          </p>
+        </CardContent>
+      </Card>
+    );
+  }
+  const meta = ZONE_META[z.zone];
+  const pct = zPercentile(s);
+  const trend = zTrend(z.z);
+  const noteText = {
+    'tasi-high': t("Saudi firms' low Sharia-driven leverage makes Z″ structurally high — always compare within the sector."),
+    'dfm-re': t('Real estate: the working-capital component is cash-adjusted (project/inventory assets excluded).'),
+    'egx-fx': t('FX-adjusted: USD debt is converted to EGP at the current rate; EBITDA is nominal — cross-check against CPI.'),
+  }[z.noteKey];
+  const C = z.components;
+  const rows = [
+    ['A', t('Working capital / assets'), C.A],
+    ['B', t('Retained earnings / assets'), C.B],
+    ['C', t('EBITDA / assets'), C.C],
+    ['D', t('Equity / debt'), C.D],
+  ];
+  return (
+    <Card>
+      <CardContent>
+        <div className="flex flex-wrap items-center gap-2">
+          <ShieldCheck className="h-5 w-5 text-primary" />
+          <h2 className="font-serif text-xl font-bold"><JargonTip term="Altman Z-Score" description="A bankruptcy-risk model. Higher is safer. We use the emerging-market Z″ variant, read within the sector.">{t('Financial Health')}</JargonTip></h2>
+          <span className="ml-auto text-xs text-muted-foreground">{t('Altman Z″')}</span>
+        </div>
+
+        <div className="mt-4 flex items-end gap-4">
+          <div>
+            <div className={cn('font-serif text-4xl font-bold', ZONE_TEXT[meta.tone])}>{z.z}</div>
+            <Badge variant={ZONE_BADGE[meta.tone]} className="mt-1">{t(meta.label)}</Badge>
+          </div>
+          <div className={cn('ml-auto', ZONE_TEXT[meta.tone])}><Sparkline data={trend} /></div>
+        </div>
+
+        {pct.percentile != null ? (
+          <div className="mt-4">
+            <div className="flex justify-between text-xs text-muted-foreground">
+              <span>{t('Sector percentile')}</span><span className="font-mono font-semibold text-foreground">{pct.percentile}%</span>
+            </div>
+            <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-muted">
+              <div className="h-full rounded-full bg-primary" style={{ width: `${pct.percentile}%` }} />
+            </div>
+            <div className="mt-1 text-[11px] text-muted-foreground">
+              {pct.percentile >= 80 ? t('Among the healthiest 20% of the sector')
+                : pct.percentile >= 50 ? t('Above the sector average')
+                  : pct.percentile >= 20 ? t('Below the sector average')
+                    : t('Among the riskiest 20% of the sector')}
+            </div>
+          </div>
+        ) : (
+          <p className="mt-3 text-xs text-muted-foreground">{t('Too few sector peers for a reliable percentile.')}</p>
+        )}
+
+        <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {rows.map(([k, label, v]) => (
+            <div key={k} className="rounded-lg border border-border px-2 py-1.5 text-center">
+              <div className="font-mono text-sm font-bold">{v}</div>
+              <div className="text-[10px] text-muted-foreground" title={label}>{k}</div>
+            </div>
+          ))}
+        </div>
+
+        {noteText && (
+          <details className="mt-3 text-xs">
+            <summary className="cursor-pointer text-muted-foreground hover:text-foreground">ⓘ {t('Market adjustment')}</summary>
+            <p className="mt-1 text-muted-foreground">{noteText}</p>
+          </details>
+        )}
+        <p className="mt-3 text-[11px] text-muted-foreground">{t('Z″ emerging-market variant. Read within the sector, never on the absolute threshold alone. Informational only.')}</p>
+      </CardContent>
+    </Card>
   );
 }
 
@@ -335,6 +442,9 @@ export default function StockDetailPage() {
               {brief && <p className="mt-2 text-[11px] text-muted-foreground">{t('Not investment advice. Generated from EquScore data.')}</p>}
             </CardContent>
           </Card>
+
+          {/* Financial Health — Altman Z″ */}
+          <ZScoreCard s={s} />
         </div>
       )}
 

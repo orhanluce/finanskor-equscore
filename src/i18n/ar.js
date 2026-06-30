@@ -1069,6 +1069,34 @@ export const AR = {
   'Above 5,500': 'فوق 5,500', '5,000–5,500': '5,000–5,500', 'Below 5,000': 'دون 5,000',
   'Yes': 'نعم', 'No': 'لا', 'Yes (<50)': 'نعم (<50)', 'No (>50)': 'لا (>50)',
 
+  // ── Financial Health (Altman Z-Score) ──
+  'Financial Health': 'الصحة المالية',
+  'Altman Z″': 'ألتمان Z″',
+  'Safe Zone': 'منطقة آمنة', 'Grey Zone': 'منطقة رمادية', 'Distress Zone': 'منطقة تعثّر',
+  'Sector percentile': 'المئين القطاعي',
+  'Among the healthiest 20% of the sector': 'ضمن أصحّ 20% في القطاع',
+  'Above the sector average': 'أعلى من متوسط القطاع',
+  'Below the sector average': 'أدنى من متوسط القطاع',
+  'Among the riskiest 20% of the sector': 'ضمن أخطر 20% في القطاع',
+  'Too few sector peers for a reliable percentile.': 'عدد نظائر القطاع قليل لمئين موثوق.',
+  'Working capital / assets': 'رأس المال العامل / الأصول',
+  'Retained earnings / assets': 'الأرباح المحتجزة / الأصول',
+  'EBITDA / assets': 'الأرباح قبل الفوائد والضرائب والإهلاك / الأصول',
+  'Equity / debt': 'حقوق الملكية / الدين',
+  'Market adjustment': 'تعديل السوق',
+  "Saudi firms' low Sharia-driven leverage makes Z″ structurally high — always compare within the sector.":
+    'انخفاض رافعة الشركات السعودية بسبب الشريعة يجعل Z″ مرتفعًا بنيويًا — قارن دائمًا ضمن القطاع.',
+  'Real estate: the working-capital component is cash-adjusted (project/inventory assets excluded).':
+    'العقارات: مكوّن رأس المال العامل معدَّل نقديًا (أصول المشاريع/المخزون مستثناة).',
+  'FX-adjusted: USD debt is converted to EGP at the current rate; EBITDA is nominal — cross-check against CPI.':
+    'معدَّل للصرف: الدين بالدولار يُحوَّل للجنيه بالسعر الحالي؛ الأرباح اسمية — قارنها بمؤشّر الأسعار.',
+  'Z″ emerging-market variant. Read within the sector, never on the absolute threshold alone. Informational only.':
+    'متغيّر Z″ للأسواق الناشئة. يُقرأ ضمن القطاع، لا على الحدّ المطلق وحده. للأغراض المعلوماتية فقط.',
+  'Altman Z-Score does not apply to this sector (balance-sheet structure differs). Use the alternative instead:':
+    'مؤشّر ألتمان Z لا ينطبق على هذا القطاع (بنية الميزانية مختلفة). استخدم البديل:',
+  'Capital Adequacy Ratio (CAR)': 'نسبة كفاية رأس المال (CAR)',
+  'Solvency / Combined Ratio': 'الملاءة / النسبة المركّبة',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',
