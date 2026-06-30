@@ -829,6 +829,33 @@ export const AR = {
   'Tile size = market capitalisation. Sample/delayed data; informational only, not investment advice.':
     'حجم المربّع = القيمة السوقية. بيانات نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
 
+  // ── ExplorePage presets ──
+  'Preset strategies': 'استراتيجيات جاهزة',
+  'Quality': 'الجودة',
+  'Strong quality & balance-sheet health, paying a dividend — durable compounders.':
+    'جودة قوية وصحة ميزانية، مع توزيعات — شركات مركِّبة للثروة على المدى الطويل.',
+  'Deep Value': 'القيمة العميقة',
+  'Trading well below fair value on a modest earnings multiple.':
+    'تتداول بأقل بكثير من القيمة العادلة بمضاعف ربحية متواضع.',
+  'Dividend Aristocrats': 'أبطال التوزيعات',
+  'High, reliable yield — the expat/income favourite (zero dividend tax in the GCC).':
+    'عائد مرتفع وموثوق — المفضّل للمغتربين والدخل (لا ضريبة توزيعات في الخليج).',
+  'Sharia Income': 'الدخل المتوافق',
+  'Sharia-compliant names with a solid dividend score.':
+    'أسهم متوافقة مع الشريعة بنقاط توزيعات قوية.',
+  'Smart-Money Momentum': 'زخم الأموال الذكية',
+  'Strong growth + money-flow stars with foreign inflow — institutions are buying.':
+    'نجوم نمو وتدفق مالي قوية مع تدفق أجنبي داخل — المؤسسات تشتري.',
+  'Contrarian Dip': 'الارتداد المعاكس',
+  'High-quality names down sharply today — MENA markets tend to mean-revert overreactions.':
+    'أسهم عالية الجودة هابطة بحدّة اليوم — أسواق المنطقة تميل لتصحيح المبالغات.',
+  'Top Equity Star': 'أعلى نجمة سهم',
+  'The highest overall Equity Star scores in the market.':
+    'أعلى نقاط نجمة السهم الإجمالية في السوق.',
+  'Foreign-Backed': 'مدعوم أجنبيًا',
+  'Heavy foreign ownership with active inflow — a quality / validation signal.':
+    'ملكية أجنبية ثقيلة مع تدفق نشط — إشارة جودة / تأكيد.',
+
   // ── generic ──
   'Back to market': 'العودة إلى السوق',
   'Stock not found': 'لم يُعثر على السهم',
