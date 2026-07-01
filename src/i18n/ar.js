@@ -187,6 +187,10 @@ export const AR = {
     'الحالة مقدَّرة من القطاع ونسبة الدين الحية — تحقّق مع هيئة شرعية.',
   'Purification': 'التطهير',
   'of dividend income.': 'من دخل الأرباح.',
+  'board-certified': 'معتمدة من هيئات',
+  'Certified Sharia-compliant by:': 'معتمدة كمتوافقة مع الشريعة من:',
+  'board figure': 'رقم الهيئة',
+  'per share.': 'لكل سهم.',
   'Debt ratio is live; the cash-interest & impermissible-income ratios need a deeper financials source (auto-screen).':
     'نسبة الدين حية؛ نسبتا الفائدة النقدية والدخل المحرّم تحتاجان مصدرًا ماليًا أعمق (فرز تلقائي).',
   'recent headlines': 'عناوين حديثة',

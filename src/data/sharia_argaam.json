@@ -1,0 +1,3861 @@
+{
+ "1140": {
+  "name": "بنك البلاد",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1150": {
+  "name": "مصرف الإنماء",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1020": {
+  "name": "بنك الجزيرة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1120": {
+  "name": "مصرف الراجحي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2350": {
+  "name": "شركة كيان السعودية للبتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "2250": {
+  "name": "المجموعة السعودية للإستثمار الصناعي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "2001": {
+  "name": "شركة كيمائيات الميثانول",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "2010": {
+  "name": "الشركة السعودية للصناعات الأساسية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2020": {
+  "name": "شركة سابك للمغذيات الزراعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "2170": {
+  "name": "شركة اللجين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.18,
+  "note": "نقية"
+ },
+ "2210": {
+  "name": "شركة نماء للكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "2290": {
+  "name": "شركة ينبع الوطنية للبتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "2310": {
+  "name": "شركة الصحراء العالمية للبتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "2330": {
+  "name": "الشركة المتقدمة للبتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2060": {
+  "name": "شركة التصنيع الوطنية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2380": {
+  "name": "شركة رابغ للتكرير والبتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "3005": {
+  "name": "شركة أسمنت ام القرى",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "3002": {
+  "name": "شركة أسمنت نجران",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "3003": {
+  "name": "شركة أسمنت المدينة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "3004": {
+  "name": "شركة أسمنت المنطقة الشمالية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "3010": {
+  "name": "شركة الأسمنت العربية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "3020": {
+  "name": "شركة أسمنت اليمامة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "3030": {
+  "name": "شركة الأسمنت السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "3040": {
+  "name": "شركة أسمنت القصيم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "3050": {
+  "name": "شركة أسمنت المنطقة الجنوبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "3060": {
+  "name": "شركة أسمنت ينبع",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "3080": {
+  "name": "شركة أسمنت المنطقة الشرقية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "3090": {
+  "name": "شركة أسمنت تبوك",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "3091": {
+  "name": "شركة أسمنت الجوف",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "3092": {
+  "name": "شركة أسمنت الرياض",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4161": {
+  "name": "شركة بن داود القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "1830": {
+  "name": "شركة لجام للرياضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "6012": {
+  "name": "شركة ريدان الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4051": {
+  "name": "شركة باعظيم التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4141": {
+  "name": "شركة العمران للصناعة والتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4191": {
+  "name": "شركة عبد الله سعد محمد أبو معطي للمكتبات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4012": {
+  "name": "شركة ثوب الأصيل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "3008": {
+  "name": "شركة الكثيري القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4008": {
+  "name": "الشركة السعودية للعدد والأدوات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4001": {
+  "name": "شركة أسواق عبدالله العثيم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4003": {
+  "name": "الشركة المتحدة للإلكترونيات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4006": {
+  "name": "الشركة السعودية للتسويق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4050": {
+  "name": "الشركة السعودية لخدمات السيارات والمعدات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.3,
+  "note": "نقية"
+ },
+ "4160": {
+  "name": "شركة ثمار التنمية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "4180": {
+  "name": "مجموعة فتيحي القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4190": {
+  "name": "شركة جرير للتسويق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4200": {
+  "name": "شركة الدريس للخدمات البترولية و النقليات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.23,
+  "note": "نقية"
+ },
+ "4240": {
+  "name": "شركة إيه إف جي إنترناشونال",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4162": {
+  "name": "شركة المنجم للأغذية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "4144": {
+  "name": "شركة رؤوم التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.11,
+  "note": "نقية"
+ },
+ "4163": {
+  "name": "شركة الدواء للخدمات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4164": {
+  "name": "شركة النهدي الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "6014": {
+  "name": "شركة الآمار الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4192": {
+  "name": "شركة متاجر السيف للتنمية والاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "6015": {
+  "name": "شركة أمريكانا للمطاعم العالمية بي إل سي - شركة أجنبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4165": {
+  "name": "شركة الماجد للعود",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4193": {
+  "name": "شركة نايس ون بيوتي للتسويق الإلكتروني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2084": {
+  "name": "شركة مياهنا",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2223": {
+  "name": "شركة أرامكو السعودية لزيوت الأساس",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "2382": {
+  "name": "شركة أديس القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2381": {
+  "name": "شركة الحفر العربية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.38,
+  "note": "نقية"
+ },
+ "2083": {
+  "name": "شركة مرافق الكهرباء والمياه بالجبيل وينبع",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.33,
+  "note": "نقية"
+ },
+ "2082": {
+  "name": "شركة أكوا باور",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2080": {
+  "name": "شركة الغاز والتصنيع الأهلية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "5110": {
+  "name": "الشركة السعودية للطاقة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2081": {
+  "name": "شركة الخريف لتقنية المياه والطاقة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.18,
+  "note": "نقية"
+ },
+ "2222": {
+  "name": "شركة الزيت العربية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4142": {
+  "name": "شركة مجموعة كابلات الرياض",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2288": {
+  "name": "شركة نفوذ للمنتجات الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "2282": {
+  "name": "شركة نقي للمياه",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "2283": {
+  "name": "شركة المطاحن الأولى",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2284": {
+  "name": "شركة المطاحن الحديثة للمنتجات الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2285": {
+  "name": "شركة المطاحن العربية للمنتجات الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "2286": {
+  "name": "شركة المطاحن الرابعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "2287": {
+  "name": "الشركة العربية للاستثمار الزراعي والصناعي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.11,
+  "note": "نقية"
+ },
+ "2281": {
+  "name": "شركة التنمية الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.1,
+  "note": "نقية"
+ },
+ "6016": {
+  "name": "شركة مطاعم بيت الشطيرة للوجبات السريعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "6013": {
+  "name": "شركة الأعمال التطويرية الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "2050": {
+  "name": "مجموعة صافولا",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2100": {
+  "name": "شركة وفرة للصناعة والتنمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "2270": {
+  "name": "الشركة السعودية لمنتجات الألبان والأغذية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "2280": {
+  "name": "شركة المراعي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "4061": {
+  "name": "مجموعة أنعام الدولية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "6001": {
+  "name": "شركة حلواني إخوان",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "6002": {
+  "name": "شركة هرفي للخدمات الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "6004": {
+  "name": "شركة كاتريون للتموين القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "6010": {
+  "name": "الشركة الوطنية للتنمية الزراعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "6020": {
+  "name": "شركة القصيم القابضة للاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "6040": {
+  "name": "شركة تبوك للتنمية الزراعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "6050": {
+  "name": "الشركة السعودية للأسماك",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "6060": {
+  "name": "شركة الشرقية للتنمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "6070": {
+  "name": "شركة الجوف الزراعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "6090": {
+  "name": "شركة جازان للتنمية والاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "7010": {
+  "name": "شركة الإتصالات السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "7020": {
+  "name": "شركة إتحاد إتصالات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "7200": {
+  "name": "شركة المعمر لأنظمة المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "7201": {
+  "name": "شركة بحر العرب لأنظمة المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "7030": {
+  "name": "شركة الإتصالات المتنقلة السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "7202": {
+  "name": "الشركة العربية لخدمات الإنترنت والاتصالات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "7203": {
+  "name": "شركة علم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "7204": {
+  "name": "شركة العرض المتقن للخدمات التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "7211": {
+  "name": "شركة عزم السعودية للاتصالات وتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "7040": {
+  "name": "شركة إتحاد قو للإتصالات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "8313": {
+  "name": "شركة رسن لتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4019": {
+  "name": "الشركة الطبية التخصصية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4018": {
+  "name": "شركة الموسى الصحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4017": {
+  "name": "شركة مستشفى الدكتور سليمان عبدالقادر فقيه",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4021": {
+  "name": "شركة مجمع المركز الكندي الطبي العام",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4013": {
+  "name": "مجموعة الدكتور سليمان الحبيب للخدمات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.11,
+  "note": "نقية"
+ },
+ "4004": {
+  "name": "شركة دله للخدمات الصحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "4005": {
+  "name": "الشركة الوطنية للرعاية الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4002": {
+  "name": "شركة المواساة للخدمات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4009": {
+  "name": "شركة الشرق الأوسط للرعاية الصحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4007": {
+  "name": "شركة الحمادي القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8060": {
+  "name": "شركة ولاء للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8050": {
+  "name": "شركة سلامة للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8012": {
+  "name": "شركة الجزيرة تكافل تعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8150": {
+  "name": "المجموعة المتحدة للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8210": {
+  "name": "شركة بوبا العربية للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8230": {
+  "name": "شركة الراجحي للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8020": {
+  "name": "شركة ملاذ للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8030": {
+  "name": "شركة المتوسط والخليج للتأمين وإعادة التأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8010": {
+  "name": "الشركة التعاونية للتأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8300": {
+  "name": "الشركة الوطنية للتأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8280": {
+  "name": "شركة ليفا للتأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8070": {
+  "name": "شركة الدرع العربي للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8180": {
+  "name": "شركة الصقر للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8160": {
+  "name": "شركة التأمين العربية التعاونية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8200": {
+  "name": "الشركة السعودية لإعادة التأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8170": {
+  "name": "شركة الاتحاد للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8311": {
+  "name": "شركة عناية السعودية للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8250": {
+  "name": "مجموعة الخليج للتأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8240": {
+  "name": "شركة تْشب العربية للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8260": {
+  "name": "الشركة الخليجية العامة للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8190": {
+  "name": "الشركة المتحدة للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "8120": {
+  "name": "شركة إتحاد الخليج الأهلية للتأمين التعاوني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "8040": {
+  "name": "شركة متكاملة للتأمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "2030": {
+  "name": "شركة المصافي العربية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.09,
+  "note": "نقية"
+ },
+ "2120": {
+  "name": "الشركة السعودية للصناعات المتطورة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "2190": {
+  "name": "شركة البنى التحتية المستدامة القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4080": {
+  "name": "شركة سناد القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "4130": {
+  "name": "شركة درب السعودية الأستثمارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "3007": {
+  "name": "شركة زهرة الواحة للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "1201": {
+  "name": "شركة تكوين المتطورة للصناعات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1210": {
+  "name": "شركة الصناعات الكيميائية الأساسية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "1211": {
+  "name": "شركة التعدين العربية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1212": {
+  "name": "مجموعة أسترا الصناعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "1213": {
+  "name": "شركة نسيج العالمية التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1214": {
+  "name": "شركة الحسن غازي إبراهيم شاكر",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "2070": {
+  "name": "الشركة السعودية للصناعات الدوائية والمستلزمات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2150": {
+  "name": "شركة الصناعات الزجاجية الوطنية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "2180": {
+  "name": "شركة تصنيع مواد التعبئة والتغليف",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "2220": {
+  "name": "الشركة الوطنية لتصنيع وسبك المعادن",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "2230": {
+  "name": "الشركة الكيميائية السعودية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2300": {
+  "name": "الشركة السعودية لصناعة الورق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2340": {
+  "name": "شركة ارتيكس للاستثمار الصناعي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4140": {
+  "name": "الشركة السعودية للصادرات الصناعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "1202": {
+  "name": "شركة الشرق الأوسط لصناعة وإنتاج الورق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4147": {
+  "name": "شركة اتحاد جروننفلدر سعدي القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1323": {
+  "name": "الشركة المتحدة لصناعات الكرتون",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4143": {
+  "name": "شركة مجموعة التيسير تالكو الصناعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "4016": {
+  "name": "شركة الشرق الأوسط للصناعات الدوائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4015": {
+  "name": "شركة مصنع جمجوم للأدوية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4146": {
+  "name": "شركة جاز العربية للخدمات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4145": {
+  "name": "شركة العبيكان للزجاج",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4014": {
+  "name": "شركة دار المعدات الطبية والعلمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "1322": {
+  "name": "شركة المصانع الكبرى للتعدين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4148": {
+  "name": "شركة الوسائل الصناعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1321": {
+  "name": "شركة أنابيب الشرق المتكاملة للصناعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "4194": {
+  "name": "شركة مجموعة منزل التسويق للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1324": {
+  "name": "شركة صالح عبدالعزيز الراشد وأولاده",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "1304": {
+  "name": "شركة اليمامة للصناعات الحديدية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1303": {
+  "name": "شركة الصناعات الكهربائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "1302": {
+  "name": "شركة بوان",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.19,
+  "note": "نقية"
+ },
+ "2370": {
+  "name": "شركة الشرق الأوسط للكابلات المتخصصة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "1301": {
+  "name": "شركة إتحاد مصانع الأسلاك",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "1320": {
+  "name": "الشركة السعودية لأنابيب الصلب",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "2040": {
+  "name": "شركة الخزف السعودي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2090": {
+  "name": "شركة الجبس الأهلية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2110": {
+  "name": "شركة الكابلات السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.22,
+  "note": "نقية"
+ },
+ "2130": {
+  "name": "الشركة السعودية للتنمية الصناعية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2160": {
+  "name": "شركة أميانتيت العربية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "2200": {
+  "name": "الشركة العربية للأنابيب",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "2240": {
+  "name": "شركة صناعات البناء المتقدمة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.6,
+  "note": "نقية"
+ },
+ "2320": {
+  "name": "شركة البابطين للطاقة والإتصالات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "2360": {
+  "name": "الشركة السعودية لإنتاج الأنابيب الفخارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4230": {
+  "name": "شركة البحر الأحمر العالمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "2140": {
+  "name": "شركة أيان للإستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4320": {
+  "name": "شركة الأندلس العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "4020": {
+  "name": "الشركة العقارية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4090": {
+  "name": "شركة طيبة للإستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "4100": {
+  "name": "شركة مكة للإنشاء والتعمير",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "4150": {
+  "name": "شركة الرياض للتعمير",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4220": {
+  "name": "إعمار المدينة الإقتصادية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4250": {
+  "name": "شركة جبل عمر للتطوير",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4300": {
+  "name": "شركة دار الأركان للتطوير العقاري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.15,
+  "note": "نقية"
+ },
+ "4310": {
+  "name": "مدينة المعرفة الإقتصادية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4323": {
+  "name": "شركة سمو العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.09,
+  "note": "نقية"
+ },
+ "4321": {
+  "name": "شركة المراكز العربية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "4326": {
+  "name": "شركة دار الماجد العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4327": {
+  "name": "شركة الرمز للعقارات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4324": {
+  "name": "شركة بنان العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4322": {
+  "name": "شركة رتال للتطوير العمراني",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "4325": {
+  "name": "شركة أم القرى للتنمية والإعمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4264": {
+  "name": "شركة طيران ناس",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.53,
+  "note": "نقية"
+ },
+ "4262": {
+  "name": "شركة لومي للتأجير",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4263": {
+  "name": "شركة سال السعودية للخدمات اللوجستية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4265": {
+  "name": "شركة شري للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4261": {
+  "name": "شركة ذيب لتأجير السيارات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4031": {
+  "name": "الشركة السعودية للخدمات الأرضية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4030": {
+  "name": "الشركة الوطنية السعودية للنقل البحري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.16,
+  "note": "نقية"
+ },
+ "4040": {
+  "name": "الشركة السعودية للنقل الجماعي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "4110": {
+  "name": "شركة باتك للإستثمار والأعمال اللوجستية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4260": {
+  "name": "الشركة المتحدة الدولية للمواصلات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4210": {
+  "name": "المجموعة السعودية للأبحاث والإعلام",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1831": {
+  "name": "شركة مهارة للموارد البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4070": {
+  "name": "شركة تهامة للإعلان والعلاقات العامة والتسويق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4270": {
+  "name": "الشركة السعودية للطباعة والتغليف",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4071": {
+  "name": "الشركة العربية للتعهدات الفنية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.13,
+  "note": "نقية"
+ },
+ "1810": {
+  "name": "مجموعة سيرا القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.12,
+  "note": "نقية"
+ },
+ "4170": {
+  "name": "شركة المشروعات السياحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "1820": {
+  "name": "شركة مجموعة بان القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "1832": {
+  "name": "شركة صدر للخدمات اللوجستية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4345": {
+  "name": "صندوق الإنماء ريت لقطاع التجزئة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4347": {
+  "name": "صندوق بنيان ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4346": {
+  "name": "صندوق ميفك ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4337": {
+  "name": "صندوق العزيزية ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4339": {
+  "name": "صندوق دراية ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4340": {
+  "name": "صندوق الراجحي ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4342": {
+  "name": "صندوق جدوى ريت السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4344": {
+  "name": "صندوق سدكو كابيتال ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4330": {
+  "name": "الرياض ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4331": {
+  "name": "صندوق الجزيرة ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4332": {
+  "name": "صندوق جدوى ريت الحرمين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4333": {
+  "name": "صندوق تعليم ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4334": {
+  "name": "صندوق المعذر ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4335": {
+  "name": "صندوق مشاركة ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4336": {
+  "name": "صندوق مُلكيّة - عقارات الخليج ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4338": {
+  "name": "صندوق الأهلي ريت 1",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "4348": {
+  "name": "صندوق الخبير ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4349": {
+  "name": "صندوق الإنماء ريت الفندقي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "4350": {
+  "name": "صندوق الاستثمار اريك ريت المتنوع",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "6018": {
+  "name": "شركة الأندية للرياضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "6019": {
+  "name": "شركة المسار الشامل للتعليم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1833": {
+  "name": "شركة الموارد للقوى البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "4084": {
+  "name": "شركة دراية المالية",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "1834": {
+  "name": "الشركة السعودية لحلول القوى البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "1835": {
+  "name": "شركة تمكين للموارد البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4083": {
+  "name": "الشركة المتحدة الدولية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4081": {
+  "name": "شركة النايفات للتمويل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "1111": {
+  "name": "شركة مجموعة تداول السعودية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "6017": {
+  "name": "شركة جاهز الدولية لتقنية نظم المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "1183": {
+  "name": "شركة سهل للتمويل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4291": {
+  "name": "الشركة الوطنية للتربية و التعليم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "1182": {
+  "name": "شركة أملاك العالمية للتمويل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "4290": {
+  "name": "شركة الخليج للتدريب والتعليم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "4292": {
+  "name": "شركة عطاء التعليمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "9406": {
+  "name": "صندوق البلاد إم إس سي آي المتداول للأسهم الأمريكية",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "9403": {
+  "name": "صندوق البلاد المتداول للصكوك السيادية السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "9400": {
+  "name": "صندوق يقين المتداول للأسهم السعودية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "9401": {
+  "name": "صندوق يقين المتداول لقطاع البتروكيماويات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "9404": {
+  "name": "صندوق الإنماء المتداول لصكوك الحكومة السعودية المحلية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "9405": {
+  "name": "صندوق البلاد المتداول للمتاجرة بالذهب",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "4702": {
+  "name": "صندوق الخبير للدخل المتنوع 2030 المتداول",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "4703": {
+  "name": "صندوق سدكو كابيتال متعدد الأصول المتداول",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "9408": {
+  "name": "صندوق البلاد إم إس سي آي المتداول لأسهم النمو السعودية",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "9407": {
+  "name": "صندوق البلاد إم إس سي آي المتداول للأسهم التقنية الأمريكية",
+  "boards": [
+   "Al Rajhi Financial"
+  ],
+  "purification": null
+ },
+ "4700": {
+  "name": "صندوق الخبير للدخل المتنوع المتداول",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "9510": {
+  "name": "الشركة الوطنية للبناء والتسويق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9537": {
+  "name": "شركة أمواج الدولية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9542": {
+  "name": "شركة كير الدولية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9546": {
+  "name": "شركة نبع الصحة للخدمات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9549": {
+  "name": "شركة عبدالعزيز ومنصور ابراهيم البابطين",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "9548": {
+  "name": "شركة صناعة البلاستيك العربية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9555": {
+  "name": "شركة لين الخير للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9559": {
+  "name": "شركة بلدي للدواجن",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.19,
+  "note": "نقية"
+ },
+ "9569": {
+  "name": "شركة آل منيف للتجارة والصناعة والزراعة والمقاولات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9579": {
+  "name": "شركة رماث الضيافة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9589": {
+  "name": "شركة فاد العالمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9593": {
+  "name": "شركة عبر الخليج للتسويق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9599": {
+  "name": "شركة الطاقات المعدنية للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.12,
+  "note": "نقية"
+ },
+ "9605": {
+  "name": "شركة نفط الشرق للصناعات الكيماوية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9607": {
+  "name": "شركة مصنع عسق للبلاستيك",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "9618": {
+  "name": "شركة الفاخرة للخياطة الرجالية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9628": {
+  "name": "شركة لمسات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9633": {
+  "name": "شركة آلات الصيانة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "9635": {
+  "name": "شركة دخون الوطنية للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.16,
+  "note": "نقية"
+ },
+ "9649": {
+  "name": "شركة جمجوم فاشن للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9651": {
+  "name": "شركة عبدالعزيز بن أحمد التويجري للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9644": {
+  "name": "شركة ناف للعلف للصناعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9650": {
+  "name": "شركة ساحة المجد للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9636": {
+  "name": "شركة الخزامى التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9630": {
+  "name": "شركة النسبة المختصة للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "9622": {
+  "name": "شركة شموع الماضي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "9612": {
+  "name": "شركة مصنع مياه سما الصحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9617": {
+  "name": "شركة ستار العربية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.15,
+  "note": "نقية"
+ },
+ "9564": {
+  "name": "شركة آفاق الغذاء",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9562": {
+  "name": "شركة بوابة الأطعمة التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.13,
+  "note": "نقية"
+ },
+ "9567": {
+  "name": "شركة غذاء السلطان للوجبات السريعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.06,
+  "note": "نقية"
+ },
+ "9536": {
+  "name": "شركة المصانع العربية للمأكولات والألبان",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.15,
+  "note": "نقية"
+ },
+ "9532": {
+  "name": "شركة مصنع مياه الجوف الصحية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9515": {
+  "name": "شركة مصنع فش فاش للمواد الغذائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9522": {
+  "name": "شركة الحاسوب للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.13,
+  "note": "نقية"
+ },
+ "9524": {
+  "name": "شركة تقدم العالمية للاتصالات وتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9547": {
+  "name": "شركة رواسي البناء للاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9550": {
+  "name": "شركة شور العالمية للتقنية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.16,
+  "note": "نقية"
+ },
+ "9557": {
+  "name": "شركة إدارات للاتصالات وتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.1,
+  "note": "نقية"
+ },
+ "9558": {
+  "name": "شركة تقنيات القمم للحاسبات والنظم التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9543": {
+  "name": "شركة نت وركرس السعودية للخدمات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "9545": {
+  "name": "الشركة الدولية للموارد البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9561": {
+  "name": "شركة شبكة المعرفة للحاسب الالي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9595": {
+  "name": "شركة وسم الأعمال لتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.09,
+  "note": "نقية"
+ },
+ "9614": {
+  "name": "شركة نقاوة لتقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9637": {
+  "name": "شركة الحلول المتسارعة للاتصالات و تقنية المعلومات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "9639": {
+  "name": "شركة أنماط التقنية للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9647": {
+  "name": "شركة وجد الحياة للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9616": {
+  "name": "شركة جنى الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9620": {
+  "name": "شركة بلسم الأفق الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.29,
+  "note": "نقية"
+ },
+ "9627": {
+  "name": "شركة طوارئيات للعناية الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9626": {
+  "name": "شركة بسمة اديم الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9600": {
+  "name": "شركة كومل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9604": {
+  "name": "شركة ميرال للعيادات الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.15,
+  "note": "نقية"
+ },
+ "9594": {
+  "name": "شركة المداواة التخصصية الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9587": {
+  "name": "شركة لانا الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "9592": {
+  "name": "شركة المجتمع الرائدة الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9572": {
+  "name": "شركة الرازي الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9574": {
+  "name": "شركة الخدمات الطبية المتخصصة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9544": {
+  "name": "شركة الرعاية المستقبلية التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9530": {
+  "name": "الشركة الطبية العربية العالمية القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.23,
+  "note": "نقية"
+ },
+ "9527": {
+  "name": "شركة ألف ميم ياء للمعدات والأجهزة الطبية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "9533": {
+  "name": "شركة المركز الآلي السعودي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9517": {
+  "name": "شركة موبي للصناعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9539": {
+  "name": "شركة مصنع أقاسيم لصناعة المواد الكيماوية والبلاستيكية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9513": {
+  "name": "شركة وطني للحديد والصلب",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9514": {
+  "name": "شركة أبناء محمد حسن الناقول",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9540": {
+  "name": "شركة تدوير البيئة الأهلية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9576": {
+  "name": "شركة منزل الورق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9580": {
+  "name": "شركة الراشد للصناعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9575": {
+  "name": "شركة مصنع تصميم الرخام",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9565": {
+  "name": "شركة معيار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9566": {
+  "name": "الشركة السعودية للصناعات الجيرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "9568": {
+  "name": "شركة ميار القابضة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9553": {
+  "name": "شركة ملان لمنتجات الحديد",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9552": {
+  "name": "شركة قمة السعودية للتجارة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9578": {
+  "name": "شركة مصاعد أطلس للتجارة العامة والمقاولات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "9523": {
+  "name": "شركة جروب فايف السعودية للأنابيب",
+  "boards": [
+   "Al Rajhi Financial",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9588": {
+  "name": "شركة الرياض للحديد",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9563": {
+  "name": "شركة بناء للصناعات الحديدية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9609": {
+  "name": "شركة مصنع بترول ناس",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9611": {
+  "name": "الشركة العربية المتحدة للزجاج المسطح",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9631": {
+  "name": "شركة هضاب الخليج التجارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9623": {
+  "name": "شركة مصنع البتال للصناعات الكيميائية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.21,
+  "note": "نقية"
+ },
+ "9601": {
+  "name": "شركة محمد هادي الرشيد وشركاه",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.08,
+  "note": "نقية"
+ },
+ "9624": {
+  "name": "شركة الشهيلي للصناعات المعدنية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9583": {
+  "name": "شركة المتحدة للصناعات التعدينية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9591": {
+  "name": "شركة فيو المتحدة للتطوير العقاري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.13,
+  "note": "نقية"
+ },
+ "9535": {
+  "name": "شركة لدن للاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9521": {
+  "name": "شركة إنمار للتطوير والاستثمار العقاري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9610": {
+  "name": "شركة الجادة الأولى للتطوير العقاري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9648": {
+  "name": "شركة حمد محمد بن سعيدان العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9634": {
+  "name": "شركة أدير العقارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.13,
+  "note": "نقية"
+ },
+ "9640": {
+  "name": "شركة أساس مكين للتطوير والاستثمار العقاري",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "9653": {
+  "name": "شركة خالد ظافر وإخوانه للخدمات اللوجستية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9584": {
+  "name": "شركة ريال للاستثمار والتنمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9571": {
+  "name": "شركة المناولة للشحن",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9577": {
+  "name": "شركة دار المركبة لتأجير السيارات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9300": {
+  "name": "صندوق الواحة ريت",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9560": {
+  "name": "شركة وجا",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9541": {
+  "name": "شركة أكاديمية التعلم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9570": {
+  "name": "شركة تام التنموية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.14,
+  "note": "نقية"
+ },
+ "9581": {
+  "name": "شركة حياة النظافة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9585": {
+  "name": "شركة ملكية للاستثمار",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.12,
+  "note": "نقية"
+ },
+ "9586": {
+  "name": "شركة أصول وبخيت الاستثمارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "9590": {
+  "name": "شركة أرماح الرياضية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9596": {
+  "name": "شركة كوارا للتمويل",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.04,
+  "note": "نقية"
+ },
+ "9645": {
+  "name": "شركة اللوحات الوطنية للصناعة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9615": {
+  "name": "شركة مفيد",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.11,
+  "note": "نقية"
+ },
+ "9613": {
+  "name": "شركة شلفا لإدارة المرافق",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.19,
+  "note": "نقية"
+ },
+ "9619": {
+  "name": "شركة مجموعة الأعمال المتعددة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.07,
+  "note": "نقية"
+ },
+ "9621": {
+  "name": "شركة الأبحاث الرقمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.32,
+  "note": "نقية"
+ },
+ "9602": {
+  "name": "شركة يقين المالية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9608": {
+  "name": "شركة الأشغال الميسرة",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.05,
+  "note": "نقية"
+ },
+ "9597": {
+  "name": "شركة الليف العالمية للخدمات البيئية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9606": {
+  "name": "شركة الثروة البشرية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.12,
+  "note": "نقية"
+ },
+ "9603": {
+  "name": "شركة الأفق التعليمية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9598": {
+  "name": "شركة المحافظة للتعليم",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.03,
+  "note": "نقية"
+ },
+ "9625": {
+  "name": "شركة الإتمام الاستشارية",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.01,
+  "note": "نقية"
+ },
+ "9632": {
+  "name": "شركة رؤية المستقبل للتدريب الصحي",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.0,
+  "note": "نقية"
+ },
+ "9641": {
+  "name": "شركة هوية للمزادات",
+  "boards": [
+   "Al Rajhi Financial",
+   "Dr. Al-Osaimi",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "4011": {
+  "name": "شركة لازوردي للمجوهرات",
+  "boards": [
+   "Dr. Al-Osaimi",
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": 0.02,
+  "note": "نقية"
+ },
+ "9642": {
+  "name": "شركة الوقت للفعاليات الترفيهية",
+  "boards": [
+   "Dr. Al-Osaimi"
+  ],
+  "purification": 0.45,
+  "note": "نقية"
+ },
+ "8310": {
+  "name": "شركة أمانة للتأمين التعاوني",
+  "boards": [
+   "Tanmiah"
+  ],
+  "purification": null
+ },
+ "8100": {
+  "name": "الشركة العربية السعودية للتأمين التعاوني",
+  "boards": [
+   "Tanmiah",
+   "Al-Bilad"
+  ],
+  "purification": null
+ },
+ "9402": {
+  "name": "صندوق الأول للاستثمار السعودي الكمي المتداول",
+  "boards": [
+   "Tanmiah"
+  ],
+  "purification": null
+ }
+}

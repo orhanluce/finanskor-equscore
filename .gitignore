@@ -13,3 +13,4 @@ node_modules
 # hazır statiği servis etsin diye. Güncelleme döngüsü: npm run build + commit + push.
 x_cookies.json
 tg_session.session
+scripts/__pycache__/

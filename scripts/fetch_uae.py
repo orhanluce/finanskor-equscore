@@ -1,8 +1,10 @@
 """
 EquScore — UAE (DFM + ADX) ingestion.
   * DFM (Dubai): LIVE via Yahoo Finance ({TICKER}.AE) — no key, delayed/EOD.
-  * ADX (Abu Dhabi): Yahoo has NO free coverage, so the main ADX names are CURATED
-    (clearly flagged auto/curated). Swap in a licensed ADX feed later.
+  * ADX (Abu Dhabi): Yahoo has NO free coverage. LIVE via investing.com
+    (scripts/investing_lib.py, curl_cffi browser-impersonation, free/no key) for the
+    names in ADX_SLUGS; falls back to the CURATED snapshot if the fetch fails or the
+    name isn't covered (e.g. MULTIPLY).
 Same 7-dim Equity Star engine as Tadawul; AED is USD-pegged so no inflation lens —
 the lenses here are Sharia + dividend + IPO. Writes src/data/uae_live.json.
 
@@ -12,10 +14,20 @@ Run:  py scripts/fetch_uae.py
 import os, json, time, statistics
 import yfinance as yf
 from urllib.request import Request, urlopen
+import investing_lib as il
 
 HERE = os.path.dirname(__file__)
 OUT = os.path.join(HERE, "..", "src", "data", "uae_live.json")
 LIMIT = int(os.environ.get("LIMIT", "0"))
+
+# investing.com equity slugs for the curated ADX names (resolved via il.search_slug,
+# verified exchange == "Abu Dhabi"). MULTIPLY isn't covered by investing.com -> curated only.
+ADX_SLUGS = {
+    "FAB": "natl-bk-of-ad", "ADNOCGAS": "adnoc-gas", "ADNOCDRILL": "adnoc-drilling",
+    "ALDAR": "aldar-properti", "EAND": "emirates-telec", "ADCB": "ad-commercial",
+    "PRESIGHT": "presight-ai-holding", "AMERICANA": "americana-restaurants?cid=1198376",
+    "BOROUGE": "abu-dhabi-polymers-co-borouge-llc",
+}
 
 # ── DFM (Dubai) — live via Yahoo .AE. Curated ticker -> clean name. ──
 DFM = {
@@ -175,16 +187,42 @@ def build_dfm(code, name):
 
 
 def adx_record(c):
-    star = c["star"]
-    return {
+    ratios = None
+    slug = ADX_SLUGS.get(c["t"])
+    if slug:
+        ratios = il.fetch_ratios(slug)
+    ratios = ratios or {}
+
+    price = ratios.get("price") or c["price"]
+    chg = c["chg"]  # investing.com key-info panel has no %-change field; keep curated delta
+    pe = ratios.get("pe") or c["pe"]
+    pb = ratios.get("pb") or c["pb"]
+    dy = ratios.get("dy") if ratios.get("dy") is not None else c["dy"]
+    mcap = ratios.get("mcap") or c["mcap"]
+    live = bool(ratios.get("price") or ratios.get("pe") or ratios.get("pb"))
+
+    star = dict(c["star"])
+    if ratios.get("pe") or ratios.get("pb"):
+        star["value"] = value_score(pe, None, pb)
+    if ratios.get("dy") is not None:
+        star["dividend"] = band(-dy, [-6, -4, -3, -1.5, 0], [6, 5, 4, 3, 2, 1])
+    if ratios.get("roe") is not None:
+        star["quality"] = band(-ratios["roe"], [-20, -15, -10, -5, 0], [6, 5, 4, 3, 2])
+
+    out = {
         "ticker": c["t"], "name": c["name"], "sector": c["sector"], "board": "ADX", "market": "AE", "currency": "AED",
-        "price": c["price"], "change": c["chg"], "mcap": c["mcap"],
-        "pe": c["pe"], "pb": c["pb"], "divYield": c["dy"], "star": star, "fairValue": c["fv"],
+        "price": round(price, 2), "change": chg, "mcap": mcap,
+        "pe": round(pe, 1) if pe else 0, "pb": round(pb, 2) if pb else 0,
+        "divYield": round(dy, 1) if dy is not None else 0, "star": star, "fairValue": c["fv"],
         "sharia": c["sharia"], "shariaRatios": {"debt": c["dr"], "cashInterest": None, "impureIncome": None},
         "foreignFlow": "in", "foreignOwn": None, "instOwn": None, "rumor": "low", "auto": True,
+        "priceLive": live,
         "analysts": {"count": 12, "buy": None, "hold": None, "sell": None, "target": c["fv"]},
-        "metrics": {}, "about": c["about"],
+        "metrics": {"roe": ratios.get("roe"), "roa": ratios.get("roa")}, "about": c["about"],
     }
+    if live:
+        out["fundamentalsSource"] = "investing.com"
+    return out
 
 
 def apply_fair_value(rows):

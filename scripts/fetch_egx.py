@@ -1,19 +1,31 @@
 """
 EquScore — Egypt (EGX) ingestion.
   * Price + change : LIVE via EODHD EOD ({TICKER}.EGX) — the free tier covers EOD prices.
-  * Fundamentals   : EODHD free tier BLOCKS fundamentals, so PE/PB/dividend/Star dims and the
-    EGP-specific fields (USD-revenue, import dependence, real growth) are CURATED estimates.
+  * Fundamentals   : EODHD free tier BLOCKS fundamentals. LIVE via investing.com
+    (scripts/investing_lib.py, curl_cffi browser-impersonation, free/no key) for the curated
+    names below (EGX_SLUGS); falls back to the CURATED estimate if the fetch fails.
+  * EGP-specific fields (USD-revenue, import dependence, real growth) stay CURATED —
+    no free live source for these.
 EGP floats, so the lenses here are FX-risk + inflation-adjusted (real) growth, not Sharia.
-Writes src/data/egx_live.json (live price, estimated fundamentals — clearly flagged auto).
+Writes src/data/egx_live.json.
 
 Run:  py scripts/fetch_egx.py
 """
 import os, json, time
 from urllib.request import urlopen
+import investing_lib as il
 
 HERE = os.path.dirname(__file__)
 OUT = os.path.join(HERE, "..", "src", "data", "egx_live.json")
 ENV = os.path.join(HERE, "..", ".env")
+
+# investing.com equity slugs for the curated EGX names (resolved via il.search_slug).
+EGX_SLUGS = {
+    "COMI": "com-intl-bk", "HRHO": "efg-hermes-hol", "TMGH": "t-m-g-holding",
+    "EAST": "eastern-co", "FWRY": "fawry-banking-and-payment", "JUFO": "juhayna-food-industries",
+    "CLHO": "cleopatra-hospital", "SKPC": "sidi-kerir-pet", "ABUK": "abou-kir-fertilizers",
+    "SWDY": "elsewedy-cable", "ETEL": "telecom-egypt", "ALCN": "alexandria-containers-and-goods",
+}
 
 env = {}
 for line in open(ENV, encoding="utf-8"):
@@ -80,6 +92,19 @@ MCAP = {  # rough market caps (EGP) for ordering
 }
 
 
+def band(x, thr, sc):
+    for t, s in zip(thr, sc):
+        if x is not None and x <= t:
+            return s
+    return sc[-1]
+
+
+def value_score(pe, pb):
+    pe_s = band(pe if (pe and pe > 0) else 99, [8, 12, 16, 22, 30, 45], [6, 5, 4, 3, 2, 1, 0])
+    pb_s = band(pb if pb else 99, [1, 1.5, 2.5, 4, 7, 10], [6, 5, 4, 3, 2, 1, 0])
+    return round(0.8 * pe_s + 0.2 * pb_s)
+
+
 def eod(symbol):
     """Last two daily closes from EODHD -> (price, change%)."""
     try:
@@ -99,21 +124,49 @@ def eod(symbol):
 def rec(c):
     price, chg = eod(f"{c['t']}.EGX")
     live = price is not None
+
+    ratios = None
+    slug = EGX_SLUGS.get(c["t"])
+    if slug:
+        ratios = il.fetch_ratios(slug)
+    ratios = ratios or {}
+
+    if not live and ratios.get("price"):
+        price, live = ratios["price"], True
     if not live:
-        price = round(c["pe"] * 2, 2) or 10  # crude placeholder if EOD missing
+        price = round(c["pe"] * 2, 2) or 10  # crude placeholder if both EOD and investing.com missing
+
+    pe = ratios.get("pe") or c["pe"]
+    pb = ratios.get("pb") or c["pb"]
+    dy = ratios.get("dy") if ratios.get("dy") is not None else c["dy"]
+    mcap = ratios.get("mcap") or MCAP.get(c["t"])
+    fundamentals_live = bool(ratios.get("pe") or ratios.get("pb") or ratios.get("dy"))
+
+    star = dict(c["star"])
+    if ratios.get("pe") or ratios.get("pb"):
+        star["value"] = value_score(pe, pb)
+    if ratios.get("dy") is not None:
+        star["dividend"] = band(-dy, [-10, -6, -4, -2, 0], [6, 5, 4, 3, 2, 1])
+    if ratios.get("roe") is not None:
+        star["quality"] = band(-ratios["roe"], [-25, -18, -12, -6, 0], [6, 5, 4, 3, 2, 1])
+
     fv = round(price * 1.12, 2)  # provisional; refined by sector reversion in UI
-    return {
+    out = {
         "ticker": c["t"], "name": c["name"], "sector": c["sector"], "board": "EGX", "market": "EG", "currency": "EGP",
-        "price": price, "change": chg, "mcap": MCAP.get(c["t"]),
-        "pe": c["pe"], "pb": c["pb"], "divYield": c["dy"], "star": c["star"], "fairValue": fv,
+        "price": price, "change": chg, "mcap": mcap,
+        "pe": round(pe, 1) if pe else 0, "pb": round(pb, 2) if pb else 0,
+        "divYield": round(dy, 1) if dy is not None else 0, "star": star, "fairValue": fv,
         "sharia": c["sharia"], "shariaRatios": {"debt": c["dr"], "cashInterest": None, "impureIncome": None},
         "foreignFlow": "in", "foreignOwn": c.get("foreignOwn"), "instOwn": None, "rumor": "low", "auto": True,
         "priceLive": live,
         "usdRevPct": c["usdRevPct"], "importDep": c["importDep"], "nominalGrowth": c["nominalGrowth"],
         "concentration": c.get("concentration", False),
         "analysts": {"count": 12, "buy": None, "hold": None, "sell": None, "target": fv},
-        "metrics": {}, "about": c["about"],
+        "metrics": {"roe": ratios.get("roe"), "roa": ratios.get("roa")}, "about": c["about"],
     }
+    if fundamentals_live:
+        out["fundamentalsSource"] = "investing.com"
+    return out
 
 
 def main():

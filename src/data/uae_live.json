@@ -6,12 +6,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 12.14,
-  "change": -0.49,
-  "mcap": 107302912000.0,
-  "pe": 5.7,
-  "pb": 1.2,
-  "divYield": 8.2,
+  "price": 12.02,
+  "change": 0.84,
+  "mcap": 106242260992.0,
+  "pe": 5.6,
+  "pb": 1.18,
+  "divYield": 8.4,
   "star": {
    "value": 6,
    "growth": 5,
@@ -21,16 +21,16 @@
    "consensus": 6,
    "flow": 5
   },
-  "fairValue": 15.88,
+  "fairValue": 15.83,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 9.4,
+   "debt": 9.5,
    "cashInterest": null,
    "impureIncome": null
   },
   "foreignFlow": "flat",
   "foreignOwn": null,
-  "instOwn": 43.1,
+  "instOwn": 43.0,
   "rumor": "low",
   "auto": true,
   "analysts": {
@@ -54,12 +54,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 13.9,
-  "change": -0.71,
-  "mcap": 55599996928.0,
+  "price": 14.0,
+  "change": 1.3,
+  "mcap": 56000000000.0,
   "pe": 4.5,
-  "pb": 1.54,
-  "divYield": 7.1,
+  "pb": 1.55,
+  "divYield": 7.2,
   "star": {
    "value": 6,
    "growth": 6,
@@ -69,7 +69,7 @@
    "consensus": 6,
    "flow": 2
   },
-  "fairValue": 20.06,
+  "fairValue": 19.98,
   "sharia": "compliant",
   "shariaRatios": {
    "debt": 0.0,
@@ -102,11 +102,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 2.78,
-  "change": 0.0,
-  "mcap": 138999988224.0,
-  "pe": 16.4,
-  "pb": 1.59,
+  "price": 2.75,
+  "change": -1.08,
+  "mcap": 137500000256.0,
+  "pe": 16.2,
+  "pb": 1.57,
   "divYield": 4.5,
   "star": {
    "value": 4,
@@ -120,7 +120,7 @@
   "fairValue": 3.13,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 31.5,
+   "debt": 31.9,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -150,14 +150,14 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 30.1,
-  "change": -0.99,
-  "mcap": 190129602560.0,
+  "price": 29.84,
+  "change": 0.95,
+  "mcap": 188487286784.0,
   "pe": 8.0,
-  "pb": 1.41,
-  "divYield": 3.3,
+  "pb": 1.4,
+  "divYield": 3.4,
   "star": {
-   "value": 5,
+   "value": 6,
    "growth": 4,
    "quality": 6,
    "health": 1,
@@ -165,10 +165,10 @@
    "consensus": 5,
    "flow": 5
   },
-  "fairValue": 31.77,
+  "fairValue": 31.45,
   "sharia": "non-compliant",
   "shariaRatios": {
-   "debt": 95.7,
+   "debt": 96.6,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -198,12 +198,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 7.5,
-  "change": 0.27,
-  "mcap": 54203330560.0,
+  "price": 7.56,
+  "change": 1.48,
+  "mcap": 54636957696.0,
   "pe": 7.6,
-  "pb": 1.23,
-  "divYield": 4.6,
+  "pb": 1.24,
+  "divYield": 4.7,
   "star": {
    "value": 6,
    "growth": 3,
@@ -211,18 +211,18 @@
    "health": 3,
    "dividend": 5,
    "consensus": 3,
-   "flow": 5
+   "flow": 4
   },
-  "fairValue": 8.19,
+  "fairValue": 8.17,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 39.4,
+   "debt": 39.1,
    "cashInterest": null,
    "impureIncome": null
   },
   "foreignFlow": "flat",
   "foreignOwn": null,
-  "instOwn": 35.0,
+  "instOwn": 34.9,
   "rumor": "low",
   "auto": true,
   "analysts": {
@@ -246,10 +246,10 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 3.72,
-  "change": -1.59,
-  "mcap": 15817512960.0,
-  "pe": 10.3,
+  "price": 3.73,
+  "change": 0.54,
+  "mcap": 15860033536.0,
+  "pe": 10.4,
   "pb": 1.05,
   "divYield": 6.7,
   "star": {
@@ -261,10 +261,10 @@
    "consensus": 3,
    "flow": 3
   },
-  "fairValue": 2.8,
+  "fairValue": 2.77,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 35.0,
+   "debt": 34.9,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -294,11 +294,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 5.88,
-  "change": -0.34,
-  "mcap": 44100001792.0,
-  "pe": 28.0,
-  "pb": 27.74,
+  "price": 5.9,
+  "change": 0.34,
+  "mcap": 44250001408.0,
+  "pe": 28.1,
+  "pb": 27.83,
   "divYield": 4.0,
   "star": {
    "value": 1,
@@ -309,10 +309,10 @@
    "consensus": 3,
    "flow": 2
   },
-  "fairValue": 4.93,
+  "fairValue": 4.95,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 9.1,
+   "debt": 9.0,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -342,11 +342,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 1.22,
-  "change": -1.61,
-  "mcap": 28411654144.0,
-  "pe": 15.3,
-  "pb": 11.07,
+  "price": 1.21,
+  "change": -1.63,
+  "mcap": 28178771968.0,
+  "pe": 15.1,
+  "pb": 9.98,
   "divYield": 6.8,
   "star": {
    "value": 2,
@@ -390,12 +390,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 5.86,
-  "change": -2.17,
-  "mcap": 17578194944.0,
-  "pe": 26.6,
-  "pb": 49.66,
-  "divYield": 3.6,
+  "price": 5.87,
+  "change": 0.17,
+  "mcap": 17608189952.0,
+  "pe": 26.7,
+  "pb": 49.75,
+  "divYield": 3.7,
   "star": {
    "value": 1,
    "growth": 6,
@@ -405,7 +405,7 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 5.09,
+  "fairValue": 5.1,
   "sharia": "compliant",
   "shariaRatios": {
    "debt": 6.5,
@@ -438,14 +438,14 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 3.45,
-  "change": -3.63,
-  "mcap": 17250000896.0,
-  "pe": 8.0,
-  "pb": 2.2,
-  "divYield": 5.0,
+  "price": 3.37,
+  "change": -2.88,
+  "mcap": 16849999872.0,
+  "pe": 7.8,
+  "pb": 2.15,
+  "divYield": 5.1,
   "star": {
-   "value": 4,
+   "value": 5,
    "growth": 4,
    "quality": 6,
    "health": 3,
@@ -453,10 +453,10 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 3.72,
+  "fairValue": 3.7,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 32.1,
+   "debt": 32.8,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -487,11 +487,11 @@
   "market": "AE",
   "currency": "AED",
   "price": 1.64,
-  "change": -2.38,
+  "change": 0.61,
   "mcap": 16400000000.0,
   "pe": 14.9,
   "pb": 5.32,
-  "divYield": 5.3,
+  "divYield": 5.4,
   "star": {
    "value": 3,
    "growth": 5,
@@ -558,7 +558,7 @@
   },
   "foreignFlow": "flat",
   "foreignOwn": null,
-  "instOwn": 51.5,
+  "instOwn": 51.6,
   "rumor": "low",
   "auto": true,
   "analysts": {
@@ -582,11 +582,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 0.7,
-  "change": -0.29,
-  "mcap": 2985519872.0,
+  "price": 0.69,
+  "change": -1.43,
+  "mcap": 2959782656.0,
   "pe": 6.3,
-  "pb": 0.82,
+  "pb": 0.81,
   "divYield": 4.3,
   "star": {
    "value": 6,
@@ -600,7 +600,7 @@
   "fairValue": 1.35,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 11.2,
+   "debt": 11.3,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -631,10 +631,10 @@
   "market": "AE",
   "currency": "AED",
   "price": 0.81,
-  "change": 0.5,
-  "mcap": 3544428544.0,
+  "change": 0.12,
+  "mcap": 3526925056.0,
   "pe": 5.8,
-  "pb": 0.62,
+  "pb": 0.61,
   "divYield": 6.2,
   "star": {
    "value": 6,
@@ -645,16 +645,16 @@
    "consensus": 3,
    "flow": 5
   },
-  "fairValue": 0.94,
+  "fairValue": 0.93,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 15.8,
+   "debt": 15.9,
    "cashInterest": null,
    "impureIncome": null
   },
   "foreignFlow": "flat",
   "foreignOwn": null,
-  "instOwn": 47.8,
+  "instOwn": 47.4,
   "rumor": "low",
   "auto": true,
   "analysts": {
@@ -678,9 +678,9 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 1.26,
-  "change": -1.56,
-  "mcap": 1890000000.0,
+  "price": 1.27,
+  "change": -0.78,
+  "mcap": 1904999936.0,
   "pe": 1.0,
   "pb": 0.6,
   "divYield": 38.3,
@@ -693,7 +693,7 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 3.15,
+  "fairValue": 3.17,
   "sharia": "doubtful",
   "shariaRatios": {
    "debt": 0,
@@ -726,14 +726,14 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 9.45,
-  "change": 4.42,
-  "mcap": 28210063360.0,
-  "pe": 8.4,
-  "pb": 1.75,
-  "divYield": 6.5,
+  "price": 8.98,
+  "change": -3.44,
+  "mcap": 26807021568.0,
+  "pe": 7.9,
+  "pb": 1.66,
+  "divYield": 6.3,
   "star": {
-   "value": 5,
+   "value": 6,
    "growth": 2,
    "quality": 6,
    "health": 2,
@@ -741,10 +741,10 @@
    "consensus": 3,
    "flow": 4
   },
-  "fairValue": 9.67,
+  "fairValue": 9.66,
   "sharia": "non-compliant",
   "shariaRatios": {
-   "debt": 63.7,
+   "debt": 67.1,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -774,25 +774,25 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 255.0,
-  "change": -1.51,
-  "mcap": 51155505152.0,
+  "price": 256.0,
+  "change": 0.43,
+  "mcap": 51356114944.0,
   "pe": 7.6,
-  "pb": 1.43,
+  "pb": 1.44,
   "divYield": 4.0,
   "star": {
    "value": 6,
    "growth": 4,
    "quality": 6,
    "health": 1,
-   "dividend": 4,
+   "dividend": 5,
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 270.0,
+  "fairValue": 268.84,
   "sharia": "non-compliant",
   "shariaRatios": {
-   "debt": 132.3,
+   "debt": 131.8,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -822,11 +822,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 2.11,
-  "change": -1.86,
-  "mcap": 7288442880.0,
-  "pe": 0.6,
-  "pb": 2.19,
+  "price": 2.08,
+  "change": -0.48,
+  "mcap": 7184815616.0,
+  "pe": 0.5,
+  "pb": 2.16,
   "divYield": 4.7,
   "star": {
    "value": 6,
@@ -837,10 +837,10 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 5.27,
+  "fairValue": 5.2,
   "sharia": "doubtful",
   "shariaRatios": {
-   "debt": 92.7,
+   "debt": 94.0,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -871,10 +871,10 @@
   "market": "AE",
   "currency": "AED",
   "price": 0.2,
-  "change": -2.38,
-  "mcap": 750099648.0,
+  "change": 0.0,
+  "mcap": 742781632.0,
   "pe": 0,
-  "pb": 1.31,
+  "pb": 1.3,
   "divYield": 0,
   "star": {
    "value": 1,
@@ -888,7 +888,7 @@
   "fairValue": 0.2,
   "sharia": "doubtful",
   "shariaRatios": {
-   "debt": 55.5,
+   "debt": 56.0,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -918,12 +918,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 5.49,
-  "change": -1.96,
-  "mcap": 25620180992.0,
-  "pe": 16.1,
-  "pb": 3.39,
-  "divYield": 5.4,
+  "price": 5.45,
+  "change": 0.0,
+  "mcap": 25433511936.0,
+  "pe": 16.0,
+  "pb": 3.36,
+  "divYield": 5.5,
   "star": {
    "value": 3,
    "growth": 2,
@@ -933,16 +933,16 @@
    "consensus": 2,
    "flow": 2
   },
-  "fairValue": 5.37,
+  "fairValue": 5.4,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 11.4,
+   "debt": 11.5,
    "cashInterest": null,
    "impureIncome": null
   },
   "foreignFlow": "flat",
   "foreignOwn": null,
-  "instOwn": 8.0,
+  "instOwn": 7.8,
   "rumor": "low",
   "auto": true,
   "analysts": {
@@ -966,11 +966,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 1.78,
-  "change": 0.56,
-  "mcap": 2606097920.0,
-  "pe": 178.0,
-  "pb": 1.02,
+  "price": 1.75,
+  "change": 0.57,
+  "mcap": 2562174976.0,
+  "pe": 175.0,
+  "pb": 1.01,
   "divYield": 0,
   "star": {
    "value": 2,
@@ -984,7 +984,7 @@
   "fairValue": 1.03,
   "sharia": "doubtful",
   "shariaRatios": {
-   "debt": 74.1,
+   "debt": 75.4,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -1014,11 +1014,11 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 2.31,
-  "change": -1.7,
-  "mcap": 5768988672.0,
-  "pe": 17.8,
-  "pb": 14.9,
+  "price": 2.34,
+  "change": 0.0,
+  "mcap": 5843910656.0,
+  "pe": 18.0,
+  "pb": 15.1,
   "divYield": 5.2,
   "star": {
    "value": 3,
@@ -1029,10 +1029,10 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 2.53,
+  "fairValue": 2.54,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 17.4,
+   "debt": 17.1,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -1063,7 +1063,7 @@
   "market": "AE",
   "currency": "AED",
   "price": 3.28,
-  "change": 1.23,
+  "change": 0.92,
   "mcap": 3279052288.0,
   "pe": 19.3,
   "pb": 1.82,
@@ -1077,7 +1077,7 @@
    "consensus": 3,
    "flow": 2
   },
-  "fairValue": 4.12,
+  "fairValue": 4.11,
   "sharia": "doubtful",
   "shariaRatios": {
    "debt": 53.3,
@@ -1110,12 +1110,12 @@
   "board": "DFM",
   "market": "AE",
   "currency": "AED",
-  "price": 1.29,
-  "change": 0.78,
-  "mcap": 4643999744.0,
-  "pe": 14.3,
-  "pb": 11.83,
-  "divYield": 5.4,
+  "price": 1.28,
+  "change": -1.54,
+  "mcap": 4608000000.0,
+  "pe": 14.2,
+  "pb": 11.74,
+  "divYield": 5.3,
   "star": {
    "value": 4,
    "growth": 4,
@@ -1128,7 +1128,7 @@
   "fairValue": 1.72,
   "sharia": "compliant",
   "shariaRatios": {
-   "debt": 21.6,
+   "debt": 21.7,
    "cashInterest": null,
    "impureIncome": null
   },
@@ -1159,11 +1159,11 @@
   "market": "AE",
   "currency": "AED",
   "price": 1.49,
-  "change": -0.67,
+  "change": 2.05,
   "mcap": 11913687040.0,
   "pe": 11.5,
   "pb": 1.34,
-  "divYield": 4.3,
+  "divYield": 4.5,
   "star": {
    "value": 5,
    "growth": 6,
@@ -1173,7 +1173,7 @@
    "consensus": 3,
    "flow": 1
   },
-  "fairValue": 1.46,
+  "fairValue": 1.45,
   "sharia": "doubtful",
   "shariaRatios": {
    "debt": 0.3,
@@ -1221,7 +1221,7 @@
    "consensus": 3,
    "flow": 2
   },
-  "fairValue": 4.09,
+  "fairValue": 4.14,
   "sharia": "compliant",
   "shariaRatios": {
    "debt": 0,
@@ -1254,11 +1254,11 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 13.6,
+  "price": 13.52,
   "change": 0.15,
-  "mcap": 150000000000.0,
-  "pe": 9.2,
-  "pb": 1.2,
+  "mcap": 189140000000.0,
+  "pe": 9.3,
+  "pb": 1.37,
   "divYield": 5.9,
   "star": {
    "value": 5,
@@ -1269,7 +1269,7 @@
    "consensus": 4,
    "flow": 4
   },
-  "fairValue": 13.41,
+  "fairValue": 13.24,
   "sharia": "non-compliant",
   "shariaRatios": {
    "debt": 44,
@@ -1281,6 +1281,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1288,8 +1289,12 @@
    "sell": null,
    "target": 15
   },
-  "metrics": {},
-  "about": "The UAE's largest bank and a regional heavyweight; strong capital and a high dividend. Conventional interest income."
+  "metrics": {
+   "roe": 15.2,
+   "roa": 1.5
+  },
+  "about": "The UAE's largest bank and a regional heavyweight; strong capital and a high dividend. Conventional interest income.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "ADNOCGAS",
@@ -1298,18 +1303,18 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 3.6,
+  "price": 3.18,
   "change": 0.6,
-  "mcap": 277000000000.0,
-  "pe": 15.0,
-  "pb": 4.2,
-  "divYield": 5.0,
+  "mcap": 263899999999.99997,
+  "pe": 13.8,
+  "pb": 2.79,
+  "divYield": 6.8,
   "star": {
-   "value": 3,
+   "value": 4,
    "growth": 5,
    "quality": 6,
    "health": 5,
-   "dividend": 5,
+   "dividend": 6,
    "consensus": 6,
    "flow": 5
   },
@@ -1325,6 +1330,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1332,8 +1338,12 @@
    "sell": null,
    "target": 3.9
   },
-  "metrics": {},
-  "about": "ADNOC's gas-processing arm — state-backed, high-margin growth plus dividend. Anchor of the ADX energy complex."
+  "metrics": {
+   "roe": 20.2,
+   "roa": 15.2
+  },
+  "about": "ADNOC's gas-processing arm — state-backed, high-margin growth plus dividend. Anchor of the ADX energy complex.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "ADNOCDRILL",
@@ -1342,18 +1352,18 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 5.5,
+  "price": 5.22,
   "change": 1.1,
-  "mcap": 88000000000.0,
-  "pe": 18.0,
-  "pb": 5.5,
-  "divYield": 3.6,
+  "mcap": 91630000000.0,
+  "pe": 17.8,
+  "pb": 5.78,
+  "divYield": 4.6,
   "star": {
-   "value": 2,
+   "value": 3,
    "growth": 6,
-   "quality": 5,
+   "quality": 6,
    "health": 4,
-   "dividend": 4,
+   "dividend": 5,
    "consensus": 6,
    "flow": 6
   },
@@ -1369,6 +1379,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1376,8 +1387,12 @@
    "sell": null,
    "target": 5.9
   },
-  "metrics": {},
-  "about": "World's largest national drilling fleet, expanding into unconventional & oilfield services. Strong inflows and growth."
+  "metrics": {
+   "roe": 35.6,
+   "roa": 17.9
+  },
+  "about": "World's largest national drilling fleet, expanding into unconventional & oilfield services. Strong inflows and growth.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "ALDAR",
@@ -1386,22 +1401,22 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 8.1,
+  "price": 8.68,
   "change": 0.99,
-  "mcap": 64000000000.0,
-  "pe": 11.0,
-  "pb": 1.6,
-  "divYield": 2.6,
+  "mcap": 66519999999.99999,
+  "pe": 8.4,
+  "pb": 1.57,
+  "divYield": 2.4,
   "star": {
-   "value": 4,
+   "value": 5,
    "growth": 5,
-   "quality": 4,
+   "quality": 5,
    "health": 4,
    "dividend": 3,
    "consensus": 5,
    "flow": 5
   },
-  "fairValue": 7.04,
+  "fairValue": 8.01,
   "sharia": "doubtful",
   "shariaRatios": {
    "debt": 31,
@@ -1413,6 +1428,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1420,8 +1436,12 @@
    "sell": null,
    "target": 9.0
   },
-  "metrics": {},
-  "about": "Abu Dhabi's leading developer (Yas Island, Saadiyat). Diversified development + recurring-income portfolio."
+  "metrics": {
+   "roe": 19.9,
+   "roa": 8.7
+  },
+  "about": "Abu Dhabi's leading developer (Yas Island, Saadiyat). Diversified development + recurring-income portfolio.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "EAND",
@@ -1430,16 +1450,16 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 17.2,
+  "price": 17.6,
   "change": -0.2,
-  "mcap": 150000000000.0,
-  "pe": 16.0,
-  "pb": 3.3,
-  "divYield": 4.7,
+  "mcap": 168540000000.0,
+  "pe": 14.2,
+  "pb": 3.31,
+  "divYield": 5.1,
   "star": {
-   "value": 3,
+   "value": 4,
    "growth": 3,
-   "quality": 5,
+   "quality": 6,
    "health": 5,
    "dividend": 5,
    "consensus": 4,
@@ -1457,6 +1477,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1464,8 +1485,12 @@
    "sell": null,
    "target": 18.5
   },
-  "metrics": {},
-  "about": "UAE telecom champion expanding across MENA, fintech and data centres. Reliable high dividend, defensive cash flow."
+  "metrics": {
+   "roe": 23.4,
+   "roa": 7.0
+  },
+  "about": "UAE telecom champion expanding across MENA, fintech and data centres. Reliable high dividend, defensive cash flow.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "ADCB",
@@ -1474,12 +1499,12 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 9.7,
+  "price": 11.0,
   "change": 0.41,
-  "mcap": 70000000000.0,
-  "pe": 8.5,
-  "pb": 1.3,
-  "divYield": 5.4,
+  "mcap": 114480000000.0,
+  "pe": 9.4,
+  "pb": 1.34,
+  "divYield": 5.7,
   "star": {
    "value": 5,
    "growth": 4,
@@ -1489,7 +1514,7 @@
    "consensus": 4,
    "flow": 4
   },
-  "fairValue": 9.86,
+  "fairValue": 9.92,
   "sharia": "non-compliant",
   "shariaRatios": {
    "debt": 40,
@@ -1501,6 +1526,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1508,8 +1534,12 @@
    "sell": null,
    "target": 10.6
   },
-  "metrics": {},
-  "about": "Abu Dhabi's #2 bank, strong retail franchise and high dividend. Conventional interest income."
+  "metrics": {
+   "roe": 14.7,
+   "roa": 1.7
+  },
+  "about": "Abu Dhabi's #2 bank, strong retail franchise and high dividend. Conventional interest income.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "MULTIPLY",
@@ -1545,6 +1575,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": false,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1552,7 +1583,10 @@
    "sell": null,
    "target": 2.2
   },
-  "metrics": {},
+  "metrics": {
+   "roe": null,
+   "roa": null
+  },
   "about": "IHC-backed holding investing in media, mobility and energy services. Acquisitive, volatile and heavily discussed."
  },
  {
@@ -1562,14 +1596,14 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 3.4,
+  "price": 2.02,
   "change": 1.8,
-  "mcap": 31000000000.0,
-  "pe": 33.0,
-  "pb": 6.0,
+  "mcap": 19630000000.0,
+  "pe": 36.1,
+  "pb": 4.8,
   "divYield": 2.0,
   "star": {
-   "value": 2,
+   "value": 1,
    "growth": 6,
    "quality": 5,
    "health": 5,
@@ -1589,6 +1623,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1596,8 +1631,12 @@
    "sell": null,
    "target": 3.5
   },
-  "metrics": {},
-  "about": "G42-backed big-data & AI analytics company — a fast-growing ADX new-economy proxy."
+  "metrics": {
+   "roe": 15.1,
+   "roa": 11.7
+  },
+  "about": "G42-backed big-data & AI analytics company — a fast-growing ADX new-economy proxy.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "AMERICANA",
@@ -1606,22 +1645,22 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 2.9,
+  "price": 2.05,
   "change": -0.6,
-  "mcap": 24000000000.0,
+  "mcap": 17050000000.0,
   "pe": 22.0,
-  "pb": 7.0,
-  "divYield": 3.3,
+  "pb": 8.36,
+  "divYield": 4.3,
   "star": {
-   "value": 2,
+   "value": 3,
    "growth": 4,
-   "quality": 5,
+   "quality": 6,
    "health": 4,
-   "dividend": 3,
+   "dividend": 5,
    "consensus": 4,
    "flow": 3
   },
-  "fairValue": 2.69,
+  "fairValue": 2.35,
   "sharia": "compliant",
   "shariaRatios": {
    "debt": 20,
@@ -1633,6 +1672,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1640,8 +1680,12 @@
    "sell": null,
    "target": 3.1
   },
-  "metrics": {},
-  "about": "MENA's largest restaurant operator (KFC, Pizza Hut franchises). Dual-listed in Abu Dhabi and Riyadh."
+  "metrics": {
+   "roe": 51.0,
+   "roa": 14.9
+  },
+  "about": "MENA's largest restaurant operator (KFC, Pizza Hut franchises). Dual-listed in Abu Dhabi and Riyadh.",
+  "fundamentalsSource": "investing.com"
  },
  {
   "ticker": "BOROUGE",
@@ -1650,16 +1694,16 @@
   "board": "ADX",
   "market": "AE",
   "currency": "AED",
-  "price": 2.5,
+  "price": 2.41,
   "change": 0.4,
-  "mcap": 75000000000.0,
-  "pe": 18.0,
-  "pb": 4.0,
-  "divYield": 6.5,
+  "mcap": 75960000000.0,
+  "pe": 20.9,
+  "pb": 4.9,
+  "divYield": 6.7,
   "star": {
    "value": 3,
    "growth": 3,
-   "quality": 5,
+   "quality": 6,
    "health": 4,
    "dividend": 6,
    "consensus": 4,
@@ -1677,6 +1721,7 @@
   "instOwn": null,
   "rumor": "low",
   "auto": true,
+  "priceLive": true,
   "analysts": {
    "count": 12,
    "buy": null,
@@ -1684,7 +1729,11 @@
    "sell": null,
    "target": 2.7
   },
-  "metrics": {},
-  "about": "ADNOC/Borealis polyolefins JV — high dividend petrochemicals play with Asian demand exposure."
+  "metrics": {
+   "roe": 21.6,
+   "roa": 11.0
+  },
+  "about": "ADNOC/Borealis polyolefins JV — high dividend petrochemicals play with Asian demand exposure.",
+  "fundamentalsSource": "investing.com"
  }
 ]

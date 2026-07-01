@@ -26,6 +26,15 @@ TD = env.get("TWELVEDATA_API_KEY", "")
 SAHMK_KEY = env.get("SAHMK_API_KEY", "")
 SAHMK_N = int(os.environ.get("SAHMK_N", "80"))   # free tier = 100 req/day -> top-N by mcap
 
+# Real Shariah-board certification (Argaam, via scripts/fetch_sharia_argaam.py). Takes
+# priority over the CURATED guesses and the sector heuristic when present for a code.
+ARGAAM_PATH = os.path.join(HERE, "..", "src", "data", "sharia_argaam.json")
+try:
+    with open(ARGAAM_PATH, encoding="utf-8") as f:
+        ARGAAM = json.load(f)
+except FileNotFoundError:
+    ARGAAM = {}
+
 # Known Sharia classification of Saudi banks (the auto debt-ratio screen is meaningless
 # for banks, so we hard-code the well-established status).
 ISLAMIC_BANKS = {"1120", "1150", "1140", "1020"}        # Al Rajhi, Alinma, Albilad, Aljazira (fully Islamic)
@@ -237,7 +246,16 @@ def build(code, name):
     sector = SECTOR_MAP.get(info.get("sector"), "Industrials")
     board = "NOMU" if code.startswith("9") else "TASI"   # parallel market — separate risk (§9.4)
     cur = CURATED.get(code)
-    if cur:
+    arg = ARGAAM.get(code)
+    shariaBoards = purificationPerShare = None
+    if arg:
+        # Certified by >=1 real Shariah board: compliant, not a heuristic guess.
+        sharia = "compliant"
+        shariaBoards = arg["boards"]
+        purificationPerShare = arg.get("purification")
+        cashI = impure = None
+        flow, own, rumor, auto = (cur["flow"], cur["own"], cur["rumor"], False) if cur else ("flat", None, "low", False)
+    elif cur:
         sharia, cashI, impure = cur["sharia"], cur["cashInterest"], cur["impure"]
         flow, own, rumor, auto = cur["flow"], cur["own"], cur["rumor"], False
     else:
@@ -265,6 +283,7 @@ def build(code, name):
         "maxScore": mx, "maxFlag": max_flag,
         "sharia": sharia,
         "shariaRatios": {"debt": dr if dr is not None else 0, "cashInterest": cashI, "impureIncome": impure},
+        "shariaBoards": shariaBoards, "purificationPerShare": purificationPerShare,
         "foreignFlow": flow, "foreignOwn": own, "instOwn": inst_pct, "rumor": rumor, "auto": auto,
         "analysts": {"count": n_an, "buy": None, "hold": None, "sell": None, "target": round(target, 2) if target else None},
         "metrics": {"roe": round(roe * 100, 1) if roe is not None else None,

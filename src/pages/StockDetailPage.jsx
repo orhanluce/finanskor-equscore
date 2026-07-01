@@ -561,11 +561,14 @@ export default function StockDetailPage() {
                     : s.sharia === 'doubtful' ? <ShieldAlert className="h-5 w-5 text-medal-bronze" />
                     : <ShieldX className="h-5 w-5 text-destructive" />}
                   <h2 className="font-serif text-xl font-bold">{t('Sharia Screen')}</h2>
-                  {s.auto && <Badge variant="muted" className="ml-auto">{t('Auto-screen')}</Badge>}
+                  {s.shariaBoards?.length
+                    ? <Badge variant="success" className="ml-auto">{s.shariaBoards.length} {t('board-certified')}</Badge>
+                    : s.auto && <Badge variant="muted" className="ml-auto">{t('Auto-screen')}</Badge>}
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  {t('AAOIFI Standard No. 21 — financial ratios.')}
-                  {s.auto && ' ' + t('Status estimated from sector + live debt ratio — verify with a Shariah board.')}
+                  {s.shariaBoards?.length
+                    ? t('Certified Sharia-compliant by:') + ' ' + s.shariaBoards.join(', ') + '.'
+                    : <>{t('AAOIFI Standard No. 21 — financial ratios.')}{s.auto && ' ' + t('Status estimated from sector + live debt ratio — verify with a Shariah board.')}</>}
                 </p>
                 <div className="mt-3 divide-y divide-border">
                   <ShariaRatio label={t('Interest-bearing debt / mcap')} value={s.shariaRatios.debt} threshold={30} />
@@ -573,7 +576,9 @@ export default function StockDetailPage() {
                   <ShariaRatio label={t('Impermissible income')} value={s.shariaRatios.impureIncome} threshold={5} />
                 </div>
                 <div className="mt-3 rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
-                  {purify != null
+                  {s.purificationPerShare != null
+                    ? <>{t('Purification')} ({t('board figure')}): <span className="font-semibold text-foreground">{s.purificationPerShare} {s.currency || 'SAR'}</span> {t('per share.')}</>
+                    : purify != null
                     ? <>{t('Purification')} {t('estimate:')} <span className="font-semibold text-foreground">{purify}%</span> {t('of dividend income.')}</>
                     : <>{t('Debt ratio is live; the cash-interest & impermissible-income ratios need a deeper financials source (auto-screen).')}</>}
                 </div>
