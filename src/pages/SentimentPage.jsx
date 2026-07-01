@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Gauge, AlertTriangle, Flame, Snowflake } from 'lucide-react';
+import { Gauge, AlertTriangle, Flame, Snowflake, Search, TrendingUp } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import { SOCIAL } from '@/data/social.js';
+import { retailAttention } from '@/data/serpapi.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
@@ -53,6 +54,7 @@ export default function SentimentPage() {
   }, []);
 
   const shown = onlyWarn ? rows.filter((r) => Math.abs(r.z) > 1.5) : rows;
+  const attn = retailAttention();
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
@@ -68,6 +70,37 @@ export default function SentimentPage() {
         <Stat value={stats.euphoric} label={t('Euphoria flags')} accent="text-destructive" />
         <Stat value={stats.panic} label={t('Panic flags')} accent="text-primary" />
       </div>
+
+      {attn && (
+        <Card className="mt-6">
+          <CardContent>
+            <div className="flex items-center gap-2">
+              <Search className="h-5 w-5 text-primary" />
+              <h2 className="font-serif text-lg font-bold">{t('Retail Search Attention')}</h2>
+              <Badge variant={attn.heat === 'high' ? 'danger' : attn.heat === 'elevated' ? 'primary' : 'muted'} className="ml-auto capitalize">
+                {attn.trend === 'rising' && <TrendingUp className="h-3 w-3" />} {t(attn.heat)}
+              </Badge>
+            </div>
+            <p className="mt-1 text-xs text-muted-foreground">
+              {t('Google search interest in')} {COUNTRY.exchange} {t('trading — a market-wide retail-attention gauge (0–100). Spikes often mark crowded tops.')}
+            </p>
+            <div className="mt-3 flex items-end gap-6">
+              <div>
+                <div className="font-serif text-3xl font-bold">{attn.latest}</div>
+                <div className="text-[11px] text-muted-foreground">{t('now')}</div>
+              </div>
+              <div><div className="font-mono text-lg">{attn.avg7}</div><div className="text-[11px] text-muted-foreground">{t('7-pt avg')}</div></div>
+              <div><div className="font-mono text-lg">{attn.peak}</div><div className="text-[11px] text-muted-foreground">{t('3-mo peak')}</div></div>
+              {attn.timeline?.length > 1 && (
+                <svg viewBox="0 0 100 28" preserveAspectRatio="none" className="ml-auto h-10 w-40 text-primary">
+                  <polyline fill="none" stroke="currentColor" strokeWidth="1.5"
+                    points={attn.timeline.map((p, i) => `${(i / (attn.timeline.length - 1)) * 100},${28 - (p.v / 100) * 26}`).join(' ')} />
+                </svg>
+              )}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <label className="mt-6 inline-flex cursor-pointer items-center gap-2 text-sm">
         <input type="checkbox" checked={onlyWarn} onChange={(e) => setOnlyWarn(e.target.checked)} className="accent-primary h-4 w-4" />

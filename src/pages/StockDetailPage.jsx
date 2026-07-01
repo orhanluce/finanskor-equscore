@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   ArrowLeft, TrendingUp, TrendingDown, Minus, ShieldCheck, ShieldAlert, ShieldX,
-  Users, Activity, Flame, Newspaper, Sparkles, Loader2, Trophy,
+  Users, Activity, Flame, Newspaper, Sparkles, Loader2, Trophy, Youtube,
 } from 'lucide-react';
 import { Card, CardContent, Badge, Button } from '@/components/ui.jsx';
 import { ScorePill, ShariaBadge } from '@/components/equity.jsx';
@@ -13,6 +13,7 @@ import CountryLens from '@/components/CountryLens.jsx';
 import TvChart from '@/components/TvChart.jsx';
 import { tvRating } from '@/data/tvSignals.js';
 import { socialFor } from '@/data/social.js';
+import { videosFor } from '@/data/serpapi.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { foreignSignal, FOREIGN_TONE } from '@/data/foreignFlow.js';
@@ -281,6 +282,7 @@ export default function StockDetailPage() {
   const a = s.analysts;
   const upside = a.target && s.price ? (a.target / s.price - 1) * 100 : null;
   const soc = socialFor(s.ticker);
+  const yt = videosFor(s.ticker);
   const rumorLevel = soc?.level || s.rumor;
   const r = RUMOR[rumorLevel];
   const purify = s.shariaRatios.impureIncome;
@@ -704,6 +706,36 @@ export default function StockDetailPage() {
                   <p className="mt-3 text-xs text-muted-foreground">
                     {t("On Tadawul, high-attention \"lottery\" stocks rise when profitability is strong and fade when it's weak — so MAX is read together with the Quality dimension.")}
                   </p>
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {yt && (
+            <Card className="lg:col-span-2">
+              <CardContent>
+                <div className="flex items-center gap-2">
+                  <Youtube className="h-5 w-5 text-destructive" />
+                  <h2 className="font-serif text-xl font-bold">{t('Analysis Videos')}</h2>
+                  <Badge variant="muted" className="ml-auto">{t('community · YouTube')}</Badge>
+                </div>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {t('Recent Arabic stock-analysis videos — retail community interest, not a rated signal.')}
+                </p>
+                <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                  {yt.videos.slice(0, 6).map((v, i) => (
+                    <a key={i} href={v.url} target="_blank" rel="noreferrer"
+                      className="flex gap-3 rounded-lg border border-border p-2 hover:bg-muted/30">
+                      {v.thumb && <img src={v.thumb} alt="" loading="lazy" className="h-14 w-24 shrink-0 rounded object-cover" />}
+                      <div className="min-w-0">
+                        <div className="text-xs font-medium leading-snug line-clamp-2">{v.title}</div>
+                        <div className="mt-1 text-[10px] text-muted-foreground line-clamp-1">{v.channel}</div>
+                        <div className="text-[10px] text-muted-foreground">
+                          {[v.views != null ? `${v.views} ${t('views')}` : null, v.published].filter(Boolean).join(' · ')}
+                        </div>
+                      </div>
+                    </a>
+                  ))}
                 </div>
               </CardContent>
             </Card>

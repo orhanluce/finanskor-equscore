@@ -1,5 +1,24 @@
 // Arabic (ع) translations, keyed by the English source string.
 export const AR = {
+  // ── SerpAPI enrichment (news / youtube / trends) ──
+  'Market Headlines': 'عناوين السوق',
+  'live · local sources': 'مباشر · مصادر محلية',
+  'Analysis Videos': 'فيديوهات تحليلية',
+  'community · YouTube': 'المجتمع · يوتيوب',
+  'Recent Arabic stock-analysis videos — retail community interest, not a rated signal.':
+    'فيديوهات تحليل حديثة للسهم — اهتمام مجتمع الأفراد، وليست إشارة مُقيَّمة.',
+  'views': 'مشاهدة',
+  'Retail Search Attention': 'اهتمام البحث لدى الأفراد',
+  'Google search interest in': 'اهتمام بحث جوجل في',
+  'trading — a market-wide retail-attention gauge (0–100). Spikes often mark crowded tops.':
+    'التداول — مقياس اهتمام الأفراد على مستوى السوق (0–100). القفزات غالبًا تسبق القمم المزدحمة.',
+  'now': 'الآن',
+  '7-pt avg': 'متوسط 7 نقاط',
+  '3-mo peak': 'ذروة 3 أشهر',
+  'high': 'مرتفع',
+  'elevated': 'متزايد',
+  'calm': 'هادئ',
+
   // ── Header / nav ──
   'Market': 'السوق',
   'Explore': 'استكشاف',

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Newspaper, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { Card, CardContent, Badge, Stat } from '@/components/ui.jsx';
 import NEWS from '@/data/news.js';
+import { marketHeadlines } from '@/data/serpapi.js';
 import { STOCKS } from '@/data/stocks.js';
 import { cn } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
@@ -31,6 +32,7 @@ export default function EfsahFlashPage() {
   }, [entries]);
 
   const rows = mood === 'all' ? entries : entries.filter((e) => e.summary.mood === mood);
+  const headlines = marketHeadlines();
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
@@ -39,6 +41,32 @@ export default function EfsahFlashPage() {
       <p className="mt-2 max-w-2xl text-muted-foreground">
         {t('News & disclosure sentiment across TASI. Tadawul shows post-earnings drift — reactions tend to persist for weeks.')}
       </p>
+
+      {headlines.length > 0 && (
+        <Card className="mt-8">
+          <CardContent>
+            <div className="flex items-center gap-2">
+              <Newspaper className="h-4 w-4 text-primary" />
+              <h2 className="font-serif text-lg font-bold">{t('Market Headlines')}</h2>
+              <Badge variant="muted" className="ml-auto">{t('live · local sources')}</Badge>
+            </div>
+            <div className="mt-3 grid gap-x-6 sm:grid-cols-2">
+              {headlines.slice(0, 10).map((it, i) => (
+                <a key={i} href={it.url} target="_blank" rel="noreferrer"
+                  className="flex items-start gap-2 border-b border-border py-2 hover:bg-muted/30 -mx-2 px-2 rounded-lg">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                  <div className="min-w-0">
+                    <div className="text-sm font-medium leading-snug">{it.title}</div>
+                    {(it.source || it.date) && (
+                      <div className="text-xs text-muted-foreground">{[it.source, it.date].filter(Boolean).join(' · ')}</div>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Stat value={stats.stocks} label={t('Names covered')} />
