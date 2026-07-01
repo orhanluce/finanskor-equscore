@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import {
-  Menu, X, TrendingUp, LogOut, User, Home,
+  Menu, X, TrendingUp, LogOut, User, Home, ChevronDown,
   LineChart, Compass, Scale, ShieldCheck,
   Droplets, Gauge, Newspaper, Flame, Zap,
   Layers, Rocket, Building2, BookOpen, Briefcase,
@@ -47,6 +47,7 @@ const NAV = [
   },
   {
     label: 'Discover',
+    collapsible: true,
     items: [
       { to: '/strategies', label: 'Strategies', icon: TrendingUp },
       { to: '/baskets', label: 'Baskets', icon: Layers },
@@ -58,6 +59,7 @@ const NAV = [
   },
   {
     label: 'Compete',
+    collapsible: true,
     items: [
       { to: '/predict', label: 'Contest', icon: Trophy },
       { to: '/competition', label: 'Competitions', icon: CalendarClock },
@@ -91,14 +93,57 @@ function HijriLine() {
   );
 }
 
+function NavItem({ it, onNavigate }) {
+  return (
+    <NavLink to={it.to} end={it.end} onClick={onNavigate}
+      className={({ isActive }) => cn(
+        'flex items-center gap-3 rounded-lg px-2.5 py-2 text-sm font-medium transition-colors',
+        isActive ? 'bg-primary/10 text-primary' : 'text-foreground/70 hover:bg-muted/60 hover:text-foreground')}>
+      <it.icon className="h-4 w-4 shrink-0" />
+      <span className="truncate">{t(it.label)}</span>
+    </NavLink>
+  );
+}
+
+function GroupLabel({ children }) {
+  return (
+    <div className="px-2 pb-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/70">
+      {children}
+    </div>
+  );
+}
+
+// Collapsible group — opens on hover (desktop) and click/tap (mobile/touch).
+// Starts open if the current route lives inside it.
+function CollapsibleGroup({ group, onNavigate }) {
+  const { pathname } = useLocation();
+  // Opens on hover (desktop) or tap (touch fires mouseenter); starts open if the
+  // active route lives inside it. Toggle on click too, for keyboard/touch users.
+  const [open, setOpen] = useState(() => group.items.some((it) => it.to === pathname));
+  return (
+    <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <button type="button" onClick={() => setOpen(true)}
+        className="flex w-full items-center justify-between rounded-lg px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/70 transition-colors hover:text-foreground">
+        <span>{t(group.label)}</span>
+        <ChevronDown className={cn('h-3.5 w-3.5 transition-transform', open && 'rotate-180')} />
+      </button>
+      {open && (
+        <div className="mt-0.5 space-y-0.5">
+          {group.items.map((it) => <NavItem key={it.to} it={it} onNavigate={onNavigate} />)}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function SidebarContent({ onNavigate }) {
   const { user, signOut, openAuth, hasAuth } = useAuth();
   return (
     <div className="flex h-full flex-col">
       {/* Brand */}
       <Link to="/" onClick={onNavigate} className="flex shrink-0 items-center px-4 pt-4 pb-2" aria-label="EquScore home">
-        <img src="/logo-light-v3.png" alt="EquScore" className="h-14 w-auto dark:hidden" />
-        <img src="/logo-dark-v3.png" alt="EquScore" className="hidden h-14 w-auto dark:block" />
+        <img src="/logo-light-v3.png" alt="EquScore" className="h-20 w-auto dark:hidden" />
+        <img src="/logo-dark-v3.png" alt="EquScore" className="hidden h-20 w-auto dark:block" />
       </Link>
 
       {/* Search */}
@@ -106,27 +151,19 @@ function SidebarContent({ onNavigate }) {
         <StockSearch compact />
       </div>
 
-      {/* Nav */}
-      <nav className="flex-1 space-y-4 overflow-y-auto px-3 py-2">
+      {/* Nav — scrollbar hidden to keep the rail clean */}
+      <nav className="flex-1 space-y-3 overflow-y-auto px-3 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {NAV.map((group, gi) => (
-          <div key={group.label || `g${gi}`}>
-            {group.label && (
-              <div className="px-2 pb-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground/70">
-                {t(group.label)}
+          group.collapsible ? (
+            <CollapsibleGroup key={group.label} group={group} onNavigate={onNavigate} />
+          ) : (
+            <div key={group.label || `g${gi}`}>
+              {group.label && <GroupLabel>{t(group.label)}</GroupLabel>}
+              <div className="space-y-0.5">
+                {group.items.map((it) => <NavItem key={it.to} it={it} onNavigate={onNavigate} />)}
               </div>
-            )}
-            <div className="space-y-0.5">
-              {group.items.map((it) => (
-                <NavLink key={it.to} to={it.to} end={it.end} onClick={onNavigate}
-                  className={({ isActive }) => cn(
-                    'flex items-center gap-3 rounded-lg px-2.5 py-2 text-sm font-medium transition-colors',
-                    isActive ? 'bg-primary/10 text-primary' : 'text-foreground/70 hover:bg-muted/60 hover:text-foreground')}>
-                  <it.icon className="h-4 w-4 shrink-0" />
-                  <span className="truncate">{t(it.label)}</span>
-                </NavLink>
-              ))}
             </div>
-          </div>
+          )
         ))}
       </nav>
 
