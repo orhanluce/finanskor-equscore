@@ -65,7 +65,6 @@ const LEFT_NAV = [
 const RIGHT_NAV = [
   {
     label: 'Discover',
-    collapsible: true,
     items: [
       { to: '/strategies', label: 'Strategies', icon: TrendingUp },
       { to: '/baskets', label: 'Baskets', icon: Layers },
@@ -177,15 +176,10 @@ function RightPanel({ onNavigate, className }) {
   const { user, signOut, openAuth, hasAuth } = useAuth();
   return (
     <div className={cn('flex flex-col', className)}>
-      <div className="px-3 pt-4 pb-2">
-        <StockSearch compact />
-      </div>
-      <nav className="flex-1 space-y-3 overflow-y-auto px-3 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <NavGroups groups={RIGHT_NAV} onNavigate={onNavigate} />
-      </nav>
-      <div className="shrink-0 space-y-2 border-t border-border px-3 py-3">
+      {/* Top: Hijri + controls + account */}
+      <div className="shrink-0 space-y-2 border-b border-border px-3 pt-4 pb-3">
         <HijriLine />
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center justify-end gap-1.5">
           <CountrySwitcher />
           <ThemeToggle />
           <LangToggle />
@@ -208,6 +202,16 @@ function RightPanel({ onNavigate, className }) {
           </Button>
         ))}
       </div>
+
+      {/* Search */}
+      <div className="px-3 pt-3 pb-2">
+        <StockSearch compact />
+      </div>
+
+      {/* Nav: Discover + Methodology */}
+      <nav className="flex-1 space-y-3 overflow-y-auto px-3 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <NavGroups groups={RIGHT_NAV} onNavigate={onNavigate} />
+      </nav>
     </div>
   );
 }
