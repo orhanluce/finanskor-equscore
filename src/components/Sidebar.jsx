@@ -47,7 +47,6 @@ const LEFT_NAV = [
   },
   {
     label: 'Compete',
-    collapsible: true,
     items: [
       { to: '/predict', label: 'Contest', icon: Trophy },
       { to: '/competition', label: 'Competitions', icon: CalendarClock },

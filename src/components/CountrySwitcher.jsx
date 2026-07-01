@@ -60,7 +60,7 @@ export default function CountrySwitcher() {
         <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-60 overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
+        <div className="absolute right-0 top-full z-[60] mt-2 w-60 overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
           <div className="flex items-center gap-1.5 px-4 py-2 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
             <Globe className="h-3.5 w-3.5" /> {t('Choose market')}
           </div>
