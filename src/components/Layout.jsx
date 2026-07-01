@@ -10,7 +10,7 @@ export default function Layout() {
   return (
     <div className="min-h-screen">
       <Sidebar />
-      <div className="flex min-h-screen flex-col lg:pl-60">
+      <div className="flex min-h-screen flex-col lg:pl-60 lg:pr-60">
         <main className="flex-1">
           <Outlet />
         </main>

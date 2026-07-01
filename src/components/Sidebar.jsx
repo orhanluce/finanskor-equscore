@@ -19,8 +19,8 @@ import { islamicSignal } from '@/lib/islamicCalendar.js';
 import { COUNTRY } from '@/data/stocks.js';
 import { t } from '@/i18n.js';
 
-// One flat, grouped nav model — mirrors the old header menus but laid out vertically.
-const NAV = [
+// Left rail: core nav + Signals + Compete.
+const LEFT_NAV = [
   {
     items: [
       { to: '/', label: 'Home', icon: Home, end: true },
@@ -46,18 +46,6 @@ const NAV = [
     ],
   },
   {
-    label: 'Discover',
-    collapsible: true,
-    items: [
-      { to: '/strategies', label: 'Strategies', icon: TrendingUp },
-      { to: '/baskets', label: 'Baskets', icon: Layers },
-      { to: '/ipo', label: 'IPOs', icon: Rocket },
-      { to: '/brokers', label: 'Brokers', icon: Building2 },
-      { to: '/stories', label: 'Stories', icon: BookOpen },
-      { to: '/academy', label: 'Academy', icon: GraduationCap },
-    ],
-  },
-  {
     label: 'Compete',
     collapsible: true,
     items: [
@@ -69,6 +57,22 @@ const NAV = [
       { to: '/portfolio', label: 'Virtual Portfolio', icon: Briefcase },
       { to: '/showcase', label: 'Showcase', icon: Trophy },
       { to: '/investors', label: 'Verified Investors', icon: UserCheck },
+    ],
+  },
+];
+
+// Right rail: Discover + Methodology (plus search + controls in the panel chrome).
+const RIGHT_NAV = [
+  {
+    label: 'Discover',
+    collapsible: true,
+    items: [
+      { to: '/strategies', label: 'Strategies', icon: TrendingUp },
+      { to: '/baskets', label: 'Baskets', icon: Layers },
+      { to: '/ipo', label: 'IPOs', icon: Rocket },
+      { to: '/brokers', label: 'Brokers', icon: Building2 },
+      { to: '/stories', label: 'Stories', icon: BookOpen },
+      { to: '/academy', label: 'Academy', icon: GraduationCap },
     ],
   },
   {
@@ -113,12 +117,10 @@ function GroupLabel({ children }) {
   );
 }
 
-// Collapsible group — opens on hover (desktop) and click/tap (mobile/touch).
-// Starts open if the current route lives inside it.
+// Collapsible group — opens on hover (desktop) or tap (touch fires mouseenter);
+// starts open if the active route lives inside it.
 function CollapsibleGroup({ group, onNavigate }) {
   const { pathname } = useLocation();
-  // Opens on hover (desktop) or tap (touch fires mouseenter); starts open if the
-  // active route lives inside it. Toggle on click too, for keyboard/touch users.
   const [open, setOpen] = useState(() => group.items.some((it) => it.to === pathname));
   return (
     <div onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
@@ -136,38 +138,51 @@ function CollapsibleGroup({ group, onNavigate }) {
   );
 }
 
-function SidebarContent({ onNavigate }) {
-  const { user, signOut, openAuth, hasAuth } = useAuth();
+function NavGroups({ groups, onNavigate }) {
   return (
-    <div className="flex h-full flex-col">
-      {/* Brand */}
+    <>
+      {groups.map((group, gi) => (
+        group.collapsible ? (
+          <CollapsibleGroup key={group.label} group={group} onNavigate={onNavigate} />
+        ) : (
+          <div key={group.label || `g${gi}`}>
+            {group.label && <GroupLabel>{t(group.label)}</GroupLabel>}
+            <div className="space-y-0.5">
+              {group.items.map((it) => <NavItem key={it.to} it={it} onNavigate={onNavigate} />)}
+            </div>
+          </div>
+        )
+      ))}
+    </>
+  );
+}
+
+// Left panel: brand + core/Signals/Compete nav.
+function LeftPanel({ onNavigate, className }) {
+  return (
+    <div className={cn('flex flex-col', className)}>
       <Link to="/" onClick={onNavigate} className="flex shrink-0 items-center px-4 pt-4 pb-2" aria-label="EquScore home">
         <img src="/logo-light-v3.png" alt="EquScore" className="h-20 w-auto dark:hidden" />
         <img src="/logo-dark-v3.png" alt="EquScore" className="hidden h-20 w-auto dark:block" />
       </Link>
+      <nav className="flex-1 space-y-3 overflow-y-auto px-3 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <NavGroups groups={LEFT_NAV} onNavigate={onNavigate} />
+      </nav>
+    </div>
+  );
+}
 
-      {/* Search */}
-      <div className="px-3 pb-2">
+// Right panel: search + Discover/Methodology nav + Hijri/controls/account.
+function RightPanel({ onNavigate, className }) {
+  const { user, signOut, openAuth, hasAuth } = useAuth();
+  return (
+    <div className={cn('flex flex-col', className)}>
+      <div className="px-3 pt-4 pb-2">
         <StockSearch compact />
       </div>
-
-      {/* Nav — scrollbar hidden to keep the rail clean */}
       <nav className="flex-1 space-y-3 overflow-y-auto px-3 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        {NAV.map((group, gi) => (
-          group.collapsible ? (
-            <CollapsibleGroup key={group.label} group={group} onNavigate={onNavigate} />
-          ) : (
-            <div key={group.label || `g${gi}`}>
-              {group.label && <GroupLabel>{t(group.label)}</GroupLabel>}
-              <div className="space-y-0.5">
-                {group.items.map((it) => <NavItem key={it.to} it={it} onNavigate={onNavigate} />)}
-              </div>
-            </div>
-          )
-        ))}
+        <NavGroups groups={RIGHT_NAV} onNavigate={onNavigate} />
       </nav>
-
-      {/* Bottom: controls + account */}
       <div className="shrink-0 space-y-2 border-t border-border px-3 py-3">
         <HijriLine />
         <div className="flex items-center gap-1.5">
@@ -205,9 +220,12 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Desktop: fixed left rail */}
+      {/* Desktop: fixed left + right rails */}
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 border-r border-border bg-background lg:block">
-        <SidebarContent />
+        <LeftPanel className="h-full" />
+      </aside>
+      <aside className="fixed inset-y-0 right-0 z-40 hidden w-60 border-l border-border bg-background lg:block">
+        <RightPanel className="h-full" />
       </aside>
 
       {/* Mobile top bar */}
@@ -221,15 +239,17 @@ export default function Sidebar() {
         </Link>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — both panels stacked */}
       {open && (
         <div className="fixed inset-0 z-50 lg:hidden">
           <div className="absolute inset-0 bg-black/40" onClick={close} />
-          <div className="absolute inset-y-0 left-0 w-72 max-w-[85vw] border-r border-border bg-background shadow-xl">
+          <div className="absolute inset-y-0 left-0 flex w-72 max-w-[85vw] flex-col overflow-y-auto border-r border-border bg-background shadow-xl [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <button onClick={close} aria-label="Close menu" className="absolute right-3 top-3 z-10 p-1.5 text-muted-foreground hover:text-foreground">
               <X className="h-5 w-5" />
             </button>
-            <SidebarContent onNavigate={close} />
+            <LeftPanel onNavigate={close} />
+            <div className="my-1 border-t border-border" />
+            <RightPanel onNavigate={close} />
           </div>
         </div>
       )}
