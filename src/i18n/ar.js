@@ -142,7 +142,7 @@ export const AR = {
   'live — Yahoo Finance (delayed)': 'حي — Yahoo Finance (متأخر)',
   'live — Yahoo + investing.com (delayed)': 'حي — Yahoo + investing.com (متأخر)',
   'live — EODHD + investing.com (EOD)': 'حي — EODHD + investing.com (نهاية اليوم)',
-  'sample dataset': 'بيانات تجريبية',
+  'Data updated:': 'آخر تحديث للبيانات:',
   'Every name with its Equity Star (out of 42) and discount to fair value.':
     'كل اسم مع نجمة السهم (من 42) والخصم عن القيمة العادلة.',
   'Every name with its Equity Star (out of 42), Sharia status and discount to fair value.':

@@ -1,19 +1,24 @@
-# EquScore — register a daily Tadawul refresh in Windows Task Scheduler.
-# Runs the free Yahoo fetch Sun-Thu (Tadawul trading days) at 16:30 (after the 15:00 close).
-# User-level task — no admin required. Re-run to update (Force).
+# EquScore — günlük veri pipeline'ını Windows Task Scheduler'a kaydeder.
+# Paz-Per (Tadawul işlem günleri) 16:30'da run_pipeline.bat çalışır:
+# fetch zinciri → veri bekçisi → build → data-only commit → push (Hostinger deploy).
+# Perşembe koşusu haftalıkları da içerir (Argaam Şeriat + SerpAPI youtube/trends).
+# Kullanıcı-seviyesi görev — admin gerekmez. Tekrar çalıştırmak günceller (Force).
 
 $ErrorActionPreference = "Stop"
-$bat  = "C:\Users\orhan\finanskor-equscore\scripts\run_fetch.bat"
-$name = "EquScore Tadawul Daily Fetch"
+$bat  = "C:\Users\orhan\finanskor-equscore\scripts\run_pipeline.bat"
+$name = "EquScore Daily Pipeline"
+
+# Eski dar-kapsamli gorevi kaldir (sadece tadawul+news cekiyordu, bekci/push yoktu)
+Unregister-ScheduledTask -TaskName "EquScore Tadawul Daily Fetch" -Confirm:$false -ErrorAction SilentlyContinue
 
 $action  = New-ScheduledTaskAction -Execute $bat
 $trigger = New-ScheduledTaskTrigger -Weekly `
   -DaysOfWeek Sunday, Monday, Tuesday, Wednesday, Thursday -At 4:30PM
 $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable `
-  -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Hours 1)
+  -DontStopOnIdleEnd -ExecutionTimeLimit (New-TimeSpan -Hours 2)
 
 Register-ScheduledTask -TaskName $name -Action $action -Trigger $trigger `
-  -Settings $settings -Description "Refresh EquScore's free Tadawul dataset from Yahoo Finance (Sun-Thu 16:30)." -Force | Out-Null
+  -Settings $settings -Description "EquScore veri pipeline'i: fetch -> bekci -> build -> commit -> push (Paz-Per 16:30; Persembe haftaliklar dahil)." -Force | Out-Null
 
-Write-Host "Registered scheduled task: '$name' (Sun-Thu 16:30)."
+Write-Host "Kaydedildi: '$name' (Paz-Per 16:30, 2 saat limit)."
 Get-ScheduledTask -TaskName $name | Select-Object TaskName, State | Format-Table -AutoSize

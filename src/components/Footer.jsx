@@ -3,6 +3,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ShareButtons from '@/components/ShareButtons.jsx';
 import { COUNTRY } from '@/data/stocks.js';
+import META from '@/data/meta.json';
+
+// "Veri güncellendi" tazelik damgası — pipeline meta.json'ı her koşuda yeniler.
+function freshness() {
+  if (!META?.lastRun) return null;
+  const d = new Date(META.lastRun);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+}
 
 export default function Footer() {
   return (
@@ -40,6 +49,11 @@ export default function Footer() {
                 <span key={src} className="rounded-full border border-background/20 bg-background/5 px-2 py-0.5 text-[11px] text-background/70">{src}</span>
               ))}
             </div>
+            {freshness() && (
+              <div className="mt-2 text-[11px] text-background/50">
+                {t('Data updated:')} {freshness()}
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-10 border-t border-background/15 pt-6 text-xs text-background/50 leading-relaxed">

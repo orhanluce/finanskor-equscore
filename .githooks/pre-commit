@@ -1,0 +1,6 @@
+#!/bin/sh
+# EquScore pre-commit: veri dosyalari sagliksizsa commit'i durdur.
+py "$(git rev-parse --show-toplevel)/scripts/veri_bekcisi.py" --quiet || {
+  echo "pre-commit: veri bekcisi commit'i durdurdu (bkz. scripts/veri_bekcisi.py)"
+  exit 1
+}
