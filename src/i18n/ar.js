@@ -969,6 +969,23 @@ export const AR = {
   'No names in this category right now.': 'لا أسهم في هذه الفئة الآن.',
   'Foreign ownership & flow from exchange reports (Saudi Exchange weekly ownership-by-nationality report where available). Sample/delayed; informational only, not investment advice.':
     'الملكية والتدفق الأجنبي من تقارير البورصة (تقرير الملكية حسب الجنسية الأسبوعي للسوق المالية حيث يتوفر). نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+  // 1-week reversal (contrarian technical)
+  '1-Week Reversal': 'انعكاس أسبوع واحد',
+  'contrarian': 'معاكس',
+  'Short-term reversal — not momentum — is what works on Tadawul.': 'الانعكاس قصير المدى — وليس الزخم — هو ما ينجح في تداول.',
+  'Oversold — reversal candidate': 'تشبّع بيعي — مرشّح للانعكاس',
+  'Overbought — pullback risk': 'تشبّع شرائي — خطر تراجع',
+  'In line with the market': 'متماشٍ مع السوق',
+  'this week': 'هذا الأسبوع',
+  'Fell much harder than the market this week; short-term reversal has historically followed on Tadawul.':
+    'انخفض أكثر بكثير من السوق هذا الأسبوع؛ الانعكاس قصير المدى تبعه تاريخيًا في تداول.',
+  'Ran up far more than the market this week; short-term give-back is common. A contrarian caution, not a sell call.':
+    'ارتفع أكثر بكثير من السوق هذا الأسبوع؛ التراجع قصير المدى شائع. تحذير معاكس، وليس توصية بيع.',
+  'This week’s move is close to the market average — no contrarian edge.':
+    'حركة هذا الأسبوع قريبة من متوسط السوق — لا ميزة معاكسة.',
+  'Oversold (1-Week)': 'تشبّع بيعي (أسبوع)',
+  'Fell much harder than the market this week — Tadawul rewards short-term reversal, not momentum.':
+    'انخفض أكثر بكثير من السوق هذا الأسبوع — تداول يكافئ الانعكاس قصير المدى، لا الزخم.',
   // signal labels + notes
   'Institutional validation': 'تأكيد مؤسسي',
   'Foreign accumulation': 'تجميع أجنبي',

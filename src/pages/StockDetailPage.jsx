@@ -14,6 +14,7 @@ import TvChart from '@/components/TvChart.jsx';
 import { tvRating } from '@/data/tvSignals.js';
 import { socialFor } from '@/data/social.js';
 import { videosFor } from '@/data/serpapi.js';
+import { reversalSignal, REVERSAL_TONE } from '@/data/technical.js';
 import NEWS from '@/data/news.js';
 import { getStock, COUNTRY } from '@/data/stocks.js';
 import { foreignSignal, FOREIGN_TONE } from '@/data/foreignFlow.js';
@@ -522,6 +523,37 @@ export default function StockDetailPage() {
                   </div>
                   <p className="mt-4 text-xs text-muted-foreground">{t(sig.note)}</p>
                   <Link to="/foreign-flow" className="mt-3 inline-block text-sm font-medium text-primary hover:underline">{t('See the whole foreign-flow board →')}</Link>
+                </CardContent>
+              </Card>
+            );
+          })()}
+
+          {/* 1-week contrarian reversal signal (research §3.3) */}
+          {(() => {
+            const rev = reversalSignal(s);
+            if (!rev) return null;
+            const RIcon = rev.key === 'oversold' ? TrendingDown : rev.key === 'overbought' ? TrendingUp : Minus;
+            return (
+              <Card>
+                <CardContent>
+                  <div className="flex items-center gap-2">
+                    <Activity className="h-5 w-5 text-primary" />
+                    <h2 className="font-serif text-xl font-bold">{t('1-Week Reversal')}</h2>
+                    <Badge variant="muted" className="ml-auto">{t('contrarian')}</Badge>
+                  </div>
+                  <p className="mt-1 text-xs text-muted-foreground">{t('Short-term reversal — not momentum — is what works on Tadawul.')}</p>
+                  <div className="mt-4 flex items-center gap-3">
+                    <span className={cn('inline-flex h-11 w-11 items-center justify-center rounded-xl bg-muted', REVERSAL_TONE[rev.tone])}>
+                      <RIcon className="h-6 w-6" />
+                    </span>
+                    <div>
+                      <div className={cn('font-serif text-xl font-bold', REVERSAL_TONE[rev.tone])}>{t(rev.label)}</div>
+                      <div className="text-xs text-muted-foreground">
+                        {s.revW != null ? `${s.revW >= 0 ? '+' : ''}${s.revW}% ${t('this week')}` : ''}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-4 text-xs text-muted-foreground">{t(rev.note)}</p>
                 </CardContent>
               </Card>
             );

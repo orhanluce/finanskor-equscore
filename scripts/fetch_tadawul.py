@@ -161,6 +161,18 @@ def yahoo_series(symbol):
         return None, 0.0, []
 
 
+def week_return(rets):
+    """Last-5-trading-day compound return (%) — feeds the 1-week CONTRARIAN signal
+    (research §3.3: short-term reversal works on Tadawul; classic 12-1 momentum does
+    NOT). Cross-sectional thresholding happens on the frontend."""
+    if len(rets) < 5:
+        return None
+    w = 1.0
+    for r in rets[-5:]:
+        w *= (1 + r)
+    return round((w - 1) * 100, 2)
+
+
 def max_signal(rets):
     """MAX / retail-attention score (§3.2): biggest single-day jump in stdev units."""
     if len(rets) < 30:
@@ -230,6 +242,7 @@ def build(code, name):
     inst = num(info.get("heldPercentInstitutions"))
     inst_pct = round(inst * 100, 1) if inst is not None else None
     mx = max_signal(rets)
+    wr = week_return(rets)
 
     star = {
         "value": value_score(pe, ev, pb),
@@ -280,7 +293,7 @@ def build(code, name):
         "pe": round(pe, 1) if pe else 0, "pb": round(pb, 2) if pb else 0,
         "evEbitda": round(ev, 1) if ev else None, "divYield": round(dyv, 1),
         "star": star, "fairValue": round(target, 2) if target else round(price, 2),  # provisional; set in post-pass
-        "maxScore": mx, "maxFlag": max_flag,
+        "maxScore": mx, "maxFlag": max_flag, "revW": wr,
         "sharia": sharia,
         "shariaRatios": {"debt": dr if dr is not None else 0, "cashInterest": cashI, "impureIncome": impure},
         "shariaBoards": shariaBoards, "purificationPerShare": purificationPerShare,

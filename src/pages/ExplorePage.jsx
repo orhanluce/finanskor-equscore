@@ -5,6 +5,7 @@ import { Card, Badge, Button } from '@/components/ui.jsx';
 import { ShariaBadge } from '@/components/equity.jsx';
 import { STOCKS, SECTORS, scoreColor } from '@/data/stocks.js';
 import { computeZScore } from '@/data/zscore.js';
+import { reversalSignal } from '@/data/technical.js';
 import { cn, money, pct } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
 
@@ -76,6 +77,12 @@ const PRESETS = [
     desc: 'In the Altman Z″ Safe Zone — low bankruptcy distress (banks/insurers excluded).',
     test: (s) => { const z = computeZScore(s); return z.applicable && z.zone === 'safe'; },
     sort: { key: 'total', dir: 'desc' },
+  },
+  {
+    id: 'oversold-week', emoji: '↩️', label: 'Oversold (1-Week)',
+    desc: 'Fell much harder than the market this week — Tadawul rewards short-term reversal, not momentum.',
+    test: (s) => reversalSignal(s)?.key === 'oversold',
+    sort: { key: 'revW', dir: 'asc' },
   },
 ];
 
