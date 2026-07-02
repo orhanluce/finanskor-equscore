@@ -49,6 +49,16 @@ export const DEFAULT_COUNTRY = 'SA';
 const LS_KEY = 'equscore_country';
 
 export function getActiveCountryId() {
+  // Cross-site deep link (e.g. finanskor.com country switcher): ?country=AE
+  // overrides and persists, so equscore.com/?country=AE opens straight into UAE.
+  try {
+    const p = new URLSearchParams(window.location.search).get('country');
+    const up = p && String(p).toUpperCase();
+    if (up && COUNTRIES[up]) {
+      localStorage.setItem(LS_KEY, up);
+      return up;
+    }
+  } catch { /* ignore */ }
   try {
     const c = localStorage.getItem(LS_KEY);
     if (c && COUNTRIES[c]) return c;
