@@ -1,11 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, Check, Globe } from 'lucide-react';
+import { ChevronDown, Check, Globe, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils.js';
 import { t } from '@/i18n.js';
 import {
   COUNTRIES, SUPPORTED, ACTIVE_ID, setActiveCountryId,
   hasChosenCountry, countryFromGeo, DEFAULT_COUNTRY,
 } from '@/data/countries.js';
+
+// Sister platforms — listed in the market menu but living on their own domain.
+// Deliberately NOT in COUNTRIES/SUPPORTED: they must never become the ACTIVE market.
+const EXTERNAL_MARKETS = [
+  { id: 'TR', flag: '🇹🇷', name: 'Türkiye', exchange: 'BIST', currency: 'TRY', url: 'https://finanskor.com' },
+];
 
 // One-time IP-geo default: on first visit (no stored choice) ask the server which
 // country the visitor is in and open that market automatically.
@@ -79,6 +85,17 @@ export default function CountrySwitcher() {
               </button>
             );
           })}
+          {EXTERNAL_MARKETS.map((c) => (
+            <a key={c.id} href={c.url}
+              className="flex w-full items-center gap-3 border-t border-border px-4 py-2.5 text-left transition-colors hover:bg-muted/60">
+              <span className="text-lg leading-none">{c.flag}</span>
+              <span className="min-w-0 flex-1">
+                <span className="block text-sm font-medium text-foreground">{c.name}</span>
+                <span className="block text-xs text-muted-foreground">{c.exchange} · {c.currency} — finanskor.com</span>
+              </span>
+              <ExternalLink className="h-4 w-4 shrink-0 text-muted-foreground" />
+            </a>
+          ))}
         </div>
       )}
     </div>
