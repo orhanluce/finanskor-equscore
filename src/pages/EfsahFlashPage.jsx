@@ -48,13 +48,14 @@ export default function EfsahFlashPage() {
             <div className="flex items-center gap-2">
               <Newspaper className="h-4 w-4 text-primary" />
               <h2 className="font-serif text-lg font-bold">{t('Market Headlines')}</h2>
-              <Badge variant="muted" className="ml-auto">{t('live · local sources')}</Badge>
+              <Badge variant="muted" className="ml-auto">{t('AI sentiment · local sources')}</Badge>
             </div>
             <div className="mt-3 grid gap-x-6 sm:grid-cols-2">
               {headlines.slice(0, 10).map((it, i) => (
                 <a key={i} href={it.url} target="_blank" rel="noreferrer"
                   className="flex items-start gap-2 border-b border-border py-2 hover:bg-muted/30 -mx-2 px-2 rounded-lg">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                  <span className={cn('mt-1.5 h-2 w-2 shrink-0 rounded-full',
+                    it.sentiment === 'positive' ? 'bg-success' : it.sentiment === 'negative' ? 'bg-destructive' : 'bg-muted-foreground/40')} />
                   <div className="min-w-0">
                     <div className="text-sm font-medium leading-snug">{it.title}</div>
                     {(it.source || it.date) && (

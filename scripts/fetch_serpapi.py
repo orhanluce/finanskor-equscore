@@ -86,6 +86,18 @@ def do_news():
         except Exception as e:
             print(f"  {mk} news err: {str(e)[:90]}", flush=True)
         time.sleep(1)
+    # Real Arabic sentiment on the headlines (Cohere; §4/T1.1) — one batch per market.
+    try:
+        from ai_sentiment import classify_titles
+        for mk, items in out.items():
+            if not items:
+                continue
+            tones = classify_titles([it["title"] for it in items])
+            for it, tone in zip(items, tones):
+                it["sentiment"] = tone
+        print("  sentiment: headlines classified (Cohere/AR)", flush=True)
+    except Exception as e:
+        print(f"  sentiment skip: {str(e)[:90]}", flush=True)
     save("serp_market_news.json", out)
 
 

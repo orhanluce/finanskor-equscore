@@ -3,6 +3,7 @@ export const AR = {
   // ── SerpAPI enrichment (news / youtube / trends) ──
   'Market Headlines': 'عناوين السوق',
   'live · local sources': 'مباشر · مصادر محلية',
+  'AI sentiment · local sources': 'تحليل المشاعر بالذكاء الاصطناعي · مصادر محلية',
   'Analysis Videos': 'فيديوهات تحليلية',
   'community · YouTube': 'المجتمع · يوتيوب',
   'Recent Arabic stock-analysis videos — retail community interest, not a rated signal.':
