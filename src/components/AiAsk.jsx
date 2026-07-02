@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Sparkles, X, Send, Loader2 } from 'lucide-react';
 import { supabase } from '@/lib/supabaseClient.js';
+import { getStock } from '@/data/stocks.js';
+import NEWS from '@/data/news.js';
+import { videosFor, marketHeadlines } from '@/data/serpapi.js';
 import { t } from '@/i18n.js';
 
 function useTicker() {
@@ -10,9 +13,41 @@ function useTicker() {
   return m ? m[1].toUpperCase() : null;
 }
 
+// Grounding: send the stock's live EquScore data + recent headlines/videos with the
+// question, so the model answers from real numbers instead of its own memory.
+function buildGrounding(ticker) {
+  const s = ticker ? getStock(ticker) : null;
+  const docs = [];
+  if (s) {
+    for (const it of (NEWS[s.ticker]?.items || []).slice(0, 6)) {
+      if (it.title) docs.push(`[news${it.sentiment ? ` ${it.sentiment}` : ''}] ${it.title}`);
+    }
+    for (const v of (videosFor(s.ticker)?.videos || []).slice(0, 6)) {
+      if (v.title) docs.push(`[video] ${v.title}${v.views != null ? ` (${v.views} views, ${v.published || ''})` : ''}`);
+    }
+  }
+  for (const h of marketHeadlines().slice(0, 6)) {
+    if (h.title) docs.push(`[market] ${h.title}`);
+  }
+  const context = s ? {
+    ticker: s.ticker, name: s.name, sector: s.sector, market: s.market, board: s.board,
+    currency: s.currency, price: s.price, changePct: s.change,
+    equityStar: `${s.total}/42`, starDims: s.star,
+    fairValue: s.fairValue, discountPct: s.discount,
+    pe: s.pe, pb: s.pb, evEbitda: s.evEbitda, divYieldPct: s.divYield,
+    sharia: s.sharia, shariaBoards: s.shariaBoards, purificationPerShare: s.purificationPerShare,
+    shariaRatios: s.shariaRatios,
+    foreignFlow: s.foreignFlow, instOwnPct: s.instOwn, netFlowPct: s.netFlowPct,
+    maxScore: s.maxScore, maxFlag: s.maxFlag,
+    analysts: s.analysts, metrics: s.metrics,
+  } : null;
+  return { context, docs: docs.slice(0, 12) };
+}
+
 async function askAI({ question, ticker = null, history = [] }) {
+  const { context, docs } = buildGrounding(ticker);
   const { data, error } = await supabase.functions.invoke('ai-ask', {
-    body: { question, ticker, history },
+    body: { question, ticker, context, docs, history },
   });
   if (error) {
     let msg = 'AI service unavailable. Please try again shortly.';

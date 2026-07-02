@@ -53,6 +53,26 @@ async function askCohere(messages: unknown[]): Promise<string> {
   return parts.map((p: { text?: string }) => p.text ?? '').join('').trim();
 }
 
+// Mini-RAG: pick the docs most relevant to the question (Cohere rerank; falls back
+// to the first N if the key is missing or the call fails).
+async function pickDocs(question: string, docs: string[], topN: number): Promise<string[]> {
+  if (docs.length <= topN || !COHERE_KEY) return docs.slice(0, topN);
+  try {
+    const res = await fetch('https://api.cohere.com/v2/rerank', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${COHERE_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'rerank-v3.5', query: question, documents: docs, top_n: topN }),
+    });
+    if (!res.ok) throw new Error(`rerank ${res.status}`);
+    const d = await res.json();
+    const picked = (d.results ?? []).map((r: { index: number }) => docs[r.index]).filter(Boolean);
+    return picked.length ? picked : docs.slice(0, topN);
+  } catch (e) {
+    console.error('rerank failed:', e);
+    return docs.slice(0, topN);
+  }
+}
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: CORS });
 
@@ -63,7 +83,7 @@ serve(async (req) => {
       });
     }
 
-    const { question, ticker, history = [] } = await req.json();
+    const { question, ticker, context = null, docs = [], history = [] } = await req.json();
     if (!question?.trim()) {
       return new Response(JSON.stringify({ error: 'No question provided.' }), {
         status: 400, headers: { ...CORS, 'Content-Type': 'application/json' },
@@ -72,9 +92,23 @@ serve(async (req) => {
 
     const ar = isArabic(question);
     const base = ar ? SYSTEM_AR : SYSTEM_EN;
-    const systemMsg = ticker
+    let systemMsg = ticker
       ? `${base}\n\n${ar ? 'السياق الحالي: المستخدم يشاهد السهم' : 'Current context: the user is viewing stock'} ${ticker}.`
       : base;
+
+    // Grounding block: live EquScore data + the most relevant recent headlines/videos.
+    if (context && typeof context === 'object') {
+      systemMsg += `\n\nLIVE EQUSCORE DATA for this stock (base every number you state on this; if a value is missing here, say you don't have it — do NOT invent figures):\n${JSON.stringify(context).slice(0, 1800)}`
+        + `\nMetric notes: equityStar = 7 dimensions scored 0-6 each (max 42, higher is better). discountPct > 0 means the price is BELOW fair value. maxScore = retail-attention signal (biggest 1-day jump in volatility units; high MAX with weak quality = value-trap risk, NOT analyst opinion). foreignFlow = net foreign/institutional direction. starDims.consensus reflects analyst ratings; analysts.target is the median analyst price target.`;
+    }
+    const cleanDocs = (Array.isArray(docs) ? docs : [])
+      .filter((d: unknown) => typeof d === 'string' && d.trim())
+      .map((d: string) => d.trim().slice(0, 160))
+      .slice(0, 12);
+    if (cleanDocs.length) {
+      const picked = await pickDocs(question.trim().slice(0, 300), cleanDocs, 6);
+      systemMsg += `\n\nRECENT ITEMS (news / analysis videos / market headlines — cite only if relevant):\n${picked.map((d) => `- ${d}`).join('\n')}`;
+    }
 
     const messages = [
       { role: 'system', content: systemMsg },
