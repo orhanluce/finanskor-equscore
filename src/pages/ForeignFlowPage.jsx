@@ -36,11 +36,18 @@ export default function ForeignFlowPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <Badge variant="primary" className="mb-3"><Globe2 className="h-3.5 w-3.5" /> {t('QFI · foreign flow')}</Badge>
+      <Badge variant="primary" className="mb-3"><Globe2 className="h-3.5 w-3.5" /> {t('Foreign & institutional flow')}</Badge>
       <h1 className="font-serif text-4xl font-bold">{t('Foreign Flow')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
         {t('Where foreign institutions — the most informed players on')} {COUNTRY.exchange} {t('— are putting money. Net buying into a name they already own heavily is a quality validation signal.')}
       </p>
+
+      {COUNTRY.id === 'SA' && (
+        <div className="mt-4 rounded-xl border border-primary/30 bg-primary/5 px-4 py-3 text-sm text-foreground/80">
+          <span className="font-semibold text-foreground">{t('New (Feb 2026):')}</span>{' '}
+          {t('The CMA scrapped the Qualified Foreign Investor (QFI) framework — Tadawul is now open to all foreign investors directly. Foreign participation is set to broaden, making this flow signal more meaningful, not less.')}
+        </div>
+      )}
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Stat value={stats.covered} label={t('Names covered')} />
@@ -93,7 +100,7 @@ export default function ForeignFlowPage() {
       </div>
 
       <p className="mt-6 text-xs text-muted-foreground">
-        {t('Foreign ownership & flow from exchange reports (Tadawul weekly QFI where available). Sample/delayed; informational only, not investment advice.')}
+        {t('Foreign ownership & flow from exchange reports (Saudi Exchange weekly ownership-by-nationality report where available). Sample/delayed; informational only, not investment advice.')}
       </p>
     </div>
   );

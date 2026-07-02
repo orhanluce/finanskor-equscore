@@ -508,7 +508,7 @@ export default function StockDetailPage() {
                 <CardContent>
                   <div className="flex items-center gap-2">
                     <Users className="h-5 w-5 text-primary" />
-                    <h2 className="font-serif text-xl font-bold"><JargonTip term="Foreign flow">{t('Foreign Flow (QFI)')}</JargonTip></h2>
+                    <h2 className="font-serif text-xl font-bold"><JargonTip term="Foreign flow">{t('Foreign Flow')}</JargonTip></h2>
                   </div>
                   <p className="mt-1 text-xs text-muted-foreground">{t('Foreign institutions are the most informed players on Tadawul.')}</p>
                   <div className="mt-4 flex items-center gap-3">

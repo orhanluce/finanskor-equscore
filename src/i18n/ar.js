@@ -954,6 +954,10 @@ export const AR = {
   // ── Foreign Flow (QFI) ──
   'Foreign Flow': 'التدفّق الأجنبي',
   'QFI · foreign flow': 'QFI · التدفّق الأجنبي',
+  'Foreign & institutional flow': 'التدفّق الأجنبي والمؤسسي',
+  'New (Feb 2026):': 'جديد (فبراير 2026):',
+  'The CMA scrapped the Qualified Foreign Investor (QFI) framework — Tadawul is now open to all foreign investors directly. Foreign participation is set to broaden, making this flow signal more meaningful, not less.':
+    'ألغت هيئة السوق المالية إطار المستثمر الأجنبي المؤهل (QFI) — أصبح سوق تداول مفتوحًا الآن لجميع المستثمرين الأجانب مباشرةً. من المتوقع أن تتوسّع المشاركة الأجنبية، مما يجعل إشارة التدفّق هذه أكثر أهمية.',
   'QFI institutional flow': 'تدفّق المؤسسات الأجنبية',
   'Where foreign institutions — the most informed players on': 'حيث تضع المؤسسات الأجنبية — أكثر اللاعبين اطّلاعًا في',
   '— are putting money. Net buying into a name they already own heavily is a quality validation signal.':
@@ -963,8 +967,8 @@ export const AR = {
   'Inflow': 'داخل', 'Outflow': 'خارج',
   'foreign own': 'ملكية أجنبية',
   'No names in this category right now.': 'لا أسهم في هذه الفئة الآن.',
-  'Foreign ownership & flow from exchange reports (Tadawul weekly QFI where available). Sample/delayed; informational only, not investment advice.':
-    'الملكية والتدفق الأجنبي من تقارير البورصة (QFI الأسبوعي لتداول حيث يتوفر). نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
+  'Foreign ownership & flow from exchange reports (Saudi Exchange weekly ownership-by-nationality report where available). Sample/delayed; informational only, not investment advice.':
+    'الملكية والتدفق الأجنبي من تقارير البورصة (تقرير الملكية حسب الجنسية الأسبوعي للسوق المالية حيث يتوفر). نموذجية/متأخرة؛ للأغراض المعلوماتية فقط، ليست نصيحة استثمارية.',
   // signal labels + notes
   'Institutional validation': 'تأكيد مؤسسي',
   'Foreign accumulation': 'تجميع أجنبي',

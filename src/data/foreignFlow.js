@@ -1,7 +1,9 @@
-// QFI / foreign-flow signal — the MENA-critical "smart money" layer (doc §3.4).
-// Reads the foreignFlow ('in'|'out'|'flat') + foreignOwn (%) fields already on each
-// stock. These are sample/EOD today; the otomasyon pipeline refreshes them from the
-// Tadawul weekly QFI report in production (same pattern as SAHMK money flow).
+// Foreign & institutional flow signal — the MENA-critical "smart money" layer (doc §3.4).
+// Reads the foreignFlow ('in'|'out'|'flat') + foreignOwn (%) fields on each stock.
+// Sample/EOD today; the pipeline refreshes from the Saudi Exchange weekly
+// ownership-by-nationality report in production (same pattern as SAHMK money flow).
+// NOTE: the QFI framework was abolished in Feb 2026 — Tadawul is now open to all
+// foreign investors, so "foreign flow" is a broad signal, no longer QFI-only.
 
 export function foreignSignal(s) {
   const flow = s.foreignFlow;
