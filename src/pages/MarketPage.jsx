@@ -52,7 +52,11 @@ export default function MarketPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
       <Badge variant={IS_LIVE ? 'success' : 'muted'} className="mb-3">
-        {COUNTRY.flag} {COUNTRY.exchange} · {IS_LIVE ? 'live — Yahoo Finance (delayed)' : 'sample dataset'}
+        {COUNTRY.flag} {COUNTRY.exchange} · {IS_LIVE
+          ? t(COUNTRY.id === 'EG' ? 'live — EODHD + investing.com (EOD)'
+            : COUNTRY.id === 'AE' ? 'live — Yahoo + investing.com (delayed)'
+            : 'live — Yahoo Finance (delayed)')
+          : t('sample dataset')}
       </Badge>
       <h1 className="font-serif text-4xl font-bold">{t('Market')}</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
