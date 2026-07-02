@@ -3,10 +3,14 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Sidebar from '@/components/Sidebar.jsx';
 import Footer from '@/components/Footer.jsx';
 import AiAsk from '@/components/AiAsk.jsx';
+import { trackPageview } from '@/lib/analytics.js';
 
 export default function Layout() {
   const { pathname } = useLocation();
-  React.useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+    trackPageview(pathname);
+  }, [pathname]);
   return (
     <div className="min-h-screen">
       <Sidebar />
